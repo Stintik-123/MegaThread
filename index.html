@@ -2,14 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>MegaThread — бесплатные ресурсы</title>
   <meta name="description" content="Каталог бесплатных ресурсов: фильмы, игры, софт, AI, приватность и инструменты.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23070b14'/%3E%3Cpath d='M9 10h14v2.2H9V10zm0 5h14v2.2H9V15zm0 5h9v2.2H9V20z' fill='%23e8eefc'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111118'/%3E%3Cpath d='M9 10h14v2.2H9V10zm0 5h14v2.2H9V15zm0 5h9v2.2H9V20z' fill='%23ffb347'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
   <div class="glow"></div>
@@ -32,18 +29,18 @@
   <main class="container">
     <section id="view-home" class="view active">
       <div class="hero">
-        <p class="eyebrow">Открытый каталог</p>
+        <p class="eyebrow">Открытый каталог · без аккаунтов</p>
         <h1>Бесплатные ресурсы<br>интернета — в одном месте</h1>
-        <p class="lead">Кино, игры, софт, AI и приватность. Без аккаунтов, без сервера и без лишнего шума.</p>
+        <p class="lead">Кино, игры, софт, AI и приватность. Удобный каталог ссылок, без лишней сложности.</p>
 
         <div class="search">
-          <input id="search" type="search" placeholder="Найти ресурс: VPN, аниме, FitGirl, ChatGPT…" autocomplete="off">
+          <input id="search" type="search" placeholder="Найти: VPN, аниме, FitGirl, ChatGPT…" autocomplete="off">
           <div id="search-results" class="dropdown"></div>
         </div>
 
         <div class="stats">
-          <div class="stat"><b id="meta-total">0</b><span>ресурсов</span></div>
-          <div class="stat"><b id="meta-cats">0</b><span>категорий</span></div>
+          <div class="stat"><b id="meta-total">…</b><span>ресурсов</span></div>
+          <div class="stat"><b id="meta-cats">…</b><span>категорий</span></div>
           <div class="stat"><b>0 ₽</b><span>навсегда</span></div>
         </div>
       </div>
@@ -76,7 +73,7 @@
   </main>
 
   <footer class="container foot">
-    <p>MegaThread · каталог ссылок · <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">вдохновлено FMHY</a></p>
+    <p>MegaThread · сделано для людей · <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">вдохновлено FMHY</a></p>
   </footer>
 
   <nav class="bottom" aria-label="Мобильная навигация">
@@ -98,6 +95,6 @@
     </a>
   </nav>
 
-  <script type="module" src="js/app.js"></script>
+  <script src="js/app.js?v=3" defer></script>
 </body>
 </html>
