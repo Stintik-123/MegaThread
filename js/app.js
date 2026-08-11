@@ -1,34 +1,56 @@
 import { CATEGORIES, RESOURCES } from './data.js';
 
-const GRADIENTS = ['', 'g2', 'g3', 'g4', 'g5'];
+const FAV_KEY = 'mt_favorites';
+const OS_LABELS = {
+  all: 'Все ОС',
+  w: 'Windows',
+  m: 'macOS',
+  l: 'Linux',
+  a: 'Android',
+  i: 'iOS',
+  any: 'Любая'
+};
 
 const state = {
   view: 'home',
   category: null,
-  filter: 'all',
-  query: ''
+  tag: 'all',
+  os: 'all',
+  favorites: loadFavorites()
 };
 
 const el = {
-  home: document.getElementById('home'),
-  panel: document.getElementById('category-panel'),
+  views: {
+    home: document.getElementById('view-home'),
+    category: document.getElementById('view-category'),
+    favorites: document.getElementById('view-favorites')
+  },
   catGrid: document.getElementById('cat-grid'),
   resList: document.getElementById('res-list'),
-  panelTitle: document.getElementById('panel-title'),
-  panelDesc: document.getElementById('panel-desc'),
+  favList: document.getElementById('fav-list'),
+  catTitle: document.getElementById('cat-title'),
+  catDesc: document.getElementById('cat-desc'),
   filters: document.getElementById('filters'),
+  osFilters: document.getElementById('os-filters'),
   search: document.getElementById('search'),
   searchResults: document.getElementById('search-results'),
-  statTotal: document.getElementById('stat-total'),
-  statCats: document.getElementById('stat-cats')
+  meta: document.getElementById('meta-line'),
+  suggest: document.getElementById('suggest-link'),
+  suggestMobile: document.getElementById('suggest-link-mobile')
 };
 
-function countByCategory(id) {
-  return RESOURCES.filter((item) => item.cat === id).length;
+function loadFavorites() {
+  try {
+    const raw = localStorage.getItem(FAV_KEY);
+    const data = raw ? JSON.parse(raw) : [];
+    return Array.isArray(data) ? data : [];
+  } catch {
+    return [];
+  }
 }
 
-function getCategory(id) {
-  return CATEGORIES.find((item) => item.id === id);
+function saveFavorites() {
+  localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites));
 }
 
 function escapeHtml(value) {
@@ -39,18 +61,71 @@ function escapeHtml(value) {
     .replaceAll('"', '"');
 }
 
-function renderHome() {
-  el.statTotal.textContent = String(RESOURCES.length);
-  el.statCats.textContent = String(CATEGORIES.length);
+function getCategory(id) {
+  return CATEGORIES.find((item) => item.id === id);
+}
 
+function resourceKey(item) {
+  return item.url;
+}
+
+function isFavorite(item) {
+  return state.favorites.includes(resourceKey(item));
+}
+
+function toggleFavorite(item) {
+  const key = resourceKey(item);
+  if (state.favorites.includes(key)) {
+    state.favorites = state.favorites.filter((value) => value !== key);
+  } else {
+    state.favorites.push(key);
+  }
+  saveFavorites();
+}
+
+function detectOs() {
+  const ua = navigator.userAgent;
+  if (/Android/i.test(ua)) return 'a';
+  if (/iPhone|iPad|iPod/i.test(ua)) return 'i';
+  if (/Mac/i.test(ua)) return 'm';
+  if (/Linux/i.test(ua)) return 'l';
+  return 'w';
+}
+
+function setupSuggestLinks() {
+  const title = encodeURIComponent('[Ресурс] ');
+  const body = encodeURIComponent(
+    'Название:\nСсылка:\nКатегория:\nПочему стоит добавить:\n'
+  );
+  const href = `https://github.com/Stintik-123/MegaThread/issues/new?title=${title}&body=${body}`;
+  el.suggest.href = href;
+  el.suggestMobile.href = href;
+}
+
+function setView(name) {
+  state.view = name;
+  Object.entries(el.views).forEach(([key, node]) => {
+    node.classList.toggle('active', key === name);
+  });
+
+  document.querySelectorAll('[data-view]').forEach((node) => {
+    node.classList.toggle('active', node.getAttribute('data-view') === name);
+  });
+
+  if (name === 'favorites') renderFavorites();
+  if (name === 'home') el.searchResults.classList.remove('open');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function renderHome() {
+  el.meta.textContent = `${RESOURCES.length} ресурсов · ${CATEGORIES.length} категорий`;
   el.catGrid.innerHTML = CATEGORIES.map((cat) => {
-    const count = countByCategory(cat.id);
+    const count = RESOURCES.filter((item) => item.cat === cat.id).length;
     return `
-      <button class="cat-card" data-open="${cat.id}" type="button">
-        <div class="cat-emoji">${cat.emoji}</div>
-        <h3>${escapeHtml(cat.title)}</h3>
-        <p>${escapeHtml(cat.desc)}</p>
-        <div class="cat-meta">${count} ресурсов</div>
+      <button class="cat" type="button" data-open="${cat.id}">
+        <strong>${escapeHtml(cat.title)}</strong>
+        <span>${escapeHtml(cat.desc)}</span>
+        <small>${count}</small>
       </button>
     `;
   }).join('');
@@ -62,86 +137,94 @@ function uniqueTags(items) {
   return Array.from(set).sort();
 }
 
-function renderFilters(items) {
+function uniqueOs(items) {
+  const set = new Set();
+  items.forEach((item) => (item.os || ['any']).forEach((os) => set.add(os)));
+  return Array.from(set);
+}
+
+function renderChips() {
+  const items = RESOURCES.filter((item) => item.cat === state.category);
   const tags = uniqueTags(items);
-  const buttons = [
-    `<button class="filter-btn ${state.filter === 'all' ? 'active' : ''}" data-filter="all" type="button">Все</button>`
-  ];
+  const osList = uniqueOs(items);
 
-  tags.forEach((tag) => {
-    buttons.push(
-      `<button class="filter-btn ${state.filter === tag ? 'active' : ''}" data-filter="${escapeHtml(tag)}" type="button">${escapeHtml(tag)}</button>`
-    );
+  el.filters.innerHTML = [
+    `<button class="chip ${state.tag === 'all' ? 'active' : ''}" type="button" data-tag="all">Все</button>`,
+    ...tags.map(
+      (tag) =>
+        `<button class="chip ${state.tag === tag ? 'active' : ''}" type="button" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`
+    )
+  ].join('');
+
+  el.osFilters.innerHTML = [
+    `<button class="chip ${state.os === 'all' ? 'active' : ''}" type="button" data-os="all">${OS_LABELS.all}</button>`,
+    ...osList.map((os) => {
+      const mine = detectOs() === os ? ' · ваша' : '';
+      return `<button class="chip ${state.os === os ? 'active' : ''}" type="button" data-os="${escapeHtml(os)}">${escapeHtml(OS_LABELS[os] || os)}${mine}</button>`;
+    })
+  ].join('');
+}
+
+function filteredCategoryItems() {
+  return RESOURCES.filter((item) => {
+    if (item.cat !== state.category) return false;
+    if (state.tag !== 'all' && !item.tags.includes(state.tag)) return false;
+    if (state.os !== 'all') {
+      const os = item.os || ['any'];
+      if (!os.includes(state.os) && !os.includes('any')) return false;
+    }
+    return true;
   });
+}
 
-  el.filters.innerHTML = buttons.join('');
+function renderItem(item) {
+  const fav = isFavorite(item);
+  const tags = item.tags.slice(0, 4).join(' · ');
+  return `
+    <div class="item" data-url="${escapeHtml(item.url)}">
+      <div>
+        <b>${escapeHtml(item.name)}</b>
+        <p>${escapeHtml(item.desc)}</p>
+        <div class="tags">${escapeHtml(tags)}</div>
+      </div>
+      <button class="star ${fav ? 'on' : ''}" type="button" data-fav="${escapeHtml(item.url)}" aria-label="Избранное">${fav ? '★' : '☆'}</button>
+      <a class="open" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть">→</a>
+    </div>
+  `;
 }
 
 function renderResources() {
-  let items = RESOURCES.filter((item) => item.cat === state.category);
-
-  if (state.filter !== 'all') {
-    items = items.filter((item) => item.tags.includes(state.filter));
-  }
-
+  const items = filteredCategoryItems();
   if (!items.length) {
-    el.resList.innerHTML = '<div class="empty">В этом фильтре пока пусто</div>';
+    el.resList.innerHTML = '<div class="empty">Ничего не найдено по фильтрам</div>';
     return;
   }
+  el.resList.innerHTML = items.map(renderItem).join('');
+}
 
-  el.resList.innerHTML = items.map((item, index) => {
-    const grad = GRADIENTS[index % GRADIENTS.length];
-    const letter = escapeHtml((item.name[0] || 'M').toUpperCase());
-    const tags = item.tags
-      .slice(0, 3)
-      .map((tag) => `<span class="tag ${escapeHtml(tag)}">${escapeHtml(tag)}</span>`)
-      .join('');
-
-    return `
-      <a class="res-item" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
-        <div class="res-ico ${grad}">${letter}</div>
-        <div class="res-body">
-          <b>${escapeHtml(item.name)}</b>
-          <span>${escapeHtml(item.desc)}</span>
-        </div>
-        <div class="res-tags">${tags}</div>
-        <div class="res-go">→</div>
-      </a>
-    `;
-  }).join('');
+function renderFavorites() {
+  const items = RESOURCES.filter((item) => state.favorites.includes(item.url));
+  if (!items.length) {
+    el.favList.innerHTML = '<div class="empty">Пока пусто. Добавляй ресурсы звёздочкой.</div>';
+    return;
+  }
+  el.favList.innerHTML = items.map(renderItem).join('');
 }
 
 function openCategory(id) {
   const cat = getCategory(id);
   if (!cat) return;
-
-  state.view = 'category';
   state.category = id;
-  state.filter = 'all';
-
-  el.panelTitle.textContent = `${cat.emoji} ${cat.title}`;
-  el.panelDesc.textContent = cat.desc;
-
-  const items = RESOURCES.filter((item) => item.cat === id);
-  renderFilters(items);
+  state.tag = 'all';
+  state.os = 'all';
+  el.catTitle.textContent = cat.title;
+  el.catDesc.textContent = cat.desc;
+  renderChips();
   renderResources();
-
-  el.home.style.display = 'none';
-  el.panel.classList.add('active');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  setView('category');
 }
 
-function showHome() {
-  state.view = 'home';
-  state.category = null;
-  state.filter = 'all';
-  el.panel.classList.remove('active');
-  el.home.style.display = 'block';
-  el.searchResults.classList.remove('open');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-function searchResources(query) {
+function search(query) {
   const q = query.trim().toLowerCase();
   if (q.length < 2) {
     el.searchResults.classList.remove('open');
@@ -160,44 +243,63 @@ function searchResources(query) {
     return;
   }
 
-  el.searchResults.innerHTML = hits.map((item) => {
-    const cat = getCategory(item.cat);
-    return `
-      <a class="search-hit" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
-        <div class="res-ico">${escapeHtml((item.name[0] || 'M').toUpperCase())}</div>
-        <div>
+  el.searchResults.innerHTML = hits
+    .map((item) => {
+      const cat = getCategory(item.cat);
+      return `
+        <a class="hit" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
           <b>${escapeHtml(item.name)}</b>
           <small>${escapeHtml(cat ? cat.title : item.cat)} · ${escapeHtml(item.desc)}</small>
-        </div>
-      </a>
-    `;
-  }).join('');
-
+        </a>
+      `;
+    })
+    .join('');
   el.searchResults.classList.add('open');
 }
 
 function bindEvents() {
   document.addEventListener('click', (event) => {
-    const openBtn = event.target.closest('[data-open]');
-    if (openBtn) {
-      openCategory(openBtn.dataset.open);
+    const viewBtn = event.target.closest('[data-view]');
+    if (viewBtn && viewBtn.tagName === 'BUTTON') {
+      const view = viewBtn.getAttribute('data-view');
+      if (view === 'home' || view === 'favorites') setView(view);
       return;
     }
 
-    const filterBtn = event.target.closest('[data-filter]');
-    if (filterBtn) {
-      state.filter = filterBtn.dataset.filter;
-      renderFilters(RESOURCES.filter((item) => item.cat === state.category));
+    const openBtn = event.target.closest('[data-open]');
+    if (openBtn) {
+      openCategory(openBtn.getAttribute('data-open'));
+      return;
+    }
+
+    const tagBtn = event.target.closest('[data-tag]');
+    if (tagBtn) {
+      state.tag = tagBtn.getAttribute('data-tag');
+      renderChips();
       renderResources();
       return;
     }
 
-    if (event.target.closest('[data-home]')) {
-      showHome();
+    const osBtn = event.target.closest('[data-os]');
+    if (osBtn) {
+      state.os = osBtn.getAttribute('data-os');
+      renderChips();
+      renderResources();
       return;
     }
 
-    if (!event.target.closest('.search-box')) {
+    const favBtn = event.target.closest('[data-fav]');
+    if (favBtn) {
+      const url = favBtn.getAttribute('data-fav');
+      const item = RESOURCES.find((entry) => entry.url === url);
+      if (!item) return;
+      toggleFavorite(item);
+      if (state.view === 'favorites') renderFavorites();
+      else if (state.view === 'category') renderResources();
+      return;
+    }
+
+    if (!event.target.closest('.search')) {
       el.searchResults.classList.remove('open');
     }
   });
@@ -205,10 +307,7 @@ function bindEvents() {
   let timer = null;
   el.search.addEventListener('input', () => {
     clearTimeout(timer);
-    timer = setTimeout(() => {
-      state.query = el.search.value;
-      searchResources(state.query);
-    }, 160);
+    timer = setTimeout(() => search(el.search.value), 140);
   });
 
   el.search.addEventListener('keydown', (event) => {
@@ -227,6 +326,7 @@ function bindEvents() {
 }
 
 function init() {
+  setupSuggestLinks();
   renderHome();
   bindEvents();
 }
