@@ -3,88 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MegaThread — бесплатные ресурсы интернета</title>
-  <meta name="description" content="Русский каталог бесплатных ресурсов: фильмы, игры, софт, AI, приватность, книги и многое другое. Вдохновлено FMHY.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>MegaThread</title>
+  <meta name="description" content="Каталог бесплатных ресурсов: фильмы, игры, софт, AI, приватность и инструменты.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23090a0b'/%3E%3Cpath d='M8 10h16v2.5H8V10zm0 5h16v2.5H8V15zm0 5h10v2.5H8V20z' fill='%23e8e8ea'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-  <div class="bg"></div>
-  <div class="noise"></div>
-
-  <header class="nav">
-    <div class="wrap nav-inner">
-      <a class="logo" href="./" data-home>
-        <div class="logo-mark">📚</div>
-        Mega<span>Thread</span>
-      </a>
-      <div class="nav-links">
-        <button type="button" data-home class="hide-sm">Главная</button>
+  <header class="top">
+    <div class="container bar">
+      <a class="brand" href="./" data-view="home">MegaThread</a>
+      <nav class="top-nav">
+        <button type="button" data-view="home">Каталог</button>
+        <button type="button" data-view="favorites">Избранное</button>
+        <a class="btn" id="suggest-link" href="#" target="_blank" rel="noopener noreferrer">Предложить</a>
         <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <main class="wrap">
-    <div id="home">
-      <section class="hero">
-        <div class="badge">
-          <span class="badge-dot"></span>
-          Русский аналог FMHY · каталог обновляется
+  <main class="container">
+    <section id="view-home" class="view active">
+      <div class="hero">
+        <h1>Бесплатные ресурсы<br>без лишнего шума</h1>
+        <p>Каталог ссылок: кино, игры, софт, AI, приватность. Без аккаунтов и без сервера.</p>
+        <div class="search">
+          <input id="search" type="search" placeholder="Поиск по названию или описанию" autocomplete="off">
+          <div id="search-results" class="dropdown"></div>
         </div>
-        <h1>Вся бесплатная сторона<br><em>интернета</em> — в одном месте</h1>
-        <p>Фильмы, игры, софт, AI, приватность, книги и инструменты. Без аккаунтов и без серверной слежки — только ссылки и удобный каталог.</p>
+        <div class="meta" id="meta-line">0 ресурсов · 0 категорий</div>
+      </div>
+      <div id="cat-grid" class="cats"></div>
+    </section>
 
-        <div class="search-box">
-          <span class="search-icon">⌕</span>
-          <input id="search" type="search" placeholder="Поиск: VPN, аниме, FitGirl, ChatGPT…" autocomplete="off">
-          <div id="search-results" class="search-results"></div>
-        </div>
-      </section>
-
-      <section class="stats">
-        <div class="stat"><b id="stat-total">0</b><span>ресурсов</span></div>
-        <div class="stat"><b id="stat-cats">0</b><span>категорий</span></div>
-        <div class="stat"><b>0 ₽</b><span>навсегда</span></div>
-        <div class="stat"><b>RU</b><span>фокус</span></div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Категории</h2>
-          <p>Выбери раздел — внутри ссылки с коротким описанием и тегами.</p>
-        </div>
-        <div id="cat-grid" class="cat-grid"></div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <h2>Как пользоваться</h2>
-          <p>Это каталог ссылок, а не хостинг файлов. Открывай ресурсы на свой страх и риск, используй adblock и здравый смысл.</p>
-        </div>
-      </section>
-    </div>
-
-    <section id="category-panel" class="panel">
-      <div class="panel-top">
-        <button class="back-btn" type="button" data-home aria-label="Назад">←</button>
+    <section id="view-category" class="view">
+      <div class="page-head">
+        <button type="button" class="back" data-view="home">Назад</button>
         <div>
-          <h2 id="panel-title">Категория</h2>
-          <p id="panel-desc"></p>
+          <h2 id="cat-title">Категория</h2>
+          <p id="cat-desc"></p>
         </div>
       </div>
-      <div id="filters" class="filters"></div>
-      <div id="res-list" class="res-list"></div>
+      <div id="filters" class="chips"></div>
+      <div id="os-filters" class="chips"></div>
+      <div id="res-list" class="list"></div>
+    </section>
+
+    <section id="view-favorites" class="view">
+      <div class="page-head">
+        <div>
+          <h2>Избранное</h2>
+          <p>Хранится в этом браузере после перезагрузки.</p>
+        </div>
+      </div>
+      <div id="fav-list" class="list"></div>
     </section>
   </main>
 
-  <footer class="wrap footer">
-    <p>© 2026 MegaThread · каталог ссылок · <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">исходный код</a></p>
-    <p style="margin-top:8px">Вдохновлено <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">FMHY</a>. Сайт ничего не хранит и не распространяет файлы.</p>
+  <footer class="container foot">
+    <p>MegaThread · каталог ссылок · <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">вдохновлено FMHY</a></p>
   </footer>
+
+  <nav class="bottom" aria-label="Мобильная навигация">
+    <button type="button" data-view="home" class="active">Каталог</button>
+    <button type="button" data-view="favorites">Избранное</button>
+    <a id="suggest-link-mobile" href="#" target="_blank" rel="noopener noreferrer">Предложить</a>
+    <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </nav>
 
   <script type="module" src="js/app.js"></script>
 </body>
