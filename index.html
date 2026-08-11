@@ -6,7 +6,7 @@
   <title>MegaThread — бесплатные ресурсы</title>
   <meta name="description" content="Каталог бесплатных ресурсов: фильмы, игры, софт, AI, приватность и инструменты.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111118'/%3E%3Cpath d='M9 10h14v2.2H9V10zm0 5h14v2.2H9V15zm0 5h9v2.2H9V20z' fill='%23ffb347'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
   <div class="glow"></div>
@@ -31,7 +31,7 @@
       <div class="hero">
         <p class="eyebrow">Открытый каталог · без аккаунтов</p>
         <h1>Бесплатные ресурсы<br>интернета — в одном месте</h1>
-        <p class="lead">Кино, игры, софт, AI и приватность. Удобный каталог ссылок, без лишней сложности.</p>
+        <p class="lead">Кино, игры, софт, AI и приватность. Удобный каталог ссылок без лишней сложности.</p>
 
         <div class="search">
           <input id="search" type="search" placeholder="Найти: VPN, аниме, FitGirl, ChatGPT…" autocomplete="off">
@@ -45,7 +45,21 @@
         </div>
       </div>
 
-      <div id="cat-grid" class="cats"></div>
+      <section class="block">
+        <div class="block-head">
+          <h2>С чего начать</h2>
+          <p>Короткий набор для первого захода</p>
+        </div>
+        <div id="start-grid" class="start-grid"></div>
+      </section>
+
+      <section class="block">
+        <div class="block-head">
+          <h2>Категории</h2>
+          <p>Выбери раздел и фильтруй по тегам или ОС</p>
+        </div>
+        <div id="cat-grid" class="cats"></div>
+      </section>
     </section>
 
     <section id="view-category" class="view">
@@ -95,6 +109,6 @@
     </a>
   </nav>
 
-  <script src="js/app.js?v=3" defer></script>
+  <script src="js/app.js?v=4" defer></script>
 </body>
 </html>
