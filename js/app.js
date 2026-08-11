@@ -278,6 +278,17 @@
     });
   }
 
+  function mergeCatalog(base, more) {
+    CATEGORIES = (base && base.CATEGORIES) || [];
+    var list = ((base && base.RESOURCES) || []).concat((more && more.RESOURCES) || []);
+    var seen = {};
+    RESOURCES = list.filter(function (item) {
+      if (!item || !item.url || seen[item.url]) return false;
+      seen[item.url] = true;
+      return true;
+    });
+  }
+
   function init() {
     setupSuggestLinks();
     renderHome();
@@ -285,11 +296,12 @@
   }
 
   function boot() {
-    fetch('js/data.json?v=4', { cache: 'no-store' })
-      .then(function (r) { return r.json(); })
-      .then(function (data) {
-        CATEGORIES = data.CATEGORIES || [];
-        RESOURCES = data.RESOURCES || [];
+    Promise.all([
+      fetch('js/data.json?v=4', { cache: 'no-store' }).then(function (r) { return r.json(); }),
+      fetch('js/data-more.json?v=4', { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return { RESOURCES: [] }; })
+    ])
+      .then(function (parts) {
+        mergeCatalog(parts[0], parts[1]);
         init();
       })
       .catch(function (err) {
