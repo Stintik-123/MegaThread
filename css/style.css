@@ -32,9 +32,9 @@ body {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(ellipse 90% 50% at 50% -15%, rgba(255, 179, 71, 0.16), transparent 55%),
+    radial-gradient(ellipse 90% 50% at 50% -15%, rgba(255, 179, 71, 0.18), transparent 55%),
     radial-gradient(ellipse 60% 40% at 100% 10%, rgba(77, 163, 255, 0.12), transparent 50%),
-    radial-gradient(ellipse 50% 35% at 0% 80%, rgba(255, 179, 71, 0.06), transparent 45%);
+    radial-gradient(ellipse 50% 35% at 0% 80%, rgba(255, 179, 71, 0.07), transparent 45%);
 }
 
 a { color: inherit; text-decoration: none; }
@@ -195,17 +195,69 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   letter-spacing: 0.04em;
 }
 
+.block {
+  margin-top: 36px;
+}
+
+.block-head {
+  margin-bottom: 14px;
+}
+
+.block-head h2 {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.block-head p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.start-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.start-card {
+  display: block;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #252533, var(--panel));
+  border-radius: 16px;
+  padding: 14px;
+  transition: 0.2s;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.start-card:hover {
+  border-color: rgba(255, 179, 71, 0.4);
+  transform: translateY(-2px);
+}
+
+.start-card b {
+  display: block;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.start-card span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .cats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
-  margin-top: 28px;
 }
 
 .cat {
   text-align: left;
   border-radius: var(--radius);
-  padding: 20px;
+  padding: 18px;
   background: linear-gradient(180deg, var(--panel-2), var(--panel));
   border: 1px solid var(--line);
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
@@ -218,12 +270,29 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
 }
 
-.cat strong {
-  display: block;
+.cat-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.cat-top strong {
   font-size: 17px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 6px;
+}
+
+.cat-top em {
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 800;
+  color: #1a1208;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 4px 8px;
+  flex-shrink: 0;
 }
 
 .cat span {
@@ -241,18 +310,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   height: 38px;
   padding: 0 16px;
   border-radius: 999px;
-  background: var(--accent);
+  background: #fff;
   color: #1a1208;
   font-size: 13px;
   font-weight: 800;
-}
-
-.cat small {
-  display: block;
-  margin-top: 10px;
-  color: var(--faint);
-  font-size: 12px;
-  font-weight: 600;
 }
 
 .page-head {
@@ -464,6 +525,10 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 .bottom button.active,
 .bottom a:hover,
 .bottom button:hover { color: var(--accent); }
+
+@media (max-width: 900px) {
+  .start-grid { grid-template-columns: repeat(2, 1fr); }
+}
 
 @media (max-width: 860px) {
   .cats { grid-template-columns: 1fr; }
