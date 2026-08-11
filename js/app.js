@@ -3,6 +3,16 @@
   let RESOURCES = [];
   const FAV_KEY = 'mt_favorites';
   const OS_LABELS = { all: 'Все ОС', w: 'Windows', m: 'macOS', l: 'Linux', a: 'Android', i: 'iOS', any: 'Любая' };
+  const START = [
+    { name: 'uBlock Origin', why: 'Блокировщик рекламы' },
+    { name: 'Firefox', why: 'Браузер' },
+    { name: 'Proton VPN', why: 'VPN' },
+    { name: 'qBittorrent', why: 'Торренты' },
+    { name: 'DeepSeek', why: 'ИИ' },
+    { name: 'FitGirl Repacks', why: 'Игры' },
+    { name: "Anna's Archive", why: 'Книги' },
+    { name: 'NewPipe', why: 'YouTube без рекламы' }
+  ];
 
   const state = { view: 'home', category: null, tag: 'all', os: 'all', favorites: loadFavorites() };
 
@@ -13,6 +23,7 @@
       favorites: document.getElementById('view-favorites')
     },
     catGrid: document.getElementById('cat-grid'),
+    startGrid: document.getElementById('start-grid'),
     resList: document.getElementById('res-list'),
     favList: document.getElementById('fav-list'),
     catTitle: document.getElementById('cat-title'),
@@ -29,8 +40,8 @@
 
   function loadFavorites() {
     try {
-      const raw = localStorage.getItem(FAV_KEY);
-      const data = raw ? JSON.parse(raw) : [];
+      var raw = localStorage.getItem(FAV_KEY);
+      var data = raw ? JSON.parse(raw) : [];
       return Array.isArray(data) ? data : [];
     } catch (e) { return []; }
   }
@@ -49,6 +60,10 @@
 
   function getCategory(id) {
     return CATEGORIES.find(function (item) { return item.id === id; });
+  }
+
+  function findByName(name) {
+    return RESOURCES.find(function (item) { return item.name === name; });
   }
 
   function isFavorite(item) {
@@ -95,17 +110,28 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  function renderStart() {
+    if (!el.startGrid) return;
+    el.startGrid.innerHTML = START.map(function (entry) {
+      var item = findByName(entry.name);
+      if (!item) return '';
+      return '<a class="start-card" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer">' +
+        '<b>' + escapeHtml(item.name) + '</b>' +
+        '<span>' + escapeHtml(entry.why) + '</span></a>';
+    }).join('');
+  }
+
   function renderHome() {
     if (el.metaTotal) el.metaTotal.textContent = String(RESOURCES.length);
     if (el.metaCats) el.metaCats.textContent = String(CATEGORIES.length);
+    renderStart();
     if (!el.catGrid) return;
     el.catGrid.innerHTML = CATEGORIES.map(function (cat) {
       var count = RESOURCES.filter(function (item) { return item.cat === cat.id; }).length;
       return '<button class="cat" type="button" data-open="' + cat.id + '">' +
-        '<strong>' + escapeHtml(cat.title) + '</strong>' +
+        '<div class="cat-top"><strong>' + escapeHtml(cat.title) + '</strong><em>' + count + '</em></div>' +
         '<span>' + escapeHtml(cat.desc) + '</span>' +
-        '<div class="pill">Открыть →</div>' +
-        '<small>' + count + ' ресурсов</small></button>';
+        '<div class="pill">Открыть →</div></button>';
     }).join('');
   }
 
@@ -259,7 +285,7 @@
   }
 
   function boot() {
-    fetch('js/data.json', { cache: 'no-store' })
+    fetch('js/data.json?v=4', { cache: 'no-store' })
       .then(function (r) { return r.json(); })
       .then(function (data) {
         CATEGORIES = data.CATEGORIES || [];
