@@ -1,49 +1,49 @@
 # MegaThread
 
-Русский каталог бесплатных ресурсов интернета. Вдохновлено [FMHY](https://fmhy.net/).
+Минималистичный каталог бесплатных ресурсов. Вдохновлено [FMHY](https://fmhy.net/).
 
-## Что это
+## Возможности
 
-Статический сайт-каталог: фильмы, игры, софт, AI, приватность, музыка, книги, торрент-инструменты, Android/iOS и обучение.
-
-Сайт **не хранит файлы** и **не является файлообменником**. Только ссылки на внешние ресурсы.
+- Поиск по каталогу
+- Фильтры по тегам и ОС
+- Избранное в `localStorage` (сохраняется после перезагрузки)
+- Кнопка «Предложить» → GitHub Issue с шаблоном
+- Нижняя навигация на мобилках
 
 ## Структура
 
 ```
-/
-  index.html      # разметка
-  css/style.css   # дизайн
-  js/app.js       # логика
-  js/data.js      # категории и ресурсы
-  README.md
+index.html
+css/style.css
+js/app.js
+js/data.js
 ```
 
 ## Запуск
-
-Открой `index.html` локально через любой static server, либо включи GitHub Pages на ветку `main` (root).
-
-Из-за ES-модулей простой `file://` может блокировать импорты — используй, например:
 
 ```bash
 npx serve .
 ```
 
+Или GitHub Pages на ветку `main` / root.
+
 ## Добавить ресурс
 
-Открой `js/data.js` и добавь объект в массив `RESOURCES`:
+В `js/data.js`:
 
 ```js
-{ cat: 'gaming', name: 'Название', desc: 'Короткое описание', url: 'https://...', tags: ['download'] }
+{ cat: 'gaming', name: 'Name', desc: 'Описание', url: 'https://...', tags: ['download'], os: ['w'] }
 ```
 
-Категории задаются в `CATEGORIES`.
+ОС: `w` Windows, `m` macOS, `l` Linux, `a` Android, `i` iOS, `any` любая.
 
-## Стек
+## Сменить favicon
 
-- Чистый HTML / CSS / JS
-- Без React / Vue / Vite
-- Без сервера и без аккаунтов
+В `index.html` замените `link rel="icon"` на свой файл, например:
+
+```html
+<link rel="icon" href="favicon.svg">
+```
 
 ## Лицензия
 
