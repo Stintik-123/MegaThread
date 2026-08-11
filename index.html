@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MegaThread — бесплатные ресурсы интернета</title>
+  <meta name="description" content="Русскоязычный каталог бесплатных ресурсов: стриминг, игры, софт, ИИ, приватность, книги, музыка и торренты. Без сервера, без регистрации.">
+  <meta name="theme-color" content="#09090b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="noise"></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#" class="logo" data-page="home">
+        <div class="logo-mark">📚</div>
+        Mega<span>Thread</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#categories" data-page="home">Категории</a>
+        <a href="#about" data-page="about">О проекте</a>
+        <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-ghost" href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener">+ Ресурс</a>
+      </div>
+    </div>
+  </header>
+
+  <div id="app">
+    <section class="page active" id="page-home">
+      <div class="wrap">
+        <div class="hero">
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Русский аналог FMHY · без сервера
+          </div>
+          <h1>Вся бесплатная сторона<br><span class="grad">интернета в одном месте</span></h1>
+          <p class="hero-sub">
+            Стриминг, игры, софт, ИИ, приватность, книги и торренты.
+            Каталог открыт, обновляется сообществом через GitHub.
+          </p>
+          <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input id="search-input" type="search" placeholder="Поиск: VPN, FitGirl, ChatGPT, RuTracker…" autocomplete="off" spellcheck="false">
+            <span class="search-kbd">/</span>
+            <div class="search-results" id="search-results"></div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><b id="stat-total">—</b><span>ресурсов</span></div>
+          <div class="stat"><b id="stat-cats">—</b><span>категорий</span></div>
+          <div class="stat"><b>0 ₽</b><span>навсегда</span></div>
+          <div class="stat"><b>RU</b><span>фокус</span></div>
+        </div>
+
+        <section class="section" id="categories">
+          <div class="section-head">
+            <h2>Категории</h2>
+            <p>Выбери раздел — внутри проверенные ссылки и фильтры</p>
+          </div>
+          <div class="cat-grid" id="cat-grid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-head">
+            <h2>Почему MegaThread</h2>
+            <p>Без аккаунтов, без трекеров, без лишних обещаний</p>
+          </div>
+          <div class="feat-grid">
+            <div class="feat">
+              <div class="feat-ico">🇷🇺</div>
+              <h3>Русский фокус</h3>
+              <p>Ресурсы, которые реально открываются из РФ и СНГ, плюс локальные трекеры и сервисы.</p>
+            </div>
+            <div class="feat">
+              <div class="feat-ico">⚡</div>
+              <h3>Быстрый поиск</h3>
+              <p>Клиентский поиск по названию, описанию и тегам. Без сервера и задержек.</p>
+            </div>
+            <div class="feat">
+              <div class="feat-ico">🔓</div>
+              <h3>Open Source</h3>
+              <p>Код и каталог на GitHub. Нашёл мёртвую ссылку — создай Issue или PR.</p>
+            </div>
+            <div class="feat">
+              <div class="feat-ico">🕶️</div>
+              <h3>Без слежки</h3>
+              <p>Статический сайт. Никаких аналитик, аккаунтов и серверных логов.</p>
+            </div>
+            <div class="feat">
+              <div class="feat-ico">📦</div>
+              <h3>Много контента</h3>
+              <p>Стриминг, репаки, торренты, ИИ, книги, мобильные моды — в одном каталоге.</p>
+            </div>
+            <div class="feat">
+              <div class="feat-ico">✨</div>
+              <h3>Чистый интерфейс</h3>
+              <p>Тёмный дизайн, крупные карточки, нормальный адаптив на телефоне.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="page" id="page-about">
+      <div class="wrap">
+        <div class="cat-top">
+          <button class="back-btn" data-page="home" type="button">←</button>
+          <div>
+            <h1>О проекте</h1>
+            <p>Честно и коротко</p>
+          </div>
+        </div>
+        <div class="feat" style="margin-bottom: 1rem">
+          <h3 style="margin-bottom: 0.75rem">Что это</h3>
+          <p>
+            MegaThread — открытый русскоязычный каталог бесплатных ресурсов.
+            Вдохновлён <a href="https://fmhy.net/" target="_blank" rel="noopener" style="color: var(--accent)">FMHY</a>,
+            но собран под аудиторию РФ/СНГ и без лишней сложности.
+          </p>
+        </div>
+        <div class="feat" style="margin-bottom: 1rem">
+          <h3 style="margin-bottom: 0.75rem">Чего здесь нет</h3>
+          <p>
+            Нет аккаунтов, рейтингов «для галочки», AI-поиска через чужие API и геймификации.
+            Только каталог, поиск и ссылки. Использование — на твой страх и риск и в рамках законов твоей страны.
+          </p>
+        </div>
+        <div class="feat" style="margin-bottom: 1.5rem">
+          <h3 style="margin-bottom: 0.75rem">Как помочь</h3>
+          <p style="margin-bottom: 1rem">
+            Добавь ресурс через Issue, поправь описание через Pull Request или просто расскажи друзьям.
+          </p>
+          <a class="btn btn-primary" href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener">Открыть GitHub →</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap">
+      © 2026 MegaThread ·
+      <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener">MIT</a>
+      · Не храним файлы, только ссылки
+    </div>
+  </footer>
+
+  <nav class="tabbar">
+    <button class="tab active" data-page="home" type="button">
+      <span class="tab-ico">🏠</span>
+      Главная
+    </button>
+    <button class="tab" data-page="streaming" type="button">
+      <span class="tab-ico">📺</span>
+      Стрим
+    </button>
+    <button class="tab" data-page="gaming" type="button">
+      <span class="tab-ico">🎮</span>
+      Игры
+    </button>
+    <button class="tab" data-page="about" type="button">
+      <span class="tab-ico">ℹ️</span>
+      О нас
+    </button>
+  </nav>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
