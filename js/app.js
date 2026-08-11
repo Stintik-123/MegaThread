@@ -34,7 +34,8 @@ const el = {
   osFilters: document.getElementById('os-filters'),
   search: document.getElementById('search'),
   searchResults: document.getElementById('search-results'),
-  meta: document.getElementById('meta-line'),
+  metaTotal: document.getElementById('meta-total'),
+  metaCats: document.getElementById('meta-cats'),
   suggest: document.getElementById('suggest-link'),
   suggestMobile: document.getElementById('suggest-link-mobile')
 };
@@ -118,14 +119,17 @@ function setView(name) {
 }
 
 function renderHome() {
-  el.meta.textContent = `${RESOURCES.length} ресурсов · ${CATEGORIES.length} категорий`;
+  el.metaTotal.textContent = String(RESOURCES.length);
+  el.metaCats.textContent = String(CATEGORIES.length);
+
   el.catGrid.innerHTML = CATEGORIES.map((cat) => {
     const count = RESOURCES.filter((item) => item.cat === cat.id).length;
     return `
       <button class="cat" type="button" data-open="${cat.id}">
         <strong>${escapeHtml(cat.title)}</strong>
         <span>${escapeHtml(cat.desc)}</span>
-        <small>${count}</small>
+        <div class="pill">Открыть →</div>
+        <small>${count} ресурсов</small>
       </button>
     `;
   }).join('');
