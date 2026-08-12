@@ -1,4 +1,6 @@
 (function () {
+  'use strict';
+  
   let CATEGORIES = [];
   let RESOURCES = [];
   const FAV_KEY = 'mt_favorites';
@@ -13,7 +15,7 @@
     { name: "Anna's Archive", why: 'Книги' },
     { name: 'NewPipe', why: 'YouTube без рекламы' }
   ];
-
+  
   const state = { view: 'home', category: null, tag: 'all', os: 'all', favorites: loadFavorites() };
 
   const el = {
@@ -41,34 +43,34 @@
   function loadFavorites() {
     try {
       var raw = localStorage.getItem(FAV_KEY);
-      var data = raw ? JSON.parse(raw) : [];
+      if (!raw) return [];
+      var data = JSON.parse(raw);
       return Array.isArray(data) ? data : [];
-    } catch (e) { return []; }
+    } catch (e) {
+      console.warn('Не удалось загрузить избранное:', e);
+      return [];
+    }
   }
 
   function saveFavorites() {
-    localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites));
+    try {
+      localStorage.setItem(FAV_KEY, JSON.stringify(state.favorites));
+    } catch (e) {
+      console.warn('Не удалось сохранить избранное:', e);
+    }
   }
 
   function escapeHtml(value) {
     return String(value)
-      .replace(/&/g, '&')
-      .replace(/</g, '<')
-      .replace(/>/g, '>')
-      .replace(/"/g, '"');
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
   }
 
-  function getCategory(id) {
-    return CATEGORIES.find(function (item) { return item.id === id; });
-  }
-
-  function findByName(name) {
-    return RESOURCES.find(function (item) { return item.name === name; });
-  }
-
-  function isFavorite(item) {
-    return state.favorites.indexOf(item.url) !== -1;
-  }
+  function getCategory(id) { return CATEGORIES.find(function (item) { return item.id === id; }); }
+  function findByName(name) { return RESOURCES.find(function (item) { return item.name === name; }); }
+  function isFavorite(item) { return state.favorites.indexOf(item.url) !== -1; }
 
   function toggleFavorite(item) {
     var key = item.url;
@@ -137,17 +139,13 @@
 
   function uniqueTags(items) {
     var set = {};
-    items.forEach(function (item) {
-      (item.tags || []).forEach(function (tag) { set[tag] = true; });
-    });
+    items.forEach(function (item) { (item.tags || []).forEach(function (tag) { set[tag] = true; }); });
     return Object.keys(set).sort();
   }
 
   function uniqueOs(items) {
     var set = {};
-    items.forEach(function (item) {
-      (item.os || ['any']).forEach(function (os) { set[os] = true; });
-    });
+    items.forEach(function (item) { (item.os || ['any']).forEach(function (os) { set[os] = true; }); });
     return Object.keys(set);
   }
 
@@ -183,18 +181,18 @@
     var tags = (item.tags || []).slice(0, 4).join(' · ');
     return '<div class="item">' +
       '<div><b>' + escapeHtml(item.name) + '</b><p>' + escapeHtml(item.desc) + '</p><div class="tags">' + escapeHtml(tags) + '</div></div>' +
-      '<button class="star ' + (fav ? 'on' : '') + '" type="button" data-fav="' + escapeHtml(item.url) + '" aria-label="Избранное">' + (fav ? '★' : '☆') + '</button>' +
-      '<a class="open" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer" aria-label="Открыть">→</a></div>';
+      '<button class="star ' + (fav ? 'on' : '') + '" type="button" data-fav="' + escapeHtml(item.url) + '" aria-label="Добавить в избранное">' + (fav ? '★' : '☆') + '</button>' +
+      '<a class="open" href="' + escapeHtml(item.url) + '" target="_blank" rel="noopener noreferrer" aria-label="Открыть ресурс">→</a></div>';
   }
 
   function renderResources() {
     var items = filteredCategoryItems();
-    el.resList.innerHTML = items.length ? items.map(renderItem).join('') : '<div class="empty">Ничего не найдено по фильтрам</div>';
+    el.resList.innerHTML = items.length ? items.map(renderItem).join('') : '<div class="empty" role="status">Ничего не найдено по фильтрам</div>';
   }
 
   function renderFavorites() {
     var items = RESOURCES.filter(function (item) { return state.favorites.indexOf(item.url) !== -1; });
-    el.favList.innerHTML = items.length ? items.map(renderItem).join('') : '<div class="empty">Пока пусто. Добавляй ресурсы звёздочкой.</div>';
+    el.favList.innerHTML = items.length ? items.map(renderItem).join('') : '<div class="empty" role="status">Пока пусто. Добавляй ресурсы звёздочкой.</div>';
   }
 
   function openCategory(id) {
@@ -221,7 +219,7 @@
       return (item.name + ' ' + item.desc + ' ' + (item.tags || []).join(' ')).toLowerCase().indexOf(q) !== -1;
     }).slice(0, 12);
     if (!hits.length) {
-      el.searchResults.innerHTML = '<div class="empty">Ничего не найдено</div>';
+      el.searchResults.innerHTML = '<div class="empty" role="status">Ничего не найдено</div>';
       el.searchResults.classList.add('open');
       return;
     }
@@ -297,17 +295,17 @@
 
   function boot() {
     Promise.all([
-      fetch('js/data.json?v=4', { cache: 'no-store' }).then(function (r) { return r.json(); }),
-      fetch('js/data-more.json?v=4', { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return { RESOURCES: [] }; })
+      fetch('js/data.json?v=5', { cache: 'no-store' }).then(function (r) { return r.json(); }),
+      fetch('js/data-more.json?v=5', { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return { RESOURCES: [] }; })
     ])
       .then(function (parts) {
         mergeCatalog(parts[0], parts[1]);
         init();
       })
       .catch(function (err) {
-        console.error(err);
+        console.error('Ошибка загрузки каталога:', err);
         var grid = document.getElementById('cat-grid');
-        if (grid) grid.innerHTML = '<div class="empty">Не удалось загрузить каталог</div>';
+        if (grid) grid.innerHTML = '<div class="empty" role="alert">Не удалось загрузить каталог. Проверьте соединение.</div>';
       });
   }
 

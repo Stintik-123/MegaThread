@@ -4,46 +4,116 @@
 
 ## Возможности
 
-- Поиск по каталогу
-- Фильтры по тегам и ОС
-- Избранное в `localStorage` (сохраняется после перезагрузки)
-- Кнопка «Предложить» → GitHub Issue с шаблоном
-- Нижняя навигация на мобилках
+- 🔍 **Поиск** по каталогу с мгновенными результатами
+- 🏷️ **Фильтры** по тегам и ОС (Windows, macOS, Linux, Android, iOS)
+- ⭐ **Избранное** в `localStorage` (сохраняется после перезагрузки)
+- 📤 **Предложить ресурс** → GitHub Issue с шаблоном
+- 📱 **Адаптивная навигация** на мобильных устройствах
+- 🚀 **PWA** — работает офлайн, устанавливается как приложение
+- ♿ **Доступность** — ARIA-атрибуты, семантическая разметка
+- 🔒 **Безопасность** — правильное экранирование HTML, CSP-friendly
 
 ## Структура
 
 ```
-index.html
-css/style.css
-js/app.js
-js/data.js
+index.html          # Главная страница
+css/style.css       # Стили (темная тема, адаптивность)
+js/app.js           # Логика приложения
+js/data.json        # Основной каталог ресурсов
+js/data-more.json   # Дополнительные ресурсы
+manifest.json       # PWA манифест
+sw.js               # Service Worker для офлайн-режима
+icons/              # Иконки для PWA
 ```
 
 ## Запуск
 
+### Локально
+
 ```bash
 npx serve .
+# или
+python -m http.server 8000
 ```
 
-Или GitHub Pages на ветку `main` / root.
+### GitHub Pages
+
+Включите GitHub Pages в настройках репозитория:
+- Source: Deploy from a branch
+- Branch: `main` / root
+
+## PWA (Progressive Web App)
+
+MegaThread поддерживает установку как нативное приложение:
+
+1. Откройте сайт в браузере (Chrome, Edge, Safari)
+2. Нажмите "Установить приложение" или "Добавить на главный экран"
+3. Приложение будет работать даже без интернета
+
+### Кэширование
+
+Service Worker кэширует:
+- HTML, CSS, JS файлы
+- Данные каталога (data.json, data-more.json)
+- Манифест приложения
+
+При отсутствии соединения показывается уведомление и последняя закэшированная версия.
 
 ## Добавить ресурс
 
-В `js/data.js`:
+### Через GitHub Issues
+
+Нажмите кнопку "Предложить" на сайте → откроется форма с шаблоном.
+
+### Вручную в `js/data.json`
 
 ```js
-{ cat: 'gaming', name: 'Name', desc: 'Описание', url: 'https://...', tags: ['download'], os: ['w'] }
+{
+  "cat": "software",
+  "name": "Название",
+  "desc": "Описание",
+  "url": "https://example.com",
+  "tags": ["open-source", "tools"],
+  "os": ["w", "m", "l"]
+}
 ```
 
-ОС: `w` Windows, `m` macOS, `l` Linux, `a` Android, `i` iOS, `any` любая.
+**Категории:** `streaming`, `gaming`, `software`, `privacy`, `ai`, `music`, `reading`, `torrent`, `android`, `education`, `tools`, `download`
 
-## Сменить favicon
+**ОС:** `w` Windows, `m` macOS, `l` Linux, `a` Android, `i` iOS, `any` любая
 
-В `index.html` замените `link rel="icon"` на свой файл, например:
+**Теги:** любые подходящие (например: `legal`, `os`, `vpn`, `adblock`, `browser`)
 
-```html
-<link rel="icon" href="favicon.svg">
-```
+## SEO и Social Sharing
+
+Проект включает:
+- Meta-теги Open Graph для Facebook/Twitter
+- Twitter Card разметку
+- Описание и ключевые слова
+- Семантическую HTML5 разметку
+
+## Доступность (a11y)
+
+- ARIA-атрибуты для интерактивных элементов
+- Семантические теги (`<header>`, `<main>`, `<nav>`, `<footer>`)
+- Фокус клавиатуры виден
+- Контрастность цветов соответствует WCAG
+- Уведомления для скринридеров (`role="status"`, `role="alert"`)
+
+## Производительность
+
+- 💨 **Быстрая загрузка** — нет тяжелых зависимостей
+- 📦 **Минимальный размер** — чистый JS/CSS
+- ⚡ **Мгновенная навигация** — SPA без перезагрузок
+- 💾 **Офлайн-режим** — Service Worker кэширует всё необходимое
+
+## Браузеры
+
+Поддерживаются современные браузеры:
+- Chrome/Edge (последние 2 версии)
+- Firefox (последние 2 версии)
+- Safari (последние 2 версии)
+- Мобильные браузеры (iOS Safari, Chrome Mobile)
 
 ## Лицензия
 
