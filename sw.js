@@ -1,11 +1,11 @@
-const CACHE_NAME = 'megathread-v1';
+const CACHE_NAME = 'megathread-v2';
 const ASSETS = [
   './',
   './index.html',
-  './css/style.css?v=4',
-  './js/app.js?v=4',
-  './js/data.json?v=4',
-  './js/data-more.json?v=4',
+  './css/style.css?v=6',
+  './js/app.js?v=6',
+  './js/data.json?v=6',
+  './js/data-more.json?v=6',
   './manifest.json'
 ];
 

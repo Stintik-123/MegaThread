@@ -1,16 +1,16 @@
 export const CATEGORIES = [
-  { id: 'streaming', title: 'Фильмы / Сериалы / Аниме', desc: 'Онлайн, скачивание и торренты' },
-  { id: 'gaming', title: 'Игры / Эмуляция', desc: 'Репаки, ROM, эмуляторы и халява' },
-  { id: 'software', title: 'Софт', desc: 'Программы, утилиты, open-source' },
-  { id: 'privacy', title: 'Приватность', desc: 'VPN, adblock, браузеры, безопасность' },
-  { id: 'ai', title: 'Искусственный интеллект', desc: 'Чаты, генерация картинок и голоса' },
-  { id: 'music', title: 'Музыка / Подкасты', desc: 'Стриминг, скачивание, радио' },
-  { id: 'reading', title: 'Книги / Манга / Комиксы', desc: 'Электронные книги, манга, аудиокниги' },
-  { id: 'torrent', title: 'Торренты', desc: 'Клиенты, трекеры, индексы' },
-  { id: 'android', title: 'Android / iOS', desc: 'APK, моды, sideloading' },
-  { id: 'education', title: 'Обучение', desc: 'Курсы, документация, материалы' },
-  { id: 'tools', title: 'Инструменты', desc: 'Браузерные и системные утилиты' },
-  { id: 'download', title: 'Скачивание', desc: 'Файлообменники и менеджеры загрузок' }
+  { id: 'streaming', title: '🎬 Фильмы / Сериалы / Аниме', desc: 'Онлайн, скачивание и торренты', icon: '🎬' },
+  { id: 'gaming', title: '🎮 Игры / Эмуляция', desc: 'Репаки, ROM, эмуляторы и халява', icon: '🎮' },
+  { id: 'software', title: '💻 Софт', desc: 'Программы, утилиты, open-source', icon: '💻' },
+  { id: 'privacy', title: '🔒 Приватность', desc: 'VPN, adblock, браузеры, безопасность', icon: '🔒' },
+  { id: 'ai', title: '🤖 Искусственный интеллект', desc: 'Чаты, генерация картинок и голоса', icon: '🤖' },
+  { id: 'music', title: '🎵 Музыка / Подкасты', desc: 'Стриминг, скачивание, радио', icon: '🎵' },
+  { id: 'reading', title: '📚 Книги / Манга / Комиксы', desc: 'Электронные книги, манга, аудиокниги', icon: '📚' },
+  { id: 'torrent', title: '🧲 Торренты', desc: 'Клиенты, трекеры, индексы', icon: '🧲' },
+  { id: 'android', title: '📱 Android / iOS', desc: 'APK, моды, sideloading', icon: '📱' },
+  { id: 'education', title: '🎓 Обучение', desc: 'Курсы, документация, материалы', icon: '🎓' },
+  { id: 'tools', title: '🛠️ Инструменты', desc: 'Браузерные и системные утилиты', icon: '🛠️' },
+  { id: 'download', title: '⬇️ Скачивание', desc: 'Файлообменники и менеджеры загрузок', icon: '⬇️' }
 ];
 
 export const RESOURCES = [
@@ -212,3 +212,4 @@ export const RESOURCES = [
   { cat: 'download', name: 'aria2', desc: 'Мощный консольный загрузчик', url: 'https://aria2.github.io/', tags: ['client', 'os'], os: ['w', 'm', 'l'] },
   { cat: 'download', name: 'Motrix', desc: 'GUI-загрузчик на базе aria2', url: 'https://motrix.app/', tags: ['client'], os: ['w', 'm', 'l'] }
 ];
+

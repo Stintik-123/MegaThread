@@ -1,1 +1,78 @@
-Nothing should be ignored in this case, as the changes consist only of source files (HTML, CSS, JavaScript, JSON) and a manifest file, with no build artifacts, dependencies, or temporary files present.
+```
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
+*.bundle.js
+
+# Cache
+.cache/
+.npm/
+.yarn/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg-info/
+.eggs/
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Original rules preserved
+*.log
+```
