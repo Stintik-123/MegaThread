@@ -1,15 +1,22 @@
 :root {
-  --bg: #111118;
-  --panel: #1a1a24;
-  --panel-2: #22222e;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.16);
-  --text: #f5f5f7;
-  --muted: #a8a8b8;
-  --faint: #7a7a8c;
+  --bg: #0d0d12;
+  --panel: #16161f;
+  --panel-2: #1e1e2a;
+  --line: rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.14);
+  --text: #fafafa;
+  --muted: #9a9ab0;
+  --faint: #6a6a7c;
   --accent: #ffb347;
+  --accent-glow: rgba(255, 179, 71, 0.35);
   --accent-2: #4da3ff;
-  --radius: 20px;
+  --success: #4ade80;
+  --warning: #fbbf24;
+  --danger: #f87171;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.22);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -561,4 +568,150 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 
 @media (min-width: 721px) {
   body { padding-bottom: 0; }
+}
+
+/* Улучшенные карточки категорий */
+.cat {
+  position: relative;
+  overflow: hidden;
+}
+
+.cat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cat:hover::before {
+  opacity: 1;
+}
+
+/* Анимация появления */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.view.active {
+  animation: slideUp 0.4s ease-out;
+}
+
+/* Улучшенные карточки "С чего начать" */
+.start-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.start-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 179, 71, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.start-card:hover::after {
+  opacity: 1;
+}
+
+/* Индикатор избранного */
+.star.on {
+  animation: pulse 0.4s ease;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+/* Улучшенный поиск */
+.search input:focus {
+  box-shadow: 0 0 0 4px var(--accent-glow), var(--shadow-md);
+}
+
+/* Скроллбары */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--panel);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Адаптив для больших экранов */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .cats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .start-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Плавные переходы */
+.cat, .item, .start-card, .chip, .back, .star, .open {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Эффект нажатия */
+.cat:active, .chip:active, .back:active {
+  transform: scale(0.98);
+}
+
+/* Тёмная тема по умолчанию улучшена */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d0d12;
+    --panel: #16161f;
+    --panel-2: #1e1e2a;
+  }
+}
+
+/* Светлая тема */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f8f9fa;
+    --panel: #ffffff;
+    --panel-2: #f1f3f5;
+    --line: rgba(0, 0, 0, 0.08);
+    --line-strong: rgba(0, 0, 0, 0.14);
+    --text: #1a1a2e;
+    --muted: #6c757d;
+    --faint: #adb5bd;
+  }
+  
+  .glow {
+    background:
+      radial-gradient(ellipse 90% 50% at 50% -15%, rgba(255, 179, 71, 0.15), transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 10%, rgba(77, 163, 255, 0.1), transparent 50%);
+  }
 }

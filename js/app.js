@@ -13,7 +13,9 @@
     { name: 'DeepSeek', why: 'ИИ' },
     { name: 'FitGirl Repacks', why: 'Игры' },
     { name: "Anna's Archive", why: 'Книги' },
-    { name: 'NewPipe', why: 'YouTube без рекламы' }
+    { name: 'NewPipe', why: 'YouTube без рекламы' },
+    { name: 'GitHub', why: 'Разработка' },
+    { name: 'Telegram', why: 'Мессенджер' }
   ];
   
   const state = { view: 'home', category: null, tag: 'all', os: 'all', favorites: loadFavorites() };
@@ -131,7 +133,7 @@
     el.catGrid.innerHTML = CATEGORIES.map(function (cat) {
       var count = RESOURCES.filter(function (item) { return item.cat === cat.id; }).length;
       return '<button class="cat" type="button" data-open="' + cat.id + '">' +
-        '<div class="cat-top"><strong>' + escapeHtml(cat.title) + '</strong><em>' + count + '</em></div>' +
+        '<div class="cat-top"><strong>' + escapeHtml(cat.icon || '') + ' ' + escapeHtml(cat.title) + '</strong><em>' + count + '</em></div>' +
         '<span>' + escapeHtml(cat.desc) + '</span>' +
         '<div class="pill">Открыть →</div></button>';
     }).join('');
