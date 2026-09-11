@@ -296,12 +296,10 @@
   }
 
   function boot() {
-    Promise.all([
-      fetch('js/data.json?v=5', { cache: 'no-store' }).then(function (r) { return r.json(); }),
-      fetch('js/data-more.json?v=5', { cache: 'no-store' }).then(function (r) { return r.json(); }).catch(function () { return { RESOURCES: [] }; })
-    ])
-      .then(function (parts) {
-        mergeCatalog(parts[0], parts[1]);
+    fetch('js/data.json?v=6', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        mergeCatalog(data, { RESOURCES: [] });
         init();
       })
       .catch(function (err) {

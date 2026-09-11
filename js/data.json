@@ -1,5 +1,5 @@
 {
-  "categories": [
+  "CATEGORIES": [
     {
       "id": "streaming",
       "title": "🎬 Фильмы / Сериалы / Аниме",
@@ -73,7 +73,7 @@
       "icon": "⬇️"
     }
   ],
-  "resources": [
+  "RESOURCES": [
     {
       "cat": "streaming",
       "name": "NEPU",
@@ -401,7 +401,6 @@
     },
     {
       "cat": "gaming",
-      "name": "Vimm's Lair",
       "desc": "Классические ROM и ISO",
       "url": "https://vimm.net/",
       "tags": [
@@ -1540,7 +1539,6 @@
     },
     {
       "cat": "reading",
-      "name": "Anna's Archive",
       "desc": "Крупный библиотечный индекс",
       "url": "https://annas-archive.org/",
       "tags": [
