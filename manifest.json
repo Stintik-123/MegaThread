@@ -1,0 +1,18 @@
+{
+  "name": "MegaThread — бесплатные ресурсы",
+  "short_name": "MegaThread",
+  "description": "Открытый каталог бесплатных ресурсов: кино, аниме, игры, софт, ИИ, приватность, книги и инструменты",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07070d",
+  "theme_color": "#0b0b12",
+  "orientation": "portrait-primary",
+  "lang": "ru-RU",
+  "dir": "ltr",
+  "categories": ["utilities", "education", "entertainment"],
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}

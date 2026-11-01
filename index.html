@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>MegaThread — бесплатные ресурсы интернета в одном каталоге</title>
+<meta name="description" content="MegaThread — открытый каталог бесплатных ресурсов: кино, аниме, игры, софт, ИИ, приватность, книги и инструменты. Без аккаунтов, работает офлайн.">
+<meta name="theme-color" content="#0b0a0d">
+<meta name="color-scheme" content="dark light">
+<meta name="keywords" content="бесплатные ресурсы, кино, аниме, игры, софт, искусственный интеллект, приватность, vpn, торренты, книги, разработка, каталог ссылок">
+<link rel="canonical" href="https://github.com/Stintik-123/MegaThread">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="MegaThread — каталог бесплатных ресурсов">
+<meta property="og:description" content="186 бесплатных ресурсов в 12 категориях. Поиск, фильтры по меткам и платформе, избранное. Без аккаунтов.">
+<meta property="og:url" content="https://github.com/Stintik-123/MegaThread">
+<meta property="og:image" content="icons/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<noscript>
+  <div class="noscript">
+    <p><b>Интерактивному каталогу нужен JavaScript.</b> Полный список ресурсов доступен и без него — <a href="noscript.html">открыть статическую версию</a>.</p>
+  </div>
+</noscript>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="brand" href="#/" data-link>
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h9"/></svg>
+      </span>
+      <span class="brand__name">Mega<em>Thread</em></span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#/" data-link class="nav__link is-active">Каталог</a>
+      <a href="#/favorites" data-link class="nav__link">
+        Избранное
+        <span class="nav__count" id="fav-badge" hidden>0</span>
+      </a>
+      <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer" class="nav__link">GitHub</a>
+    </nav>
+
+    <div class="header__actions">
+      <button class="icon-btn" id="install-btn" type="button" aria-label="Установить приложение" title="Установить приложение" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v10M8 11l4 4 4-4M5 19h14"/></svg>
+      </button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Сменить тему">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.6v2.2M12 19.2v2.2M4.2 12H2M22 12h-2.2M6.1 6.1 4.5 4.5M19.5 19.5l-1.6-1.6M17.9 6.1l1.6-1.6M4.5 19.5l1.6-1.6"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M20 14.2A8.2 8.2 0 0 1 9.8 4a8.4 8.4 0 1 0 10.2 10.2Z"/></svg>
+      </button>
+      <button class="icon-btn" id="help-btn" type="button" aria-label="Горячие клавиши" title="Горячие клавиши (?)" data-help>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.6 9.3a2.5 2.5 0 1 1 3.3 2.4c-.6.2-.9.8-.9 1.4v.4"/><path d="M12 17h.01"/></svg>
+      </button>
+      <a class="btn btn--quiet header__suggest" href="https://github.com/Stintik-123/MegaThread/issues/new?title=Предложение%20ресурса" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        Предложить
+      </a>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="container">
+
+  <!-- ===================== HOME ===================== -->
+  <section class="view is-active" id="view-home">
+
+    <div class="hero">
+      <h1 class="hero__title">Бесплатные ресурсы <em>в одном каталоге</em></h1>
+      <p class="hero__sentence">Кино, игры, софт, искусственный интеллект и приватность. Найдите нужную ссылку за пару секунд.</p>
+
+      <form class="hero__form" role="search" id="search-form">
+        <div class="search">
+          <div class="search__box">
+            <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input id="search" type="search" placeholder="VPN, аниме, FitGirl, торренты" autocomplete="off" spellcheck="false" aria-label="Поиск по каталогу" aria-controls="search-results" aria-expanded="false">
+            <button class="search__clear" id="search-clear" type="button" aria-label="Очистить поле" hidden>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+            </button>
+          </div>
+          <div class="search__results" id="search-results" role="region" aria-label="Результаты поиска" hidden></div>
+        </div>
+        <button class="btn btn--primary" type="submit">Найти</button>
+      </form>
+
+      <div class="hero__hints">
+        <span>Часто ищут</span>
+        <button type="button" class="qchip" data-q="vpn">VPN</button>
+        <button type="button" class="qchip" data-q="аниме">Аниме</button>
+        <button type="button" class="qchip" data-q="игры">Игры</button>
+        <button type="button" class="qchip" data-q="ии">ИИ</button>
+        <button type="button" class="qchip" data-q="торренты">Торренты</button>
+        <button type="button" class="qchip" data-q="книги">Книги</button>
+        <button type="button" class="qchip" data-q="разработка">Разработка</button>
+      </div>
+
+      <div class="hero__tools">
+        <button class="link-btn" type="button" data-random>случайный ресурс</button>
+        <button class="link-btn" type="button" data-export-all>выгрузить каталог</button>
+        <button class="link-btn" type="button" data-help>горячие клавиши</button>
+      </div>
+    </div>
+
+    <div class="facts" id="facts"></div>
+
+    <section class="section" id="recent-block" hidden></section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>С чего начать</h2>
+        <p>Десять ссылок, которые закрывают большинство задач</p>
+      </div>
+      <div class="picks" id="start-grid"></div>
+    </section>
+
+    <section class="section reveal">
+      <div class="section__head">
+        <h2>Категории</h2>
+        <p>Откройте раздел и отфильтруйте по меткам или платформе</p>
+      </div>
+      <div class="cats" id="cat-grid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section__head">
+        <h2>Весь каталог</h2>
+        <div class="section__tools">
+          <span class="section__count" id="all-count"></span>
+          <label class="select">
+            <span class="select__label">сортировка</span>
+            <select id="sort-select" aria-label="Сортировка каталога"></select>
+          </label>
+        </div>
+      </div>
+      <div class="toolbar">
+        <div class="chips" id="all-tags"></div>
+        <div class="chips" id="all-os"></div>
+      </div>
+      <div class="res-list" id="all-list"></div>
+      <button class="btn btn--quiet more-btn" id="more-btn" type="button" data-more hidden>показать ещё</button>
+    </section>
+  </section>
+
+  <!-- ===================== CATEGORY ===================== -->
+  <section class="view" id="view-category">
+    <div class="page-head">
+      <button class="back" type="button" data-back aria-label="Назад к каталогу">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"/></svg>
+      </button>
+      <div class="page-head__text">
+        <h1 id="cat-title">Категория</h1>
+        <p id="cat-desc"></p>
+      </div>
+      <div class="page-head__count"><b id="cat-count">0</b><span>ресурсов</span></div>
+    </div>
+    <div class="toolbar">
+      <div class="chips" id="cat-tags"></div>
+      <div class="chips" id="cat-os"></div>
+    </div>
+    <div class="res-list" id="cat-list"></div>
+  </section>
+
+  <!-- ===================== FAVORITES ===================== -->
+  <section class="view" id="view-favorites">
+    <div class="page-head">
+      <div class="page-head__text">
+        <h1>Избранное</h1>
+        <p>Списки живут в этом браузере, синхронизации с сервером нет</p>
+      </div>
+      <div class="page-head__count"><b id="fav-count">0</b><span>сохранено</span></div>
+    </div>
+    <div class="fav-actions" id="fav-actions" hidden>
+      <button class="btn btn--quiet" id="fav-export" type="button" data-export-fav>Скачать списком</button>
+      <button class="btn btn--quiet" id="fav-copy" type="button" data-copy-fav>Скопировать список</button>
+      <button class="btn btn--quiet is-danger" id="fav-clear" type="button" data-clear-fav>Очистить всё</button>
+    </div>
+    <div class="res-list" id="fav-list"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h9"/></svg>
+      </span>
+      <div>
+        <b>MegaThread</b>
+        <p>Открытый каталог бесплатных ресурсов. Без аккаунтов и рекламы.</p>
+      </div>
+    </div>
+    <nav class="footer__links" aria-label="Ссылки">
+      <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">Исходный код</a>
+      <a href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener noreferrer">Предложить ресурс</a>
+      <a href="https://github.com/Stintik-123/MegaThread/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a>
+      <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">Вдохновлено FMHY</a>
+    </nav>
+  </div>
+  <p class="footer__note container">
+    Только легальный и бесплатный контент. Каталог открыт для всех — его можно дополнять.
+    <span id="offline-notice" class="footer__offline" hidden>Офлайн-режим: часть функций недоступна</span>
+  </p>
+</footer>
+
+<button class="to-top" id="to-top" type="button" aria-label="Наверх" hidden>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="visually-hidden" id="live-status" role="status" aria-live="polite"></div>
+
+<!-- ===================== DIALOGS ===================== -->
+<dialog class="dialog" id="res-dialog" aria-labelledby="res-dialog-title">
+  <div class="dialog__body" id="res-dialog-body"></div>
+</dialog>
+
+<dialog class="dialog dialog--help" id="help-dialog" aria-labelledby="help-dialog-title">
+  <div class="dialog__body">
+    <div class="dialog__head">
+      <h2 id="help-dialog-title">Горячие клавиши</h2>
+      <button class="icon-btn" type="button" data-close-help aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div id="help-dialog-body"></div>
+  </div>
+</dialog>
+
+<nav class="bottom" aria-label="Мобильная навигация">
+  <a href="#/" data-link class="is-active">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg>
+    Каталог
+  </a>
+  <a href="#/favorites" data-link>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="m12 18-6.2 3.3 1.2-7L2 9.3l7.1-1L12 2l2.9 6.3 7.1 1-5 4.9 1.2 7z"/></svg>
+    Избранное
+  </a>
+  <a href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    Предложить
+  </a>
+  <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.2-4.6-5.1 0-1.1.4-2 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-.1.8 1 2.8 1 .5 1.4.2 2.4.1 2.7.7.8 1 1.7 1 2.8 0 3.9-2.4 4.8-4.6 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2z"/></svg>
+    GitHub
+  </a>
+</nav>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
