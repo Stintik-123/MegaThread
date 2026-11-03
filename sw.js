@@ -1,12 +1,16 @@
-const CACHE = 'megathread-v5';
+const CACHE = 'megathread-v7';
+const PREVIEW_CACHE = 'megathread-previews-v1';
 const ASSETS = [
   './',
   './index.html',
+  './preview.html',
   './noscript.html',
   './css/style.css',
   './css/tokens.css',
   './css/base.css',
+  './css/preview.css',
   './js/app.js',
+  './js/preview.js',
   './js/data.js',
   './js/labels.js',
   './js/icons.js',
@@ -15,8 +19,10 @@ const ASSETS = [
   './js/render.js',
   './js/router.js',
   './js/catalog.js',
+  './js/collections.js',
   './manifest.json',
-  './icons/icon.svg'
+  './icons/icon.svg',
+  './icons/icon-maskable.svg'
 ];
 
 self.addEventListener('install', (event) => {
@@ -31,7 +37,13 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
+      .then((keys) =>
+        Promise.all(
+          keys
+            .filter((k) => k !== CACHE && k !== PREVIEW_CACHE)
+            .map((k) => caches.delete(k))
+        )
+      )
       .then(() => self.clients.claim())
   );
 });
@@ -53,6 +65,24 @@ self.addEventListener('fetch', (event) => {
           return res;
         })
         .catch(() => caches.match('./index.html').then((r) => r || caches.match('./')))
+    );
+    return;
+  }
+
+  // скриншоты сайтов: отдельный кэш, грузим по требованию
+  if (url.pathname.includes('/previews/')) {
+    event.respondWith(
+      caches.open(PREVIEW_CACHE).then((cache) =>
+        cache.match(req).then((cached) => {
+          if (cached) return cached;
+          return fetch(req)
+            .then((res) => {
+              if (res.status === 200 && res.type === 'basic') cache.put(req, res.clone());
+              return res;
+            })
+            .catch(() => cached || Response.error());
+        })
+      )
     );
     return;
   }

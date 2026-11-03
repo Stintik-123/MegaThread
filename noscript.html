@@ -1,668 +1,876 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MegaThread — каталог без JavaScript</title>
 <meta name="description" content="Полный список бесплатных ресурсов MegaThread в виде обычной страницы.">
 <link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
 <style>
-  body {
-    font-family: var(--font-body);
-    background: var(--bg);
-    color: var(--text);
-    line-height: 1.55;
-    margin: 0;
-    padding: var(--space-6) var(--space-4) var(--space-8);
-  }
+  body { padding: var(--s6) var(--s4) var(--s8); }
   .wrap { width: min(880px, 100%); margin-inline: auto; }
-  h1 { font-family: var(--font-head); font-size: clamp(26px, 5vw, 38px); margin: 0 0 var(--space-3); }
-  h2 { font-family: var(--font-head); font-size: 19px; margin: 0 0 var(--space-2); }
-  .lead { color: var(--text-muted); margin: 0 0 var(--space-6); }
-  section { border-top: var(--border-w) solid var(--line); padding: var(--space-5) 0; }
-  .cat-desc { color: var(--text-faint); font-size: 14px; margin: 0 0 var(--space-3); }
-  ul { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
-  li { border: var(--border-w) solid var(--line); border-radius: var(--radius-md); padding: var(--space-3) var(--space-4); background: var(--surface); }
+  h1 { font-size: clamp(26px, 5vw, 38px); margin: 0 0 var(--s3); }
+  h2 { font-size: 19px; margin: 0 0 var(--s2); }
+  .lead { color: var(--fg-muted); margin: 0 0 var(--s6); }
+  section { border-top: var(--border) solid var(--line); padding: var(--s5) 0; }
+  .cat-desc { color: var(--fg-faint); font-size: 14px; margin: 0 0 var(--s3); }
+  ul { display: grid; gap: var(--s3); }
+  li { border: var(--border) solid var(--line); padding: var(--s3) var(--s4); }
   li a { font-weight: 600; }
   li a:hover { color: var(--accent); }
-  li span { display: block; color: var(--text-muted); font-size: 14px; }
-  li small { display: block; color: var(--text-faint); font-size: 12px; margin-top: 4px; }
-  a { color: inherit; }
+  li span { display: block; color: var(--fg-muted); font-size: 14px; }
+  li small { display: block; color: var(--fg-faint); font-size: 12px; margin-top: 4px; }
+  li em { display: block; color: var(--fg-muted); font-size: 12px; margin-top: 4px; font-style: normal; }
+  .legend { border: var(--border) solid var(--line); padding: var(--s3); margin-bottom: var(--s5); font-size: 13px; }
+  .legend b { display: block; margin-bottom: 4px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>MegaThread — каталог бесплатных ресурсов</h1>
-  <p class="lead">Эта страница работает без JavaScript: 186 ресурсов в 12 категориях.
+  <p class="lead">Эта страница работает без JavaScript: 237 ресурсов в 13 категориях.
   <a href="index.html">Вернуться к интерактивной версии</a>.</p>
-<section>
+  <div class="legend">
+    <b>Доступность из России</b>
+    У каждого ресурса указана метка: «работает в РФ», «работает с оговорками», «нужно зеркало».
+    Если в заметке есть подробности — они идут под описанием.
+  </div>
+  <section>
   <h2>Кино и аниме</h2>
-  <p class="cat-desc">Онлайн, скачивание и торренты — 18 ресурсов</p>
+  <p class="cat-desc">Онлайн, скачивание и торренты — 21 ресурс</p>
   <ul>
-<li><a href="https://nepu.to/" rel="noopener noreferrer">NEPU</a>
-      <span>Стриминг фильмов и сериалов</span>
-      <small>стриминг · любая ОС</small></li>
-<li><a href="https://cineby.app/" rel="noopener noreferrer">Cineby</a>
-      <span>Онлайн-кинотеатр с большим каталогом</span>
-      <small>стриминг · любая ОС</small></li>
-<li><a href="https://aether.mom/" rel="noopener noreferrer">Aether</a>
-      <span>Стриминг фильмов и сериалов</span>
-      <small>стриминг · любая ОС</small></li>
-<li><a href="https://vidsrc.to/" rel="noopener noreferrer">Vidsrc</a>
-      <span>Встраиваемые источники видео</span>
-      <small>стриминг · любая ОС</small></li>
-<li><a href="https://www.miruro.com/" rel="noopener noreferrer">Miruro</a>
-      <span>Стриминг аниме</span>
-      <small>стриминг, аниме · любая ОС</small></li>
-<li><a href="https://animepahe.ru/" rel="noopener noreferrer">animepahe</a>
-      <span>Аниме в хорошем качестве</span>
-      <small>стриминг, аниме · любая ОС</small></li>
-<li><a href="https://allmanga.to/" rel="noopener noreferrer">AllManga</a>
-      <span>Аниме и манга</span>
-      <small>стриминг, аниме · любая ОС</small></li>
-<li><a href="https://hianime.to/" rel="noopener noreferrer">HiAnime</a>
-      <span>Каталог аниме онлайн</span>
-      <small>стриминг, аниме · любая ОС</small></li>
-<li><a href="https://1337x.to/" rel="noopener noreferrer">1337x</a>
+    <li><a href="https://1337x.to/" rel="noopener noreferrer">1337x</a>
       <span>Торрент-индекс, раздел Movies</span>
-      <small>торренты · любая ОС</small></li>
-<li><a href="https://ext.to/" rel="noopener noreferrer">Ext.to</a>
-      <span>Торрент-поиск по категориям</span>
-      <small>торренты · любая ОС</small></li>
-<li><a href="https://nyaa.si/" rel="noopener noreferrer">Nyaa</a>
-      <span>Главный торрент-трекер аниме</span>
-      <small>торренты, аниме · любая ОС</small></li>
-<li><a href="https://simkl.com/" rel="noopener noreferrer">Simkl</a>
-      <span>Трекинг сериалов и аниме</span>
-      <small>трекеры · любая ОС</small></li>
-<li><a href="https://letterboxd.com/" rel="noopener noreferrer">Letterboxd</a>
-      <span>Трекинг и отзывы на фильмы</span>
-      <small>трекеры · любая ОС</small></li>
-<li><a href="https://myanimelist.net/" rel="noopener noreferrer">MyAnimeList</a>
-      <span>Трекинг аниме и манги</span>
-      <small>трекеры, аниме · любая ОС</small></li>
-<li><a href="https://anilist.co/" rel="noopener noreferrer">AniList</a>
-      <span>Современный трекер аниме и манги</span>
-      <small>трекеры, аниме · любая ОС</small></li>
-<li><a href="https://www.kinopoisk.ru/" rel="noopener noreferrer">Кинопоиск</a>
+      <small>торренты · любая ОС · работает в РФ</small>
+      <em>Доступен напрямую, у части провайдеров требуется смена DNS.</em></li>
+    <li><a href="https://www.kinopoisk.ru/" rel="noopener noreferrer">Кинопоиск</a>
       <span>Легальный раздел с бесплатным контентом</span>
-      <small>стриминг, русский, легально · любая ОС</small></li>
-<li><a href="https://archive.org/details/movies" rel="noopener noreferrer">Internet Archive Movies</a>
+      <small>стриминг, русский, легально · любая ОС · работает в РФ</small>
+      <em>Бесплатный раздел с контентом ВГТРК открывается без VPN.</em></li>
+    <li><a href="https://mosfilm.ru/" rel="noopener noreferrer">Мосфильм</a>
+      <span>Фильмотека киностудии: классика в открытом доступе</span>
+      <small>стриминг, легально, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://smotrim.ru/" rel="noopener noreferrer">Смотрим</a>
+      <span>ВГТРК: фильмы, сериалы и прямые эфиры бесплатно</span>
+      <small>стриминг, легально, русский · любая ОС · работает в РФ</small>
+      <em>Полностью легальный контент, открывается из России без VPN и регистрации.</em></li>
+    <li><a href="https://aether.mom/" rel="noopener noreferrer">Aether</a>
+      <span>Стриминг фильмов и сериалов</span>
+      <small>стриминг · любая ОС · работает в РФ</small></li>
+    <li><a href="https://allmanga.to/" rel="noopener noreferrer">AllManga</a>
+      <span>Аниме и манга</span>
+      <small>стриминг, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://anilist.co/" rel="noopener noreferrer">AniList</a>
+      <span>Современный трекер аниме и манги</span>
+      <small>трекеры, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://animepahe.ru/" rel="noopener noreferrer">animepahe</a>
+      <span>Аниме в хорошем качестве</span>
+      <small>стриминг, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://cineby.app/" rel="noopener noreferrer">Cineby</a>
+      <span>Онлайн-кинотеатр с большим каталогом</span>
+      <small>стриминг · любая ОС · работает в РФ</small></li>
+    <li><a href="https://ext.to/" rel="noopener noreferrer">Ext.to</a>
+      <span>Торрент-поиск по категориям</span>
+      <small>торренты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://hianime.to/" rel="noopener noreferrer">HiAnime</a>
+      <span>Каталог аниме онлайн</span>
+      <small>стриминг, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://archive.org/details/movies" rel="noopener noreferrer">Internet Archive Movies</a>
       <span>Фильмы в общественном достоянии</span>
-      <small>скачивание, легально · любая ОС</small></li>
-<li><a href="https://fmhy.net/video" rel="noopener noreferrer">Soap2Day style indexes</a>
-      <span>Индекс стриминговых зеркал FMHY-секции</span>
-      <small>индексы · любая ОС</small></li>
+      <small>скачивание, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://lampa.app/" rel="noopener noreferrer">Lampa</a>
+      <span>Каталог фильмов для Android и Smart TV</span>
+      <small>стриминг, торренты, приложения · Windows, Android · работает в РФ</small>
+      <em>Сам приложение хранит только метаданные, а видео подключает через плагины. Официальная сборка в Google Play ограничена, есть сборки без ограничений.</em></li>
+    <li><a href="https://letterboxd.com/" rel="noopener noreferrer">Letterboxd</a>
+      <span>Трекинг и отзывы на фильмы</span>
+      <small>трекеры · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.miruro.com/" rel="noopener noreferrer">Miruro</a>
+      <span>Стриминг аниме</span>
+      <small>стриминг, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://myanimelist.net/" rel="noopener noreferrer">MyAnimeList</a>
+      <span>Трекинг аниме и манги</span>
+      <small>трекеры, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://nepu.to/" rel="noopener noreferrer">NEPU</a>
+      <span>Стриминг фильмов и сериалов</span>
+      <small>стриминг · любая ОС · работает в РФ</small></li>
+    <li><a href="https://nyaa.si/" rel="noopener noreferrer">Nyaa</a>
+      <span>Главный торрент-трекер аниме</span>
+      <small>торренты, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://simkl.com/" rel="noopener noreferrer">Simkl</a>
+      <span>Трекинг сериалов и аниме</span>
+      <small>трекеры · любая ОС · работает в РФ</small></li>
+    <li><a href="https://github.com/YouROK/TorrServer" rel="noopener noreferrer">TorrServer</a>
+      <span>Сервер для стриминга торрентов на Android TV</span>
+      <small>торренты, стриминг, приложения, системные · Windows, Android · работает в РФ</small></li>
+    <li><a href="https://vidsrc.to/" rel="noopener noreferrer">Vidsrc</a>
+      <span>Встраиваемые источники видео</span>
+      <small>стриминг · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Игры</h2>
-  <p class="cat-desc">Репаки, ROM, эмуляторы и халява — 20 ресурсов</p>
+  <p class="cat-desc">Репаки, ROM, эмуляторы и халява — 25 ресурсов</p>
   <ul>
-<li><a href="https://steamrip.com/" rel="noopener noreferrer">SteamRIP</a>
-      <span>Предустановленные игры без Steam</span>
-      <small>скачивание · Windows</small></li>
-<li><a href="https://fitgirl-repacks.site/" rel="noopener noreferrer">FitGirl Repacks</a>
-      <span>Сжатые репаки игр</span>
-      <small>скачивание · Windows</small></li>
-<li><a href="https://ankergames.net/" rel="noopener noreferrer">AnkerGames</a>
-      <span>Каталог игр для скачивания</span>
-      <small>скачивание · Windows</small></li>
-<li><a href="https://ovagames.com/" rel="noopener noreferrer">Ovagames</a>
-      <span>Репаки и полный дистрибутив</span>
-      <small>скачивание · Windows</small></li>
-<li><a href="https://gog-games.to/" rel="noopener noreferrer">GOG Games</a>
-      <span>DRM-free игры с GOG</span>
-      <small>скачивание · Windows, macOS, Linux</small></li>
-<li><a href="https://online-fix.me/" rel="noopener noreferrer">Online-Fix</a>
-      <span>Фиксы мультиплеера для offline-игр</span>
-      <small>скачивание · Windows</small></li>
-<li><a href="https://emulation.gametechwiki.com/" rel="noopener noreferrer">Emulation Wiki</a>
-      <span>Гайды по эмуляторам всех платформ</span>
-      <small>эмуляторы · любая ОС</small></li>
-<li><a href="https://r-roms.github.io/" rel="noopener noreferrer">r/ROMs Mega</a>
-      <span>Каталог ROM и ISO</span>
-      <small>эмуляторы, ROM · любая ОС</small></li>
-<li><a href="https://vimm.net/" rel="noopener noreferrer">Vimm's Lair</a>
-      <span>Классические ROM и ISO</span>
-      <small>эмуляторы, ROM · любая ОС</small></li>
-<li><a href="https://cdromance.com/" rel="noopener noreferrer">CDRomance</a>
-      <span>PS1/PS2 и ретро-игры</span>
-      <small>эмуляторы, ROM · любая ОС</small></li>
-<li><a href="https://myrient.erista.me/" rel="noopener noreferrer">Myrient</a>
-      <span>Большой архив образов</span>
-      <small>эмуляторы, ROM · любая ОС</small></li>
-<li><a href="https://store.epicgames.com/free-games" rel="noopener noreferrer">Epic Games Free</a>
-      <span>Халява недели от Epic</span>
-      <small>легально, бесплатно · Windows, macOS</small></li>
-<li><a href="https://store.steampowered.com/app/730/" rel="noopener noreferrer">CS2</a>
-      <span>Counter-Strike 2 бесплатно в Steam</span>
-      <small>легально, бесплатно · Windows, macOS, Linux</small></li>
-<li><a href="https://store.steampowered.com/app/570/" rel="noopener noreferrer">Dota 2</a>
-      <span>Бесплатная MOBA</span>
-      <small>легально, бесплатно · Windows, macOS, Linux</small></li>
-<li><a href="https://www.warframe.com/" rel="noopener noreferrer">Warframe</a>
-      <span>Кооперативный шутер F2P</span>
-      <small>легально, бесплатно · Windows</small></li>
-<li><a href="https://www.pathofexile.com/" rel="noopener noreferrer">Path of Exile</a>
-      <span>ARPG с честной F2P-моделью</span>
-      <small>легально, бесплатно · Windows, macOS</small></li>
-<li><a href="https://play0ad.com/" rel="noopener noreferrer">0 A.D.</a>
+    <li><a href="https://play0ad.com/" rel="noopener noreferrer">0 A.D.</a>
       <span>Открытая стратегия</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.minetest.net/" rel="noopener noreferrer">Minetest</a>
-      <span>Открытый аналог Minecraft</span>
-      <small>легально, системные · Windows, macOS, Linux, Android</small></li>
-<li><a href="https://supertuxkart.net/" rel="noopener noreferrer">SuperTuxKart</a>
-      <span>Открытые аркадные гонки</span>
-      <small>легально, системные · Windows, macOS, Linux, Android</small></li>
-<li><a href="https://www.backloggd.com/" rel="noopener noreferrer">Backloggd</a>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://ankergames.net/" rel="noopener noreferrer">AnkerGames</a>
+      <span>Каталог игр для скачивания</span>
+      <small>скачивание · Windows · работает в РФ</small></li>
+    <li><a href="https://www.backloggd.com/" rel="noopener noreferrer">Backloggd</a>
       <span>Трекинг игрового бэклога</span>
-      <small>трекеры · любая ОС</small></li>
+      <small>трекеры · любая ОС · работает в РФ</small></li>
+    <li><a href="https://cdromance.com/" rel="noopener noreferrer">CDRomance</a>
+      <span>PS1/PS2 и ретро-игры</span>
+      <small>эмуляторы, ROM · любая ОС · работает в РФ</small></li>
+    <li><a href="https://store.steampowered.com/app/730/" rel="noopener noreferrer">CS2</a>
+      <span>Counter-Strike 2 бесплатно в Steam</span>
+      <small>легально, бесплатно · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://store.steampowered.com/app/570/" rel="noopener noreferrer">Dota 2</a>
+      <span>Бесплатная MOBA</span>
+      <small>легально, бесплатно · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://emulation.gametechwiki.com/" rel="noopener noreferrer">Emulation Wiki</a>
+      <span>Гайды по эмуляторам всех платформ</span>
+      <small>эмуляторы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://store.epicgames.com/free-games" rel="noopener noreferrer">Epic Games Free</a>
+      <span>Халява недели от Epic</span>
+      <small>легально, бесплатно · Windows, macOS · работает в РФ</small></li>
+    <li><a href="https://store.epicgames.com/" rel="noopener noreferrer">Epic Games Store</a>
+      <span>Магазин с бесплатными играми каждую неделю</span>
+      <small>легально, бесплатно · Windows, macOS · работает в РФ</small></li>
+    <li><a href="https://fitgirl-repacks.site/" rel="noopener noreferrer">FitGirl Repacks</a>
+      <span>Сжатые репаки игр</span>
+      <small>скачивание · Windows · работает в РФ</small>
+      <em>Домен регулярно блокируют, зеркала указаны на главной странице.</em></li>
+    <li><a href="https://gog-games.to/" rel="noopener noreferrer">GOG Games</a>
+      <span>DRM-free игры с GOG</span>
+      <small>скачивание · Windows, macOS, Linux · работает в РФ</small>
+      <em>Зеркало DRM-free игр GOG. Оригинальные покупки доступны на gog.com.</em></li>
+    <li><a href="https://itch.io/" rel="noopener noreferrer">itch.io</a>
+      <span>Магазин инди-игр, демо и бесплатных браузерных игр</span>
+      <small>легально, бесплатно · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.minetest.net/" rel="noopener noreferrer">Minetest</a>
+      <span>Открытый аналог Minecraft</span>
+      <small>легально, системные · Windows, macOS, Linux, Android · работает в РФ</small></li>
+    <li><a href="https://modrinth.com/" rel="noopener noreferrer">Modrinth</a>
+      <span>Открытые моды и сборки для Minecraft и других игр</span>
+      <small>легально, бесплатно, моды · Windows, macOS, Linux, Android · работает в РФ</small></li>
+    <li><a href="https://myrient.erista.me/" rel="noopener noreferrer">Myrient</a>
+      <span>Большой архив образов</span>
+      <small>эмуляторы, ROM · любая ОС · работает в РФ</small></li>
+    <li><a href="https://online-fix.me/" rel="noopener noreferrer">Online-Fix</a>
+      <span>Фиксы мультиплеера для offline-игр</span>
+      <small>скачивание · Windows · работает в РФ</small></li>
+    <li><a href="https://ovagames.com/" rel="noopener noreferrer">Ovagames</a>
+      <span>Репаки и полный дистрибутив</span>
+      <small>скачивание · Windows · работает в РФ</small></li>
+    <li><a href="https://www.pathofexile.com/" rel="noopener noreferrer">Path of Exile</a>
+      <span>ARPG с честной F2P-моделью</span>
+      <small>легально, бесплатно · Windows, macOS · работает в РФ</small></li>
+    <li><a href="https://r-roms.github.io/" rel="noopener noreferrer">r/ROMs Mega</a>
+      <span>Каталог ROM и ISO</span>
+      <small>эмуляторы, ROM · любая ОС · работает в РФ</small></li>
+    <li><a href="https://store.steampowered.com/" rel="noopener noreferrer">Steam</a>
+      <span>Магазин игр с оплатой рублями и постоянными распродажами</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small>
+      <em>Работает из России, принимает российские карты. Раздачи и демки бесплатны.</em></li>
+    <li><a href="https://steamdb.info/" rel="noopener noreferrer">SteamDB</a>
+      <span>Цены, распродажи и история скидок Steam</span>
+      <small>легально, бесплатно, инструменты · любая ОС · работает в РФ</small>
+      <em>Показывает реальные цены по регионам и историю скидок — чтобы не переплачивать.</em></li>
+    <li><a href="https://steamrip.com/" rel="noopener noreferrer">SteamRIP</a>
+      <span>Предустановленные игры без Steam</span>
+      <small>скачивание · Windows · работает в РФ</small>
+      <em>Домен и зеркала меняются — держите актуальную ссылку из сообщества.</em></li>
+    <li><a href="https://supertuxkart.net/" rel="noopener noreferrer">SuperTuxKart</a>
+      <span>Открытые аркадные гонки</span>
+      <small>легально, системные · Windows, macOS, Linux, Android · работает в РФ</small></li>
+    <li><a href="https://vimm.net/" rel="noopener noreferrer">Vimm's Lair</a>
+      <span>Классические ROM и ISO</span>
+      <small>эмуляторы, ROM · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.warframe.com/" rel="noopener noreferrer">Warframe</a>
+      <span>Кооперативный шутер F2P</span>
+      <small>легально, бесплатно · Windows · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Софт</h2>
-  <p class="cat-desc">Программы, утилиты, open-source — 21 ресурсов</p>
+  <p class="cat-desc">Программы, утилиты, open-source — 27 ресурсов</p>
   <ul>
-<li><a href="https://www.blackmagicdesign.com/products/davinciresolve" rel="noopener noreferrer">DaVinci Resolve</a>
-      <span>Профессиональный монтаж, бесплатная версия</span>
-      <small>легально, видео · Windows, macOS, Linux</small></li>
-<li><a href="https://www.blender.org/" rel="noopener noreferrer">Blender</a>
-      <span>3D, анимация и рендер</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.gimp.org/" rel="noopener noreferrer">GIMP</a>
-      <span>Редактор изображений</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://krita.org/" rel="noopener noreferrer">Krita</a>
-      <span>Цифровая живопись</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.audacityteam.org/" rel="noopener noreferrer">Audacity</a>
-      <span>Запись и монтаж звука</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://obsproject.com/" rel="noopener noreferrer">OBS Studio</a>
-      <span>Запись экрана и стриминг</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.videolan.org/" rel="noopener noreferrer">VLC</a>
-      <span>Плеер любого формата</span>
-      <small>легально, системные · Windows, macOS, Linux, Android, iOS</small></li>
-<li><a href="https://www.libreoffice.org/" rel="noopener noreferrer">LibreOffice</a>
-      <span>Офисный пакет</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.7-zip.org/" rel="noopener noreferrer">7-Zip</a>
+    <li><a href="https://www.7-zip.org/" rel="noopener noreferrer">7-Zip</a>
       <span>Архиватор</span>
-      <small>легально, системные · Windows</small></li>
-<li><a href="https://peazip.github.io/" rel="noopener noreferrer">PeaZip</a>
-      <span>Кроссплатформенный архиватор</span>
-      <small>легально, системные · Windows, Linux</small></li>
-<li><a href="https://code.visualstudio.com/" rel="noopener noreferrer">VS Code</a>
-      <span>Редактор кода</span>
-      <small>легально · Windows, macOS, Linux</small></li>
-<li><a href="https://getsharex.com/" rel="noopener noreferrer">ShareX</a>
-      <span>Скриншоты и запись экрана</span>
-      <small>легально, системные · Windows</small></li>
-<li><a href="https://www.voidtools.com/" rel="noopener noreferrer">Everything</a>
-      <span>Мгновенный поиск файлов в Windows</span>
-      <small>легально · Windows</small></li>
-<li><a href="https://massgrave.dev/" rel="noopener noreferrer">Massgrave</a>
-      <span>Активация Windows и Office</span>
-      <small>инструменты · Windows</small></li>
-<li><a href="https://rufus.ie/" rel="noopener noreferrer">Rufus</a>
-      <span>Загрузочные USB</span>
-      <small>легально, системные · Windows</small></li>
-<li><a href="https://www.ventoy.net/" rel="noopener noreferrer">Ventoy</a>
-      <span>Мультизагрузочная флешка</span>
-      <small>легально, системные · Windows, Linux</small></li>
-<li><a href="https://etcher.balena.io/" rel="noopener noreferrer">Balena Etcher</a>
+      <small>легально, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://myoffice.ru/" rel="noopener noreferrer">МойОфис</a>
+      <span>Российский офисный пакет, бесплатно для дома</span>
+      <small>легально, русский, системные · Windows, macOS, Linux, Android · работает в РФ</small></li>
+    <li><a href="https://r7-office.ru/" rel="noopener noreferrer">Р7-Офис</a>
+      <span>Бесплатный офисный пакет с российскими сертификатами</span>
+      <small>легально, русский, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.aimp.ru/" rel="noopener noreferrer">AIMP</a>
+      <span>Лёгкий плеер с поддержкой Lossless и русским интерфейсом</span>
+      <small>легально, бесплатно, системные, русский · Windows, Android · работает в РФ</small></li>
+    <li><a href="https://www.audacityteam.org/" rel="noopener noreferrer">Audacity</a>
+      <span>Запись и монтаж звука</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://etcher.balena.io/" rel="noopener noreferrer">Balena Etcher</a>
       <span>Запись образов на USB</span>
-      <small>легально · Windows, macOS, Linux</small></li>
-<li><a href="https://handbrake.fr/" rel="noopener noreferrer">HandBrake</a>
+      <small>легально · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.blender.org/" rel="noopener noreferrer">Blender</a>
+      <span>3D, анимация и рендер</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.blackmagicdesign.com/products/davinciresolve" rel="noopener noreferrer">DaVinci Resolve</a>
+      <span>Профессиональный монтаж, бесплатная версия</span>
+      <small>легально, видео · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.voidtools.com/" rel="noopener noreferrer">Everything</a>
+      <span>Мгновенный поиск файлов в Windows</span>
+      <small>легально · Windows · работает в РФ</small></li>
+    <li><a href="https://www.gimp.org/" rel="noopener noreferrer">GIMP</a>
+      <span>Редактор изображений</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://handbrake.fr/" rel="noopener noreferrer">HandBrake</a>
       <span>Конвертер видео</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://mpv.io/" rel="noopener noreferrer">MPV</a>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://kodi.tv/" rel="noopener noreferrer">Kodi</a>
+      <span>Медиатеатр с торрент-аддонами для ТВ и приставок</span>
+      <small>видео, легально, бесплатно, системные · Windows, macOS, Linux, Android · работает в РФ</small></li>
+    <li><a href="https://krita.org/" rel="noopener noreferrer">Krita</a>
+      <span>Цифровая живопись</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.libreoffice.org/" rel="noopener noreferrer">LibreOffice</a>
+      <span>Офисный пакет</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://massgrave.dev/" rel="noopener noreferrer">Massgrave</a>
+      <span>Активация Windows и Office</span>
+      <small>инструменты · Windows · работает в РФ</small>
+      <em>Открытые скрипты активации Windows и Office. Используйте на свой страх и риск.</em></li>
+    <li><a href="https://mpc-be.org/" rel="noopener noreferrer">MPC-BE</a>
+      <span>Видеоплеер с аппаратным ускорением</span>
+      <small>видео, легально, бесплатно, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://mpv.io/" rel="noopener noreferrer">MPV</a>
       <span>Минималистичный видеоплеер</span>
-      <small>легально, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://notepad-plus-plus.org/" rel="noopener noreferrer">Notepad++</a>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://notepad-plus-plus.org/" rel="noopener noreferrer">Notepad++</a>
       <span>Быстрый текстовый редактор</span>
-      <small>легально, системные · Windows</small></li>
-<li><a href="https://learn.microsoft.com/windows/powertoys/" rel="noopener noreferrer">PowerToys</a>
+      <small>легально, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://obsproject.com/" rel="noopener noreferrer">OBS Studio</a>
+      <span>Запись экрана и стриминг</span>
+      <small>легально, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://peazip.github.io/" rel="noopener noreferrer">PeaZip</a>
+      <span>Кроссплатформенный архиватор</span>
+      <small>легально, системные · Windows, Linux · работает в РФ</small></li>
+    <li><a href="https://learn.microsoft.com/windows/powertoys/" rel="noopener noreferrer">PowerToys</a>
       <span>Утилиты для Windows</span>
-      <small>легально · Windows</small></li>
+      <small>легально · Windows · работает в РФ</small></li>
+    <li><a href="https://rufus.ie/" rel="noopener noreferrer">Rufus</a>
+      <span>Загрузочные USB</span>
+      <small>легально, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://getsharex.com/" rel="noopener noreferrer">ShareX</a>
+      <span>Скриншоты и запись экрана</span>
+      <small>легально, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://www.ventoy.net/" rel="noopener noreferrer">Ventoy</a>
+      <span>Мультизагрузочная флешка</span>
+      <small>легально, системные · Windows, Linux · работает в РФ</small></li>
+    <li><a href="https://www.videolan.org/" rel="noopener noreferrer">VLC</a>
+      <span>Плеер любого формата</span>
+      <small>легально, системные · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://code.visualstudio.com/" rel="noopener noreferrer">VS Code</a>
+      <span>Редактор кода</span>
+      <small>легально · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://github.com/yt-dlp/yt-dlp" rel="noopener noreferrer">yt-dlp</a>
+      <span>Скачивание видео и аудио с сотен сайтов</span>
+      <small>утилиты, бесплатно, разработка, системные · Windows, macOS, Linux · работает в РФ</small>
+      <em>Работает с YouTube, VK, Rutube и другими платформами. Актуальная версия важна: YouTube регулярно ломает старые сборки.</em></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Приватность</h2>
-  <p class="cat-desc">VPN, adblock, браузеры, безопасность — 20 ресурсов</p>
+  <p class="cat-desc">VPN, adblock, браузеры, безопасность — 22 ресурса</p>
   <ul>
-<li><a href="https://ublockorigin.com/" rel="noopener noreferrer">uBlock Origin</a>
-      <span>Блокировщик рекламы</span>
-      <small>adblock, легально · любая ОС</small></li>
-<li><a href="https://www.privacyguides.org/" rel="noopener noreferrer">Privacy Guides</a>
-      <span>Гайды по приватности</span>
-      <small>гайды, легально · любая ОС</small></li>
-<li><a href="https://proton.me/mail" rel="noopener noreferrer">Proton Mail</a>
-      <span>Зашифрованная почта</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://proton.me/vpn" rel="noopener noreferrer">Proton VPN</a>
-      <span>VPN с бесплатным тарифом</span>
-      <small>VPN, легально · Windows, macOS, Linux, Android, iOS</small></li>
-<li><a href="https://mullvad.net/" rel="noopener noreferrer">Mullvad VPN</a>
-      <span>Приватный VPN без аккаунта</span>
-      <small>VPN, легально · Windows, macOS, Linux, Android, iOS</small></li>
-<li><a href="https://www.ivpn.net/" rel="noopener noreferrer">IVPN</a>
-      <span>Платный приватный VPN</span>
-      <small>VPN, легально · Windows, macOS, Linux, Android, iOS</small></li>
-<li><a href="https://www.mozilla.org/firefox/" rel="noopener noreferrer">Firefox</a>
-      <span>Браузер с сильной приватностью</span>
-      <small>браузеры, легально · Windows, macOS, Linux, Android</small></li>
-<li><a href="https://brave.com/" rel="noopener noreferrer">Brave</a>
-      <span>Chromium с блокировкой трекеров</span>
-      <small>браузеры, легально · Windows, macOS, Linux, Android, iOS</small></li>
-<li><a href="https://librewolf.net/" rel="noopener noreferrer">Librewolf</a>
-      <span>Firefox под приватность</span>
-      <small>браузеры, легально · Windows, macOS, Linux</small></li>
-<li><a href="https://mullvad.net/browser" rel="noopener noreferrer">Mullvad Browser</a>
-      <span>Браузер от Mullvad и Tor Project</span>
-      <small>браузеры, легально · Windows, macOS, Linux</small></li>
-<li><a href="https://searx.space/" rel="noopener noreferrer">SearXNG</a>
-      <span>Метапоиск без слежки</span>
-      <small>поиск, легально · любая ОС</small></li>
-<li><a href="https://duckduckgo.com/" rel="noopener noreferrer">DuckDuckGo</a>
-      <span>Поиск без персонализации</span>
-      <small>поиск, легально · любая ОС</small></li>
-<li><a href="https://haveibeenpwned.com/" rel="noopener noreferrer">Have I Been Pwned</a>
-      <span>Проверка утечек паролей и почты</span>
-      <small>безопасность, легально · любая ОС</small></li>
-<li><a href="https://www.virustotal.com/" rel="noopener noreferrer">VirusTotal</a>
-      <span>Проверка файлов на вирусы</span>
-      <small>безопасность, легально · любая ОС</small></li>
-<li><a href="https://tria.ge/" rel="noopener noreferrer">Tria.ge</a>
-      <span>Песочница для анализа файлов</span>
-      <small>безопасность, легально · любая ОС</small></li>
-<li><a href="https://bitwarden.com/" rel="noopener noreferrer">Bitwarden</a>
+    <li><a href="https://adguard-dns.io/" rel="noopener noreferrer">AdGuard DNS</a>
+      <span>Блокировка рекламы на уровне DNS для всей сети</span>
+      <small>adblock, легально, бесплатно · Windows, macOS, Linux, Android, iOS · работает в РФ</small>
+      <em>Работает в России. Защищает все устройства в сети, а не только браузер.</em></li>
+    <li><a href="https://bitwarden.com/" rel="noopener noreferrer">Bitwarden</a>
       <span>Менеджер паролей</span>
-      <small>безопасность, легально · любая ОС</small></li>
-<li><a href="https://keepassxc.org/" rel="noopener noreferrer">KeePassXC</a>
-      <span>Локальный менеджер паролей</span>
-      <small>безопасность, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.torproject.org/" rel="noopener noreferrer">Tor Browser</a>
-      <span>Анонимный браузер</span>
-      <small>браузеры, легально · Windows, macOS, Linux, Android</small></li>
-<li><a href="https://simplelogin.io/" rel="noopener noreferrer">SimpleLogin</a>
-      <span>Email-алиасы</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://docs.clearurls.xyz/" rel="noopener noreferrer">ClearURLs</a>
+      <small>безопасность, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://brave.com/" rel="noopener noreferrer">Brave</a>
+      <span>Chromium с блокировкой трекеров</span>
+      <small>браузеры, легально · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://docs.clearurls.xyz/" rel="noopener noreferrer">ClearURLs</a>
       <span>Удаление трекеров из ссылок</span>
-      <small>расширения, легально · любая ОС</small></li>
+      <small>расширения, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://duckduckgo.com/" rel="noopener noreferrer">DuckDuckGo</a>
+      <span>Поиск без персонализации</span>
+      <small>поиск, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.mozilla.org/firefox/" rel="noopener noreferrer">Firefox</a>
+      <span>Браузер с сильной приватностью</span>
+      <small>браузеры, легально · Windows, macOS, Linux, Android · работает в РФ</small>
+      <em>Доступен, страницы Google и YouTube открываются медленнее.</em></li>
+    <li><a href="https://haveibeenpwned.com/" rel="noopener noreferrer">Have I Been Pwned</a>
+      <span>Проверка утечек паролей и почты</span>
+      <small>безопасность, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://keepassxc.org/" rel="noopener noreferrer">KeePassXC</a>
+      <span>Локальный менеджер паролей</span>
+      <small>безопасность, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://librewolf.net/" rel="noopener noreferrer">Librewolf</a>
+      <span>Firefox под приватность</span>
+      <small>браузеры, легально · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://mullvad.net/browser" rel="noopener noreferrer">Mullvad Browser</a>
+      <span>Браузер от Mullvad и Tor Project</span>
+      <small>браузеры, легально · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://mullvad.net/" rel="noopener noreferrer">Mullvad VPN</a>
+      <span>Приватный VPN без аккаунта</span>
+      <small>VPN, легально · Windows, macOS, Linux, Android, iOS · работает с оговорками</small>
+      <em>Работает через мосты и обфускацию, но сайт и оплата из РФ недоступны.</em></li>
+    <li><a href="https://www.privacyguides.org/" rel="noopener noreferrer">Privacy Guides</a>
+      <span>Гайды по приватности</span>
+      <small>гайды, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://proton.me/mail" rel="noopener noreferrer">Proton Mail</a>
+      <span>Зашифрованная почта</span>
+      <small>легально · любая ОС · работает с оговорками</small>
+      <em>Открывается через мост Proton, в вебе может быть недоступен.</em></li>
+    <li><a href="https://proton.me/vpn" rel="noopener noreferrer">Proton VPN</a>
+      <span>VPN с бесплатным тарифом</span>
+      <small>VPN, легально · Windows, macOS, Linux, Android, iOS · работает с оговорками</small>
+      <em>В РФ подключается нестабильно: 43 из 61 опрошенных не смогли выйти. Сайт и приложения недоступны, оплата картой РФ не проходит.</em></li>
+    <li><a href="https://quad9.net/" rel="noopener noreferrer">Quad9</a>
+      <span>Бесплатный DNS-резолвер с фильтрацией вредоносных доменов</span>
+      <small>легально, бесплатно, безопасность · любая ОС · работает в РФ</small></li>
+    <li><a href="https://searx.space/" rel="noopener noreferrer">SearXNG</a>
+      <span>Метапоиск без слежки</span>
+      <small>поиск, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://getsession.org/" rel="noopener noreferrer">Session</a>
+      <span>Мессенджер без номера телефона и без регистрации</span>
+      <small>легально, бесплатно, приватность · Windows, macOS, Linux, Android, iOS · работает в РФ</small>
+      <em>Не требует SIM и не привязан к номеру — рабочая замена Signal, который в РФ заблокирован.</em></li>
+    <li><a href="https://simplelogin.io/" rel="noopener noreferrer">SimpleLogin</a>
+      <span>Email-алиасы</span>
+      <small>легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.torproject.org/" rel="noopener noreferrer">Tor Browser</a>
+      <span>Анонимный браузер</span>
+      <small>браузеры, легально · Windows, macOS, Linux, Android · работает с оговорками</small>
+      <em>tor.org в РФ заблокирован — качайте с официальных зеркал проекта.</em></li>
+    <li><a href="https://tria.ge/" rel="noopener noreferrer">Tria.ge</a>
+      <span>Песочница для анализа файлов</span>
+      <small>безопасность, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://ublockorigin.com/" rel="noopener noreferrer">uBlock Origin</a>
+      <span>Блокировщик рекламы</span>
+      <small>adblock, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.virustotal.com/" rel="noopener noreferrer">VirusTotal</a>
+      <span>Проверка файлов на вирусы</span>
+      <small>безопасность, легально · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
+  <h2>Обход блокировок</h2>
+  <p class="cat-desc">VPN, конфиги и инструменты, которые работают в России — 16 ресурсов</p>
+  <ul>
+    <li><a href="https://github.com/MHSanaei/3x-ui" rel="noopener noreferrer">3x-ui</a>
+      <span>Панель управления своим VLESS-сервером</span>
+      <small>обход, конфиги, разработка · любая ОС · работает в РФ</small>
+      <em>Свой сервер за полчаса: домен, сертификат, автоподбор обхода блокировок.</em></li>
+    <li><a href="https://t.me/rutracker_news" rel="noopener noreferrer">Рутрекер в Telegram</a>
+      <span>Каналы трекера с актуальными зеркалами</span>
+      <small>зеркала, торренты, русский · любая ОС · работает в РФ</small>
+      <em>Рабочий доступ к трекеру, когда домен закрыт. Бот @ru_tracker_bot пришлёт свежее зеркало.</em></li>
+    <li><a href="https://adguard-vpn.com/" rel="noopener noreferrer">AdGuard VPN</a>
+      <span>Блокирует рекламу и работает в российских магазинах приложений</span>
+      <small>VPN, обход, легально · Windows, macOS, Linux, Android, iOS · работает в РФ</small>
+      <em>Один из самых стабильных зарубежных VPN в РФ, есть в российском App Store. Бесплатно 3 ГБ в месяц.</em></li>
+    <li><a href="https://amnezia.org/" rel="noopener noreferrer">AmneziaVPN</a>
+      <span>Русский VPN на AmneziaWG и VLESS Reality — лучший выбор в РФ</span>
+      <small>VPN, обход, русский · Windows, macOS, Linux, Android, iOS · работает в РФ</small>
+      <em>Работал у 28 из 39 опрошенных в октябре 2026 — лучший результат среди VPN. Свои серверы, оплата рублями, конфиги можно раздать друзьям.</em></li>
+    <li><a href="https://annas-archive.info/" rel="noopener noreferrer">Anna’s Archive: зеркала</a>
+      <span>Индекс актуальных зеркал библиотек и трекеров</span>
+      <small>зеркала, индексы, книги, бесплатно · любая ОС · работает в РФ</small>
+      <em>Показывает живые зеркала Z-Library, Sci-Hub и Library Genesis с аптаймом. Обновляется каждые пять минут.</em></li>
+    <li><a href="https://github.com/ValdikSS/GoodbyeDPI" rel="noopener noreferrer">GoodbyeDPI</a>
+      <span>Локальный обход DPI для Windows, Linux и macOS</span>
+      <small>обход, DPI, бесплатно, системные · Windows, Linux, macOS · работает в РФ</small>
+      <em>Не VPN: просто чинит доступ к YouTube и другим сайтам без установки туннеля.</em></li>
+    <li><a href="https://github.com/hiddify/hiddify-app" rel="noopener noreferrer">Hiddify</a>
+      <span>Кроссплатформенный клиент с режимом обхода DPI</span>
+      <small>клиенты, обход, системные · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://hysteria.network/" rel="noopener noreferrer">Hysteria2</a>
+      <span>Протокол для обхода блокировок на медленных сетях</span>
+      <small>VPN, обход, легально · любая ОС · работает в РФ</small>
+      <em>Держит скорость там, где другие протоколы душат, — вариант для мобильного интернета.</em></li>
+    <li><a href="https://github.com/Ivan-Milchev/Karing" rel="noopener noreferrer">Karing</a>
+      <span>Кроссплатформенный клиент с рекламой в приложении</span>
+      <small>клиенты, обход, системные · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://github.com/MatsuriDayo/NekoBoxForAndroid" rel="noopener noreferrer">NekoBox</a>
+      <span>Клиент для Android с поддержкой sing-box</span>
+      <small>клиенты, обход, APK · Android · работает в РФ</small></li>
+    <li><a href="https://github.com/StreisandSetter/Streisand" rel="noopener noreferrer">Streisand</a>
+      <span>Клиент для iOS и Android с подбором работающих протоколов</span>
+      <small>клиенты, обход, приложения · Android, iOS · работает в РФ</small></li>
+    <li><a href="https://github.com/throneproj/Throne" rel="noopener noreferrer">Throne</a>
+      <span>Андроид-клиент для VLESS с подбором протокола</span>
+      <small>клиенты, обход, APK · Android · работает в РФ</small></li>
+    <li><a href="https://github.com/2dust/v2rayN" rel="noopener noreferrer">v2rayN</a>
+      <span>Клиент VLESS, VMess и Shadowsocks для Windows</span>
+      <small>клиенты, обход, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://github.com/SeamniZ/vpn-configs-for-russia" rel="noopener noreferrer">vpn-configs-for-russia</a>
+      <span>Бесплатные конфиги VLESS и Hysteria2, обновляются автоматически</span>
+      <small>VPN, обход, бесплатно, конфиги · любая ОС · работает в РФ</small>
+      <em>Подписка TXT для v2rayN, Throne, NekoBox и Streisand. Конфиги фильтруются по чёрным и белым спискам РКН.</em></li>
+    <li><a href="https://www.wireguard.com/" rel="noopener noreferrer">WireGuard</a>
+      <span>База для AmneziaWG и других схем обхода</span>
+      <small>VPN, обход, легально, системные · Windows, macOS, Linux, Android, iOS · работает с оговорками</small>
+      <em>Чистый WireGuard в РФ режут, работает только в обёртке AmneziaWG.</em></li>
+    <li><a href="https://github.com/bol-van/zapret" rel="noopener noreferrer">Zapret</a>
+      <span>Набор скриптов обхода DPI для роутеров и Linux</span>
+      <small>обход, DPI, бесплатно, системные · Linux, любая ОС · работает в РФ</small>
+      <em>Работает на роутере и заменяет связку VPN+прокси там, где обычный VPN режут.</em></li>
+  </ul>
+</section>
+  <section>
   <h2>ИИ</h2>
-  <p class="cat-desc">Чаты, генерация картинок и голоса — 17 ресурсов</p>
+  <p class="cat-desc">Чаты, генерация картинок и голоса — 20 ресурсов</p>
   <ul>
-<li><a href="https://chatgpt.com/" rel="noopener noreferrer">ChatGPT</a>
+    <li><a href="https://chatgpt.com/" rel="noopener noreferrer">ChatGPT</a>
       <span>ИИ-чат, есть бесплатный тариф</span>
-      <small>чаты · любая ОС</small></li>
-<li><a href="https://chat.deepseek.com/" rel="noopener noreferrer">DeepSeek</a>
-      <span>Сильный бесплатный ИИ, хорош в коде</span>
-      <small>чаты · любая ОС</small></li>
-<li><a href="https://giga.chat/" rel="noopener noreferrer">GigaChat</a>
-      <span>ИИ от Сбера</span>
-      <small>чаты, русский · любая ОС</small></li>
-<li><a href="https://alice.yandex.ru/" rel="noopener noreferrer">YandexGPT</a>
-      <span>ИИ от Яндекса</span>
-      <small>чаты, русский · любая ОС</small></li>
-<li><a href="https://claude.ai/" rel="noopener noreferrer">Claude</a>
+      <small>чаты · любая ОС · работает с оговорками</small>
+      <em>Регистрация с российского номера может не пройти. Рабочие агрегаторы — в разделе «ИИ».</em></li>
+    <li><a href="https://claude.ai/" rel="noopener noreferrer">Claude</a>
       <span>ИИ от Anthropic</span>
-      <small>чаты · любая ОС</small></li>
-<li><a href="https://gemini.google.com/" rel="noopener noreferrer">Gemini</a>
-      <span>ИИ от Google</span>
-      <small>чаты · любая ОС</small></li>
-<li><a href="https://www.perplexity.ai/" rel="noopener noreferrer">Perplexity</a>
-      <span>ИИ-поиск с источниками</span>
-      <small>чаты, поиск · любая ОС</small></li>
-<li><a href="https://fusionbrain.ai/" rel="noopener noreferrer">Kandinsky</a>
-      <span>Генерация картинок по-русски</span>
-      <small>картинки, русский · любая ОС</small></li>
-<li><a href="https://stability.ai/" rel="noopener noreferrer">Stable Diffusion</a>
-      <span>Открытая генерация изображений</span>
-      <small>картинки, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://github.com/lllyasviel/Fooocus" rel="noopener noreferrer">Fooocus</a>
-      <span>Локальная генерация картинок</span>
-      <small>картинки, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://github.com/comfyanonymous/ComfyUI" rel="noopener noreferrer">ComfyUI</a>
+      <small>чаты · любая ОС · работает с оговорками</small>
+      <em>Аккаунт с российским номером телефона не регистрируется.</em></li>
+    <li><a href="https://github.com/comfyanonymous/ComfyUI" rel="noopener noreferrer">ComfyUI</a>
       <span>Нодовый интерфейс для генерации</span>
-      <small>картинки, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://suno.com/" rel="noopener noreferrer">Suno</a>
-      <span>Генерация музыки по тексту</span>
-      <small>аудио · любая ОС</small></li>
-<li><a href="https://www.udio.com/" rel="noopener noreferrer">Udio</a>
-      <span>Генерация песен</span>
-      <small>аудио · любая ОС</small></li>
-<li><a href="https://huggingface.co/" rel="noopener noreferrer">Hugging Face</a>
+      <small>картинки, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://chat.deepseek.com/" rel="noopener noreferrer">DeepSeek</a>
+      <span>Сильный бесплатный ИИ, хорош в коде</span>
+      <small>чаты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://github.com/lllyasviel/Fooocus" rel="noopener noreferrer">Fooocus</a>
+      <span>Локальная генерация картинок</span>
+      <small>картинки, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://gemini.google.com/" rel="noopener noreferrer">Gemini</a>
+      <span>ИИ от Google</span>
+      <small>чаты · любая ОС · работает с оговорками</small>
+      <em>Доступ к Google-сервисам из РФ ограничен, нужна обходная подписка.</em></li>
+    <li><a href="https://giga.chat/" rel="noopener noreferrer">GigaChat</a>
+      <span>ИИ от Сбера</span>
+      <small>чаты, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://huggingface.co/" rel="noopener noreferrer">Hugging Face</a>
       <span>Каталог открытых моделей</span>
-      <small>системные · любая ОС</small></li>
-<li><a href="https://ollama.com/" rel="noopener noreferrer">Ollama</a>
-      <span>Локальный запуск LLM</span>
-      <small>системные, чаты · Windows, macOS, Linux</small></li>
-<li><a href="https://lmstudio.ai/" rel="noopener noreferrer">LM Studio</a>
+      <small>системные · любая ОС · работает с оговорками</small>
+      <em>Часть моделей и файлов скачивается медленно, зеркала — на hf-mirror.com.</em></li>
+    <li><a href="https://fusionbrain.ai/" rel="noopener noreferrer">Kandinsky</a>
+      <span>Генерация картинок по-русски</span>
+      <small>картинки, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://lmstudio.ai/" rel="noopener noreferrer">LM Studio</a>
       <span>GUI для локальных моделей</span>
-      <small>чаты · Windows, macOS, Linux</small></li>
-<li><a href="https://openwebui.com/" rel="noopener noreferrer">Open WebUI</a>
+      <small>чаты · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://chat.mistral.ai/" rel="noopener noreferrer">Mistral Le Chat</a>
+      <span>Европейский чат с бесплатным тарифом</span>
+      <small>чаты, бесплатно, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://ollama.com/" rel="noopener noreferrer">Ollama</a>
+      <span>Локальный запуск LLM</span>
+      <small>системные, чаты · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://openwebui.com/" rel="noopener noreferrer">Open WebUI</a>
       <span>Веб-интерфейс для локальных LLM</span>
-      <small>чаты, системные · Windows, macOS, Linux</small></li>
+      <small>чаты, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://openrouter.ai/" rel="noopener noreferrer">OpenRouter</a>
+      <span>Единый доступ к сотне моделей с бесплатным лимитом</span>
+      <small>чаты, разработка, бесплатно · любая ОС · работает с оговорками</small>
+      <em>Сайт открывается, но оплата картами РФ не проходит. Часть моделей доступна бесплатно.</em></li>
+    <li><a href="https://www.perplexity.ai/" rel="noopener noreferrer">Perplexity</a>
+      <span>ИИ-поиск с источниками</span>
+      <small>чаты, поиск · любая ОС · работает в РФ</small>
+      <em>Открывается из России без VPN, поиск с источниками работает на русском.</em></li>
+    <li><a href="https://chat.qwen.ai/" rel="noopener noreferrer">Qwen</a>
+      <span>Бесплатный чат от Alibaba с сильной работой на русском</span>
+      <small>чаты, бесплатно, китайский · любая ОС · работает в РФ</small>
+      <em>Открывается из России без VPN, есть бесплатная веб-версия и API.</em></li>
+    <li><a href="https://stability.ai/" rel="noopener noreferrer">Stable Diffusion</a>
+      <span>Открытая генерация изображений</span>
+      <small>картинки, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://suno.com/" rel="noopener noreferrer">Suno</a>
+      <span>Генерация музыки по тексту</span>
+      <small>аудио · любая ОС · работает с оговорками</small>
+      <em>Регистрация и оплата из РФ ограничены.</em></li>
+    <li><a href="https://www.udio.com/" rel="noopener noreferrer">Udio</a>
+      <span>Генерация песен</span>
+      <small>аудио · любая ОС · работает с оговорками</small>
+      <em>Оплата картами РФ не проходит, нужен способ оплаты из-за рубежа.</em></li>
+    <li><a href="https://alice.yandex.ru/" rel="noopener noreferrer">YandexGPT</a>
+      <span>ИИ от Яндекса</span>
+      <small>чаты, русский · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Музыка</h2>
-  <p class="cat-desc">Стриминг, скачивание, радио — 13 ресурсов</p>
+  <p class="cat-desc">Стриминг, скачивание, радио — 15 ресурсов</p>
   <ul>
-<li><a href="https://lucida.to/" rel="noopener noreferrer">lucida</a>
-      <span>Скачивание треков в высоком качестве</span>
-      <small>скачивание · любая ОС</small></li>
-<li><a href="https://squid.wtf/" rel="noopener noreferrer">squid.wtf</a>
-      <span>Скачивание музыки</span>
-      <small>скачивание · любая ОС</small></li>
-<li><a href="https://nicotine-plus.org/" rel="noopener noreferrer">Nicotine+</a>
-      <span>Soulseek-клиент</span>
-      <small>P2P, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.slsknet.org/" rel="noopener noreferrer">Soulseek</a>
-      <span>P2P-обмен музыкой</span>
-      <small>P2P · Windows, macOS</small></li>
-<li><a href="https://github.com/SpotX-Official/SpotX" rel="noopener noreferrer">SpotX</a>
-      <span>Модификация Spotify для Windows</span>
-      <small>моды · Windows</small></li>
-<li><a href="https://archive.org/details/audio" rel="noopener noreferrer">Internet Archive Audio</a>
-      <span>Большой аудиоархив</span>
-      <small>легально, скачивание · любая ОС</small></li>
-<li><a href="https://freemusicarchive.org/" rel="noopener noreferrer">Free Music Archive</a>
-      <span>Свободная музыка</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://www.radio-browser.info/" rel="noopener noreferrer">Radio Browser</a>
-      <span>Каталог интернет-радио</span>
-      <small>радио, легально · любая ОС</small></li>
-<li><a href="https://www.last.fm/" rel="noopener noreferrer">Last.fm</a>
-      <span>Скробблинг и рекомендации</span>
-      <small>трекеры · любая ОС</small></li>
-<li><a href="https://rateyourmusic.com/" rel="noopener noreferrer">RateYourMusic</a>
-      <span>Рейтинги альбомов</span>
-      <small>трекеры · любая ОС</small></li>
-<li><a href="https://bandcamp.com/" rel="noopener noreferrer">Bandcamp</a>
+    <li><a href="https://akniga.org/" rel="noopener noreferrer">АКНИГА</a>
+      <span>Бесплатные аудиокниги с качественной озвучкой</span>
+      <small>книги, бесплатно, аудио, русский · Windows, Android · работает в РФ</small></li>
+    <li><a href="https://music.yandex.ru/" rel="noopener noreferrer">Яндекс Музыка</a>
+      <span>Крупнейшая русскоязычная библиотека треков</span>
+      <small>легально, русский, стриминг · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://bandcamp.com/" rel="noopener noreferrer">Bandcamp</a>
       <span>Инди-музыка, часто бесплатные релизы</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://soundcloud.com/" rel="noopener noreferrer">SoundCloud</a>
-      <span>Стриминг и открытие артистов</span>
-      <small>стриминг · любая ОС</small></li>
-<li><a href="https://funkwhale.audio/" rel="noopener noreferrer">Funkwhale</a>
+      <small>легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://freemusicarchive.org/" rel="noopener noreferrer">Free Music Archive</a>
+      <span>Свободная музыка</span>
+      <small>легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://funkwhale.audio/" rel="noopener noreferrer">Funkwhale</a>
       <span>Федеративный музыкальный сервис</span>
-      <small>стриминг, системные · любая ОС</small></li>
+      <small>стриминг, системные · любая ОС · работает в РФ</small></li>
+    <li><a href="https://archive.org/details/audio" rel="noopener noreferrer">Internet Archive Audio</a>
+      <span>Большой аудиоархив</span>
+      <small>легально, скачивание · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.last.fm/" rel="noopener noreferrer">Last.fm</a>
+      <span>Скробблинг и рекомендации</span>
+      <small>трекеры · любая ОС · работает с оговорками</small>
+      <em>Периодически блокируется в РФ, работает через зеркала и обходные ссылки.</em></li>
+    <li><a href="https://lucida.to/" rel="noopener noreferrer">lucida</a>
+      <span>Скачивание треков в высоком качестве</span>
+      <small>скачивание · любая ОС · работает в РФ</small></li>
+    <li><a href="https://nicotine-plus.org/" rel="noopener noreferrer">Nicotine+</a>
+      <span>Soulseek-клиент</span>
+      <small>P2P, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://www.radio-browser.info/" rel="noopener noreferrer">Radio Browser</a>
+      <span>Каталог интернет-радио</span>
+      <small>радио, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://rateyourmusic.com/" rel="noopener noreferrer">RateYourMusic</a>
+      <span>Рейтинги альбомов</span>
+      <small>трекеры · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.slsknet.org/" rel="noopener noreferrer">Soulseek</a>
+      <span>P2P-обмен музыкой</span>
+      <small>P2P · Windows, macOS · работает в РФ</small></li>
+    <li><a href="https://soundcloud.com/" rel="noopener noreferrer">SoundCloud</a>
+      <span>Стриминг и открытие артистов</span>
+      <small>стриминг · любая ОС · работает в РФ</small></li>
+    <li><a href="https://squid.wtf/" rel="noopener noreferrer">squid.wtf</a>
+      <span>Скачивание музыки</span>
+      <small>скачивание · любая ОС · работает в РФ</small></li>
+    <li><a href="https://music.vk.com/" rel="noopener noreferrer">VK Музыка</a>
+      <span>Музыка ВКонтакте с бесплатной версией</span>
+      <small>легально, русский, стриминг · Windows, macOS, Android, iOS · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Книги</h2>
-  <p class="cat-desc">Электронные книги, манга, аудиокниги — 15 ресурсов</p>
+  <p class="cat-desc">Электронные книги, манга, аудиокниги — 17 ресурсов</p>
   <ul>
-<li><a href="https://annas-archive.org/" rel="noopener noreferrer">Anna's Archive</a>
+    <li><a href="https://www.litres.ru/" rel="noopener noreferrer">ЛитРес</a>
+      <span>Легальный книжный магазин с бесплатным разделом</span>
+      <small>легально, русский, книги · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://annas-archive.org/" rel="noopener noreferrer">Anna's Archive</a>
       <span>Крупный библиотечный индекс</span>
-      <small>книги · любая ОС</small></li>
-<li><a href="https://z-lib.gd/" rel="noopener noreferrer">Z-Library</a>
-      <span>Электронные книги</span>
-      <small>книги · любая ОС</small></li>
-<li><a href="https://libgen.is/" rel="noopener noreferrer">Library Genesis</a>
-      <span>Научные и художественные книги</span>
-      <small>книги · любая ОС</small></li>
-<li><a href="https://sci-hub.se/" rel="noopener noreferrer">Sci-Hub</a>
-      <span>Научные статьи</span>
-      <small>наука · любая ОС</small></li>
-<li><a href="https://www.gutenberg.org/" rel="noopener noreferrer">Project Gutenberg</a>
-      <span>Книги в общественном достоянии</span>
-      <small>легально, книги · любая ОС</small></li>
-<li><a href="https://standardebooks.org/" rel="noopener noreferrer">Standard Ebooks</a>
-      <span>Бесплатные книги с аккуратной вёрсткой</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://weebcentral.com/" rel="noopener noreferrer">Weeb Central</a>
-      <span>Чтение манги</span>
-      <small>манга · любая ОС</small></li>
-<li><a href="https://mangadex.org/" rel="noopener noreferrer">MangaDex</a>
-      <span>Каталог манги от сообщества</span>
-      <small>манга · любая ОС</small></li>
-<li><a href="https://getcomics.org/" rel="noopener noreferrer">GetComics</a>
-      <span>Комиксы</span>
-      <small>комиксы · любая ОС</small></li>
-<li><a href="https://readcomiconline.li/" rel="noopener noreferrer">Readcomiconline</a>
-      <span>Онлайн-комиксы</span>
-      <small>комиксы · любая ОС</small></li>
-<li><a href="https://audiobookbay.lu/" rel="noopener noreferrer">Audiobook Bay</a>
+      <small>книги · любая ОС · работает в РФ</small></li>
+    <li><a href="https://audiobookbay.lu/" rel="noopener noreferrer">Audiobook Bay</a>
       <span>Аудиокниги</span>
-      <small>аудио · любая ОС</small></li>
-<li><a href="https://www.koodoreader.com/" rel="noopener noreferrer">Koodo Reader</a>
-      <span>Кроссплатформенная читалка</span>
-      <small>приложения, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://librera.mobi/" rel="noopener noreferrer">Librera</a>
-      <span>Читалка для Android</span>
-      <small>приложения · Android</small></li>
-<li><a href="https://thestorygraph.com/" rel="noopener noreferrer">StoryGraph</a>
-      <span>Трекинг книг</span>
-      <small>трекеры · любая ОС</small></li>
-<li><a href="https://focal.fmhy.net/" rel="noopener noreferrer">FOCAL</a>
+      <small>аудио · любая ОС · работает в РФ</small></li>
+    <li><a href="https://fictionlib.ru/" rel="noopener noreferrer">FictionLib</a>
+      <span>Большая библиотека художественной литературы</span>
+      <small>книги, бесплатно, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://focal.fmhy.net/" rel="noopener noreferrer">FOCAL</a>
       <span>Поиск книг и статей</span>
-      <small>индексы · любая ОС</small></li>
+      <small>индексы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://getcomics.org/" rel="noopener noreferrer">GetComics</a>
+      <span>Комиксы</span>
+      <small>комиксы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.koodoreader.com/" rel="noopener noreferrer">Koodo Reader</a>
+      <span>Кроссплатформенная читалка</span>
+      <small>приложения, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://libgen.is/" rel="noopener noreferrer">Library Genesis</a>
+      <span>Научные и художественные книги</span>
+      <small>книги · любая ОС · нужно зеркало</small>
+      <em>libgen.* регулярно блокируют, актуальный домен ищите на annas-archive.info.</em></li>
+    <li><a href="https://librera.mobi/" rel="noopener noreferrer">Librera</a>
+      <span>Читалка для Android</span>
+      <small>приложения · Android · работает в РФ</small></li>
+    <li><a href="https://mangadex.org/" rel="noopener noreferrer">MangaDex</a>
+      <span>Каталог манги от сообщества</span>
+      <small>манга · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.gutenberg.org/" rel="noopener noreferrer">Project Gutenberg</a>
+      <span>Книги в общественном достоянии</span>
+      <small>легально, книги · любая ОС · работает в РФ</small></li>
+    <li><a href="https://readcomiconline.li/" rel="noopener noreferrer">Readcomiconline</a>
+      <span>Онлайн-комиксы</span>
+      <small>комиксы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://sci-hub.ru/" rel="noopener noreferrer">Sci-Hub</a>
+      <span>Научные статьи</span>
+      <small>наука · любая ОС · работает с оговорками</small>
+      <em>Часть адресов в списке РКН. Рабочие зеркала: sci-hub.ru, sci-hub.box.</em></li>
+    <li><a href="https://standardebooks.org/" rel="noopener noreferrer">Standard Ebooks</a>
+      <span>Бесплатные книги с аккуратной вёрсткой</span>
+      <small>легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://thestorygraph.com/" rel="noopener noreferrer">StoryGraph</a>
+      <span>Трекинг книг</span>
+      <small>трекеры · любая ОС · работает в РФ</small></li>
+    <li><a href="https://weebcentral.com/" rel="noopener noreferrer">Weeb Central</a>
+      <span>Чтение манги</span>
+      <small>манга · любая ОС · работает в РФ</small></li>
+    <li><a href="https://z-lib.gd/" rel="noopener noreferrer">Z-Library</a>
+      <span>Электронные книги</span>
+      <small>книги · любая ОС · нужно зеркало</small>
+      <em>Домены Z-Library постоянно блокируют. Актуальные зеркала: z-lib.gd, z-lib.fm, 1lib.sk, go-to-library.sk.</em></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Торренты</h2>
-  <p class="cat-desc">Клиенты, трекеры, индексы — 12 ресурсов</p>
+  <p class="cat-desc">Клиенты, трекеры, индексы — 14 ресурсов</p>
   <ul>
-<li><a href="https://www.qbittorrent.org/" rel="noopener noreferrer">qBittorrent</a>
-      <span>Открытый торрент-клиент</span>
-      <small>клиенты, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://transmissionbt.com/" rel="noopener noreferrer">Transmission</a>
-      <span>Лёгкий торрент-клиент</span>
-      <small>клиенты, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://deluge-torrent.org/" rel="noopener noreferrer">Deluge</a>
-      <span>Торрент-клиент с плагинами</span>
-      <small>клиенты, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://www.biglybt.com/" rel="noopener noreferrer">BiglyBT</a>
-      <span>Продвинутый клиент на базе Vuze</span>
-      <small>клиенты · Windows, macOS, Linux</small></li>
-<li><a href="https://1337x.to/" rel="noopener noreferrer">1337x</a>
+    <li><a href="https://1337x.to/" rel="noopener noreferrer">1337x</a>
       <span>Популярный торрент-индекс</span>
-      <small>индексы · любая ОС</small></li>
-<li><a href="https://rutor.info/" rel="noopener noreferrer">RuTor</a>
-      <span>Русскоязычный торрент-трекер</span>
-      <small>индексы, русский · любая ОС</small></li>
-<li><a href="https://rutracker.org/" rel="noopener noreferrer">RuTracker</a>
-      <span>Крупный русскоязычный трекер</span>
-      <small>индексы, русский · любая ОС</small></li>
-<li><a href="https://nyaa.si/" rel="noopener noreferrer">Nyaa</a>
+      <small>индексы · любая ОС · работает в РФ</small>
+      <em>Доступен напрямую, у части провайдеров требуется смена DNS.</em></li>
+    <li><a href="https://www.biglybt.com/" rel="noopener noreferrer">BiglyBT</a>
+      <span>Продвинутый клиент на базе Vuze</span>
+      <small>клиенты · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://deluge-torrent.org/" rel="noopener noreferrer">Deluge</a>
+      <span>Торрент-клиент с плагинами</span>
+      <small>клиенты, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://eztvx.to/" rel="noopener noreferrer">EZTVx</a>
+      <span>Индекс сериалов в виде торрентов</span>
+      <small>торренты, сериалы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://nyaa.si/" rel="noopener noreferrer">Nyaa</a>
       <span>Аниме-торренты</span>
-      <small>индексы, аниме · любая ОС</small></li>
-<li><a href="https://torrentgalaxy.to/" rel="noopener noreferrer">TorrentGalaxy</a>
-      <span>Торрент-индекс</span>
-      <small>индексы · любая ОС</small></li>
-<li><a href="https://yts.mx/" rel="noopener noreferrer">YTS</a>
-      <span>Фильмы в компактном размере</span>
-      <small>индексы · любая ОС</small></li>
-<li><a href="https://thepiratebay.org/" rel="noopener noreferrer">The Pirate Bay</a>
+      <small>индексы, аниме · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.qbittorrent.org/" rel="noopener noreferrer">qBittorrent</a>
+      <span>Открытый торрент-клиент</span>
+      <small>клиенты, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://rutor.info/" rel="noopener noreferrer">RuTor</a>
+      <span>Русскоязычный торрент-трекер</span>
+      <small>индексы, русский · любая ОС · нужно зеркало</small>
+      <em>Основной домен недоступен из РФ, держите под рукой зеркала rutor.info.</em></li>
+    <li><a href="https://rutracker.org/" rel="noopener noreferrer">RuTracker</a>
+      <span>Крупный русскоязычный трекер</span>
+      <small>индексы, русский · любая ОС · нужно зеркало</small>
+      <em>Домен rutracker.org заблокирован РКН. Работают зеркала и Telegram-канал трекера.</em></li>
+    <li><a href="https://thepiratebay.org/" rel="noopener noreferrer">The Pirate Bay</a>
       <span>Классический торрент-индекс</span>
-      <small>индексы · любая ОС</small></li>
-<li><a href="https://torrentio.strem.fun/" rel="noopener noreferrer">Torrentio</a>
+      <small>индексы · любая ОС · работает в РФ</small>
+      <em>DNS блокируется у части провайдеров — заходите через onion-зеркало.</em></li>
+    <li><a href="https://torrentgalaxy.to/" rel="noopener noreferrer">TorrentGalaxy</a>
+      <span>Торрент-индекс</span>
+      <small>индексы · любая ОС · работает в РФ</small>
+      <em>Работает, но качество раздач скачет — проверяйте рейтинг.</em></li>
+    <li><a href="https://torrentio.strem.fun/" rel="noopener noreferrer">Torrentio</a>
       <span>Addon-индекс для стриминга через debrid</span>
-      <small>индексы · любая ОС</small></li>
+      <small>индексы · любая ОС · работает в РФ</small></li>
+    <li><a href="https://torrentsearch.info/" rel="noopener noreferrer">TorrentSearch</a>
+      <span>Поиск по трекерам без регистрации</span>
+      <small>торренты, поиск, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://transmissionbt.com/" rel="noopener noreferrer">Transmission</a>
+      <span>Лёгкий торрент-клиент</span>
+      <small>клиенты, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://yts.mx/" rel="noopener noreferrer">YTS</a>
+      <span>Фильмы в компактном размере</span>
+      <small>индексы · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Android и iOS</h2>
-  <p class="cat-desc">APK, моды, sideloading — 13 ресурсов</p>
+  <p class="cat-desc">APK, моды, sideloading — 18 ресурсов</p>
   <ul>
-<li><a href="https://www.apkmirror.com/" rel="noopener noreferrer">APKMirror</a>
-      <span>Чистые APK без модов</span>
-      <small>APK, легально · Android</small></li>
-<li><a href="https://f-droid.org/" rel="noopener noreferrer">F-Droid</a>
-      <span>Каталог open-source Android-приложений</span>
-      <small>APK, системные · Android</small></li>
-<li><a href="https://github.com/Droid-ify/client" rel="noopener noreferrer">Droid-ify</a>
-      <span>Современный клиент F-Droid</span>
-      <small>APK, системные · Android</small></li>
-<li><a href="https://github.com/ImranR98/Obtainium" rel="noopener noreferrer">Obtainium</a>
-      <span>Обновления приложений с GitHub и сайтов</span>
-      <small>утилиты, системные · Android</small></li>
-<li><a href="https://forum.mobilism.org/" rel="noopener noreferrer">Mobilism</a>
-      <span>Моды APK и форум</span>
-      <small>APK, моды · Android</small></li>
-<li><a href="https://auroraoss.com/" rel="noopener noreferrer">Aurora Store</a>
-      <span>Клиент Google Play без аккаунта Google</span>
-      <small>APK, системные · Android</small></li>
-<li><a href="https://newpipe.net/" rel="noopener noreferrer">NewPipe</a>
-      <span>YouTube-клиент без рекламы</span>
-      <small>приложения, системные · Android</small></li>
-<li><a href="https://revanced.app/" rel="noopener noreferrer">Revanced</a>
-      <span>Патчи для YouTube и других приложений</span>
-      <small>моды · Android</small></li>
-<li><a href="https://sidestore.io/" rel="noopener noreferrer">SideStore</a>
-      <span>Sideloading на iOS без джейлбрейка</span>
-      <small>iOS · iOS</small></li>
-<li><a href="https://github.com/opa334/TrollStore" rel="noopener noreferrer">TrollStore</a>
-      <span>Постоянный sideload на части iOS</span>
-      <small>iOS · iOS</small></li>
-<li><a href="https://sideloadly.io/" rel="noopener noreferrer">Sideloadly</a>
-      <span>Установка IPA с компьютера</span>
-      <small>iOS · Windows, macOS</small></li>
-<li><a href="https://altstore.io/" rel="noopener noreferrer">AltStore</a>
+    <li><a href="https://altstore.io/" rel="noopener noreferrer">AltStore</a>
       <span>Sideloading через AltServer</span>
-      <small>iOS · iOS</small></li>
-<li><a href="https://appdb.to/" rel="noopener noreferrer">AppDB</a>
-      <span>Каталог IPA и профилей</span>
-      <small>iOS · iOS</small></li>
+      <small>iOS · iOS · работает в РФ</small></li>
+    <li><a href="https://www.apkmirror.com/" rel="noopener noreferrer">APKMirror</a>
+      <span>Чистые APK без модов</span>
+      <small>APK, легально · Android · работает в РФ</small></li>
+    <li><a href="https://apkpure.com/" rel="noopener noreferrer">APKPure</a>
+      <span>Архив APK с версиями под разные архитектуры</span>
+      <small>APK, приложения · Android · работает в РФ</small></li>
+    <li><a href="https://aptoide.com/" rel="noopener noreferrer">Aptoide</a>
+      <span>Магазин APK с собственным клиентом</span>
+      <small>APK, приложения · Android · работает в РФ</small></li>
+    <li><a href="https://auroraoss.com/" rel="noopener noreferrer">Aurora Store</a>
+      <span>Клиент Google Play без аккаунта Google</span>
+      <small>APK, системные · Android · работает в РФ</small></li>
+    <li><a href="https://github.com/Droid-ify/client" rel="noopener noreferrer">Droid-ify</a>
+      <span>Современный клиент F-Droid</span>
+      <small>APK, системные · Android · работает в РФ</small></li>
+    <li><a href="https://f-droid.org/" rel="noopener noreferrer">F-Droid</a>
+      <span>Каталог open-source Android-приложений</span>
+      <small>APK, системные · Android · работает в РФ</small></li>
+    <li><a href="https://appgallery.huawei.com/" rel="noopener noreferrer">Huawei AppGallery</a>
+      <span>Альтернативный магазин приложений для любых Android</span>
+      <small>приложения, APK · Android · работает в РФ</small></li>
+    <li><a href="https://nashstore.com/" rel="noopener noreferrer">NashStore</a>
+      <span>Российский магазин с банковскими приложениями</span>
+      <small>APK, приложения, легально, русский · Android · работает в РФ</small></li>
+    <li><a href="https://newpipe.net/" rel="noopener noreferrer">NewPipe</a>
+      <span>YouTube-клиент без рекламы</span>
+      <small>приложения, системные · Android · работает в РФ</small></li>
+    <li><a href="https://github.com/ImranR98/Obtainium" rel="noopener noreferrer">Obtainium</a>
+      <span>Обновления приложений с GitHub и сайтов</span>
+      <small>утилиты, системные · Android · работает в РФ</small></li>
+    <li><a href="https://revanced.app/" rel="noopener noreferrer">Revanced</a>
+      <span>Патчи для YouTube и других приложений</span>
+      <small>моды · Android · работает в РФ</small></li>
+    <li><a href="https://www.rustore.ru/" rel="noopener noreferrer">RuStore</a>
+      <span>Российский магазин приложений от VK и Минцифры</span>
+      <small>приложения, легально, русский, APK · Android · работает в РФ</small>
+      <em>Предустановлен на смартфоны, которые продают в России. В каталоге приложения банков, удалённые из Google Play.</em></li>
+    <li><a href="https://sideloadly.io/" rel="noopener noreferrer">Sideloadly</a>
+      <span>Установка IPA с компьютера</span>
+      <small>iOS · Windows, macOS · работает в РФ</small></li>
+    <li><a href="https://sidestore.io/" rel="noopener noreferrer">SideStore</a>
+      <span>Sideloading на iOS без джейлбрейка</span>
+      <small>iOS · iOS · работает в РФ</small></li>
+    <li><a href="https://telegram.org/" rel="noopener noreferrer">Telegram</a>
+      <span>Мессенджер, официальное приложение для Android и iOS</span>
+      <small>легально, бесплатно, приложения, русский · Windows, macOS, Linux, Android, iOS · работает в РФ</small>
+      <em>Приложение убрали из российских магазинов — ставьте APK с официального сайта.</em></li>
+    <li><a href="https://github.com/opa334/TrollStore" rel="noopener noreferrer">TrollStore</a>
+      <span>Постоянный sideload на части iOS</span>
+      <small>iOS · iOS · работает в РФ</small></li>
+    <li><a href="https://uptodown.com/" rel="noopener noreferrer">Uptodown</a>
+      <span>Каталог APK и старых версий программ</span>
+      <small>APK, приложения · Windows, Android · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Обучение</h2>
-  <p class="cat-desc">Курсы, документация, материалы — 11 ресурсов</p>
+  <p class="cat-desc">Курсы, документация, материалы — 13 ресурсов</p>
   <ul>
-<li><a href="https://www.coursera.org/" rel="noopener noreferrer">Coursera</a>
-      <span>Курсы от университетов</span>
-      <small>курсы, легально · любая ОС</small></li>
-<li><a href="https://www.edx.org/" rel="noopener noreferrer">edX</a>
-      <span>Онлайн-курсы MIT, Harvard и других</span>
-      <small>курсы, легально · любая ОС</small></li>
-<li><a href="https://www.khanacademy.org/" rel="noopener noreferrer">Khan Academy</a>
-      <span>Бесплатное обучение с нуля</span>
-      <small>курсы, легально · любая ОС</small></li>
-<li><a href="https://ocw.mit.edu/" rel="noopener noreferrer">MIT OCW</a>
-      <span>Открытые курсы MIT</span>
-      <small>курсы, легально · любая ОС</small></li>
-<li><a href="https://www.freecodecamp.org/" rel="noopener noreferrer">freeCodeCamp</a>
-      <span>Бесплатное обучение программированию</span>
-      <small>курсы, легально · любая ОС</small></li>
-<li><a href="https://developer.mozilla.org/" rel="noopener noreferrer">MDN Web Docs</a>
-      <span>Документация по веб-технологиям</span>
-      <small>документация, легально · любая ОС</small></li>
-<li><a href="https://wiki.archlinux.org/" rel="noopener noreferrer">Arch Wiki</a>
+    <li><a href="https://wiki.archlinux.org/" rel="noopener noreferrer">Arch Wiki</a>
       <span>Linux-документация</span>
-      <small>документация, легально · любая ОС</small></li>
-<li><a href="https://en.cppreference.com/" rel="noopener noreferrer">CPPreference</a>
+      <small>документация, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.coursera.org/" rel="noopener noreferrer">Coursera</a>
+      <span>Курсы от университетов</span>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://en.cppreference.com/" rel="noopener noreferrer">CPPreference</a>
       <span>Справочник C и C++</span>
-      <small>документация, легально · любая ОС</small></li>
-<li><a href="https://odysee.com/" rel="noopener noreferrer">Odysee</a>
-      <span>Видео и документалистика</span>
-      <small>видео · любая ОС</small></li>
-<li><a href="https://archive.org/" rel="noopener noreferrer">Internet Archive</a>
+      <small>документация, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.edx.org/" rel="noopener noreferrer">edX</a>
+      <span>Онлайн-курсы MIT, Harvard и других</span>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.freecodecamp.org/" rel="noopener noreferrer">freeCodeCamp</a>
+      <span>Бесплатное обучение программированию</span>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://habr.com/ru/" rel="noopener noreferrer">Habr</a>
+      <span>Русскоязычное сообщество разработчиков</span>
+      <small>разработка, русский, бесплатно, документация · любая ОС · работает в РФ</small></li>
+    <li><a href="https://archive.org/" rel="noopener noreferrer">Internet Archive</a>
       <span>Книги, видео, софт, веб-архив</span>
-      <small>легально · любая ОС</small></li>
-<li><a href="https://github.com/ossu/computer-science" rel="noopener noreferrer">OSSU</a>
+      <small>легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.khanacademy.org/" rel="noopener noreferrer">Khan Academy</a>
+      <span>Бесплатное обучение с нуля</span>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://developer.mozilla.org/" rel="noopener noreferrer">MDN Web Docs</a>
+      <span>Документация по веб-технологиям</span>
+      <small>документация, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://ocw.mit.edu/" rel="noopener noreferrer">MIT OCW</a>
+      <span>Открытые курсы MIT</span>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://odysee.com/" rel="noopener noreferrer">Odysee</a>
+      <span>Видео и документалистика</span>
+      <small>видео · любая ОС · работает в РФ</small></li>
+    <li><a href="https://github.com/ossu/computer-science" rel="noopener noreferrer">OSSU</a>
       <span>Открытый путь обучения Computer Science</span>
-      <small>курсы, легально · любая ОС</small></li>
+      <small>курсы, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://stepik.org/" rel="noopener noreferrer">Stepik</a>
+      <span>Бесплатные курсы на русском от российских вузов</span>
+      <small>курсы, легально, бесплатно, русский · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Инструменты</h2>
-  <p class="cat-desc">Браузерные и системные утилиты — 15 ресурсов</p>
+  <p class="cat-desc">Браузерные и системные утилиты — 16 ресурсов</p>
   <ul>
-<li><a href="https://temp-mail.org/" rel="noopener noreferrer">Temp-Mail</a>
-      <span>Временная почта</span>
-      <small>почта · любая ОС</small></li>
-<li><a href="https://10minutemail.com/" rel="noopener noreferrer">10MinuteMail</a>
+    <li><a href="https://10minutemail.com/" rel="noopener noreferrer">10MinuteMail</a>
       <span>Одноразовая почта</span>
-      <small>почта · любая ОС</small></li>
-<li><a href="https://www.remove.bg/" rel="noopener noreferrer">Remove.bg</a>
-      <span>Удаление фона с фото</span>
-      <small>картинки · любая ОС</small></li>
-<li><a href="https://www.photopea.com/" rel="noopener noreferrer">Photopea</a>
-      <span>Онлайн-аналог Photoshop</span>
-      <small>картинки, легально · любая ОС</small></li>
-<li><a href="https://squoosh.app/" rel="noopener noreferrer">Squoosh</a>
-      <span>Сжатие изображений</span>
-      <small>картинки, легально · любая ОС</small></li>
-<li><a href="https://tinywow.com/" rel="noopener noreferrer">TinyWow</a>
-      <span>Набор онлайн-инструментов</span>
-      <small>утилиты · любая ОС</small></li>
-<li><a href="https://convertio.co/" rel="noopener noreferrer">Convertio</a>
-      <span>Конвертация файлов</span>
-      <small>утилиты · любая ОС</small></li>
-<li><a href="https://jsoncrack.com/" rel="noopener noreferrer">JSON Crack</a>
-      <span>Визуализация JSON</span>
-      <small>разработка · любая ОС</small></li>
-<li><a href="https://regex101.com/" rel="noopener noreferrer">regex101</a>
-      <span>Тестирование регулярных выражений</span>
-      <small>разработка · любая ОС</small></li>
-<li><a href="https://caniuse.com/" rel="noopener noreferrer">Can I Use</a>
+      <small>почта · любая ОС · работает в РФ</small></li>
+    <li><a href="https://caniuse.com/" rel="noopener noreferrer">Can I Use</a>
       <span>Поддержка веб-фич в браузерах</span>
-      <small>разработка · любая ОС</small></li>
-<li><a href="https://downdetector.com/" rel="noopener noreferrer">DownDetector</a>
-      <span>Статус популярных сервисов</span>
-      <small>утилиты · любая ОС</small></li>
-<li><a href="https://www.speedtest.net/" rel="noopener noreferrer">Speedtest</a>
-      <span>Проверка скорости интернета</span>
-      <small>утилиты · любая ОС</small></li>
-<li><a href="https://ipleak.net/" rel="noopener noreferrer">IPLeak</a>
-      <span>Проверка утечек IP, DNS и WebRTC</span>
-      <small>приватность · любая ОС</small></li>
-<li><a href="https://gchq.github.io/CyberChef/" rel="noopener noreferrer">CyberChef</a>
+      <small>разработка · любая ОС · работает в РФ</small></li>
+    <li><a href="https://convertio.co/" rel="noopener noreferrer">Convertio</a>
+      <span>Конвертация файлов</span>
+      <small>утилиты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://gchq.github.io/CyberChef/" rel="noopener noreferrer">CyberChef</a>
       <span>Набор утилит для данных и кодировок</span>
-      <small>разработка, утилиты · любая ОС</small></li>
-<li><a href="https://excalidraw.com/" rel="noopener noreferrer">Excalidraw</a>
+      <small>разработка, утилиты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.deepl.com/" rel="noopener noreferrer">DeepL</a>
+      <span>Переводчик с хорошим качеством русского перевода</span>
+      <small>легально, бесплатно, инструменты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://downdetector.com/" rel="noopener noreferrer">DownDetector</a>
+      <span>Статус популярных сервисов</span>
+      <small>утилиты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://excalidraw.com/" rel="noopener noreferrer">Excalidraw</a>
       <span>Быстрые схемы и наброски</span>
-      <small>утилиты · любая ОС</small></li>
+      <small>утилиты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://ipleak.net/" rel="noopener noreferrer">IPLeak</a>
+      <span>Проверка утечек IP, DNS и WebRTC</span>
+      <small>приватность · любая ОС · работает в РФ</small></li>
+    <li><a href="https://jsoncrack.com/" rel="noopener noreferrer">JSON Crack</a>
+      <span>Визуализация JSON</span>
+      <small>разработка · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.photopea.com/" rel="noopener noreferrer">Photopea</a>
+      <span>Онлайн-аналог Photoshop</span>
+      <small>картинки, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://regex101.com/" rel="noopener noreferrer">regex101</a>
+      <span>Тестирование регулярных выражений</span>
+      <small>разработка · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.remove.bg/" rel="noopener noreferrer">Remove.bg</a>
+      <span>Удаление фона с фото</span>
+      <small>картинки · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.speedtest.net/" rel="noopener noreferrer">Speedtest</a>
+      <span>Проверка скорости интернета</span>
+      <small>утилиты · любая ОС · работает в РФ</small></li>
+    <li><a href="https://squoosh.app/" rel="noopener noreferrer">Squoosh</a>
+      <span>Сжатие изображений</span>
+      <small>картинки, легально · любая ОС · работает в РФ</small></li>
+    <li><a href="https://temp-mail.org/" rel="noopener noreferrer">Temp-Mail</a>
+      <span>Временная почта</span>
+      <small>почта · любая ОС · работает в РФ</small></li>
+    <li><a href="https://tinywow.com/" rel="noopener noreferrer">TinyWow</a>
+      <span>Набор онлайн-инструментов</span>
+      <small>утилиты · любая ОС · работает в РФ</small></li>
   </ul>
 </section>
-<section>
+  <section>
   <h2>Скачивание</h2>
-  <p class="cat-desc">Файлообменники и менеджеры загрузок — 11 ресурсов</p>
+  <p class="cat-desc">Файлообменники и менеджеры загрузок — 13 ресурсов</p>
   <ul>
-<li><a href="https://www.mediafire.com/" rel="noopener noreferrer">MediaFire</a>
-      <span>Файлообменник</span>
-      <small>файлообменники · любая ОС</small></li>
-<li><a href="https://mega.nz/" rel="noopener noreferrer">Mega</a>
-      <span>Облако с шифрованием</span>
-      <small>файлообменники · любая ОС</small></li>
-<li><a href="https://pixeldrain.com/" rel="noopener noreferrer">Pixeldrain</a>
-      <span>Быстрый файлообменник</span>
-      <small>файлообменники · любая ОС</small></li>
-<li><a href="https://gofile.io/" rel="noopener noreferrer">Gofile</a>
-      <span>Загрузка файлов без жёстких лимитов</span>
-      <small>файлообменники · любая ОС</small></li>
-<li><a href="https://krakenfiles.com/" rel="noopener noreferrer">KrakenFiles</a>
-      <span>Файлообменник</span>
-      <small>файлообменники · любая ОС</small></li>
-<li><a href="https://jdownloader.org/" rel="noopener noreferrer">JDownloader</a>
-      <span>Менеджер загрузок</span>
-      <small>клиенты · Windows, macOS, Linux</small></li>
-<li><a href="https://www.internetdownloadmanager.com/" rel="noopener noreferrer">IDM</a>
-      <span>Internet Download Manager</span>
-      <small>клиенты · Windows</small></li>
-<li><a href="https://abdownloadmanager.com/" rel="noopener noreferrer">AB Download Manager</a>
+    <li><a href="https://cloud.mail.ru/" rel="noopener noreferrer">Облако Mail</a>
+      <span>Российское облачное хранилище с большими файлами</span>
+      <small>файлообменники, легально, русский · любая ОС · работает в РФ</small></li>
+    <li><a href="https://disk.yandex.ru/" rel="noopener noreferrer">Яндекс Диск</a>
+      <span>Облачное хранилище с приложением для Android</span>
+      <small>файлообменники, легально, русский · Windows, macOS, Linux, Android, iOS · работает в РФ</small></li>
+    <li><a href="https://abdownloadmanager.com/" rel="noopener noreferrer">AB Download Manager</a>
       <span>Современный менеджер загрузок</span>
-      <small>клиенты, системные · Windows</small></li>
-<li><a href="https://www.gnu.org/software/wget/" rel="noopener noreferrer">wget</a>
-      <span>Консольная загрузка файлов</span>
-      <small>клиенты, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://aria2.github.io/" rel="noopener noreferrer">aria2</a>
+      <small>клиенты, системные · Windows · работает в РФ</small></li>
+    <li><a href="https://aria2.github.io/" rel="noopener noreferrer">aria2</a>
       <span>Мощный консольный загрузчик</span>
-      <small>клиенты, системные · Windows, macOS, Linux</small></li>
-<li><a href="https://motrix.app/" rel="noopener noreferrer">Motrix</a>
+      <small>клиенты, системные · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://gofile.io/" rel="noopener noreferrer">Gofile</a>
+      <span>Загрузка файлов без жёстких лимитов</span>
+      <small>файлообменники · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.internetdownloadmanager.com/" rel="noopener noreferrer">IDM</a>
+      <span>Internet Download Manager</span>
+      <small>клиенты · Windows · работает в РФ</small></li>
+    <li><a href="https://jdownloader.org/" rel="noopener noreferrer">JDownloader</a>
+      <span>Менеджер загрузок</span>
+      <small>клиенты · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://krakenfiles.com/" rel="noopener noreferrer">KrakenFiles</a>
+      <span>Файлообменник</span>
+      <small>файлообменники · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.mediafire.com/" rel="noopener noreferrer">MediaFire</a>
+      <span>Файлообменник</span>
+      <small>файлообменники · любая ОС · работает в РФ</small></li>
+    <li><a href="https://mega.nz/" rel="noopener noreferrer">Mega</a>
+      <span>Облако с шифрованием</span>
+      <small>файлообменники · любая ОС · работает в РФ</small></li>
+    <li><a href="https://motrix.app/" rel="noopener noreferrer">Motrix</a>
       <span>GUI-загрузчик на базе aria2</span>
-      <small>клиенты · Windows, macOS, Linux</small></li>
+      <small>клиенты · Windows, macOS, Linux · работает в РФ</small></li>
+    <li><a href="https://pixeldrain.com/" rel="noopener noreferrer">Pixeldrain</a>
+      <span>Быстрый файлообменник</span>
+      <small>файлообменники · любая ОС · работает в РФ</small></li>
+    <li><a href="https://www.gnu.org/software/wget/" rel="noopener noreferrer">wget</a>
+      <span>Консольная загрузка файлов</span>
+      <small>клиенты, системные · Windows, macOS, Linux · работает в РФ</small></li>
   </ul>
 </section>
 </div>

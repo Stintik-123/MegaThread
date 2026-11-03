@@ -1,0 +1,8 @@
+node_modules/
+.shots/
+*.log
+*.zip
+.data.tmp.json
+.parsed.json
+previews/_run.log
+previews/index.html

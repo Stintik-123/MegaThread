@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru" data-theme="dark">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>MegaThread — бесплатные ресурсы интернета в одном каталоге</title>
 <meta name="description" content="MegaThread — открытый каталог бесплатных ресурсов: кино, аниме, игры, софт, ИИ, приватность, книги и инструменты. Без аккаунтов, работает офлайн.">
-<meta name="theme-color" content="#0b0a0d">
-<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="#ffffff">
+<meta name="color-scheme" content="light dark">
 <meta name="keywords" content="бесплатные ресурсы, кино, аниме, игры, софт, искусственный интеллект, приватность, vpn, торренты, книги, разработка, каталог ссылок">
 <link rel="canonical" href="https://github.com/Stintik-123/MegaThread">
 
@@ -20,16 +20,10 @@
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 <link rel="apple-touch-icon" href="icons/icon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-
-<div class="aurora" aria-hidden="true"></div>
-<div class="grain" aria-hidden="true"></div>
 
 <a class="skip-link" href="#main">Перейти к содержимому</a>
 
@@ -50,10 +44,13 @@
 
     <nav class="nav" aria-label="Основная навигация">
       <a href="#/" data-link class="nav__link is-active">Каталог</a>
+      <a href="#/collections" data-link class="nav__link">Подборки</a>
+      <a href="#/tags" data-link class="nav__link">Метки</a>
       <a href="#/favorites" data-link class="nav__link">
         Избранное
         <span class="nav__count" id="fav-badge" hidden>0</span>
       </a>
+      <a href="#/about" data-link class="nav__link">О проекте</a>
       <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer" class="nav__link">GitHub</a>
     </nav>
 
@@ -85,14 +82,14 @@
   <section class="view is-active" id="view-home">
 
     <div class="hero">
-      <h1 class="hero__title">Бесплатные ресурсы <em>в одном каталоге</em></h1>
-      <p class="hero__sentence">Кино, игры, софт, искусственный интеллект и приватность. Найдите нужную ссылку за пару секунд.</p>
+      <h1 class="hero__title">Бесплатные ресурсы, которые работают из России</h1>
+      <p class="hero__sentence">237 ссылок в 13 разделах: кино, игры, софт, приватность, обход блокировок, ИИ, музыка, книги. У каждого ресурса честная метка доступности — видно сразу, открывается он из России или нужен VPN.</p>
 
       <form class="hero__form" role="search" id="search-form">
         <div class="search">
           <div class="search__box">
             <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-            <input id="search" type="search" placeholder="VPN, аниме, FitGirl, торренты" autocomplete="off" spellcheck="false" aria-label="Поиск по каталогу" aria-controls="search-results" aria-expanded="false">
+            <input id="search" type="search" placeholder="vpn, аниме, торренты, репаки" autocomplete="off" spellcheck="false" aria-label="Поиск по каталогу" aria-controls="search-results" aria-expanded="false">
             <button class="search__clear" id="search-clear" type="button" aria-label="Очистить поле" hidden>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
             </button>
@@ -103,7 +100,7 @@
       </form>
 
       <div class="hero__hints">
-        <span>Часто ищут</span>
+        <span>Часто ищут:</span>
         <button type="button" class="qchip" data-q="vpn">VPN</button>
         <button type="button" class="qchip" data-q="аниме">Аниме</button>
         <button type="button" class="qchip" data-q="игры">Игры</button>
@@ -132,7 +129,15 @@
       <div class="picks" id="start-grid"></div>
     </section>
 
-    <section class="section reveal">
+    <section class="section">
+      <div class="section__head">
+        <h2>Что работает без VPN</h2>
+        <p>Ресурсы, которые открываются из России без обходных инструментов</p>
+      </div>
+      <div class="no-vpn" id="novpn-grid"></div>
+    </section>
+
+    <section class="section">
       <div class="section__head">
         <h2>Категории</h2>
         <p>Откройте раздел и отфильтруйте по меткам или платформе</p>
@@ -195,6 +200,103 @@
     </div>
     <div class="res-list" id="fav-list"></div>
   </section>
+
+  <!-- ===================== COLLECTIONS ===================== -->
+  <section class="view" id="view-collections">
+    <div class="page-head">
+      <div class="page-head__text">
+        <h1>Подборки</h1>
+        <p>Готовые наборы под конкретные задачи: без VPN, на русском, для новичка</p>
+      </div>
+      <div class="page-head__count"><b id="col-count">0</b><span>подборок</span></div>
+    </div>
+    <div class="collections" id="collections"></div>
+  </section>
+
+  <!-- ===================== TAGS ===================== -->
+  <section class="view" id="view-tags">
+    <div class="page-head">
+      <div class="page-head__text">
+        <h1>Метки</h1>
+        <p>Все метки каталога с числом ресурсов. Нажмите, чтобы открыть выборку</p>
+      </div>
+      <div class="page-head__count"><b id="tags-count">0</b><span>меток</span></div>
+    </div>
+    <div class="tagcloud" id="tagcloud"></div>
+  </section>
+
+  <!-- ===================== SEARCH PAGE ===================== -->
+  <section class="view" id="view-search">
+    <div class="page-head">
+      <button class="back" type="button" data-back aria-label="Назад к каталогу">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 6-6 6 6 6"/></svg>
+      </button>
+      <div class="page-head__text">
+        <h1 id="search-title">Поиск</h1>
+        <p id="search-count"></p>
+      </div>
+    </div>
+    <div class="res-list" id="search-list"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="view" id="view-about">
+    <div class="prose">
+      <h1>О проекте</h1>
+      <p class="prose__lead">MegaThread — открытый каталог бесплатных ресурсов, собранный под русскоязычную аудиторию. Каждая ссылка проверена на доступность из России.</p>
+
+      <h2>Что внутри</h2>
+      <p>237 ресурсов в 13 категориях: кино и аниме, игры, софт, приватность, обход блокировок, ИИ, музыка, книги, торренты, приложения, обучение, инструменты и файлообменники.</p>
+
+      <h2>Статусы доступности</h2>
+      <p>У каждого ресурса есть метка доступности из России — она опирается на отчёты сообщества и данные на осень 2026 года:</p>
+      <ul class="prose__list" id="ru-legend"></ul>
+
+      <h2>Как пользоваться</h2>
+      <ul class="prose__list">
+        <li><b>Поиск</b> понимает синонимы: «впн» находит VPN, «торренты» — трекеры, «репаки» — игры.</li>
+        <li><b>Фильтры</b> по меткам и платформам записываются в адрес страницы — ссылкой можно поделиться.</li>
+        <li><b>Клик по названию</b> открывает карточку ресурса, <b>звёздочка</b> добавляет его в избранное.</li>
+        <li><b>Иконка «внешняя ссылка»</b> открывает сайт, <b>«окно»</b> — мини-окно с превью и подробностями.</li>
+        <li><b>Клавиши:</b> <code>/</code> — поиск, <code>R</code> — случайный ресурс, <code>?</code> — все горячие клавиши.</li>
+      </ul>
+
+      <h2>Что здесь не так</h2>
+      <p>Каталог не врёт про доступность: если сервис заблокирован в России, у него стоит честная метка, а не ссылка в надежде, что «пролезет». Расписания и зеркала меняются — если ресурс перестал открываться, отметьте это через «Предложить ресурс».</p>
+
+      <h2>Присоединиться</h2>
+      <p>Каталог открыт: добавление ресурса, исправление устаревшей ссылки или замена зеркала — всё через <a href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener noreferrer">issues на GitHub</a>. Код открыт, каталог можно форкнуть и вести свою версию.</p>
+    </div>
+  </section>
+
+  <!-- ===================== RULES ===================== -->
+  <section class="view" id="view-rules">
+    <div class="prose">
+      <h1>Правила и дисклеймер</h1>
+      <p class="prose__lead">Коротко о том, что этот каталог собой представляет и чего он не делает.</p>
+
+      <h2>Что это</h2>
+      <p>Список ссылок на бесплатные ресурсы: программы с открытым кодом, бесплатные тарифы, инди-раздачи, публичные библиотеки и материалы, распространяемые свободно. Каталог помогает найти то, что можно скачать или открыть без оплаты.</p>
+
+      <h2>Правила каталога</h2>
+      <ul class="prose__list">
+        <li>В каталог попадают только ресурсы, которые действительно бесплатны для пользователя — без обязательной подписки и оплаты.</li>
+        <li>Для каждого ресурса указан статус доступности из России и, если есть, короткое примечание о том, что делать при блокировке.</li>
+        <li>Ссылки ведут на официальные страницы проектов. Агрегаторы и зеркала отмечаются в примечании.</li>
+        <li>Реклама, вредоносные сборки и «крякнутые» версии с незнакомым источником в каталог не попадают.</li>
+        <li>Если ресурс перестал работать — он удаляется, а не остаётся «на всякий случай».</li>
+      </ul>
+
+      <h2>Ответственность</h2>
+      <p>Каталог даёт ссылки, а не файлы. Что вы скачиваете и как используете — ваша зона ответственности. Обратите внимание: в России распространение пиратского контента может преследоваться по закону, а разработчики легального софта не любят, когда их программы ломают.</p>
+
+      <h2>Приватность</h2>
+      <p>Сайт не имеет серверной части: избранное, недавние ресурсы и настройки темы хранятся только в вашем браузере. Никакой аналитики, счётчиков и cookie — кроме тех, что вы сами поставите расширениями.</p>
+
+      <h2>Ошибки</h2>
+      <p>Нашли мёртвую ссылку или неверный статус? Напишите в <a href="https://github.com/Stintik-123/MegaThread/issues" target="_blank" rel="noopener noreferrer">issues</a> — правки вносятся быстро.</p>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
@@ -209,10 +311,13 @@
       </div>
     </div>
     <nav class="footer__links" aria-label="Ссылки">
+      <a href="#/collections" data-link>Подборки</a>
+      <a href="#/tags" data-link>Метки</a>
+      <a href="#/about" data-link>О проекте</a>
+      <a href="#/rules" data-link>Правила</a>
       <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">Исходный код</a>
       <a href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener noreferrer">Предложить ресурс</a>
       <a href="https://github.com/Stintik-123/MegaThread/issues" target="_blank" rel="noopener noreferrer">Сообщить об ошибке</a>
-      <a href="https://fmhy.net/" target="_blank" rel="noopener noreferrer">Вдохновлено FMHY</a>
     </nav>
   </div>
   <p class="footer__note container">
@@ -250,17 +355,17 @@
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4.5v-6h-5v6H5a1 1 0 0 1-1-1z"/></svg>
     Каталог
   </a>
+  <a href="#/collections" data-link>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg>
+    Подборки
+  </a>
   <a href="#/favorites" data-link>
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="m12 18-6.2 3.3 1.2-7L2 9.3l7.1-1L12 2l2.9 6.3 7.1 1-5 4.9 1.2 7z"/></svg>
     Избранное
   </a>
   <a href="https://github.com/Stintik-123/MegaThread/issues/new" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg>
     Предложить
-  </a>
-  <a href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.9c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.2-4.6-5.1 0-1.1.4-2 1-2.8-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1 .8-.2 1.6-.3 2.4-.3s1.6.1 2.4.3c2-.1.8 1 2.8 1 .5 1.4.2 2.4.1 2.7.7.8 1 1.7 1 2.8 0 3.9-2.4 4.8-4.6 5.1.4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2z"/></svg>
-    GitHub
   </a>
 </nav>
 
