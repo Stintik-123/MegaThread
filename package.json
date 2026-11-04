@@ -1,6 +1,5 @@
 {
   "name": "megathread",
-  "version": "4.0.0",
   "private": true,
   "description": "MegaThread — каталог бесплатных ресурсов. Одностраничник на чистом HTML/CSS/JS.",
   "type": "module",

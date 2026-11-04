@@ -706,6 +706,40 @@
 .dialog__head h2 { font-size: 18px; font-weight: 600; }
 .dialog__head .icon-btn { width: 28px; height: 28px; }
 
+/* курсор-указатель на фоне диалога: клик по нему закрывает окно */
+.dialog { cursor: default; }
+
+.modal__shot {
+  position: relative;
+  margin: calc(var(--s5) * -1) calc(var(--s5) * -1) var(--s4);
+  aspect-ratio: 8 / 5;
+  background: var(--bg-sunken);
+  overflow: hidden;
+}
+.modal__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+.modal__shotfail {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: var(--fs-label);
+  color: var(--fg-faint);
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--bg-sunken),
+      var(--bg-sunken) 12px,
+      var(--bg-alt) 12px,
+      var(--bg-alt) 24px
+    );
+}
+
 .modal__head { display: flex; align-items: flex-start; gap: var(--s3); }
 .modal__headtext { flex: 1; min-width: 0; }
 .modal__head .icon-btn { width: 28px; height: 28px; }
@@ -745,7 +779,7 @@
 }
 .shortcuts__row dd { font-size: var(--fs-label); color: var(--fg-muted); text-align: right; }
 
-/* ============================ статус доступности из РФ ============================ */
+/* ============================ статус доступности ============================ */
 
 .ru {
   display: inline-flex;

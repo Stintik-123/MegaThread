@@ -165,7 +165,7 @@ function titleFor(name) {
     case 'rules': return 'Правила — MegaThread';
     case 'search': return 'Поиск — MegaThread';
     case 'category': return 'Категория — MegaThread';
-    default: return 'MegaThread — бесплатные ресурсы, которые работают из России';
+    default: return 'MegaThread — бесплатные ресурсы интернета в одном каталоге';
   }
 }
 
@@ -178,7 +178,7 @@ function renderFacts() {
   el.facts.innerHTML = render.renderFacts([
     { value: String(RESOURCES.length), label: 'ресурсов в каталоге' },
     { value: String(CATEGORIES.length), label: 'категорий' },
-    { value: String(working), label: 'работают из РФ' },
+    { value: String(working), label: 'открываются напрямую' },
     { value: String(tagCount), label: 'меток' },
   ]);
 }
@@ -209,7 +209,7 @@ function renderCategories() {
   el.catGrid.innerHTML = CATEGORIES.map((c) => render.renderCategory(c, counts.get(c.id) || 0)).join('');
 }
 
-/** Ресурсы, которые открываются из России без обходных инструментов. */
+/** Ресурсы, которые открываются напрямую, без обходных инструментов. */
 function renderNoVpn() {
   const list = RESOURCES
     .filter((r) => (r.ru || 'ok') === 'ok')
@@ -384,12 +384,25 @@ function moveHit(step) {
   list[state.hitIndex].scrollIntoView({ block: 'nearest' });
 }
 
+/** Показывает карточку ресурса: скриншот, описание, статус, действия. */
+function showResourceDialog(r) {
+  el.resDialogBody.innerHTML = render.renderResourceDialog(r, store.isFavorite(r.name));
+  const shot = $('[data-shot]', el.resDialogBody);
+  if (shot) {
+    shot.addEventListener('error', () => {
+      shot.hidden = true;
+      const fail = $('.modal__shotfail', el.resDialogBody);
+      if (fail) fail.hidden = false;
+    });
+  }
+  if (!el.resDialog.open) el.resDialog.showModal();
+}
+
 function openResource(name) {
   const r = catalog.findByName(name);
   if (!r) return;
   store.pushRecent(r.name);
-  el.resDialogBody.innerHTML = render.renderResourceDialog(r, store.isFavorite(r.name));
-  if (!el.resDialog.open) el.resDialog.showModal();
+  showResourceDialog(r);
 }
 
 function openByHash(name) {
@@ -399,8 +412,7 @@ function openByHash(name) {
     return;
   }
   store.pushRecent(r.name);
-  el.resDialogBody.innerHTML = render.renderResourceDialog(r, store.isFavorite(r.name));
-  if (!el.resDialog.open) el.resDialog.showModal();
+  showResourceDialog(r);
   history.replaceState(null, '', '#/');
 }
 
@@ -659,9 +671,9 @@ function initEvents() {
 
   // --- глобальный клик по делегированным кнопкам ---
   document.addEventListener('click', (e) => {
-    const previewBtn = e.target.closest('[data-preview]');
-    if (previewBtn) {
-      openPreview(previewBtn.dataset.preview);
+    const closeRes = e.target.closest('[data-close-res]');
+    if (closeRes) {
+      el.resDialog.close();
       return;
     }
     const colBtn = e.target.closest('[data-collection-open]');
@@ -801,6 +813,15 @@ function initEvents() {
   }, { passive: true });
   el.toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
+  // --- клик по фону диалога закрывает его ---
+  for (const dialog of [el.resDialog, el.helpDialog]) {
+    if (!dialog) continue;
+    dialog.addEventListener('click', (e) => {
+      // клик по самому <dialog> = клик по затемнённому фону
+      if (e.target === dialog) dialog.close();
+    });
+  }
+
   // --- клик вне поиска ---
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search')) el.searchResults.hidden = true;
@@ -834,20 +855,6 @@ function toggleFilter(btn) {
   announce(btn.getAttribute('aria-pressed') === 'true' ? 'Фильтр снят' : 'Фильтр включён');
 }
 
-/**
- * Открывает мини-окно предпросмотра отдельным окном браузера.
- * Внутри — скриншот сайта, описание, статус доступности из РФ и похожие ресурсы.
- */
-function openPreview(name) {
-  const url = 'preview.html?name=' + encodeURIComponent(name);
-  const win = window.open(
-    url,
-    'megathread-preview',
-    'width=540,height=760,menubar=no,toolbar=no,location=no,status=no,resizable=yes,scrollbars=yes'
-  );
-  if (!win) toast('Браузер заблокировал новое окно — разрешите всплывающие окна');
-}
-
 function randomResource() {
   const list = catalog.filterResources({ tags: state.filters.tags, os: state.filters.os });
   const pool = list.length ? list : RESOURCES;
@@ -871,9 +878,7 @@ function refreshLists() {
   const title = $('.modal__title', el.resDialogBody);
   if (!title) return;
   const r = catalog.findByName(title.textContent);
-  if (r) {
-    el.resDialogBody.innerHTML = render.renderResourceDialog(r, store.isFavorite(r.name));
-  }
+  if (r) showResourceDialog(r);
 }
 
 /* ============================ PWA ============================ */

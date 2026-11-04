@@ -1,5 +1,6 @@
 node_modules/
 .shots/
+shots/
 *.log
 *.zip
 .data.tmp.json

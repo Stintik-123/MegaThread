@@ -38,13 +38,13 @@ const html = `<!DOCTYPE html>
     <span>Mega<em>Thread</em></span>
   </div>
   <div>
-    <h1>Бесплатные ресурсы, которые работают из России</h1>
+    <h1>Бесплатные ресурсы интернета в одном каталоге</h1>
     <p class="sub">Кино, игры, софт, обход блокировок, ИИ, книги. Без аккаунтов.</p>
     <div class="rule"></div>
     <div class="row">
       <div class="stat"><b>237</b><span>ресурсов</span></div>
       <div class="stat"><b>13</b><span>разделов</span></div>
-      <div class="stat"><b>219</b><span>работают из РФ</span></div>
+      <div class="stat"><b>219</b><span>открываются сразу</span></div>
       <div class="stat"><b>48</b><span>меток</span></div>
     </div>
   </div>

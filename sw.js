@@ -1,16 +1,13 @@
-const CACHE = 'megathread-v7';
+const CACHE = 'megathread-v8';
 const PREVIEW_CACHE = 'megathread-previews-v1';
 const ASSETS = [
   './',
   './index.html',
-  './preview.html',
   './noscript.html',
   './css/style.css',
   './css/tokens.css',
   './css/base.css',
-  './css/preview.css',
   './js/app.js',
-  './js/preview.js',
   './js/data.js',
   './js/labels.js',
   './js/icons.js',

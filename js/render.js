@@ -3,7 +3,7 @@
 import { icon } from './icons.js';
 import { TAG_LABELS, OS_LABELS, RU_LABELS } from './labels.js';
 import { CAT_BY_ID } from './data.js';
-import { escapeHtml, highlight } from './search.js';
+import { escapeHtml, highlight, hostOf } from './search.js';
 
 export function tagLabel(tag) {
   return TAG_LABELS[tag] || tag;
@@ -13,14 +13,14 @@ export function osLabel(os) {
   return OS_LABELS[os] || os;
 }
 
-/** Метка доступности из России. */
+/** Метка доступности. */
 export function ruLabel(ru) {
   return RU_LABELS[ru] || RU_LABELS.ok;
 }
 
 export function ruBadge(ru) {
   const id = ru || 'ok';
-  return `<span class="ru ru--${id}" title="Доступность из России">${escapeHtml(ruLabel(id))}</span>`;
+  return `<span class="ru ru--${id}" title="Доступность">${escapeHtml(ruLabel(id))}</span>`;
 }
 
 /** Строка ресурса в общем списке. */
@@ -47,8 +47,6 @@ export function renderResource(r, { fav = false, terms = null } = {}) {
   <div class="row__actions">
     <button class="ico" type="button" data-fav="${escapeHtml(r.name)}" aria-pressed="${fav}"
       aria-label="${fav ? 'Убрать из избранного' : 'В избранное'}" title="${fav ? 'Убрать из избранного' : 'В избранное'}">${icon('star', 15)}</button>
-    <button class="ico" type="button" data-preview="${escapeHtml(r.name)}"
-      aria-label="Превью ${escapeHtml(r.name)}" title="Открыть мини-окно с превью">${icon('app', 15)}</button>
     <a class="ico" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer"
       aria-label="Открыть ${escapeHtml(r.name)}" title="Открыть ${escapeHtml(r.name)}">${icon('external', 15)}</a>
   </div>
@@ -109,12 +107,20 @@ export function renderResourceDialog(r, fav) {
   const cat = CAT_BY_ID[r.cat];
   const osText = r.os.map(osLabel).join(', ');
   const ru = r.ru || 'ok';
+  const shot = 'previews/' + previewFile(r.url);
   return `
+<div class="modal__shot">
+  <img src="${shot}" alt="Скриншот сайта ${escapeHtml(r.name)}" loading="lazy" data-shot>
+  <span class="modal__shotfail" hidden>Превью недоступно</span>
+</div>
 <div class="modal__head">
   <div class="modal__headtext">
     <h2 class="modal__title" id="res-dialog-title">${escapeHtml(r.name)}</h2>
     <p class="modal__cat">${escapeHtml(cat ? cat.title : '')}</p>
   </div>
+  <button class="icon-btn" type="button" data-close-res aria-label="Закрыть">
+    ${icon('x', 15)}
+  </button>
 </div>
 <p class="modal__desc">${escapeHtml(r.desc)}</p>
 <div class="modal__meta">
@@ -126,12 +132,17 @@ ${r.note ? `<div class="modal__note modal__note--ru"><b>${escapeHtml(ruLabel(ru)
 <p class="modal__url">${escapeHtml(r.url)}</p>
 <div class="modal__actions">
   <a class="btn btn--primary" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">Открыть сайт</a>
-  <button class="btn btn--quiet" type="button" data-preview="${escapeHtml(r.name)}">Мини-окно</button>
   <button class="btn btn--quiet${fav ? ' is-star' : ''}" type="button" data-fav="${escapeHtml(r.name)}">
     ${fav ? 'В избранном' : 'В избранное'}
   </button>
   <button class="btn btn--quiet" type="button" data-copy-url="${escapeHtml(r.url)}">Копировать ссылку</button>
 </div>`;
+}
+
+/** Имя файла превью: домен в kebab-case. */
+export function previewFile(url) {
+  const host = hostOf(url).toLowerCase();
+  return host.replace(/[^a-z0-9]/g, '-') + '.jpg';
 }
 
 /** Карточка подборки. */

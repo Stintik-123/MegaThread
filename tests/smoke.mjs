@@ -211,7 +211,7 @@ try {
   const recentVisible = await page.isVisible('#recent-block');
   check('блок недавних появился', recentVisible);
 
-  /* ---------- 17. статусы доступности из РФ ---------- */
+  /* ---------- 17. статусы доступности ---------- */
   await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
   const ruBadges = await page.$$eval('#all-list .ru', (n) => n.length);
   check('у строк каталога есть метка доступности', ruBadges > 0, String(ruBadges));
@@ -224,7 +224,7 @@ try {
     ruStates.join(',')
   );
   const novpnCards = await page.$$eval('#novpn-grid .novpn', (n) => n.length);
-  check('блок «работает без VPN» наполнен', novpnCards >= 9, String(novpnCards));
+  check('блок «открывается напрямую» наполнен', novpnCards >= 9, String(novpnCards));
 
   /* ---------- 18. подборки ---------- */
   await page.click('.nav__link[href="#/collections"]');
@@ -248,31 +248,49 @@ try {
   await page.goto(BASE + '/index.html#/about', { waitUntil: 'networkidle' });
   await page.waitForSelector('#view-about.is-active', { timeout: 3000 });
   const aboutText = await page.textContent('#view-about');
-  check('страница «О проекте» содержит легенду статусов', aboutText.includes('Работает в РФ'));
+  check('страница «О проекте» содержит легенду статусов', /Открывается|оговорк|зеркал/i.test(aboutText));
   await page.goto(BASE + '/index.html#/rules', { waitUntil: 'networkidle' });
   await page.waitForSelector('#view-rules.is-active', { timeout: 3000 });
   const rulesText = await page.textContent('#view-rules');
   check('страница правил не пустая', rulesText.length > 500, String(rulesText.length));
 
-  /* ---------- 21. мини-окно предпросмотра ---------- */
-  const popupPromise = context.waitForEvent('page', { timeout: 8000 }).catch(() => null);
+  /* ---------- 21. карточка ресурса со скриншотом ---------- */
   await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-  await page.click('#all-list .ico[data-preview]');
-  const popup = await popupPromise;
-  check('мини-окно открылось', Boolean(popup));
-  if (popup) {
-    await popup.waitForLoadState('domcontentloaded');
-    await popup.waitForTimeout(500);
-    const pvName = await popup.textContent('#pv-name');
-    check('в мини-окне есть название ресурса', Boolean(pvName && pvName.trim()), String(pvName));
-    const pvImg = await popup.getAttribute('#pv-img', 'src');
-    check('в мини-окне подключено превью', Boolean(pvImg && pvImg.includes('previews/')), String(pvImg));
-    const pvMeta = await popup.textContent('#pv-meta');
-    check('в мини-окне есть статус доступности', /РФ|оговорк|зеркал/i.test(pvMeta), pvMeta.slice(0, 60));
-    const pvUrl = await popup.getAttribute('#pv-open', 'href');
-    check('в мини-окне есть ссылка на сайт', Boolean(pvUrl && pvUrl.startsWith('http')), String(pvUrl));
-    await popup.close();
-  }
+  await page.click('#all-list .row__name');
+  await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
+  const cardName = await page.textContent('#res-dialog-title');
+  check('в карточке есть название ресурса', Boolean(cardName && cardName.trim()), String(cardName));
+  const shotSrc = await page.getAttribute('#res-dialog-body [data-shot]', 'src');
+  check('в карточке есть скриншот сайта', Boolean(shotSrc && shotSrc.includes('previews/')), String(shotSrc));
+  const cardMeta = await page.textContent('#res-dialog-body .modal__meta');
+  check(
+    'в карточке есть статус доступности',
+    /Открывается|оговорк|зеркал|Заблокирован/i.test(cardMeta),
+    cardMeta.slice(0, 60)
+  );
+  const cardUrl = await page.getAttribute('#res-dialog-body .modal__actions a', 'href');
+  check('в карточке есть ссылка на сайт', Boolean(cardUrl && cardUrl.startsWith('http')), String(cardUrl));
+  const previewBtns = await page.$$('#all-list [data-preview]');
+  check('в строках каталога нет кнопки мини-окна', previewBtns.length === 0, String(previewBtns.length));
+
+  // закрытие кнопкой
+  await page.click('#res-dialog-body [data-close-res]');
+  await page.waitForTimeout(250);
+  check('карточка закрывается кнопкой', !(await page.isVisible('#res-dialog[open]')));
+
+  // закрытие кликом по фону
+  await page.click('#all-list .row__name');
+  await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
+  await page.mouse.click(8, 8);
+  await page.waitForTimeout(250);
+  check('карточка закрывается кликом по фону', !(await page.isVisible('#res-dialog[open]')));
+
+  // закрытие по Esc
+  await page.click('#all-list .row__name');
+  await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(250);
+  check('карточка закрывается по Esc', !(await page.isVisible('#res-dialog[open]')));
 
   /* ---------- 22. статическая версия ---------- */
   const noJsContext = await browser.newContext({
@@ -285,7 +303,7 @@ try {
   check('без JS видно все 237 ресурсов', noJsItems === 237, String(noJsItems));
   const noJsCats = await noJs.$$eval('section', (n) => n.length);
   check('без JS видно 13 категорий', noJsCats === 13, String(noJsCats));
-  const noJsRu = await noJs.$$eval('li small', (n) => n.filter((x) => /РФ|оговорк|зеркал/i.test(x.textContent)).length);
+  const noJsRu = await noJs.$$eval('li small', (n) => n.filter((x) => /открывается|оговорк|зеркал|заблокирован/i.test(x.textContent)).length);
   check('без JS видны статусы доступности', noJsRu === 237, String(noJsRu));
   await noJsContext.close();
 

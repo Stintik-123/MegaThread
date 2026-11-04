@@ -7,15 +7,15 @@ import { RESOURCES, CATEGORIES } from './data.js';
 export const COLLECTIONS = [
   {
     id: 'novpn',
-    title: 'Работает без VPN',
-    desc: 'Открывается из России без обходных инструментов',
+    title: 'Без обхода блокировок',
+    desc: 'Открывается напрямую, без обходных инструментов',
     rule: { ru: ['ok'] },
     limit: 12,
   },
   {
     id: 'bypass',
     title: 'Обход блокировок',
-    desc: 'VPN, конфиги и клиенты, которые работают в России',
+    desc: 'VPN, конфиги и клиенты для обхода блокировок',
     rule: { cat: ['bypass'] },
     limit: 12,
   },
@@ -43,7 +43,7 @@ export const COLLECTIONS = [
   {
     id: 'ai',
     title: 'ИИ без подписки',
-    desc: 'Чаты и генераторы, которые открываются из России',
+    desc: 'Чаты и генераторы, которые открываются напрямую',
     rule: { cat: ['ai'], ru: ['ok', 'limited'] },
     limit: 12,
   },
