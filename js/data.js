@@ -1,5 +1,5 @@
 // Данные каталога MegaThread. Единственный источник правды — этот файл.
-// 13 категорий, 237 ресурсов.
+// 13 категорий, 264 ресурсов.
 // ru: ok — работает в России, limited — с оговорками, blocked — заблокирован,
 // mirror — нужен зеркальный домен.
 
@@ -31,7 +31,7 @@ export const CATEGORIES = [
   {
     "id": "bypass",
     "title": "Обход блокировок",
-    "desc": "VPN, конфиги и инструменты, которые работают в России",
+    "desc": "VPN, конфиги и инструменты для обхода блокировок",
     "icon": "shield"
   },
   {
@@ -85,20 +85,6 @@ export const CATEGORIES = [
 ];
 
 export const RESOURCES = [
-  {
-    "cat": "media",
-    "name": "1337x",
-    "desc": "Торрент-индекс, раздел Movies",
-    "url": "https://1337x.to/",
-    "tags": [
-      "торренты"
-    ],
-    "os": [
-      "any"
-    ],
-    "ru": "ok",
-    "note": "Доступен напрямую, у части провайдеров требуется смена DNS."
-  },
   {
     "cat": "media",
     "name": "Кинопоиск",
@@ -320,20 +306,6 @@ export const RESOURCES = [
     "url": "https://nepu.to/",
     "tags": [
       "стриминг"
-    ],
-    "os": [
-      "any"
-    ],
-    "ru": "ok"
-  },
-  {
-    "cat": "media",
-    "name": "Nyaa",
-    "desc": "Главный торрент-трекер аниме",
-    "url": "https://nyaa.si/",
-    "tags": [
-      "торренты",
-      "аниме"
     ],
     "os": [
       "any"
@@ -3604,7 +3576,270 @@ export const RESOURCES = [
       "l"
     ],
     "ru": "ok"
-  }
+  },
+  {
+    "cat": "torrents",
+    "name": "NNM-Club",
+    "desc": "Русский трекер и форум: раздачи, обсуждения, рецензии, разделы по темам.",
+    "url": "https://nnm-club.me/",
+    "tags": ["торренты", "трекеры", "русский"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "LimeTorrents",
+    "desc": "Индекс торрентов с быстрым поиском по имени файла.",
+    "url": "https://www.limetorrents.lol/",
+    "tags": ["торренты", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "Torrentz2",
+    "desc": "Индекс метафайлов .torrent без рекламных переходов.",
+    "url": "https://torrentz2.nz/",
+    "tags": ["торренты", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "Zooqle",
+    "desc": "Индекс с хорошей индексацией редких раздач.",
+    "url": "https://zooqle.com/",
+    "tags": ["торренты", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "Toorgle",
+    "desc": "Поисковая надстройка: ищет сразу по нескольким индексам.",
+    "url": "https://toorgle.me/",
+    "tags": ["торренты", "индексы", "поиск"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "RARBG",
+    "desc": "Индекс с подборками свежих релизов. Домены постоянно меняются — старые могут не открываться.",
+    "url": "https://rarbg.to/",
+    "tags": ["торренты", "индексы"],
+    "os": ["any"],
+    "ru": "ok",
+    "note": "Домены меняются регулярно: если ссылка не открывается, поищите актуальный адрес через rutor или rutracker."
+  },
+  {
+    "cat": "torrents",
+    "name": "Torlock",
+    "desc": "Индекс magnet-ссылок без рекламы на страницах.",
+    "url": "https://torlock.com/",
+    "tags": ["торренты", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "Sukebei.Nyaa.si",
+    "desc": "Ветка Nyaa для взрослого аниме и редких раздач.",
+    "url": "https://sukebei.nyaa.si/",
+    "tags": ["торренты", "аниме"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "AniDex",
+    "desc": "Трекер аниме с двойными озвучками и субтитрами, есть рейтинги.",
+    "url": "https://anidex.info/",
+    "tags": ["торренты", "аниме"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "LibGen: gen.lib.rus.ec",
+    "desc": "Русское зеркало LibGen — часто доступно без обхода.",
+    "url": "https://gen.lib.rus.ec/",
+    "tags": ["книги", "зеркала"],
+    "os": ["any"],
+    "ru": "mirror",
+    "note": "Зеркало живёт дольше основного домена, но тоже периодически отключается."
+  },
+  {
+    "cat": "books",
+    "name": "Б-ОК / Bookzz",
+    "desc": "Библиотека книг на нескольких языках, есть поиск по автору.",
+    "url": "https://b-ok.org/",
+    "tags": ["книги"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "Mobilism",
+    "desc": "Форум о книгах с разделом запросов и обсуждениями новинок.",
+    "url": "https://mobilism.org/",
+    "tags": ["книги", "форум"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "Booksc",
+    "desc": "Поиск по сотням миллионов книг и научных статей.",
+    "url": "https://booksc.org/",
+    "tags": ["книги", "наука"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "FreeBookSpot",
+    "desc": "Бесплатные книги в epub, mobi и pdf.",
+    "url": "https://freebookspot.es/",
+    "tags": ["книги", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "Ebookee",
+    "desc": "Каталог книг по авторам и жанрам.",
+    "url": "https://ebookee.org/",
+    "tags": ["книги", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "AudiobookBay",
+    "desc": "Аудиокниги и раздачи, много общего с трекером MAM.",
+    "url": "https://audiobookbay.is/",
+    "tags": ["аудиокниги", "книги"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "CS.RIN.RU",
+    "desc": "Форум по играм: обсуждения, патчи, раздачи, просьбы о поиске игр.",
+    "url": "https://cs.rin.ru/forum/",
+    "tags": ["игры", "форум", "русский"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "DODI Repacks",
+    "desc": "Репаки с акцентом на чистоту установки и малый размер.",
+    "url": "https://dodi-repacks.com/",
+    "tags": ["игры", "репаки", "скачивание"],
+    "os": ["w"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "The Eye",
+    "desc": "Крупная архив ROM: консоли, аркадные автоматы, handheld.",
+    "url": "https://the-eye.eu/",
+    "tags": ["ROM", "эмуляторы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "ROMULATION",
+    "desc": "ROM для Switch, PS Vita, PSP, Game Boy и других платформ.",
+    "url": "https://romulation.net/",
+    "tags": ["ROM", "эмуляторы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "EmuParadise",
+    "desc": "Архив ROM: NDS, PSP, PSX, NES, SNES, Wii.",
+    "url": "https://www.emuparadise.me/",
+    "tags": ["ROM", "эмуляторы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "Wotaku",
+    "desc": "Агрегатор аниме: ссылки на стриминг, торренты и загрузки в одном месте.",
+    "url": "https://wotaku.moe/",
+    "tags": ["аниме", "стриминг", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "The Index",
+    "desc": "Каталог аниме с торрентами, magnet-ссылками и прямыми загрузками.",
+    "url": "https://theindex.moe/",
+    "tags": ["аниме", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "EverythingMoe",
+    "desc": "Список аниме-ресурсов и обновлений озвучек.",
+    "url": "https://everythingmoe.com/",
+    "tags": ["аниме", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "AnimePahe",
+    "desc": "Зеркало AnimePahe: сериалы с субтитрами, есть расписание выхода.",
+    "url": "https://animepahe.com/",
+    "tags": ["аниме", "стриминг"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "media",
+    "name": "Subslikescript",
+    "desc": "База субтитров к сериалам с готовыми таймкодами.",
+    "url": "https://subslikescript.com/",
+    "tags": ["сериалы", "субтитры", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "software",
+    "name": "4K Video Downloader",
+    "desc": "Загрузка видео и аудиодорожек с YouTube и других сервисов.",
+    "url": "https://www.4kdownload.com/",
+    "tags": ["утилиты", "бесплатно", "видео"],
+    "os": ["w", "m", "l"],
+    "ru": "ok"
+  },
+  {
+    "cat": "software",
+    "name": "MediaInfo",
+    "desc": "Показывает метаданные файлов: кодек, битрейт, дорожки, субтитры.",
+    "url": "https://mediaarea.net/en/MediaInfo",
+    "tags": ["утилиты", "бесплатно", "системные"],
+    "os": ["w", "m", "l"],
+    "ru": "ok"
+  },
+  {
+    "cat": "downloads",
+    "name": "1fichier",
+    "desc": "Файлообменник с большими лимитами и защитой от спама.",
+    "url": "https://1fichier.com/",
+    "tags": ["файлообменники", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
 ];
 
 export const CAT_BY_ID = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]));

@@ -135,7 +135,7 @@ ${r.note ? `<div class="modal__note modal__note--ru"><b>${escapeHtml(ruLabel(ru)
   <button class="btn btn--quiet${fav ? ' is-star' : ''}" type="button" data-fav="${escapeHtml(r.name)}">
     ${fav ? 'В избранном' : 'В избранное'}
   </button>
-  <button class="btn btn--quiet" type="button" data-copy-url="${escapeHtml(r.url)}">Копировать ссылку</button>
+  <button class="btn btn--quiet" type="button" data-copy-url="${escapeHtml(r.url)}">Скопировать ссылку</button>
 </div>`;
 }
 
@@ -203,5 +203,136 @@ export function renderShortcuts(list) {
 export function renderFacts(facts) {
   return facts
     .map((f) => `<div class="fact"><b>${escapeHtml(f.value)}</b><span>${escapeHtml(f.label)}</span></div>`)
+    .join('');
+}
+
+/* =====================================================================
+   НОВЫЙ СЛОЙ: сайдбар, плитка разделов, «докс»-списки и палитра поиска
+   ===================================================================== */
+
+/** Цвета категорий: 13 различимых оттенков, пригодных под белую иконку. */
+export const CAT_COLORS = {
+  media: '#1f8fb3',
+  games: '#7c5cff',
+  software: '#e0653b',
+  privacy: '#2f9e44',
+  bypass: '#c2255c',
+  ai: '#0c8599',
+  music: '#8a6d3b',
+  books: '#5f3dc4',
+  torrents: '#d9480f',
+  mobile: '#1971c2',
+  learning: '#0b7285',
+  tools: '#2b8a3e',
+  downloads: '#b35309',
+};
+
+/** Цвет категории по id. */
+export function catColor(catId) {
+  return CAT_COLORS[catId] || '#5f3dc4';
+}
+
+/** Число ресурсов из карты или объекта счётчиков. */
+function countOf(counts, id) {
+  if (!counts) return 0;
+  if (typeof counts.get === 'function') return counts.get(id) || 0;
+  return counts[id] || 0;
+}
+
+/**
+ * Пункты меню сайдбара.
+ * @param {Array} cats — категории каталога
+ * @param {Map|Object} counts — количество ресурсов по id категории
+ * @param {string} activeCat — id активной категории (для класса is-active)
+ */
+export function renderSidebarCats(cats, counts, activeCat = null) {
+  return (cats || [])
+    .map(
+      (cat) => `<a class="sidenav__link${cat.id === activeCat ? ' is-active' : ''}" href="#/cat/${escapeHtml(cat.id)}">
+  <span class="sidenav__icon">${icon(cat.icon, 18)}</span>
+  <span class="sidenav__text">${escapeHtml(cat.title)}</span>
+  <span class="sidenav__count">${countOf(counts, cat.id)}</span>
+</a>`
+    )
+    .join('');
+}
+
+/** Карточка раздела в плитке на главной. */
+export function renderCatCard(cat, count) {
+  const color = catColor(cat.id);
+  return `
+<a class="catcard" href="#/cat/${escapeHtml(cat.id)}" style="--cat-color:${color}">
+  <span class="catcard__icon">${icon(cat.icon, 20)}</span>
+  <span class="catcard__body"><b class="catcard__title">${escapeHtml(cat.title)}</b><span class="catcard__desc">${escapeHtml(cat.desc)}</span></span>
+  <span class="catcard__count">${count}</span>
+</a>`;
+}
+
+/**
+ * «Докс»-список страницы раздела.
+ * @param {Array} groups — [{ id, title, desc, items }]
+ */
+export function renderDocGroups(groups) {
+  return (groups || [])
+    .filter((g) => g && g.items && g.items.length)
+    .map((g) => {
+      const id = escapeHtml(g.id);
+      const desc = g.desc ? `<p class="docgroup__desc">${escapeHtml(g.desc)}</p>` : '';
+      const items = g.items.map((r) => renderDocItem(r)).join('');
+      return `
+<section class="docgroup" id="grp-${id}">
+  <h2 class="docgroup__title">${escapeHtml(g.title)} <span class="docgroup__count">${g.items.length}</span></h2>
+  ${desc}
+  <ul class="docitems">
+    ${items}
+  </ul>
+</section>`;
+    })
+    .join('');
+}
+
+/** Один ресурс в «докс»-списке. */
+function renderDocItem(r) {
+  const name = escapeHtml(r.name);
+  // Метки берём только те, для которых есть человекочитаемая подпись.
+  const tags = (r.tags || []).filter((t) => TAG_LABELS[t]).slice(0, 3);
+  const tagHtml = tags.map((t) => `<span class="tag">${escapeHtml(tagLabel(t))}</span>`).join('');
+  const note = r.note ? ` <em class="docitem__note">${escapeHtml(r.note)}</em>` : '';
+
+  return `
+    <li class="docitem" data-name="${name}">
+      <div class="docitem__main">
+        <button class="docitem__name" type="button" data-open="${name}">${name}</button>
+        <span class="docitem__desc">${escapeHtml(r.desc)}${note}</span>
+      </div>
+      <div class="docitem__meta">${ruBadge(r.ru)}${tagHtml}</div>
+      <div class="docitem__actions">
+        <button class="ico" type="button" data-fav="${name}" aria-pressed="false" aria-label="В избранное" title="В избранное">${icon('star', 15)}</button>
+        <a class="ico" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer" aria-label="Открыть ${name}" title="Открыть ${name}">${icon('external', 15)}</a>
+      </div>
+    </li>`;
+}
+
+/**
+ * Результаты палитры поиска.
+ * @param {Array} items — массив ресурсов или объектов { res }
+ */
+export function renderPaletteItems(items) {
+  const list = items || [];
+  if (!list.length) {
+    return `<div class="palette__empty">Ничего не найдено. Попробуйте другой запрос.</div>`;
+  }
+  return list
+    .map((item, i) => {
+      const r = item && item.res ? item.res : item;
+      if (!r) return '';
+      const cat = CAT_BY_ID[r.cat];
+      return `
+<div class="palette__item" role="option" aria-selected="false" data-name="${escapeHtml(r.name)}" data-index="${i}">
+  <span class="palette__item-icon">${icon(cat ? cat.icon : 'app', 18)}</span>
+  <span class="palette__item-text"><b>${escapeHtml(r.name)}</b><small>${escapeHtml(r.desc)}</small></span>
+  <span class="palette__item-cat">${escapeHtml(cat ? cat.title : '')}</span>
+</div>`;
+    })
     .join('');
 }

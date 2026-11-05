@@ -21,7 +21,7 @@ export const COLLECTIONS = [
   },
   {
     id: 'free',
-    title: 'Бесплатно и легально',
+    title: 'Бесплатно',
     desc: 'Свободный контент, open-source и бесплатные тарифы',
     rule: { tags: ['легально'] },
     limit: 12,
@@ -59,6 +59,27 @@ export const COLLECTIONS = [
     title: 'Торренты',
     desc: 'Клиенты, трекеры и индексы раздач',
     rule: { cat: ['torrents'] },
+    limit: 12,
+  },
+  {
+    id: 'books',
+    title: 'Книги и библиотеки',
+    desc: 'Библиотеки, зеркала и аудиокниги',
+    rule: { cat: ['books'] },
+    limit: 12,
+  },
+  {
+    id: 'games',
+    title: 'Игры и репаки',
+    desc: 'Репаки, ROM и эмуляторы',
+    rule: { cat: ['games'] },
+    limit: 12,
+  },
+  {
+    id: 'anime',
+    title: 'Аниме и манга',
+    desc: 'Каталоги, озвучки, субтитры и трекеры',
+    rule: { tags: ['аниме', 'манга'] },
     limit: 12,
   },
 ];
@@ -107,6 +128,9 @@ export const COLLECTION_ICONS = {
   ai: 'spark',
   android: 'phone',
   torrents: 'download',
+  books: 'book',
+  games: 'gamepad',
+  anime: 'film',
 };
 
 export const CATEGORY_COUNT = CATEGORIES.length;

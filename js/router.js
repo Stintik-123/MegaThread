@@ -1,4 +1,4 @@
-// Хэш-роутинг: #/, #/cat/<id>, #/favorites, #/res/<имя>.
+// Хэш-роутинг: #/, #/catalog, #/cat/<id>, #/favorites, #/res/<имя>.
 
 export function parseHash(hash = location.hash) {
   const raw = String(hash || '').replace(/^#/, '');
@@ -6,22 +6,33 @@ export function parseHash(hash = location.hash) {
   const parts = path.split('/').filter(Boolean);
   const params = new URLSearchParams(queryString);
 
-  if (!parts.length) return { name: 'home', params };
-  if (parts[0] === 'favorites') return { name: 'favorites', params };
-  if (parts[0] === 'collections') return { name: 'collections', params };
-  if (parts[0] === 'tags') return { name: 'tags', params };
-  if (parts[0] === 'about') return { name: 'about', params };
-  if (parts[0] === 'rules') return { name: 'rules', params };
-  if (parts[0] === 'search') return { name: 'search', params };
-  if (parts[0] === 'cat' && parts[1]) return { name: 'category', cat: decodeURIComponent(parts[1]), params };
-  if (parts[0] === 'res' && parts[1]) return { name: 'resource', res: decodeURIComponent(parts[1]), params };
-  return { name: 'home', params };
+  if (!parts.length) return route('home', params);
+  if (parts[0] === 'catalog') return route('catalog', params);
+  if (parts[0] === 'favorites') return route('favorites', params);
+  if (parts[0] === 'collections') return route('collections', params);
+  if (parts[0] === 'tags') return route('tags', params);
+  if (parts[0] === 'about') return route('about', params);
+  if (parts[0] === 'rules') return route('rules', params);
+  if (parts[0] === 'search') return route('search', params);
+  if (parts[0] === 'cat' && parts[1]) return route('category', params, { cat: decodeURIComponent(parts[1]) });
+  if (parts[0] === 'res' && parts[1]) return route('resource', params, { res: decodeURIComponent(parts[1]) });
+  return route('home', params);
+}
+
+/**
+ * Маршрут. Историческое поле `name` сохранено для обратной совместимости,
+ * `view` — новое имя, которым пользуется слой рендеринга.
+ */
+function route(name, params, extra = {}) {
+  return { name, view: name, params, ...extra };
 }
 
 export function buildHash(name, opts = {}) {
   switch (name) {
     case 'category':
       return '#/cat/' + encodeURIComponent(opts.cat);
+    case 'catalog':
+      return '#/catalog';
     case 'favorites':
       return '#/favorites';
     case 'collections':

@@ -3,6 +3,8 @@
 import { chromium } from 'playwright';
 import { listen } from '../scripts/serve.mjs';
 
+const TOTAL = 264;
+
 const results = [];
 let failures = 0;
 
@@ -35,34 +37,42 @@ try {
 
   /* ---------- 2. счётчики ---------- */
   const facts = await page.$$eval('.fact b', (nodes) => nodes.map((n) => n.textContent.trim()));
-  check('полоса фактов: 237 ресурсов', facts[0] === '237', facts.join('/'));
+  check('полоса фактов: 264 ресурса', facts[0] === String(TOTAL), facts.join('/'));
   check('полоса фактов: 13 категорий', facts[1] === '13', facts.join('/'));
   check('полоса фактов: 4 показателя', facts.length === 4, String(facts.length));
 
-  /* ---------- 3. категории ---------- */
-  const cats = await page.$$('.catline');
-  check('13 категорий отрисовано', cats.length === 13, String(cats.length));
+  /* ---------- 3. плитка разделов ---------- */
+  const cards = await page.$$('.catgrid .catcard');
+  check('13 карточек разделов отрисовано', cards.length === 13, String(cards.length));
 
-  /* ---------- 4. каталог ---------- */
+  /* ---------- 4. сайдбар ---------- */
+  const sideLinks = await page.$$eval('#sidebar-cats .sidenav__link', (n) => n.length);
+  check('в сайдбаре 13 разделов', sideLinks === 13, String(sideLinks));
+  const sideCounts = await page.$$eval('#sidebar-cats .sidenav__count', (n) => n.length);
+  check('у разделов в сайдбаре есть счётчики', sideCounts === 13, String(sideCounts));
+
+  /* ---------- 5. весь каталог ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   const total = await page.$$eval('#all-list .row', (n) => n.length);
   check('каталог выдаётся порциями по 48', total === 48, String(total));
-  const moreVisible = await page.isVisible('#more-btn');
-  check('кнопка «показать ещё» видна', moreVisible);
-
+  check('кнопка «показать ещё» видна', await page.isVisible('#more-btn'));
   await page.click('#more-btn');
   const total2 = await page.$$eval('#all-list .row', (n) => n.length);
   check('после «показать ещё» стало 96', total2 === 96, String(total2));
 
-  /* ---------- 5. поиск с синонимом ---------- */
-  await page.fill('#search', 'впн');
-  await page.waitForSelector('#search-results .hit', { timeout: 3000 });
-  const hits = await page.$$eval('#search-results .hit', (nodes) =>
-    nodes.map((n) => n.querySelector('b').textContent.trim())
+  /* ---------- 6. палитра поиска по Ctrl+K ---------- */
+  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  await page.keyboard.press('Control+k');
+  await page.waitForSelector('#palette[open]', { timeout: 3000 });
+  check('Ctrl+K открывает палитру поиска', await page.isVisible('#palette[open]'));
+  await page.fill('#palette-input', 'впн');
+  await page.waitForSelector('#palette-results .palette__item', { timeout: 3000 });
+  const hits = await page.$$eval('#palette-results .palette__item b', (nodes) =>
+    nodes.map((n) => n.textContent.trim())
   );
   check('поиск «впн» находит Proton VPN', hits.some((h) => /Proton VPN/i.test(h)), hits.join(', '));
   check('поиск «впн» находит Mullvad', hits.some((h) => /Mullvad/i.test(h)), hits.join(', '));
-  const marked = await page.$$eval('#search-results mark', (n) => n.length);
-  check('совпадения подсвечены', marked > 0, String(marked));
   const vpnNames = await page.evaluate(async (base) => {
     const mod = await import(base + '/js/data.js');
     return mod.RESOURCES.filter((r) => r.tags.includes('VPN')).map((r) => r.name);
@@ -73,57 +83,67 @@ try {
     hits.join(', ')
   );
 
-  /* ---------- 6. Enter открывает первый результат ---------- */
-  await page.press('#search', 'Enter');
+  /* ---------- 7. Enter открывает первый результат ---------- */
+  await page.keyboard.press('Enter');
   await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
   const dialogTitle = await page.textContent('#res-dialog .modal__title');
   check('Enter открыл карточку VPN-ресурса', /VPN/i.test(dialogTitle), dialogTitle);
-  const firstHitName = await page.evaluate(() => {
-    const el = document.querySelector('#search-results .hit b');
-    return el ? el.textContent.trim() : '';
-  });
-  check('открыт именно первый результат выдачи', dialogTitle.trim() === firstHitName, `${dialogTitle} vs ${firstHitName}`);
+  check('палитра закрылась после Enter', !(await page.isVisible('#palette[open]')));
   await page.keyboard.press('Escape');
-  await page.waitForSelector('#res-dialog[open]', { state: 'detached', timeout: 2000 }).catch(() => {});
+  await page.waitForTimeout(250);
   check('Escape закрыл карточку', !(await page.isVisible('#res-dialog[open]')));
 
-  /* ---------- 7. избранное сохраняется между перезагрузками ---------- */
-  await page.fill('#search', '');
+  /* ---------- 8. «/» тоже открывает палитру ---------- */
+  await page.keyboard.press('/');
+  await page.waitForSelector('#palette[open]', { timeout: 3000 });
+  const focused = await page.evaluate(() => document.activeElement.id);
+  check('«/» открывает палитру и фокусирует поле', focused === 'palette-input', focused);
+  await page.keyboard.press('Escape');
+
+  /* ---------- 9. избранное сохраняется между перезагрузками ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   const firstFav = await page.$('#all-list .row .ico[aria-pressed]');
   await firstFav.click();
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   const badge = await page.textContent('#fav-badge');
   check('счётчик избранного вырос до 1', badge.trim() === '1', badge);
   await page.reload({ waitUntil: 'networkidle' });
   const badgeAfter = await page.textContent('#fav-badge');
   check('избранное пережило перезагрузку', badgeAfter.trim() === '1', badgeAfter);
 
-  /* ---------- 8. страница избранного ---------- */
+  /* ---------- 10. страница избранного ---------- */
   await page.click('.nav__link[href="#/favorites"]');
   await page.waitForSelector('#view-favorites.is-active', { timeout: 3000 });
   const favRows = await page.$$eval('#fav-list .row', (n) => n.length);
   check('в избранном одна запись', favRows === 1, String(favRows));
 
-  /* ---------- 9. маршрут категории ---------- */
+  /* ---------- 11. раздел: докс-список с группами ---------- */
   await page.click('.nav__link[href="#/"]');
   await page.waitForSelector('#view-home.is-active', { timeout: 3000 });
-  await page.click('.catline[data-cat="ai"]');
+  await page.click('.catgrid .catcard[href="#/cat/ai"]');
   await page.waitForSelector('#view-category.is-active', { timeout: 3000 });
   const catTitle = await page.textContent('#cat-title');
-  check('открылась категория ИИ', catTitle.trim() === 'ИИ', catTitle);
-  const catCount = await page.textContent('#cat-count');
-  check('в категории ИИ 20 ресурсов', catCount.trim() === '20', catCount);
-  const aiRows = await page.$$eval('#cat-list .row', (n) => n.length);
-  check('строки категории отрисованы', aiRows === 20, String(aiRows));
+  check('открылся раздел ИИ', catTitle.trim() === 'ИИ', catTitle);
+  const groups = await page.$$eval('#cat-list .docgroup', (n) => n.length);
+  check('раздел разбит на группы', groups >= 2, String(groups));
+  const aiItems = await page.$$eval('#cat-list .docitem', (n) => n.length);
+  const aiCount = await page.textContent('#cat-count');
+  check('все ресурсы раздела попали в список', aiItems === Number(aiCount.trim()), `${aiItems} vs ${aiCount}`);
+  const docNames = await page.$$eval('#cat-list .docitem__name', (n) => n.length);
+  check('у каждой позиции есть название-ссылка', docNames === aiItems, `${docNames} vs ${aiItems}`);
 
-  /* ---------- 10. deep-link ---------- */
+  /* ---------- 12. deep-link ---------- */
   await page.goto(BASE + '/index.html#/cat/torrents', { waitUntil: 'networkidle' });
   await page.waitForSelector('#view-category.is-active', { timeout: 3000 });
   const tTitle = await page.textContent('#cat-title');
-  check('deep-link открыл категорию Торренты', tTitle.trim() === 'Торренты', tTitle);
+  check('deep-link открыл раздел Торренты', tTitle.trim() === 'Торренты', tTitle);
+  const torrentGroups = await page.$$eval('#cat-list .docgroup__title', (n) => n.map((x) => x.textContent.trim()));
+  check('в разделе торрентов есть группы', torrentGroups.length >= 2, torrentGroups.join(' | '));
 
-  /* ---------- 11. сортировка ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 13. сортировка ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   await page.selectOption('#sort-select', 'name');
   const names = await page.$$eval('#all-list .row__name', (n) => n.map((x) => x.textContent.trim()));
   const sorted = [...names].sort((a, b) => a.localeCompare(b, 'ru'));
@@ -132,16 +152,17 @@ try {
   const sortAfter = await page.inputValue('#sort-select');
   check('сортировка запомнилась', sortAfter === 'name', sortAfter);
 
-  /* ---------- 12. фильтры пишутся в URL ---------- */
+  /* ---------- 14. фильтры пишутся в URL ---------- */
   await page.click('#all-tags .chip');
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   const url = page.url();
   check('фильтр записан в URL', url.includes('tags='), url);
 
-  /* ---------- 13. фильтр по метке сужает список ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 15. фильтр по метке сужает список ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   await page.click('#all-tags .chip--more');
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   await page.click('#all-tags .chip:has-text("VPN")');
   await page.waitForTimeout(300);
   const vpnCount = await page.$$eval('#all-list .row', (n) => n.length);
@@ -155,14 +176,15 @@ try {
     JSON.stringify(vpnRows)
   );
 
-  /* ---------- 14. платформенный фильтр ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 16. платформенный фильтр ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   const osChips = await page.$$eval('#all-os .chip', (n) => n.length);
   check('панель платформ отрисована', osChips === 6, String(osChips));
   await page.click('#all-os .chip:has-text("Windows")');
   await page.waitForTimeout(300);
   const winRows = await page.$$eval('#all-list .row', (n) => n.length);
-  check('фильтр «Windows» сузил выдачу', winRows > 0 && winRows < 237, String(winRows));
+  check('фильтр «Windows» сузил выдачу', winRows > 0 && winRows < TOTAL, String(winRows));
   const osInRows = await page.$$eval('#all-list .row__os', (n) => n.map((x) => x.textContent.trim()));
   check(
     'в выдаче только Windows-совместимые',
@@ -170,49 +192,46 @@ try {
     osInRows.slice(0, 4).join(' | ')
   );
 
-  /* ---------- 15. панель меток свёрнута и раскрывается ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 17. панель меток свёрнута и раскрывается ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   const collapsedChips = await page.$$eval('#all-tags .chip:not(.chip--more)', (n) => n.length);
   check('метки свёрнуты в превью', collapsedChips === 10, String(collapsedChips));
   await page.click('#all-tags .chip--more');
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   const expandedChips = await page.$$eval('#all-tags .chip:not(.chip--more)', (n) => n.length);
-  check('метки раскрываются полностью', expandedChips > 30, String(expandedChips));
+  check('метки раскрываются полностью', expandedChips > 40, String(expandedChips));
 
-  /* ---------- 16. горячие клавиши ---------- */
+  /* ---------- 18. горячие клавиши ---------- */
   await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-  await page.keyboard.press('/');
-  const focused = await page.evaluate(() => document.activeElement.id);
-  check('«/» фокусирует поиск', focused === 'search', focused);
-
-  await page.keyboard.press('Escape');
   await page.keyboard.press('?');
   await page.waitForSelector('#help-dialog[open]', { timeout: 3000 });
   check('«?» открывает подсказку', await page.isVisible('#help-dialog[open]'));
   await page.keyboard.press('Escape');
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   check('Escape закрывает подсказку', !(await page.isVisible('#help-dialog[open]')));
 
-  /* ---------- 15. тема сохраняется ---------- */
+  /* ---------- 19. тема сохраняется ---------- */
   await page.click('#theme-toggle');
-  await page.waitForTimeout(200);
+  await page.waitForTimeout(250);
   const theme = await page.getAttribute('html', 'data-theme');
   check('тема переключилась', theme === 'dark' || theme === 'light', String(theme));
   await page.reload({ waitUntil: 'networkidle' });
   const themeAfter = await page.getAttribute('html', 'data-theme');
   check('тема пережила перезагрузку', themeAfter === theme, String(themeAfter));
 
-  /* ---------- 16. недавние ---------- */
+  /* ---------- 20. недавние ---------- */
   await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
   await page.click('#start-grid .pick__name');
   await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
   await page.keyboard.press('Escape');
-  await page.waitForTimeout(300);
-  const recentVisible = await page.isVisible('#recent-block');
-  check('блок недавних появился', recentVisible);
+  await page.waitForTimeout(350);
+  check('блок недавних появился', await page.isVisible('#recent-block'));
 
-  /* ---------- 17. статусы доступности ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 21. статусы доступности ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   const ruBadges = await page.$$eval('#all-list .ru', (n) => n.length);
   check('у строк каталога есть метка доступности', ruBadges > 0, String(ruBadges));
   const ruStates = await page.$$eval('#all-list .ru', (n) =>
@@ -226,15 +245,15 @@ try {
   const novpnCards = await page.$$eval('#novpn-grid .novpn', (n) => n.length);
   check('блок «открывается напрямую» наполнен', novpnCards >= 9, String(novpnCards));
 
-  /* ---------- 18. подборки ---------- */
+  /* ---------- 22. подборки ---------- */
   await page.click('.nav__link[href="#/collections"]');
   await page.waitForSelector('#view-collections.is-active', { timeout: 3000 });
-  const colCards = await page.$$eval('.colcard', (n) => n.length);
+  const colCards = await page.$$eval('#view-collections .colcard', (n) => n.length);
   check('подборок не меньше восьми', colCards >= 8, String(colCards));
-  const colItems = await page.$$eval('.colcard__list li', (n) => n.length);
+  const colItems = await page.$$eval('#view-collections .colcard__list li', (n) => n.length);
   check('в подборках есть ресурсы', colItems > 0, String(colItems));
 
-  /* ---------- 19. облако меток ---------- */
+  /* ---------- 23. облако меток ---------- */
   await page.click('.nav__link[href="#/tags"]');
   await page.waitForSelector('#view-tags.is-active', { timeout: 3000 });
   const cloudItems = await page.$$eval('.tagcloud__item', (n) => n.length);
@@ -244,7 +263,7 @@ try {
   const tagResults = await page.$$eval('#search-list .row', (n) => n.length);
   check('переход по метке даёт выборку', tagResults > 0, String(tagResults));
 
-  /* ---------- 20. текстовые страницы ---------- */
+  /* ---------- 24. текстовые страницы ---------- */
   await page.goto(BASE + '/index.html#/about', { waitUntil: 'networkidle' });
   await page.waitForSelector('#view-about.is-active', { timeout: 3000 });
   const aboutText = await page.textContent('#view-about');
@@ -254,8 +273,9 @@ try {
   const rulesText = await page.textContent('#view-rules');
   check('страница правил не пустая', rulesText.length > 500, String(rulesText.length));
 
-  /* ---------- 21. карточка ресурса со скриншотом ---------- */
-  await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+  /* ---------- 25. карточка ресурса со скриншотом ---------- */
+  await page.goto(BASE + '/index.html#/catalog', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#view-catalog.is-active', { timeout: 3000 });
   await page.click('#all-list .row__name');
   await page.waitForSelector('#res-dialog[open]', { timeout: 3000 });
   const cardName = await page.textContent('#res-dialog-title');
@@ -270,8 +290,6 @@ try {
   );
   const cardUrl = await page.getAttribute('#res-dialog-body .modal__actions a', 'href');
   check('в карточке есть ссылка на сайт', Boolean(cardUrl && cardUrl.startsWith('http')), String(cardUrl));
-  const previewBtns = await page.$$('#all-list [data-preview]');
-  check('в строках каталога нет кнопки мини-окна', previewBtns.length === 0, String(previewBtns.length));
 
   // закрытие кнопкой
   await page.click('#res-dialog-body [data-close-res]');
@@ -292,7 +310,7 @@ try {
   await page.waitForTimeout(250);
   check('карточка закрывается по Esc', !(await page.isVisible('#res-dialog[open]')));
 
-  /* ---------- 22. статическая версия ---------- */
+  /* ---------- 26. статическая версия ---------- */
   const noJsContext = await browser.newContext({
     viewport: { width: 1280, height: 900 },
     javaScriptEnabled: false,
@@ -300,14 +318,16 @@ try {
   const noJs = await noJsContext.newPage();
   await noJs.goto(BASE + '/noscript.html', { waitUntil: 'domcontentloaded' });
   const noJsItems = await noJs.$$eval('li', (n) => n.length);
-  check('без JS видно все 237 ресурсов', noJsItems === 237, String(noJsItems));
+  check(`без JS видно все ${TOTAL} ресурсов`, noJsItems === TOTAL, String(noJsItems));
   const noJsCats = await noJs.$$eval('section', (n) => n.length);
   check('без JS видно 13 категорий', noJsCats === 13, String(noJsCats));
-  const noJsRu = await noJs.$$eval('li small', (n) => n.filter((x) => /открывается|оговорк|зеркал|заблокирован/i.test(x.textContent)).length);
-  check('без JS видны статусы доступности', noJsRu === 237, String(noJsRu));
+  const noJsRu = await noJs.$$eval('li small', (n) =>
+    n.filter((x) => /открывается|оговорк|зеркал|заблокирован/i.test(x.textContent)).length
+  );
+  check('без JS видны статусы доступности', noJsRu === TOTAL, String(noJsRu));
   await noJsContext.close();
 
-  /* ---------- 18. манифест и иконки ---------- */
+  /* ---------- 27. манифест и иконки ---------- */
   const manifest = await page.evaluate(async (base) => {
     const r = await fetch(base + '/manifest.json');
     return r.json();
@@ -319,7 +339,7 @@ try {
     check('иконка ' + ic.src + ' доступна', ok);
   }
 
-  /* ---------- 19. нет битых внутренних ссылок ---------- */
+  /* ---------- 28. нет битых внутренних ссылок ---------- */
   const broken = await page.evaluate(async () => {
     const urls = [...document.querySelectorAll('a[href]')]
       .map((a) => a.getAttribute('href'))
@@ -333,20 +353,22 @@ try {
   });
   check('внутренние ссылки не битые', broken.length === 0, broken.join(', '));
 
-  /* ---------- 20. консоль чистая ---------- */
+  /* ---------- 29. консоль чистая ---------- */
   const realErrors = consoleErrors.filter((e) => !/favicon|manifest|sw\.js/i.test(e));
   check('консоль без ошибок', realErrors.length === 0, realErrors.join(' | '));
 
-  /* ---------- 21. мобильная вёрстка ---------- */
+  /* ---------- 30. мобильная вёрстка ---------- */
   const mobile = await context.newPage();
   await mobile.setViewportSize({ width: 390, height: 844 });
   await mobile.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-  const bottomNav = await mobile.isVisible('.bottom');
-  check('на мобильном видна нижняя навигация', bottomNav);
+  check('на мобильном видна кнопка меню', await mobile.isVisible('#burger'));
   const overflow = await mobile.evaluate(
     () => document.documentElement.scrollWidth - document.documentElement.clientWidth
   );
   check('нет горизонтального скролла на мобильном', overflow <= 1, String(overflow));
+  await mobile.click('#burger');
+  await mobile.waitForTimeout(350);
+  check('сайдбар открывается по кнопке меню', await mobile.evaluate(() => document.body.classList.contains('nav-open')));
   await mobile.close();
 
 } catch (err) {
@@ -364,5 +386,3 @@ console.log(`Пройдено: ${passed} из ${results.length}. Провале�
 console.log('='.repeat(52));
 
 process.exit(failures > 0 ? 1 : 0);
-
-

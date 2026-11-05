@@ -7,6 +7,7 @@ import * as store from './store.js';
 import * as search from './search.js';
 import * as catalog from './catalog.js';
 import * as render from './render.js';
+import { groupResources } from './groups.js';
 import { COLLECTIONS, collectionItems, collectionTotal } from './collections.js';
 import { parseHash, buildHash, navigate, readFilters, writeFilters } from './router.js';
 
@@ -15,10 +16,12 @@ const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
 
 const PAGE_SIZE = 48;
 const TAGS_PREVIEW = 10;
+const PALETTE_LIMIT = 20;
 
 const el = {
   views: {
     home: $('#view-home'),
+    catalog: $('#view-catalog'),
     category: $('#view-category'),
     favorites: $('#view-favorites'),
     collections: $('#view-collections'),
@@ -27,12 +30,10 @@ const el = {
     about: $('#view-about'),
     rules: $('#view-rules'),
   },
-  search: $('#search'),
-  searchForm: $('#search-form'),
-  searchClear: $('#search-clear'),
-  searchResults: $('#search-results'),
   facts: $('#facts'),
   catGrid: $('#cat-grid'),
+  sidebarCats: $('#sidebar-cats'),
+  heroBadge: $('#hero-badge'),
   allList: $('#all-list'),
   allTags: $('#all-tags'),
   allOs: $('#all-os'),
@@ -45,6 +46,7 @@ const el = {
   catTitle: $('#cat-title'),
   catDesc: $('#cat-desc'),
   catCount: $('#cat-count'),
+  catIcon: $('#cat-icon'),
   favList: $('#fav-list'),
   favCount: $('#fav-count'),
   favBadge: $('#fav-badge'),
@@ -53,6 +55,7 @@ const el = {
   startGrid: $('#start-grid'),
   novpnGrid: $('#novpn-grid'),
   collections: $('#collections'),
+  collectionsPage: $('#collections-page'),
   colCount: $('#col-count'),
   tagcloud: $('#tagcloud'),
   tagsCount: $('#tags-count'),
@@ -70,9 +73,15 @@ const el = {
   header: $('#header'),
   toTop: $('#to-top'),
   burger: $('#burger'),
+  sidebar: $('#sidebar'),
   nav: $('.nav'),
   installBtn: $('#install-btn'),
   offlineNotice: $('#offline-notice'),
+  palette: $('#palette'),
+  paletteInput: $('#palette-input'),
+  paletteResults: $('#palette-results'),
+  searchOpen: $('#search-open'),
+  searchOpenHero: $('#search-open-hero'),
 };
 
 /** Текущее состояние вида. */
@@ -113,7 +122,7 @@ function applyTheme(theme) {
     root.removeAttribute('data-theme');
   }
   const meta = $('meta[name="theme-color"]');
-  if (meta) meta.setAttribute('content', theme === 'light' ? '#ffffff' : '#101010');
+  if (meta) meta.setAttribute('content', theme === 'light' ? '#ffffff' : '#15171c');
 }
 
 function initTheme() {
@@ -138,26 +147,32 @@ function showView(name) {
   }
   const hrefFor = {
     home: '#/',
+    catalog: '#/catalog',
     favorites: '#/favorites',
     collections: '#/collections',
     tags: '#/tags',
     about: '#/about',
     rules: '#/rules',
     search: '#/search',
-    category: '#/collections',
   };
   $$('.nav__link[data-link]').forEach((a) => {
     a.classList.toggle('is-active', a.getAttribute('href') === hrefFor[name]);
   });
-  $$('.bottom a[data-link]').forEach((a) => {
-    a.classList.toggle('is-active', a.getAttribute('href') === hrefFor[name]);
+  $$('.sidenav__link').forEach((a) => {
+    const href = a.getAttribute('href');
+    const active =
+      (name === 'category' && href.startsWith('#/cat/') && href === `#/cat/${state.catId}`) ||
+      href === hrefFor[name];
+    a.classList.toggle('is-active', Boolean(active));
   });
   state.view = name;
   document.title = titleFor(name);
+  closeSidebar();
 }
 
 function titleFor(name) {
   switch (name) {
+    case 'catalog': return 'Весь каталог — MegaThread';
     case 'favorites': return 'Избранное — MegaThread';
     case 'collections': return 'Подборки — MegaThread';
     case 'tags': return 'Метки — MegaThread';
@@ -173,14 +188,16 @@ function titleFor(name) {
 
 function renderFacts() {
   const tagCount = catalog.allTags().length;
-  const osCount = catalog.allOs().filter((o) => o.id !== 'any').length;
   const working = RESOURCES.filter((r) => (r.ru || 'ok') === 'ok').length;
   el.facts.innerHTML = render.renderFacts([
     { value: String(RESOURCES.length), label: 'ресурсов в каталоге' },
-    { value: String(CATEGORIES.length), label: 'категорий' },
+    { value: String(CATEGORIES.length), label: 'разделов' },
     { value: String(working), label: 'открываются напрямую' },
     { value: String(tagCount), label: 'меток' },
   ]);
+  if (el.heroBadge) {
+    el.heroBadge.textContent = `${RESOURCES.length} ресурсов · ${CATEGORIES.length} разделов`;
+  }
 }
 
 const START_PICKS = [
@@ -206,14 +223,18 @@ function renderStartPicks() {
 
 function renderCategories() {
   const counts = catalog.categoryCounts();
-  el.catGrid.innerHTML = CATEGORIES.map((c) => render.renderCategory(c, counts.get(c.id) || 0)).join('');
+  el.catGrid.innerHTML = CATEGORIES.map((c) => render.renderCatCard(c, counts.get(c.id) || 0)).join('');
+}
+
+/** Боковое меню с разделами. */
+function renderSidebar() {
+  const counts = catalog.categoryCounts();
+  el.sidebarCats.innerHTML = render.renderSidebarCats(CATEGORIES, counts);
 }
 
 /** Ресурсы, которые открываются напрямую, без обходных инструментов. */
 function renderNoVpn() {
-  const list = RESOURCES
-    .filter((r) => (r.ru || 'ok') === 'ok')
-    .slice(0, 9);
+  const list = RESOURCES.filter((r) => (r.ru || 'ok') === 'ok').slice(0, 9);
   el.novpnGrid.innerHTML = list
     .map(
       (r) => `
@@ -254,13 +275,15 @@ function renderRecent() {
 </div>`;
 }
 
+/* ============================ весь каталог ============================ */
+
 function renderAll() {
   const list = catalog.sortResources(
     catalog.filterResources({ tags: state.filters.tags, os: state.filters.os }),
     store.getState().sort
   );
 
-  el.allCount.textContent = list.length + ' ' + plural(list.length, 'ресурс', 'ресурса', 'ресурсов');
+  el.allCount.textContent = String(list.length);
   el.allList.innerHTML = list.length
     ? list.slice(0, state.allShown).map((r) => render.renderResource(r, { fav: store.isFavorite(r.name) })).join('')
     : render.renderEmpty('Ничего не найдено', 'Сбросьте фильтры или уточните запрос.');
@@ -314,15 +337,17 @@ function renderCategory(catId) {
   state.catId = catId;
   el.catTitle.textContent = cat.title;
   el.catDesc.textContent = cat.desc;
+  if (el.catIcon) el.catIcon.innerHTML = icon(cat.icon, 22);
 
   const list = catalog.sortResources(
     catalog.filterResources({ cat: catId, tags: state.catFilters.tags, os: state.catFilters.os }),
     store.getState().sort
   );
 
-  el.catCount.textContent = list.length;
-  el.catList.innerHTML = list.length
-    ? list.slice(0, state.catShown).map((r) => render.renderResource(r, { fav: store.isFavorite(r.name) })).join('')
+  el.catCount.textContent = String(list.length);
+  const groups = groupResources(catId, list);
+  el.catList.innerHTML = groups.length
+    ? render.renderDocGroups(groups)
     : render.renderEmpty('В этой категории пусто', 'Фильтры отсекли все ресурсы.');
 
   renderFilterBar(el.catTags, el.catOs, state.catFilters, list, 'cat');
@@ -332,7 +357,7 @@ function renderCategory(catId) {
 
 function renderFavorites() {
   const list = store.favoriteResources();
-  el.favCount.textContent = list.length;
+  el.favCount.textContent = String(list.length);
   el.favActions.hidden = list.length === 0;
   el.favList.innerHTML = list.length
     ? list.map((r) => render.renderResource(r, { fav: true })).join('')
@@ -345,37 +370,46 @@ function updateFavBadge() {
   el.favBadge.hidden = n === 0;
 }
 
-/* ============================ поиск ============================ */
+/* ============================ палитра поиска ============================ */
 
-function renderSearchResults(query) {
-  const q = query.trim();
-  if (!q) {
-    el.searchResults.hidden = true;
-    el.searchResults.innerHTML = '';
-    state.hits = [];
-    state.hitIndex = -1;
-    return;
-  }
-  const terms = search.expand(q);
-  const hits = search.search(q, 12);
-  state.hits = hits;
-  state.hitIndex = -1;
-
-  if (!hits.length) {
-    el.searchResults.hidden = false;
-    el.searchResults.innerHTML = `<div class="hit hit--empty">Ничего не найдено по запросу «${q}»</div>`;
-    return;
-  }
-  el.searchResults.hidden = false;
-  el.searchResults.innerHTML = hits.map((h) => render.renderHit(h, terms)).join('');
+function openPalette(query = '') {
+  if (!el.palette) return;
+  if (!el.palette.open) el.palette.showModal();
+  el.paletteInput.value = query;
+  el.paletteInput.focus();
+  el.paletteInput.select();
+  renderPalette(query);
 }
 
-/** Подсвечивает активный элемент в выпадающем списке результатов. */
-function moveHit(step) {
-  if (!state.hits.length) return;
-  const list = $$('.hit', el.searchResults);
+function closePalette() {
+  if (el.palette && el.palette.open) el.palette.close();
+}
+
+function renderPalette(query) {
+  const q = query.trim();
+  state.hits = [];
+  state.hitIndex = -1;
+
+  if (!q) {
+    el.paletteResults.innerHTML = `<div class="palette__empty">Начните вводить запрос: кино, аниме, торренты, VPN, репаки…</div>`;
+    return;
+  }
+
+  const hits = search.search(q, PALETTE_LIMIT);
+  state.hits = hits;
+  if (!hits.length) {
+    el.paletteResults.innerHTML = `<div class="palette__empty">Ничего не найдено. Попробуйте другой запрос.</div>`;
+    return;
+  }
+  el.paletteResults.innerHTML = render.renderPaletteItems(hits.map((h) => h.res));
+  setPaletteActive(0);
+}
+
+/** Подсвечивает активный элемент в палитре. */
+function setPaletteActive(index) {
+  const list = $$('.palette__item', el.paletteResults);
   if (!list.length) return;
-  state.hitIndex = (state.hitIndex + step + list.length) % list.length;
+  state.hitIndex = (index + list.length) % list.length;
   list.forEach((node, i) => {
     const active = i === state.hitIndex;
     node.classList.toggle('is-active', active);
@@ -384,7 +418,8 @@ function moveHit(step) {
   list[state.hitIndex].scrollIntoView({ block: 'nearest' });
 }
 
-/** Показывает карточку ресурса: скриншот, описание, статус, действия. */
+/* ============================ карточка ресурса ============================ */
+
 function showResourceDialog(r) {
   el.resDialogBody.innerHTML = render.renderResourceDialog(r, store.isFavorite(r.name));
   const shot = $('[data-shot]', el.resDialogBody);
@@ -420,11 +455,13 @@ function openByHash(name) {
 
 function renderCollections() {
   el.colCount.textContent = String(COLLECTIONS.length);
-  el.collections.innerHTML = COLLECTIONS.map((col) => {
+  const html = COLLECTIONS.map((col) => {
     const items = collectionItems(col);
     const total = collectionTotal(col);
     return render.renderCollection({ ...col, total }, items);
   }).join('');
+  if (el.collections) el.collections.innerHTML = html;
+  if (el.collectionsPage) el.collectionsPage.innerHTML = html;
 }
 
 /* ============================ облако меток ============================ */
@@ -437,9 +474,6 @@ function renderTags() {
 
 /* ============================ страница поиска ============================ */
 
-/**
- * Собирает выборку по параметрам: q (текст), tag, os, cat, ru.
- */
 function searchPageItems(params) {
   const q = params.get('q');
   const tag = params.get('tag');
@@ -503,12 +537,19 @@ function applyRoute() {
     renderAll();
     return;
   }
+  if (route.name === 'catalog') {
+    state.filters = readFilters(route.params);
+    showView('catalog');
+    renderAll();
+    return;
+  }
   if (route.name === 'favorites') {
     showView('favorites');
     renderFavorites();
     return;
   }
   if (route.name === 'category') {
+    state.catId = route.cat;
     showView('category');
     renderCategory(route.cat);
     return;
@@ -593,69 +634,78 @@ async function copyText(text) {
   }
 }
 
+/* ============================ сайдбар ============================ */
+
+function openSidebar() {
+  document.body.classList.add('nav-open');
+  el.burger.setAttribute('aria-expanded', 'true');
+}
+
+function closeSidebar() {
+  document.body.classList.remove('nav-open');
+  if (el.burger) el.burger.setAttribute('aria-expanded', 'false');
+}
+
 /* ============================ события ============================ */
 
 function initEvents() {
-  // --- поиск ---
-  el.search.addEventListener('input', () => {
-    el.searchClear.hidden = !el.search.value;
-    renderSearchResults(el.search.value);
-  });
-  el.search.addEventListener('focus', () => {
-    if (el.search.value.trim()) renderSearchResults(el.search.value);
-  });
-  el.searchClear.addEventListener('click', () => {
-    el.search.value = '';
-    el.searchClear.hidden = true;
-    renderSearchResults('');
-    el.search.focus();
-  });
-  el.searchForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const q = el.search.value.trim();
-    if (!q) return;
-    const first = state.hits[0];
-    if (first) {
-      openResource(first.res.name);
-      el.searchResults.hidden = true;
-    }
+  // --- палитра поиска ---
+  if (el.searchOpen) el.searchOpen.addEventListener('click', () => openPalette());
+  if (el.searchOpenHero) el.searchOpenHero.addEventListener('click', () => openPalette());
+
+  el.paletteInput.addEventListener('input', () => renderPalette(el.paletteInput.value));
+
+  el.paletteResults.addEventListener('click', (e) => {
+    const item = e.target.closest('.palette__item');
+    if (!item) return;
+    closePalette();
+    openResource(item.dataset.name);
   });
 
-  // --- результаты поиска: мышь и клавиатура ---
-  el.searchResults.addEventListener('click', (e) => {
-    const hit = e.target.closest('.hit');
-    if (!hit) return;
-    openResource(hit.dataset.name);
-    el.searchResults.hidden = true;
+  el.palette.addEventListener('click', (e) => {
+    if (e.target === el.palette) closePalette();
   });
 
   document.addEventListener('keydown', (e) => {
     const inField = /^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName);
 
     if (e.key === 'Escape') {
+      if (el.palette.open) {
+        closePalette();
+        return;
+      }
       if (el.resDialog.open) el.resDialog.close();
       else if (el.helpDialog.open) el.helpDialog.close();
-      else if (!el.searchResults.hidden) el.searchResults.hidden = true;
-      if (document.activeElement === el.search) el.search.blur();
       return;
     }
-    if (inField) {
-      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        if (state.hits.length) {
+
+    if (el.palette.open) {
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setPaletteActive(state.hitIndex + 1);
+        return;
+      }
+      if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setPaletteActive(state.hitIndex - 1);
+        return;
+      }
+      if (e.key === 'Enter') {
+        const hit = state.hits[state.hitIndex];
+        if (hit) {
           e.preventDefault();
-          moveHit(e.key === 'ArrowDown' ? 1 : -1);
+          closePalette();
+          openResource(hit.res.name);
         }
+        return;
       }
-      if (e.key === 'Escape') {
-        el.search.blur();
-        el.searchResults.hidden = true;
-      }
-      return;
     }
+
+    if (inField) return;
+
     if (e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k')) {
       e.preventDefault();
-      el.search.focus();
-      el.search.select();
+      openPalette();
       return;
     }
     if (e.key === '?') {
@@ -698,10 +748,7 @@ function initEvents() {
     }
     const qchip = e.target.closest('[data-q]');
     if (qchip) {
-      el.search.value = qchip.dataset.q;
-      el.searchClear.hidden = false;
-      renderSearchResults(el.search.value);
-      el.search.focus();
+      openPalette(qchip.dataset.q);
       return;
     }
     const openBtn = e.target.closest('[data-open]');
@@ -771,16 +818,16 @@ function initEvents() {
       toast('История очищена');
       return;
     }
-    if (e.target.closest('[data-back]')) {
-      navigate('#/');
-      return;
-    }
     if (e.target.closest('[data-help]')) {
       openHelp();
       return;
     }
     if (e.target.closest('[data-close-help]')) {
       el.helpDialog.close();
+      return;
+    }
+    if (e.target.closest('.sidenav__link')) {
+      closeSidebar();
     }
   });
 
@@ -802,8 +849,8 @@ function initEvents() {
 
   // --- мобильное меню ---
   el.burger.addEventListener('click', () => {
-    const open = el.nav.classList.toggle('is-open');
-    el.burger.setAttribute('aria-expanded', String(open));
+    if (document.body.classList.contains('nav-open')) closeSidebar();
+    else openSidebar();
   });
 
   // --- наверх ---
@@ -814,22 +861,12 @@ function initEvents() {
   el.toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
   // --- клик по фону диалога закрывает его ---
-  for (const dialog of [el.resDialog, el.helpDialog]) {
+  for (const dialog of [el.resDialog, el.helpDialog, el.palette]) {
     if (!dialog) continue;
     dialog.addEventListener('click', (e) => {
-      // клик по самому <dialog> = клик по затемнённому фону
       if (e.target === dialog) dialog.close();
     });
   }
-
-  // --- клик вне поиска ---
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.search')) el.searchResults.hidden = true;
-    if (el.nav.classList.contains('is-open') && !e.target.closest('.nav') && !e.target.closest('.burger')) {
-      el.nav.classList.remove('is-open');
-      el.burger.setAttribute('aria-expanded', 'false');
-    }
-  });
 
   window.addEventListener('hashchange', applyRoute);
 }
@@ -849,7 +886,7 @@ function toggleFilter(btn) {
     renderCategory(state.catId);
   } else {
     state.allShown = PAGE_SIZE;
-    if (state.view === 'home') writeFilters(state.filters);
+    if (state.view === 'home' || state.view === 'catalog') writeFilters(state.filters);
     renderAll();
   }
   announce(btn.getAttribute('aria-pressed') === 'true' ? 'Фильтр снят' : 'Фильтр включён');
@@ -871,7 +908,7 @@ function openHelp() {
 function refreshLists() {
   updateFavBadge();
   renderRecent();
-  if (state.view === 'home') renderAll();
+  if (state.view === 'home' || state.view === 'catalog') renderAll();
   else if (state.view === 'category') renderCategory(state.catId);
   else if (state.view === 'favorites') renderFavorites();
   if (!el.resDialog.open) return;
@@ -918,6 +955,7 @@ function init() {
 
   renderFacts();
   renderCategories();
+  renderSidebar();
   renderStartPicks();
   renderNoVpn();
   renderCollections();
