@@ -8,7 +8,7 @@ const REPO = 'MegaThread';
 const API = 'https://api.github.com';
 
 const DESCRIPTION =
-  'Каталог бесплатных ресурсов с честными метками доступности: 237 ссылок в 13 разделах, поиск с синонимами, фильтры, избранное, PWA и работа офлайн.';
+  'Каталог бесплатных ресурсов и торрент-трекеров: 264 ссылки в 13 разделах, поиск по Ctrl+K, фильтры, избранное, PWA и работа офлайн.';
 const TOPICS = [
   'static-site', 'pwa', 'catalog', 'resources', 'free-resources',
   'russian-language', 'torrents', 'privacy', 'open-source', 'awesome-list',
