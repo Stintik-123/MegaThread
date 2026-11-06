@@ -12,7 +12,7 @@ const html = `<!DOCTYPE html>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     width: 1200px; height: 630px;
-    background: #ffffff;
+    background: #fafafa;
     color: #111111;
     font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
     padding: 72px 80px;
@@ -24,13 +24,13 @@ const html = `<!DOCTYPE html>
   .mark { display: flex; align-items: center; gap: 16px; }
   .mark svg { width: 44px; height: 44px; }
   .mark span { font-size: 30px; font-weight: 700; letter-spacing: -.02em; }
-  .mark em { font-style: normal; color: #0b4fc7; }
+  .mark em { font-style: normal; color: #171717; }
   h1 { font-size: 74px; font-weight: 700; letter-spacing: -.03em; line-height: 1.05; max-width: 900px; }
-  .sub { margin-top: 24px; font-size: 28px; color: #55555c; }
+  .sub { margin-top: 24px; font-size: 28px; color: #525252; }
   .rule { height: 3px; background: #111111; margin: 40px 0 32px; }
   .row { display: flex; gap: 56px; }
   .stat b { display: block; font-size: 40px; font-weight: 700; font-family: ui-monospace, Consolas, monospace; }
-  .stat span { font-size: 19px; color: #86868f; }
+  .stat span { font-size: 19px; color: #737373; }
 </style></head>
 <body>
   <div class="mark">
@@ -38,7 +38,7 @@ const html = `<!DOCTYPE html>
     <span>Mega<em>Thread</em></span>
   </div>
   <div>
-    <h1>Бесплатные ресурсы интернета в одном каталоге</h1>
+    <h1>Каталог бесплатных ресурсов и трекеров</h1>
     <p class="sub">Кино, игры, софт, обход блокировок, ИИ, книги. Без аккаунтов.</p>
     <div class="rule"></div>
     <div class="row">

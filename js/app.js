@@ -160,6 +160,7 @@ function showView(name) {
   });
   $$('.sidenav__link').forEach((a) => {
     const href = a.getAttribute('href');
+    if (!href) return;
     const active =
       (name === 'category' && href.startsWith('#/cat/') && href === `#/cat/${state.catId}`) ||
       href === hrefFor[name];

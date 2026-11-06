@@ -100,13 +100,27 @@
           <a class="sidenav__link" href="#/tags">Метки</a>
           <a class="sidenav__link" href="#/favorites">Избранное</a>
           <a class="sidenav__link" href="#/search">Поиск</a>
+          <button class="sidenav__link" type="button" data-random>Случайный ресурс</button>
+          <button class="sidenav__link" type="button" data-export-all>Выгрузить каталог</button>
+        </nav>
+      </div>
+
+      <div class="sidenav">
+        <div class="sidenav__title">Часто ищут</div>
+        <nav class="sidenav__nav sidenav__nav--chips" aria-label="Частые запросы">
+          <button type="button" class="qchip" data-q="vpn">VPN</button>
+          <button type="button" class="qchip" data-q="аниме">Аниме</button>
+          <button type="button" class="qchip" data-q="торренты">Торренты</button>
+          <button type="button" class="qchip" data-q="игры">Игры</button>
+          <button type="button" class="qchip" data-q="книги">Книги</button>
+          <button type="button" class="qchip" data-q="ии">ИИ</button>
+          <button type="button" class="qchip" data-q="разработка">Разработка</button>
         </nav>
       </div>
 
       <div class="sidenav">
         <div class="sidenav__title">О проекте</div>
         <nav class="sidenav__nav" aria-label="О проекте">
-          <a class="sidenav__link" href="#/about">О проекте</a>
           <a class="sidenav__link" href="#/rules">Правила и дисклеймер</a>
           <a class="sidenav__link" href="https://github.com/Stintik-123/MegaThread" target="_blank" rel="noopener noreferrer">Исходный код</a>
         </nav>
@@ -120,34 +134,46 @@
   <section class="view is-active" id="view-home">
 
     <div class="hero">
-      <span class="hero__badge" id="hero-badge">Каталог бесплатных ресурсов</span>
-      <h1 class="hero__title">Бесплатные ресурсы интернета в одном каталоге</h1>
-      <p class="hero__sentence">Кино и аниме, игры, софт, приватность, обход блокировок, ИИ, музыка, книги и торрент-трекеры. У каждого ресурса честная метка доступности — видно сразу, открывается он напрямую или понадобится обход.</p>
+      <div class="hero__text">
+        <p class="hero__meta">264 ресурса · 13 разделов · 53 метки</p>
+        <h1 class="hero__title">Каталог бесплатных ресурсов и трекеров</h1>
+        <p class="hero__sentence">264 ссылки в 13 разделах с честной меткой доступности: открывается, работает с оговорками, нужен обход или зеркало. Без аккаунтов и без рекламы.</p>
 
-      <div class="hero__search">
-        <button class="searchbtn searchbtn--wide" id="search-open-hero" type="button">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-          <span>Поиск по каталогу: vpn, аниме, торренты, репаки…</span>
-          <kbd>Ctrl K</kbd>
-        </button>
+        <div class="hero__search">
+          <button class="searchbtn searchbtn--wide" id="search-open-hero" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <span>Поиск по каталогу</span>
+            <kbd>Ctrl K</kbd>
+          </button>
+        </div>
+
+        <div class="hero__tools">
+          <a class="link-btn" href="#/catalog">Весь каталог</a>
+        </div>
       </div>
 
-      <div class="hero__hints">
-        <span>Часто ищут:</span>
-        <button type="button" class="qchip" data-q="vpn">VPN</button>
-        <button type="button" class="qchip" data-q="аниме">Аниме</button>
-        <button type="button" class="qchip" data-q="игры">Игры</button>
-        <button type="button" class="qchip" data-q="ии">ИИ</button>
-        <button type="button" class="qchip" data-q="торренты">Торренты</button>
-        <button type="button" class="qchip" data-q="книги">Книги</button>
-        <button type="button" class="qchip" data-q="разработка">Разработка</button>
-      </div>
-
-      <div class="hero__tools">
-        <button class="link-btn" type="button" data-random>случайный ресурс</button>
-        <button class="link-btn" type="button" data-export-all>выгрузить каталог</button>
-        <button class="link-btn" type="button" data-help>горячие клавиши</button>
-      </div>
+      <figure class="hero__visual">
+        <figure class="hero__shot hero__shot--wide">
+          <img src="previews/rutracker-org.jpg" alt="Главная страница RuTracker" loading="eager">
+          <figcaption>rutracker.org</figcaption>
+        </figure>
+        <figure class="hero__shot">
+          <img src="previews/libgen-is.jpg" alt="Главная страница LibGen" loading="eager">
+          <figcaption>libgen.is</figcaption>
+        </figure>
+        <figure class="hero__shot">
+          <img src="previews/nyaa-si.jpg" alt="Главная страница Nyaa" loading="eager">
+          <figcaption>nyaa.si</figcaption>
+        </figure>
+        <figure class="hero__shot">
+          <img src="previews/fitgirl-repacks-site.jpg" alt="Главная страница FitGirl Repacks" loading="eager">
+          <figcaption>fitgirl-repacks.site</figcaption>
+        </figure>
+        <figure class="hero__shot">
+          <img src="previews/z-lib-gd.jpg" alt="Главная страница Z-Library" loading="eager">
+          <figcaption>z-lib.gd</figcaption>
+        </figure>
+      </figure>
     </div>
 
     <div class="facts" id="facts"></div>

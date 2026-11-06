@@ -1,149 +1,166 @@
-/* MegaThread — единственное место, где живут цвета, радиусы, тени, шрифты и шаги отступов.
-   Правило: вне токенов — ни одного цветового литерала и ни одного px-шрифта. */
+/* MegaThread — монохромная графитовая тема в духе печатного справочника.
+   Правило: цвет, шрифт, отступ и радиус живут только здесь. Вне токенов — ни одного литерала. */
 
 :root {
   /* --- типографика: только системный стек, без внешних шрифтов --- */
   --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 
-  --fs-display: 34px;
-  --fs-h1: 26px;
+  --fs-display: 44px;
+  --fs-xl: 30px;
+  --fs-h1: 30px;
   --fs-h2: 20px;
   --fs-h3: 16px;
   --fs-body: 15px;
-  --fs-sm: 14px;
-  --fs-small: 13px;
-  --fs-micro: 12px;
-  /* псевдоним для base.css */
   --fs-label: 13px;
-  --fs-xl: 18px;
-  --fs-stat: 22px;
-  --fs-count: 24px;
+  --fs-small: 13px;
+  --fs-sm: 12px;
+  --fs-micro: 12px;
+  --fs-count: 13px;
+  --fs-stat: 28px;
 
-  --lh-tight: 1.25;
+  --lh-tight: 1.08;
   --lh-body: 1.55;
 
-  /* --- шаг отступов --- */
+  /* --- шаг отступов: всё кратно 4 --- */
   --s1: 4px;
   --s2: 8px;
   --s3: 12px;
   --s4: 16px;
-  --s5: 20px;
-  --s6: 24px;
-  --s7: 32px;
-  --s8: 48px;
-  --s9: 64px;
-  --container: 1320px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 64px;
+  --s9: 96px;
+  --container: 1280px;
   --header-h: 60px;
 
-  /* --- радиусы --- */
+  /* --- форма: умеренные радиусы, вложенность вычитается из внешнего --- */
   --radius-xs: 4px;
   --radius-ctl: 8px;
-  --radius-card: 10px;
+  --radius-card: 12px;
   --radius-modal: 14px;
   --radius-pill: 999px;
-
-  /* --- линии, движение --- */
   --border: 1px;
-  --dur: .15s;
-  --ease: cubic-bezier(.3, .7, .4, 1);
 
-  /* --- палитра: светлая по умолчанию (в духе fmhy) --- */
-  --bg: #f7f8fa;
+  /* --- движение: одна кривая, короткие отклики --- */
+  --dur: 140ms;
+  --dur-slow: 320ms;
+  --ease: cubic-bezier(.22, 1, .36, 1);
+
+  /* --- палитра: графит, единственный акцент — чернила --- */
+  --bg: #fafafa;
   --surface: #ffffff;
-  --surface-2: #f1f3f6;
-  --line: #e3e6ec;
-  --line-strong: #cfd4dd;
+  --surface-2: #f4f4f5;
+  --surface-3: #ebebed;
+  --fg: #171717;
+  --fg-muted: #525252;
+  --fg-faint: #737373;
+  --line: #e5e5e7;
+  --line-strong: #c9c9cd;
 
-  --fg: #161a20;
-  --fg-muted: #5b6472;
-  --fg-faint: #8a93a3;
-
-  --accent: #1f8fb3;
-  --accent-strong: #17748f;
+  --accent: #171717;
+  --accent-strong: #171717;
   --accent-fg: #ffffff;
-  --accent-wash: #e6f4f8;
-  --focus: #1f8fb3;
+  --accent-wash: #f0f0f1;
 
-  --ok: #1f7a4d;
-  --ok-wash: #e6f4ec;
-  --warn: #9a6b00;
-  --warn-wash: #fdf3dc;
-  --danger: #b3261e;
-  --danger-wash: #fdeceb;
-  --mirror: #6b4fbb;
-  --mirror-wash: #efeafb;
+  --focus: #171717;
+  --danger: #52525b;
+  --danger-wash: #ebebed;
 
-  --shadow-1: 0 1px 2px rgba(16, 24, 40, .05), 0 1px 3px rgba(16, 24, 40, .07);
-  --shadow-2: 0 14px 40px rgba(16, 24, 40, .14);
-  --overlay: rgba(16, 24, 40, .45);
+  /* статусы доступности — только серые: смысл несёт подпись, а не цвет */
+  --ok: var(--st-ok-fg);
+  --ok-wash: var(--st-ok-bg);
+  --warn: var(--st-limited-fg);
+  --warn-wash: var(--st-limited-bg);
+  --mirror: var(--st-mirror-fg);
+  --mirror-wash: var(--st-mirror-bg);
+  --st-ok-fg: #ffffff;
+  --st-ok-bg: #171717;
+  --st-limited-fg: #3f3f46;
+  --st-limited-bg: #e4e4e7;
+  --st-blocked-fg: #52525b;
+  --st-blocked-bg: #ebebed;
+  --st-mirror-fg: #3f3f46;
+  --st-mirror-bg: #f1f1f2;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
+  --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);
+  --shadow-3: 0 24px 48px -16px rgba(0, 0, 0, .28);
+  --overlay: rgba(20, 20, 21, .45);
 }
 
-/* Тёмная тема: холодная сине-серая. Приглушённый акцент, мягкие границы —
-   длинные списки не «режут» глаза.
-   Правило: по выбору пользователя (data-theme) и по системной настройке.
-   Без data-theme сайт следует prefers-color-scheme. */
+/* Тёмная тема: та же графитовая шкала, один и тот же чёрный акцент.
+   Глубина — шаги поверхностей и волосяные линии, без цветных теней. */
 [data-theme='dark'],
 :root:not([data-theme='light']) {
-  --bg: #15171c;
-  --surface: #1c1f26;
-  --surface-2: #23272f;
-  --line: #2b3039;
-  --line-strong: #3a4049;
+  --bg: #141415;
+  --surface: #19191b;
+  --surface-2: #232325;
+  --surface-3: #2b2b2e;
+  --fg: #ededed;
+  --fg-muted: #a1a1a6;
+  --fg-faint: #85858b;
+  --line: #2b2b2e;
+  --line-strong: #3d3d41;
 
-  --fg: #e7eaef;
-  --fg-muted: #9aa4b2;
-  --fg-faint: #6d7686;
+  --accent: #ededed;
+  --accent-strong: #ededed;
+  --accent-fg: #101011;
+  --accent-wash: #232325;
 
-  --accent: #5bc0dd;
-  --accent-strong: #7fd0e6;
-  --accent-fg: #0d1116;
-  --accent-wash: #16262d;
-  --focus: #7fd0e6;
+  --focus: #ededed;
+  --danger: #a1a1a6;
+  --danger-wash: #232325;
 
-  --ok: #4ec98a;
-  --ok-wash: #14291f;
-  --warn: #e0b046;
-  --warn-wash: #2d2413;
-  --danger: #ff8a7a;
-  --danger-wash: #2e1a19;
-  --mirror: #a58bff;
-  --mirror-wash: #221d33;
+  --st-ok-fg: #101011;
+  --st-ok-bg: #ededed;
+  --st-limited-fg: #d4d4d8;
+  --st-limited-bg: #2c2c30;
+  --st-blocked-fg: #a1a1a6;
+  --st-blocked-bg: #232325;
+  --st-mirror-fg: #d4d4d8;
+  --st-mirror-bg: #262629;
 
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, .35);
-  --shadow-2: 0 16px 44px rgba(0, 0, 0, .6);
-  --overlay: rgba(4, 6, 10, .6);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .5);
+  --shadow-2: 0 8px 24px rgba(0, 0, 0, .55);
+  --shadow-3: 0 24px 48px -16px rgba(0, 0, 0, .8);
+  --overlay: rgba(0, 0, 0, .6);
 }
 
 @media (prefers-color-scheme: light) {
   :root:not([data-theme='dark']) {
-    --bg: #f7f8fa;
+    --bg: #fafafa;
     --surface: #ffffff;
-    --surface-2: #f1f3f6;
-    --line: #e3e6ec;
-    --line-strong: #cfd4dd;
+    --surface-2: #f4f4f5;
+    --surface-3: #ebebed;
+    --fg: #171717;
+    --fg-muted: #525252;
+    --fg-faint: #737373;
+    --line: #e5e5e7;
+    --line-strong: #c9c9cd;
 
-    --fg: #161a20;
-    --fg-muted: #5b6472;
-    --fg-faint: #8a93a3;
-
-    --accent: #1f8fb3;
-    --accent-strong: #17748f;
+    --accent: #171717;
+    --accent-strong: #171717;
     --accent-fg: #ffffff;
-    --accent-wash: #e6f4f8;
-    --focus: #1f8fb3;
+    --accent-wash: #f0f0f1;
 
-    --ok: #1f7a4d;
-    --ok-wash: #e6f4ec;
-    --warn: #9a6b00;
-    --warn-wash: #fdf3dc;
-    --danger: #b3261e;
-    --danger-wash: #fdeceb;
-    --mirror: #6b4fbb;
-    --mirror-wash: #efeafb;
+    --focus: #171717;
+    --danger: #52525b;
+    --danger-wash: #ebebed;
 
-    --shadow-1: 0 1px 2px rgba(16, 24, 40, .05), 0 1px 3px rgba(16, 24, 40, .07);
-    --shadow-2: 0 14px 40px rgba(16, 24, 40, .14);
-    --overlay: rgba(16, 24, 40, .45);
+    --st-ok-fg: #ffffff;
+    --st-ok-bg: #171717;
+    --st-limited-fg: #3f3f46;
+    --st-limited-bg: #e4e4e7;
+    --st-blocked-fg: #52525b;
+    --st-blocked-bg: #ebebed;
+    --st-mirror-fg: #3f3f46;
+    --st-mirror-bg: #f1f1f2;
+
+    --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
+    --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);
+    --shadow-3: 0 24px 48px -16px rgba(0, 0, 0, .28);
+    --overlay: rgba(20, 20, 21, .45);
   }
 }
