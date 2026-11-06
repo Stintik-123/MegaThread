@@ -42,10 +42,10 @@ const html = `<!DOCTYPE html>
     <p class="sub">Кино, игры, софт, обход блокировок, ИИ, книги. Без аккаунтов.</p>
     <div class="rule"></div>
     <div class="row">
-      <div class="stat"><b>264</b><span>ресурсов</span></div>
-      <div class="stat"><b>13</b><span>разделов</span></div>
-      <div class="stat"><b>245</b><span>открываются сразу</span></div>
-      <div class="stat"><b>53</b><span>меток</span></div>
+      <div class="stat"><b>1383</b><span>ресурсов</span></div>
+      <div class="stat"><b>9</b><span>разделов</span></div>
+      <div class="stat"><b>1374</b><span>открываются сразу</span></div>
+      <div class="stat"><b>29</b><span>меток</span></div>
     </div>
   </div>
 </body></html>`;

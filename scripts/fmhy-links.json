@@ -1,0 +1,4861 @@
+{
+  "source": "fmhy.net",
+  "items": [
+    {
+      "name": "123anime",
+      "url": "https://123animehub.cc/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "9anime",
+      "url": "https://9animstv.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "All Manga",
+      "url": "https://allmanga.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AniHost",
+      "url": "https://anihosts.xyz/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "Anime Nexus",
+      "url": "https://anime.nexus/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "AnimeDex",
+      "url": "https://animedex.fun/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeKhor",
+      "url": "https://animekhor.org/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeLover",
+      "url": "https://animelover.site/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeOnsen",
+      "url": "https://animeonsen.xyz/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "animepahe",
+      "url": "https://animepahe.pw/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeParadise",
+      "url": "https://www.animeparadise.moe/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeStream",
+      "url": "https://anime.uniquestream.net/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "animeTVplus",
+      "url": "https://animetvplus.xyz/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "AnimeX",
+      "url": "https://animex.one/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "AnimeXin",
+      "url": "https://animexin.dev/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "animeY",
+      "url": "https://animey.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "Aniwave",
+      "url": "https://aniwaves.ru/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "bAnime",
+      "url": "https://banime.top/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "Enhancements",
+      "url": "https://update.greasyfork.org/scripts/520048/AnimePahe%20Improvements.user.js",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "EverythingMoe",
+      "url": "https://everythingmoe.com/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+      "notes": []
+    },
+    {
+      "name": "Hayase",
+      "url": "https://hayase.watch/",
+      "section": "anime",
+      "desc": "Торрент-раздачи аниме с озвучкой и субтитрами: через торренты, приложение",
+      "notes": []
+    },
+    {
+      "name": "hi10anime",
+      "url": "https://hi10anime.com/",
+      "section": "anime",
+      "desc": "Сайт для скачивания аниме в разных форматах и озвучках: с субтитрами, требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "JustAnime",
+      "url": "https://justanime.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "JustIndex",
+      "url": "https://justindex.cc/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+      "notes": []
+    },
+    {
+      "name": "Kawaii Anime",
+      "url": "https://kawaiianime.cc/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "Kayoanime",
+      "url": "https://kayoanime.com/",
+      "section": "anime",
+      "desc": "Сайт для скачивания аниме в разных форматах и озвучках: с субтитрами",
+      "notes": []
+    },
+    {
+      "name": "KickAssAnime",
+      "url": "https://kaa.lt/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "Kuroiru",
+      "url": "https://kuroiru.co/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+      "notes": []
+    },
+    {
+      "name": "LMANIME",
+      "url": "https://lmanime.com/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "MeguAnimes",
+      "url": "https://meguanime.com/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "MKissa",
+      "url": "https://mkissa.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "MultiAnime",
+      "url": "https://multinime.site/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "Nyaa",
+      "url": "https://nyaa.si/",
+      "section": "anime",
+      "desc": "Торрент-индекс аниме с субтитрами и озвучкой",
+      "notes": [
+        "Torrents"
+      ]
+    },
+    {
+      "name": "Quality Tags",
+      "url": "https://releases.moe/about/",
+      "section": "anime",
+      "desc": "Торрент-раздачи аниме с озвучкой и субтитрами: через торренты",
+      "notes": [
+        "or Mirror - Anime Video Quality Guide / Docs"
+      ]
+    },
+    {
+      "name": "Re:ANIME",
+      "url": "https://reanime.to/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
+      "notes": []
+    },
+    {
+      "name": "Seanime",
+      "url": "https://seanime.app/",
+      "section": "anime",
+      "desc": "Торрент-раздачи аниме с озвучкой и субтитрами: через торренты, приложение",
+      "notes": []
+    },
+    {
+      "name": "The Index",
+      "url": "https://theindex.moe/library/anime",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+      "notes": []
+    },
+    {
+      "name": "Tokyo Insider",
+      "url": "https://www.tokyoinsider.com/",
+      "section": "anime",
+      "desc": "Сайт для скачивания аниме в разных форматах и озвучках: с субтитрами",
+      "notes": []
+    },
+    {
+      "name": "WatchAnimeX",
+      "url": "https://watchanimez.me/",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "notes": []
+    },
+    {
+      "name": "Wotaku",
+      "url": "https://wotaku.wiki/websites",
+      "section": "anime",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+      "notes": []
+    },
+    {
+      "name": "Anna's Archive",
+      "url": "https://annas-archive.gl/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "Apps / Extensions",
+      "url": "https://go-to-library.sk/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
+      "notes": [
+        "Movies / TV / Anime / 4K / HEVC",
+        "Movies / TV / 4K / HEVC / Use Adblocker +",
+        "Movies / TV / 1080p / HEVC / Use",
+        "Movies / TV",
+        "Hayase - Torrent Streaming App / / Wiki",
+        "RetroAchievements - Achievements for Emulators / Compatible Games /",
+        "ROMs / Unofficial",
+        "ROMs"
+      ]
+    },
+    {
+      "name": "Atsumaru",
+      "url": "https://atsu.moe/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "AudiobookBay",
+      "url": "https://audiobookbay.lu/",
+      "section": "books",
+      "desc": "Сайт для скачивания книг, журналов и файлов: через торренты",
+      "notes": []
+    },
+    {
+      "name": "BAEN",
+      "url": "https://www.baen.com/allbooks/category/index/id/2012",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов",
+      "notes": []
+    },
+    {
+      "name": "BatCave",
+      "url": "https://batcave.biz/",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "BDeBooks",
+      "url": "https://bdebooks.com/en/ebooks/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "BookFrom.net",
+      "url": "https://www.bookfrom.net/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "BookSee",
+      "url": "https://en.booksee.org/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "calibre",
+      "url": "https://calibre-ebook.com/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "ComicBookPlus",
+      "url": "https://comicbookplus.com/",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "Comix",
+      "url": "https://comix.to/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "Deploy Locally",
+      "url": "https://software.annas-archive.gl/AnnaArchivist/annas-archive",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "Downloader",
+      "url": "https://mangadex-dl.mansuf.link/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания: комиксы и манга",
+      "notes": [
+        "BBC Radio 1 Essential Mix - BBC Radio 1 Essential Mix Archive + Guide /",
+        "MiroPPB - A State of Trance Archive / DJ Mixes /"
+      ]
+    },
+    {
+      "name": "dpgroup",
+      "url": "https://www.dpgroup.org/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "eBookoz",
+      "url": "https://ebookoz.net/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "eBooks1001",
+      "url": "https://ebooks1001.com/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Explanations",
+      "url": "https://www.explainxkcd.com/wiki/index.php/Main_Page",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "Explosm",
+      "url": "https://explosm.net/rcg",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "findxkcd",
+      "url": "https://xkcd-search.typesense.org/",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "Flibusta",
+      "url": "https://flibusta.is/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "FreeBannedBooks",
+      "url": "https://freebannedbooks.org/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "GetComics",
+      "url": "https://getcomics.org/",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "i2p",
+      "url": "https://flibusta.i2p/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Inventaire",
+      "url": "https://inventaire.io/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "JustFreeBooks",
+      "url": "https://www.justfreebooks.info/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Kagane",
+      "url": "https://kagane.org/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "Library Genesis",
+      "url": "https://libgen.li/",
+      "section": "books",
+      "desc": "Зеркало LibGen для доступа к библиотеке книг",
+      "notes": []
+    },
+    {
+      "name": "MangaDot",
+      "url": "https://mangadot.net/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "Manybooks",
+      "url": "https://manybooks.net/",
+      "section": "books",
+      "desc": "Большая подборка бесплатных книг в разных форматах",
+      "notes": []
+    },
+    {
+      "name": "Matrix",
+      "url": "https://matrix.to/#/#annas:archivecommunication.org",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
+      "notes": [
+        "MangaDot /"
+      ]
+    },
+    {
+      "name": "Mayberry",
+      "url": "https://joinmayberry.com/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "mIRC",
+      "url": "https://redd.it/znprct",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Mobilism",
+      "url": "https://forum.mobilism.org",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
+      "notes": [
+        "2 /",
+        "Requires Sign-Up"
+      ]
+    },
+    {
+      "name": "MyAnonaMouse",
+      "url": "https://www.myanonamouse.net/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: через торренты, комиксы и манга, книги",
+      "notes": [
+        "MyAnonaMouse - Books / Audiobooks / Comics / Sheet Music / Torrents /",
+        "Torrents",
+        "MyAnonaMouse - Torrents / / Ratio Warnings"
+      ]
+    },
+    {
+      "name": "NovelCool",
+      "url": "https://www.novelcool.com/",
+      "section": "books",
+      "desc": "Сайты с лайт-новеллами для чтения и скачивания",
+      "notes": []
+    },
+    {
+      "name": "NovelFire",
+      "url": "https://novelfire.net/",
+      "section": "books",
+      "desc": "Сайты с лайт-новеллами для чтения и скачивания: новеллы",
+      "notes": []
+    },
+    {
+      "name": "NovelPhoenix",
+      "url": "https://novelphoenix.com/",
+      "section": "books",
+      "desc": "Сайты с лайт-новеллами для чтения и скачивания",
+      "notes": []
+    },
+    {
+      "name": "OceanOfPDF",
+      "url": "https://oceanofpdf.com/",
+      "section": "books",
+      "desc": "Поисковик по PDF-книгам, статьям и учебникам: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "OniSaga",
+      "url": "https://onisaga.com/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "Open Library",
+      "url": "https://openlibrary.org/",
+      "section": "books",
+      "desc": "Открытая библиотека с каталогом книг и авторов",
+      "notes": []
+    },
+    {
+      "name": "Open Slum",
+      "url": "https://open-slum.org/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "RaveBSD",
+      "url": "https://ravebooksearch.com/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Read From",
+      "url": "https://readfrom.net/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Recherche",
+      "url": "https://recherche-ebook.fr/en/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "The Free Book Library",
+      "url": "https://ebooks.i2p/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов",
+      "notes": []
+    },
+    {
+      "name": "Toonkotsu",
+      "url": "https://toonkotsu.com/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "Unglue.it",
+      "url": "https://unglue.it/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: книги",
+      "notes": []
+    },
+    {
+      "name": "Weeb Central",
+      "url": "https://weebcentral.com/",
+      "section": "books",
+      "desc": "Сайты с мангой для чтения онлайн и скачивания",
+      "notes": []
+    },
+    {
+      "name": "WeLib",
+      "url": "https://welib.org/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов",
+      "notes": []
+    },
+    {
+      "name": "WuxiaClick",
+      "url": "https://wuxia.click/",
+      "section": "books",
+      "desc": "Сайты с лайт-новеллами для чтения и скачивания",
+      "notes": []
+    },
+    {
+      "name": "xkcd",
+      "url": "https://xkcd.com/",
+      "section": "books",
+      "desc": "Сайты с комиксами для чтения онлайн и скачивания: комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "Z-Library",
+      "url": "https://z-lib.gd/",
+      "section": "books",
+      "desc": "Библиотека электронных книг, статей и журналов: приложение, расширение браузера, комиксы и манга",
+      "notes": []
+    },
+    {
+      "name": "3DS ROMS",
+      "url": "https://3dsroms.org",
+      "section": "games",
+      "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
+      "notes": []
+    },
+    {
+      "name": "AbandonwareGames",
+      "url": "https://abandonwaregames.net/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "AnkerGames",
+      "url": "https://ankergames.net/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: через торренты, уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "AstralGames",
+      "url": "https://astralgames.net/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "Axekin",
+      "url": "https://www.axekin.com/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей",
+      "notes": []
+    },
+    {
+      "name": "BuildGDX",
+      "url": "https://m210.duke4.net/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "CDRomance",
+      "url": "https://cdromance.org/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей: игры",
+      "notes": []
+    },
+    {
+      "name": "CS.RIN.RU",
+      "url": "https://cs.rin.ru/forum",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC",
+      "notes": []
+    },
+    {
+      "name": "Dolphin Guides",
+      "url": "https://dolphin-emu.org/docs/guides/",
+      "section": "games",
+      "desc": "Эмулятор GameCube и Wii для запуска игр с дисков",
+      "notes": []
+    },
+    {
+      "name": "FC Gallery",
+      "url": "https://fcpic.nesbbs.com/index_en.html",
+      "section": "games",
+      "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
+      "notes": []
+    },
+    {
+      "name": "FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/",
+      "section": "games",
+      "desc": "Репаки игр от FitGirl с обходом проверки файлов",
+      "notes": []
+    },
+    {
+      "name": "Fluxer",
+      "url": "https://fluxer.gg/1Tt9Lw5B",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: через торренты, игры, уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "GameBounty",
+      "url": "https://gamebounty.world/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "GOG Revived",
+      "url": "https://gog-rev.com/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: через торренты, игры",
+      "notes": []
+    },
+    {
+      "name": "hShop",
+      "url": "https://hshop.erista.me/",
+      "section": "games",
+      "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
+      "notes": []
+    },
+    {
+      "name": "JNUSTool",
+      "url": "https://gbatemp.net/threads/jnustool-nusgrabber-and-cdecrypt-combined.413179/",
+      "section": "games",
+      "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
+      "notes": []
+    },
+    {
+      "name": "KaOsKrew",
+      "url": "https://kaoskrew.org/",
+      "section": "games",
+      "desc": "Репаки игр с уже установленными файлами, без проверки",
+      "notes": []
+    },
+    {
+      "name": "Kryoto",
+      "url": "https://kryo.to/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: уже установленные версии",
+      "notes": [
+        "Download / Pre-Installed"
+      ]
+    },
+    {
+      "name": "LegendsWorld",
+      "url": "https://www.legendsworld.net/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "My Abandonware",
+      "url": "https://www.myabandonware.com/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "NesFiles",
+      "url": "https://www.nesfiles.com/",
+      "section": "games",
+      "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
+      "notes": []
+    },
+    {
+      "name": "NoPayStation",
+      "url": "https://nopaystation.com/",
+      "section": "games",
+      "desc": "ROM-игры для консолей PlayStation: PS1, PS2, PSP",
+      "notes": []
+    },
+    {
+      "name": "Online Fix",
+      "url": "https://online-fix.me/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: через торренты",
+      "notes": [
+        "MEGA Account Generators - Account Gen / Unlimited Upload Size /"
+      ]
+    },
+    {
+      "name": "Ova Games",
+      "url": "https://www.ovagames.com/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: игры",
+      "notes": []
+    },
+    {
+      "name": "Recommended Emulator Specs",
+      "url": "https://emulation.gametechwiki.com/index.php/Computer_specs",
+      "section": "games",
+      "desc": "Эмулятор консолей для запуска игр с дисков и картриджей",
+      "notes": []
+    },
+    {
+      "name": "Retro eXo",
+      "url": "https://www.retro-exo.com/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры: через торренты, игры",
+      "notes": []
+    },
+    {
+      "name": "RetroAchievements",
+      "url": "https://retroachievements.org/",
+      "section": "games",
+      "desc": "Эмулятор консолей для запуска игр с дисков и картриджей",
+      "notes": []
+    },
+    {
+      "name": "RetroGameTalk",
+      "url": "https://retrogametalk.com/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей",
+      "notes": []
+    },
+    {
+      "name": "ROM Heaven",
+      "url": "https://romheaven.com/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей",
+      "notes": []
+    },
+    {
+      "name": "ROMHack Plaza",
+      "url": "https://romhackplaza.org/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей: игры",
+      "notes": []
+    },
+    {
+      "name": "ROMHack.ing",
+      "url": "https://www.romhack.ing/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей: игры",
+      "notes": [
+        "RetroGameTalk (sign-up required) / , CDRomance, ⁠ROMHack.ing / , or ⁠ROMHack Plaza / - ROM Fan Translations / Hacks"
+      ]
+    },
+    {
+      "name": "Skraper",
+      "url": "https://www.skraper.net/",
+      "section": "games",
+      "desc": "Ресурсы с ROM-играми, BIOS и утилитами для эмуляторов",
+      "notes": []
+    },
+    {
+      "name": "SteamRIP",
+      "url": "https://steamrip.com/",
+      "section": "games",
+      "desc": "Каталог пиратских релизов игр со SteamRip",
+      "notes": []
+    },
+    {
+      "name": "SteamUnderground",
+      "url": "https://steamunderground.net/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "Torrminatorr",
+      "url": "https://forum.torrminatorr.com/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "VETUSWARE",
+      "url": "https://vetusware.com/category/Games/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "Vimm's Lair",
+      "url": "https://vimm.net/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей",
+      "notes": []
+    },
+    {
+      "name": "Virgil Game Search",
+      "url": "https://virgil.samidy.com/?engine=games",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: через торренты, игры",
+      "notes": [
+        "2 / or Software CSE - Multi-Site Software Search"
+      ]
+    },
+    {
+      "name": "ZeiGames",
+      "url": "https://zeigames.com/",
+      "section": "games",
+      "desc": "Сайт для скачивания пиратских игр, репаков и DLC: уже установленные версии",
+      "notes": []
+    },
+    {
+      "name": "Ziperto",
+      "url": "https://ziperto.com/",
+      "section": "games",
+      "desc": "Сайт с ROM-играми для эмуляторов консолей",
+      "notes": []
+    },
+    {
+      "name": "Zombs-Lair",
+      "url": "https://www.zombs-lair.com/",
+      "section": "games",
+      "desc": "Старые игры, abandonware и классические ретро-игры",
+      "notes": []
+    },
+    {
+      "name": "1fichier.com",
+      "url": "https://1fichier.com/",
+      "section": "misc",
+      "desc": "Файлообменник с большими файлами и защитой ссылок",
+      "notes": []
+    },
+    {
+      "name": "2share",
+      "url": "https://2share.su/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "4d2.sh",
+      "url": "https://4d2.sh/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "ATM",
+      "url": "https://atm.rip/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Bestfile",
+      "url": "https://bestfile.io/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Catbox",
+      "url": "https://catbox.moe/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Clicknupload",
+      "url": "https://clicknupload.click",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "CryptFiles",
+      "url": "https://cryptfiles.cloud/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "DataNodes",
+      "url": "https://datanodes.to/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Depositfiles",
+      "url": "https://depositfiles.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Dosya Upload",
+      "url": "http://www.dosyaupload.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "DropDrive",
+      "url": "https://dropdrive.org/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "DropMB",
+      "url": "https://dropmb.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "DropMeFiles",
+      "url": "https://dropmefiles.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "DropMeFiles (ua)",
+      "url": "https://dropmefiles.com.ua/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "eDisk",
+      "url": "https://www.edisk.cz/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FEX.NET",
+      "url": "https://fex.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "file.kiwi",
+      "url": "https://file.kiwi/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": [
+        "Unlimited / 90 Hours"
+      ]
+    },
+    {
+      "name": "Filebin",
+      "url": "https://filebin.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FileDitch",
+      "url": "https://new.fileditch.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "filedrop",
+      "url": "https://r7zxn.cc/filedrop/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FileFast",
+      "url": "https://file.fast/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FileGo",
+      "url": "https://filego.app/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "Filegoat",
+      "url": "https://filego.at/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Filekeeper",
+      "url": "https://filekeeper.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "FilePort",
+      "url": "https://fileport.io/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FilesPayouts",
+      "url": "https://filespayouts.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "Filester",
+      "url": "https://filester.me/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FilesYard",
+      "url": "https://filesyard.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "filez.stream",
+      "url": "https://filez.stream/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "FireLoad",
+      "url": "https://www.fireload.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "GigaFile",
+      "url": "https://gigafile.nu/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Gofile",
+      "url": "https://gofile.io/",
+      "section": "misc",
+      "desc": "Файлообменник с большими файлами и прямыми ссылками",
+      "notes": []
+    },
+    {
+      "name": "GrosFichiers",
+      "url": "https://www.grosfichiers.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Hexupload",
+      "url": "https://hexload.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "hostb",
+      "url": "https://hostb.org/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Hxfile",
+      "url": "https://hxfile.co/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Imagenetz",
+      "url": "https://www.imagenetz.de/?setLang=en",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Internxt Send",
+      "url": "https://send.internxt.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "JuiceBox",
+      "url": "https://box.juicey.dev/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "JUMBOmail",
+      "url": "https://www.jumbomail.me/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Lite Version",
+      "url": "https://lite.mocha.my/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: без регистрации",
+      "notes": []
+    },
+    {
+      "name": "Litterbox",
+      "url": "https://litterbox.catbox.moe/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Luffy Files",
+      "url": "https://luffyfiles.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Lufi",
+      "url": "https://upload.adminforge.de/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "MaraFile",
+      "url": "https://marafile.cc/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Matcha",
+      "url": "https://www.matchaup.my/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "MediaFire",
+      "url": "https://www.mediafire.com/",
+      "section": "misc",
+      "desc": "Файлообменник для хранения и скачивания крупных файлов",
+      "notes": []
+    },
+    {
+      "name": "Mega4Upload",
+      "url": "https://mega4upload.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "MegaUp",
+      "url": "https://megaup.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "MixDrop",
+      "url": "https://mixdrop.ag/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "MixLoads",
+      "url": "https://mixloads.to/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "Mocha",
+      "url": "https://mocha.my/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "NippyDrop",
+      "url": "https://nippydrop.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "OpnXNG",
+      "url": "https://opnxng.com/",
+      "section": "misc",
+      "desc": "Публичные инстансы SearXNG для анонимного поиска",
+      "notes": []
+    },
+    {
+      "name": "Origrid",
+      "url": "https://origrid.io/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "pasted.sh",
+      "url": "https://pasted.sh/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "patchy.moe",
+      "url": "https://patchy.moe/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Patrins",
+      "url": "https://patrins.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "pCloud Transfer",
+      "url": "https://transfer.pcloud.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Pearcrypt",
+      "url": "https://pearcrypt.lol/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Pillowcase",
+      "url": "https://pillows.su/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Pixeldrain",
+      "url": "https://pixeldrain.com/",
+      "section": "misc",
+      "desc": "Файлообменник с большими лимитами и анонимной загрузкой",
+      "notes": [
+        "Pixeldrain - 10GB / 60 Days After Last Download (10% min) / Signup Required for Upload / Mirrors / / Bypass /"
+      ]
+    },
+    {
+      "name": "Plik",
+      "url": "https://up2store.de/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "pone",
+      "url": "https://pone.rs/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Savedly",
+      "url": "https://savedly.net/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Send",
+      "url": "https://send.vis.ee/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Send.now",
+      "url": "https://send.now/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "SendGB",
+      "url": "https://www.sendgb.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Smash",
+      "url": "https://fromsmash.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Stashr",
+      "url": "https://stashr.wtf/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "storage.to",
+      "url": "https://storage.to/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "SwissTransfer",
+      "url": "https://www.swisstransfer.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Temp.sh",
+      "url": "https://temp.sh/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Tempcloud",
+      "url": "https://temp.kotol.cloud/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "TheUserCloud",
+      "url": "https://theuser.cloud/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Transfer.it",
+      "url": "https://transfer.it/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "TransferSize",
+      "url": "https://www.transfersize.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Transfr",
+      "url": "https://www.transfr.me/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Tresorit Send",
+      "url": "https://send.tresorit.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "uDrop",
+      "url": "https://www.udrop.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "ufile.io",
+      "url": "https://ufile.io/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Upload.bg",
+      "url": "https://upload.bg/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "UploadNow",
+      "url": "https://uploadnow.io/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "UpZur",
+      "url": "https://upzur.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "VikingFile",
+      "url": "https://vikingfile.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Workupload",
+      "url": "https://workupload.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "Z-o-o-m",
+      "url": "https://z-o-o-m.eu/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач: приложение",
+      "notes": []
+    },
+    {
+      "name": "Zipyshare",
+      "url": "https://zipyshare.com/",
+      "section": "misc",
+      "desc": "Файлообменник для крупных файлов, архивов и раздач",
+      "notes": []
+    },
+    {
+      "name": "1337x Movies",
+      "url": "https://1337x.to/movie-library/1/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов, музыки и игр",
+      "notes": [
+        "Movies / TV / Anime"
+      ]
+    },
+    {
+      "name": "1Flex",
+      "url": "https://www.1flex.org/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы, сериалы",
+      "notes": []
+    },
+    {
+      "name": "1Shows",
+      "url": "http://1shows.org",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": [
+        "Movies / TV / Anime / 4K / HEVC"
+      ]
+    },
+    {
+      "name": "1Tube",
+      "url": "https://www.1tube.org/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": [
+        "Multi-Site Search"
+      ]
+    },
+    {
+      "name": "4KHDHub",
+      "url": "https://4khdhub.one/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Addic7ed",
+      "url": "https://www.addic7ed.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "Advanced Search",
+      "url": "https://playlists.at/youtube/search/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "Aether",
+      "url": "https://aether.st/",
+      "section": "movie-and-shows",
+      "desc": "Форк пиратского стриминг-сервиса для онлайн-просмотра без рекламы: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "AniCine",
+      "url": "https://anicine.sbs/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Anixtv",
+      "url": "https://anixx.fun/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "ArrowTV",
+      "url": "https://arrowtv.net/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Auto-Subtitles",
+      "url": "https://www.bazarr.media/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты, фильмы",
+      "notes": [
+        "Sonarr / , SickGear, DuckieTV or Medusa - Autodownload TV Torrents / Guide /",
+        "Subtitle Autosearch / Download Tool"
+      ]
+    },
+    {
+      "name": "Basement",
+      "url": "https://basementx.lol/",
+      "section": "movie-and-shows",
+      "desc": "Форк пиратского стриминг-сервиса для онлайн-просмотра без рекламы: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Best Series",
+      "url": "https://bstsrs.in/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра сериалов и шоу",
+      "notes": []
+    },
+    {
+      "name": "Best-MovieZ",
+      "url": "https://www.best-moviez.ws/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Beta",
+      "url": "https://beta.cno.to/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
+      "notes": [
+        "Subtitles"
+      ]
+    },
+    {
+      "name": "BiliBili",
+      "url": "https://www.bilibili.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": [
+        "BiliBili, TypeType, 2 / or / Resources / Tools"
+      ]
+    },
+    {
+      "name": "Bye Sudo",
+      "url": "https://stremio.ar0.eu/",
+      "section": "movie-and-shows",
+      "desc": "Дополнения и надстройки для медиаплеера Stremio",
+      "notes": []
+    },
+    {
+      "name": "Chillflix",
+      "url": "https://chillflix.lol/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Cinecat",
+      "url": "https://cinecat.eu/",
+      "section": "movie-and-shows",
+      "desc": "Форк пиратского стриминг-сервиса для онлайн-просмотра без рекламы: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "CineLite",
+      "url": "https://cinelite.xyz/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Cinema of the World",
+      "url": "https://worldscinema.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "CinemaCity",
+      "url": "https://cinemacity.cc/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
+    },
+    {
+      "name": "Cinetaro",
+      "url": "https://cinetaro.to/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Cinezo",
+      "url": "https://www.cinezo.st/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Cno",
+      "url": "https://cno.to/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Coreflix",
+      "url": "https://coreflix.tv/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "CorsFlix",
+      "url": "https://watch.corsflix.net",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": [
+        "Rive, 2 or , 2, 3 - Movies / TV / Anime / Status /"
+      ]
+    },
+    {
+      "name": "Dailymotion",
+      "url": "https://www.dailymotion.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "DDLBase",
+      "url": "https://ddlbase.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "downloads-anymovies",
+      "url": "https://www.downloads-anymovies.co/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "dulo",
+      "url": "https://dulo.mov/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "DVDeez",
+      "url": "https://dvdeez.top/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме",
+      "notes": []
+    },
+    {
+      "name": "Enhancement Extension",
+      "url": "https://vknext.net/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "ExT",
+      "url": "https://ext.to/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме",
+      "notes": []
+    },
+    {
+      "name": "EZTV",
+      "url": "https://eztvx.to/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме",
+      "notes": []
+    },
+    {
+      "name": "FilmFans",
+      "url": "https://filmfans.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "FilmGo",
+      "url": "https://www.filmgo.live/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "FlexGet",
+      "url": "https://flexget.com/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты",
+      "notes": []
+    },
+    {
+      "name": "FlickyStream",
+      "url": "https://flickystream.mov/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Flixer",
+      "url": "https://flixer.gd",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Free Movies",
+      "url": "https://free-movies.to/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Frontend",
+      "url": "https://www.gestdown.info/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "Ghostflix",
+      "url": "https://ghostflix.st/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "GoPlay",
+      "url": "https://goplay.su/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для просмотра дорам и сериалов онлайн: фильмы",
+      "notes": []
+    },
+    {
+      "name": "HDEncode",
+      "url": "https://hdencode.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "HDHub4u",
+      "url": "https://hdhub4u.bi/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "HdMoviesHub",
+      "url": "https://hdmovieshub.fyi/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Hexa",
+      "url": "https://hexa.su/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "HindMoviez",
+      "url": "https://hindmoviez.cafe/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "HollyMovieHD",
+      "url": "https://hollymoviehd.cc/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "HydraHD",
+      "url": "https://hydrahd.gd/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "KatDrama",
+      "url": "https://k-drama.in/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для просмотра дорам и сериалов онлайн: фильмы",
+      "notes": []
+    },
+    {
+      "name": "KatMovieHD",
+      "url": "https://new.katmoviehd.top/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "KMMOVIES",
+      "url": "https://kmmovies.shop/category/english/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Kodasusaka",
+      "url": "https://kodasusaka.com/movies",
+      "section": "movie-and-shows",
+      "desc": "Специализированный сайт онлайн-просмотра по жанрам: фильмы",
+      "notes": []
+    },
+    {
+      "name": "Kontrast",
+      "url": "https://kontrast.top/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
+    },
+    {
+      "name": "Levidia",
+      "url": "https://www.levidia.ch/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "LimeTorrents",
+      "url": "https://www.limetorrents.fun/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": [
+        "Video / Audio / Books"
+      ]
+    },
+    {
+      "name": "Medeberiya",
+      "url": "https://medeberiya.net/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Medusa",
+      "url": "https://pymedusa.com/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты",
+      "notes": []
+    },
+    {
+      "name": "MeowTV",
+      "url": "https://meowtv.ru/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "MKV BASE",
+      "url": "https://mkvbase.site/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Moovie",
+      "url": "https://moovie.fun/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Movie Night",
+      "url": "https://movienig.ht/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "MovieParadise",
+      "url": "https://movieparadise.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Movies Ni Pipay",
+      "url": "https://moviesnipipay.me/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "MultiShows",
+      "url": "https://multishows.top/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Naijavault",
+      "url": "https://www.naijavault.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: фильмы",
+      "notes": []
+    },
+    {
+      "name": "NEPU",
+      "url": "https://nepu.io/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
+      "notes": [
+        "2, 3, 4 / Status /"
+      ]
+    },
+    {
+      "name": "NetShows",
+      "url": "https://netshows.xyz/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
+      "notes": []
+    },
+    {
+      "name": "Nico Nico",
+      "url": "https://www.nicovideo.jp/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "NOXX",
+      "url": "https://noxx.gg/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра сериалов и шоу",
+      "notes": []
+    },
+    {
+      "name": "OlaMovies",
+      "url": "https://olamovies.dad/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Open Subtitles",
+      "url": "https://opensubtitles.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "Pahe",
+      "url": "https://pahe.ink/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "PantyFlix",
+      "url": "https://pantyflix.com/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "PlayTorrio",
+      "url": "https://playtorrio.xyz/",
+      "section": "movie-and-shows",
+      "desc": "Приложение для онлайн-просмотра фильмов и сериалов: приложение",
+      "notes": [
+        "2 - Multi-Site Downloader / Movies / TV / Anime / 4K / HEVC / /",
+        "2 - Torrent Streaming App / Stremio Addon Support / /"
+      ]
+    },
+    {
+      "name": "PressPlay",
+      "url": "https://pressplayx.to/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: фильмы",
+      "notes": []
+    },
+    {
+      "name": "Primeshows",
+      "url": "https://www.primeshows.org/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
+      "notes": []
+    },
+    {
+      "name": "PrimeWire",
+      "url": "https://www.primewire.mov/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра сериалов и шоу",
+      "notes": []
+    },
+    {
+      "name": "Proxies",
+      "url": "https://ytsproxies.com/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Proxy",
+      "url": "https://extranet.torrentbay.st/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме",
+      "notes": [
+        "Catbox - 200MB / Forever (w/ Account) / 2 Years (Inactive Files w/ no Account) /"
+      ]
+    },
+    {
+      "name": "PSArips",
+      "url": "https://psa.wf/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Public Domain Movie Torrents",
+      "url": "https://www.publicdomaintorrents.info/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
+    },
+    {
+      "name": "r/softwarr",
+      "url": "https://reddit.com/r/softwarr",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты",
+      "notes": [
+        "Seedbox Subreddit",
+        "Private Trackers General, or Graph - Private Tracker Guides",
+        "Tracker Discussion",
+        "or r/OpenedSignups - Open Tracker Signup Subs",
+        "Open Tracker Signup Subs",
+        "Ebook Subreddit",
+        "or Archive Team / - Data Hoarding Communities"
+      ]
+    },
+    {
+      "name": "Radarr",
+      "url": "https://radarr.video/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты, фильмы",
+      "notes": []
+    },
+    {
+      "name": "RapidMoviez",
+      "url": "https://rmz.cr/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Redflix",
+      "url": "https://redflix.one/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Reelix",
+      "url": "https://reelix.ac/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Requests",
+      "url": "https://space.olamovies.dad/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Rive",
+      "url": "https://www.rivestream.app/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": [
+        "2 or CorsFlix, 2, 3 - Movies / TV / Anime / Status /"
+      ]
+    },
+    {
+      "name": "RLSXTVT",
+      "url": "https://rlsxtvt.icu/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "RuTracker Movies",
+      "url": "https://rutracker.org/forum/index.php?c=2",
+      "section": "movie-and-shows",
+      "desc": "Русский трекер с огромной базой раздач: фильмы, сериалы, игры, музыка, софт",
+      "notes": [
+        "ROMs / Torrents / Use",
+        "Movies / TV / Anime",
+        "ROMs / Torrents / Use",
+        "RuTracker Tools - Quick Translator / Wiki / / Bypass Extension, 2",
+        "RuTracker Tools - Quick Translator / Wiki / Rules / , 2"
+      ]
+    },
+    {
+      "name": "Search Filters / Stars",
+      "url": "https://greasyfork.org/scripts/585901",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, прямые ссылки, фильмы",
+      "notes": [
+        "or IMDb-Scout-Mod / - Torrent Site Results on IMDb",
+        "CS.RIN Tools - Status / Enhancements / Steam Buttons / /",
+        "1337x Tools - Telegram Bot / IMDb Ratings / / Display Magnets / Timestamp Fix",
+        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / / Timestamp Fix",
+        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / Display Magnets /",
+        "MyAnonaMouse - Torrents / Invites /",
+        "NTS Radio - DJ Radio Shows / / Downloader / SoundCloud / Mixcloud / Discovery Guide",
+        "Quickly Send DDL Links to Premiumize & NoPremium"
+      ]
+    },
+    {
+      "name": "SeriesVault",
+      "url": "https://seriesvault.win/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве",
+      "notes": []
+    },
+    {
+      "name": "ShareBB",
+      "url": "https://sharebb.me/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, требуется регистрация, фильмы",
+      "notes": []
+    },
+    {
+      "name": "ShowBox",
+      "url": "https://www.showbox.media/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Sign-Up (Better Host)",
+      "url": "https://paste.to/?d2685dc847a535c4#_7YmBZfs57EoYcBpnFwkxjz4QBzt3qXBEPkWbmY9aSkkj",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "SolidarityCinema",
+      "url": "https://www.solidaritycinema.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Sonarr",
+      "url": "https://sonarr.tv/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты",
+      "notes": []
+    },
+    {
+      "name": "SSR Movies",
+      "url": "https://ssrmovies.blue/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "StagaTV",
+      "url": "https://www.stagatv.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: фильмы",
+      "notes": []
+    },
+    {
+      "name": "Status",
+      "url": "https://rar.to/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
+      "notes": [
+        "Aether, 2, 3 - Movies / TV / Anime / Auto-Next / 4K / /",
+        "Rive, 2, 3 or CorsFlix, 2, 3 - Movies / TV / Anime / Auto-Next / 4K / /",
+        "HydraHD, 2 - Movies / TV / Anime / Auto-Next / /",
+        "Re:ANIME, 2, 3 - Sub / Dub / Auto-Next / Index / /",
+        "⁠bAnime - Sub / Dub / Auto-Next / /",
+        "WCO, 2, 3, 4, 5, 6 - TV / Movies / Anime /",
+        "Rive, 2 or CorsFlix, 2, 3 - Movies / TV / Anime / /",
+        "YTS or YifyMovies - Movies / 4K / Proxies / / /"
+      ]
+    },
+    {
+      "name": "Status / Mirrors",
+      "url": "https://primewire.nexus/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра сериалов и шоу",
+      "notes": []
+    },
+    {
+      "name": "StreamAggregator",
+      "url": "https://streamaggregator.in/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Streaming Perfect Setup",
+      "url": "https://numb3rs.stream/",
+      "section": "movie-and-shows",
+      "desc": "Дополнения и надстройки для медиаплеера Stremio",
+      "notes": []
+    },
+    {
+      "name": "Stremio",
+      "url": "https://www.stremio.com/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты, приложение",
+      "notes": []
+    },
+    {
+      "name": "SubDL",
+      "url": "https://subdl.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "Subscene",
+      "url": "https://sub-scene.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "SubSL",
+      "url": "https://subsl.top/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: фильмы",
+      "notes": []
+    },
+    {
+      "name": "SubSource",
+      "url": "https://subsource.net/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "TFPDL",
+      "url": "https://tfpdl.se/category/movies/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "TodayTVSeries",
+      "url": "https://www.todaytvseries1.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве",
+      "notes": []
+    },
+    {
+      "name": "Toflix",
+      "url": "https://toflix.co/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "TonkaCine",
+      "url": "https://tonkacine.watch/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
+      "notes": []
+    },
+    {
+      "name": "TorrentSurf",
+      "url": "https://torrentsurf.to/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
+    },
+    {
+      "name": "TPB Movies",
+      "url": "https://thepiratebay.org/search.php?q=top100:200",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами всего подряд",
+      "notes": []
+    },
+    {
+      "name": "TV Shows",
+      "url": "https://tvshows.ac/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "TVSBoy",
+      "url": "https://tvsboy.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "TvShows4Mobile",
+      "url": "https://tvshows4mobile.org/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве",
+      "notes": []
+    },
+    {
+      "name": "TypeType",
+      "url": "https://watch.typetype.video/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
+      "notes": [
+        "Nico Nico / Desktop or , 2 /"
+      ]
+    },
+    {
+      "name": "UHDMovies",
+      "url": "https://modlist.in/?type=uhdmovies",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "VegaMovies",
+      "url": "https://1vegamovies.baby/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Viren070's Guides",
+      "url": "https://guides.viren070.me/stremio",
+      "section": "movie-and-shows",
+      "desc": "Дополнения и надстройки для медиаплеера Stremio",
+      "notes": []
+    },
+    {
+      "name": "VK",
+      "url": "https://vkvideo.ru/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "Vuflix",
+      "url": "https://vuflix.co/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Vyla Home",
+      "url": "https://vyla.cc/products/home",
+      "section": "movie-and-shows",
+      "desc": "Приложение для онлайн-просмотра фильмов и сериалов: приложение",
+      "notes": []
+    },
+    {
+      "name": "Waploaded",
+      "url": "https://films.waploaded.com/movie",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Way2Movies",
+      "url": "https://beta.way2movies.live/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "WCO",
+      "url": "https://www.wco.tv/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для просмотра мультсериалов и анимации онлайн: фильмы",
+      "notes": []
+    },
+    {
+      "name": "WebUI",
+      "url": "https://web.stremio.com/",
+      "section": "movie-and-shows",
+      "desc": "Приложения для торрентов, онлайн-просмотра и управления: через торренты, приложение",
+      "notes": []
+    },
+    {
+      "name": "Willow",
+      "url": "https://willowmovies.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "WorldFree4u",
+      "url": "https://worldfree4u.expert/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "XDMovies",
+      "url": "https://xdmovies.com/",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "YifyMovies",
+      "url": "https://yifymovies.xyz/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Youplex Torrents",
+      "url": "https://youplex.cc/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "Youshows",
+      "url": "https://youshows.org/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
+      "notes": []
+    },
+    {
+      "name": "YTS",
+      "url": "https://yts.gg/",
+      "section": "movie-and-shows",
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: в HD-качестве, фильмы",
+      "notes": []
+    },
+    {
+      "name": "ZetMoon",
+      "url": "https://zetmoon.live/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
+      "notes": []
+    },
+    {
+      "name": "AlterPortal",
+      "url": "https://alterportal.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "AMP3",
+      "url": "https://amp3.cc/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Antra Web",
+      "url": "https://antra.hoshi.cfd/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "ARCOD",
+      "url": "https://arcod.xyz/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "ArtScene",
+      "url": "http://artscene.textfiles.com/music/midi/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов: музыка",
+      "notes": []
+    },
+    {
+      "name": "AudioFetcher",
+      "url": "https://audiofetcher.com/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Canna",
+      "url": "https://canna.to/?lang=eng",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "CannaPower",
+      "url": "https://canna-power.to",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "ccMixter",
+      "url": "https://ccmixter.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "cobalt",
+      "url": "https://cobalt.tools/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Core Radio",
+      "url": "https://coreradio.online/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "CYBROX",
+      "url": "https://cybrox.pro/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "DeadPulpit",
+      "url": "https://www.deadpulpit.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "DiscogC",
+      "url": "https://www.discogc.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Discografias Completas",
+      "url": "https://www.discografias-completas.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "DoubleDouble",
+      "url": "https://doubledouble.top/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов: музыка",
+      "notes": []
+    },
+    {
+      "name": "Exystence",
+      "url": "https://exystence.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "FLAC Attack",
+      "url": "https://flacattack.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов: музыка",
+      "notes": []
+    },
+    {
+      "name": "FlacMusic",
+      "url": "https://www.flacmusic.info/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "FreeMIDI",
+      "url": "https://freemidi.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов: музыка, scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "FreeMP3Cloud",
+      "url": "https://freemp3cloud.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Geocities MIDIs",
+      "url": "https://www.midicities.com/GeoCities",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов: музыка, scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "GetRockMusic",
+      "url": "https://getrockmusic.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "GloryBeats",
+      "url": "https://glorybeats.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Interviews",
+      "url": "https://interviewfor.red/",
+      "section": "music",
+      "desc": "Торрент-раздачи музыки, альбомов и сборников: требуется регистрация",
+      "notes": [
+        "Orpheus - MP3 / FLAC / Requires Sign-Up /"
+      ]
+    },
+    {
+      "name": "IntMusic",
+      "url": "https://intmusic.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "iPlusFree",
+      "url": "https://www7.iplusfree.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "LEAKED",
+      "url": "https://leaked.cx/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Lidarr",
+      "url": "https://lidarr.audio/",
+      "section": "music",
+      "desc": "Торрент-раздачи музыки, альбомов и сборников: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Lossless Music Download",
+      "url": "https://flac.music.hi.cn/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Lossless-Music",
+      "url": "https://lossless-music.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "LosslessAlbums",
+      "url": "https://losslessalbums.club/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "lucida",
+      "url": "https://lucida.to/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов: музыка",
+      "notes": []
+    },
+    {
+      "name": "MiroPPB",
+      "url": "https://miroppb.com/",
+      "section": "music",
+      "desc": "Миксы и лайв-сеты диджеев для скачивания музыки",
+      "notes": []
+    },
+    {
+      "name": "MixesDB",
+      "url": "https://www.mixesdb.com/",
+      "section": "music",
+      "desc": "Миксы и лайв-сеты диджеев для скачивания музыки",
+      "notes": []
+    },
+    {
+      "name": "Mixupload",
+      "url": "https://mixupload.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Monochrome",
+      "url": "https://monochrome.st/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "mp3db",
+      "url": "https://mp3db.pro/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Music Rider",
+      "url": "https://musicrider.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "musify",
+      "url": "https://musify.club/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "New Album Releases",
+      "url": "https://newalbumreleases.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "New-Team",
+      "url": "https://new-team.org/",
+      "section": "music",
+      "desc": "Торрент-раздачи музыки, альбомов и сборников",
+      "notes": []
+    },
+    {
+      "name": "nodata",
+      "url": "https://nodata.tv/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "NTS Radio",
+      "url": "https://www.nts.live/",
+      "section": "music",
+      "desc": "Миксы и лайв-сеты диджеев для скачивания музыки: сериалы",
+      "notes": []
+    },
+    {
+      "name": "Octave",
+      "url": "https://octavestreaming.com/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Orpheus",
+      "url": "https://orpheus.network/",
+      "section": "music",
+      "desc": "Торрент-раздачи музыки, альбомов и сборников: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "Redacted",
+      "url": "https://redacted.sh/",
+      "section": "music",
+      "desc": "Торрент-раздачи музыки, альбомов и сборников: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "Rhythmax JioSaavn Downloader",
+      "url": "https://saavn.odskyler.com/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Rhythmax TIDAL Downloader",
+      "url": "https://tidal.odskyler.com/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Rip Anything From Anywhere",
+      "url": "https://anything.rip/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": [
+        "Multi-Site Bypass"
+      ]
+    },
+    {
+      "name": "RockDownload",
+      "url": "https://www.rockdownload.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "ShareMania",
+      "url": "https://sharemania.us/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "SongsLover",
+      "url": "https://songslover.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "SoundClick",
+      "url": "https://www.soundclick.com/default.cfm",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Spotisaver",
+      "url": "https://spotisaver.net/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "squid.wtf",
+      "url": "https://squid.wtf/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "Tancpol",
+      "url": "https://tancpol.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "ThemFire",
+      "url": "https://themfire.pro/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "Tricotism",
+      "url": "https://www.tricotism.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов: музыка, scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "vdwn.cloud",
+      "url": "https://vdwn.cloud/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "VGMusic",
+      "url": "https://www.vgmusic.com/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "xprm",
+      "url": "https://xprm.net/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "YTiz",
+      "url": "https://ytiz.xyz/",
+      "section": "music",
+      "desc": "Сайты для скачивания (риппа) музыки и альбомов",
+      "notes": []
+    },
+    {
+      "name": "z3.fm",
+      "url": "https://z3.fm/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "zvu4no",
+      "url": "https://zvu4it.org/",
+      "section": "music",
+      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
+      "notes": []
+    },
+    {
+      "name": "3X-UI",
+      "url": "https://docs.sanaei.dev/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Acrylic",
+      "url": "https://mayakron.altervista.org/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам",
+      "notes": []
+    },
+    {
+      "name": "AirVPN",
+      "url": "https://airvpn.org/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Algo VPN",
+      "url": "https://blog.trailofbits.com/2016/12/12/meet-algo-the-vpn-that-works/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Amnezia",
+      "url": "https://amnezia.org/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": [
+        "⁠WireSock, , 2 / / / / or TunnlTo - Split Tunneling Clients",
+        "2 - Proxy Client / All Platforms / / / /"
+      ]
+    },
+    {
+      "name": "Android",
+      "url": "https://0xacab.org/leap/bitmask_android",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Bitmask",
+      "url": "https://bitmask.net/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Blockaway",
+      "url": "https://www.blockaway.net/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Censor Tracker",
+      "url": "https://censortracker.org/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "ClashVerge",
+      "url": "https://www.clashverge.dev/",
+      "section": "privacy",
+      "desc": "Клиент для подключения к прокси, VPN и SOCKS",
+      "notes": []
+    },
+    {
+      "name": "Cloudflare One",
+      "url": "https://one.one.one.one/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "CroxyProxy",
+      "url": "https://www.croxyproxy.com/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "DNSCrypt",
+      "url": "https://dnscrypt.info/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам",
+      "notes": []
+    },
+    {
+      "name": "DNSTT.XYZ",
+      "url": "https://dnstt.xyz/",
+      "section": "privacy",
+      "desc": "Инструмент обхода блокировок и цензуры в интернете",
+      "notes": []
+    },
+    {
+      "name": "fastssh",
+      "url": "https://www.fastssh.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "FilterWatch",
+      "url": "https://filter.watch/english/",
+      "section": "privacy",
+      "desc": "Инструмент обхода блокировок и цензуры в интернете",
+      "notes": []
+    },
+    {
+      "name": "FoxyProxy",
+      "url": "https://getfoxyproxy.org/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам: расширение браузера, трекер",
+      "notes": []
+    },
+    {
+      "name": "FreeSocks",
+      "url": "https://freesocks.org/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам: приложение",
+      "notes": []
+    },
+    {
+      "name": "FreeVPN",
+      "url": "https://www.freevpn.us/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Geph",
+      "url": "https://geph.io/",
+      "section": "privacy",
+      "desc": "Инструмент обхода блокировок и цензуры в интернете",
+      "notes": []
+    },
+    {
+      "name": "GreenSSH",
+      "url": "https://www.greenssh.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Hiddify Manager",
+      "url": "https://hiddify.com/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": [
+        "Proxy Panel"
+      ]
+    },
+    {
+      "name": "Howdy",
+      "url": "https://howdy.id/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Hysteria",
+      "url": "https://v2.hysteria.network/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "JagoanSSH",
+      "url": "https://www.jagoanssh.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Lantern",
+      "url": "https://lantern.io/",
+      "section": "privacy",
+      "desc": "Приложение для обхода блокировок в странах с цензурой",
+      "notes": []
+    },
+    {
+      "name": "NetBird",
+      "url": "https://netbird.io/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "url": "https://nginxproxymanager.com",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "No Port Forwarding",
+      "url": "https://www.ivpn.net/blog/gradual-removal-of-port-forwarding/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Nym",
+      "url": "https://nym.com/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": [
+        "Paid"
+      ]
+    },
+    {
+      "name": "OpenTunnel",
+      "url": "https://opentunnel.net/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "OpenVPN",
+      "url": "https://openvpn.net/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Outline",
+      "url": "https://getoutline.org/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Phantom",
+      "url": "https://phantom.lol/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Pritunl",
+      "url": "https://pritunl.com/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "PrivadoVPN",
+      "url": "https://privadovpn.com/freevpn",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Proton VPN",
+      "url": "https://protonvpn.com",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Proxy Checker",
+      "url": "https://proxy-checker.net/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Proxyium",
+      "url": "https://proxyium.com/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "ProxyOf2",
+      "url": "https://proxyof2.com/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "ProxyPal",
+      "url": "https://proxypal.net/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Psiphon",
+      "url": "https://psiphon.ca/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам: приложение",
+      "notes": []
+    },
+    {
+      "name": "RaceVPN",
+      "url": "https://www.racevpn.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Reflect4",
+      "url": "https://reflect4.me/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Rethink DNS",
+      "url": "https://rethinkdns.com/app",
+      "section": "privacy",
+      "desc": "Инструмент обхода блокировок и цензуры в интернете",
+      "notes": []
+    },
+    {
+      "name": "RiseupVPN",
+      "url": "https://riseup.net/en/vpn",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "Scramjet",
+      "url": "https://docs.titaniumnetwork.org/proxies/scramjet/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Shadowmere",
+      "url": "https://shadowmere.xyz",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Shadowsocks",
+      "url": "https://shadowsocks.org/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": [
+        "Shadowsocks Client / All Platforms"
+      ]
+    },
+    {
+      "name": "sing-box",
+      "url": "https://sing-box.sagernet.org/",
+      "section": "privacy",
+      "desc": "Списки прокси-серверов для обхода блокировок",
+      "notes": [
+        "Proxy Client"
+      ]
+    },
+    {
+      "name": "Snowflake",
+      "url": "https://snowflake.torproject.org/",
+      "section": "privacy",
+      "desc": "Прокси-сервисы для обхода блокировок и доступа к сайтам: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "SSHKit",
+      "url": "https://sshkit.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "sshOcean",
+      "url": "https://sshocean.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "SSLSecureProxy",
+      "url": "https://www.sslsecureproxy.com/",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "Tailscale",
+      "url": "https://tailscale.com/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Techlore Chart",
+      "url": "https://vpn.techlore.tech/",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "tinc VPN",
+      "url": "https://www.tinc-vpn.org/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Titanium Network",
+      "url": "https://titaniumnetwork.org/#services",
+      "section": "privacy",
+      "desc": "Веб-прокси для доступа к заблокированным сайтам",
+      "notes": []
+    },
+    {
+      "name": "TunnlTo",
+      "url": "https://tunnl.to/",
+      "section": "privacy",
+      "desc": "Утилиты и клиенты для VPN, прокси и DNS-туннелей",
+      "notes": []
+    },
+    {
+      "name": "Twingate",
+      "url": "https://www.twingate.com/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "V2Nodes",
+      "url": "https://v2nodes.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "VPN Jantit",
+      "url": "https://www.vpnjantit.com/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "VPN Relationships",
+      "url": "https://kumu.io/Windscribe/vpn-relationships",
+      "section": "privacy",
+      "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
+      "notes": []
+    },
+    {
+      "name": "vpn.fail",
+      "url": "https://vpn.fail/",
+      "section": "privacy",
+      "desc": "Готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "WG Tunnel",
+      "url": "https://wgtunnel.com/",
+      "section": "privacy",
+      "desc": "Утилиты и клиенты для VPN, прокси и DNS-туннелей",
+      "notes": []
+    },
+    {
+      "name": "WGDashboard",
+      "url": "https://wgdashboard.dev/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "Windscribe",
+      "url": "https://windscribe.com",
+      "section": "privacy",
+      "desc": "VPN с бесплатным тарифом и обходом блокировок",
+      "notes": []
+    },
+    {
+      "name": "WireGuard",
+      "url": "https://www.wireguard.com/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": [
+        "NTS Radio - DJ Radio Shows / Interactive Tracklist / Downloader / / Mixcloud / Discovery Guide",
+        "NTS Radio - DJ Radio Shows / Interactive Tracklist / Downloader / SoundCloud / Mixcloud /",
+        "BBC Radio 1 Essential Mix Archive + Guide",
+        "Downloading Guide / Site Index",
+        "Editing Software",
+        "2, 3 (search) - Download Manager / Firefox / Chrome /",
+        "WinRAR, 2 - File Archiver / /",
+        "Account Gen / Unlimited Upload Size"
+      ]
+    },
+    {
+      "name": "WireSock",
+      "url": "https://wiresock.net/",
+      "section": "privacy",
+      "desc": "Утилиты и клиенты для VPN, прокси и DNS-туннелей",
+      "notes": []
+    },
+    {
+      "name": "ZeroTier",
+      "url": "https://www.zerotier.com/",
+      "section": "privacy",
+      "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
+      "notes": []
+    },
+    {
+      "name": "1024TeraDL",
+      "url": "https://1024teradl.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "1DDL",
+      "url": "https://1ddl.org/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "4Shared",
+      "url": "https://www.4shared.com/",
+      "section": "software",
+      "desc": "Файлообменник для хранения и скачивания файлов",
+      "notes": []
+    },
+    {
+      "name": "7-Zip",
+      "url": "https://www.7-zip.org/",
+      "section": "software",
+      "desc": "Бесплатный архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "AB Download Manager",
+      "url": "https://abdownloadmanager.com/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "AdiIRC",
+      "url": "https://adiirc.com/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "AditHD",
+      "url": "https://www.adit-hd.com/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": []
+    },
+    {
+      "name": "aQRoss",
+      "url": "https://aqross.app/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Archive Team",
+      "url": "https://wiki.archiveteam.org/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач",
+      "notes": []
+    },
+    {
+      "name": "ArrowDL",
+      "url": "https://www.arrow-dl.com/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "Blip",
+      "url": "https://blip.net/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Bypass Paywalls Clean",
+      "url": "https://gitflic.ru/project/magnolia1234/bpc_uploads",
+      "section": "software",
+      "desc": "Инструменты и расширения для обхода платных стен: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "Bypass.lc",
+      "url": "https://bypass.lc/",
+      "section": "software",
+      "desc": "Обход редиректов и сокращателей ссылок на файлы",
+      "notes": []
+    },
+    {
+      "name": "Bypass.vip",
+      "url": "https://bypass.vip/",
+      "section": "software",
+      "desc": "Обход редиректов и сокращателей ссылок на файлы",
+      "notes": []
+    },
+    {
+      "name": "Clip Fish",
+      "url": "https://clip.fish/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Convos",
+      "url": "https://convos.chat/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "CracksURL",
+      "url": "https://cracksurl.com/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": [
+        "CracksURL / / , 2"
+      ]
+    },
+    {
+      "name": "croc",
+      "url": "https://getcroc.com/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "DashBeam",
+      "url": "https://dashbeam.net/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Debrid Media Manager",
+      "url": "https://debridmediamanager.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "Debrid Vault",
+      "url": "https://debridvault.elfhosted.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "Down for Everyone or Just Me",
+      "url": "https://downforeveryoneorjustme.com/",
+      "section": "software",
+      "desc": "Сервис проверки доступности сайтов и ссылок на контент",
+      "notes": []
+    },
+    {
+      "name": "Downdetector",
+      "url": "https://downdetector.com/",
+      "section": "software",
+      "desc": "Сервис проверки доступности сайтов и ссылок на контент",
+      "notes": []
+    },
+    {
+      "name": "DownloadHa",
+      "url": "https://www.downloadha.com/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": []
+    },
+    {
+      "name": "DownThemAll",
+      "url": "https://www.downthemall.org/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "downTURK",
+      "url": "https://www.downturk.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "Encode",
+      "url": "https://encode.su/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "European Alternatives",
+      "url": "https://european-alternatives.eu/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": []
+    },
+    {
+      "name": "Evade",
+      "url": "https://skipped.lol",
+      "section": "software",
+      "desc": "Обход редиректов и сокращателей ссылок на файлы",
+      "notes": [
+        "Ad-Links Bypasser"
+      ]
+    },
+    {
+      "name": "EyeDex",
+      "url": "https://www.eyedex.org/",
+      "section": "software",
+      "desc": "Каталог файлов и раздач для скачивания без рекламы: прямые ссылки",
+      "notes": []
+    },
+    {
+      "name": "ezyZip",
+      "url": "https://www.ezyzip.com/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "FDM",
+      "url": "https://www.freedownloadmanager.org/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "Fileforums",
+      "url": "https://fileforums.com/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "FilePizza",
+      "url": "https://file.pizza/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "FileZilla",
+      "url": "https://filezilla-project.org/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Filter",
+      "url": "https://pastebin.com/VFrdqPTe",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "Free Transfer",
+      "url": "https://transfert.free.fr/upload",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Freedium",
+      "url": "https://freedium-mirror.cfd/",
+      "section": "software",
+      "desc": "Инструменты и расширения для обхода платных стен",
+      "notes": []
+    },
+    {
+      "name": "Get4All",
+      "url": "https://get4all.org/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "Go Speed",
+      "url": "https://gopeed.com/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "Google Quick Share",
+      "url": "https://www.android.com/quick-share/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "HatchZip",
+      "url": "https://hatchzip.dev/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "HDM",
+      "url": "https://hydra.javad.dev/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "imFile",
+      "url": "https://imfile.org/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "IPFS",
+      "url": "https://ipfs.tech/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "IPFS Cluster",
+      "url": "https://ipfscluster.io/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "IRC Guide",
+      "url": "https://rentry.org/ircfmhyguide",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": [
+        "More Hosts / 1GB or Below"
+      ]
+    },
+    {
+      "name": "iTeraPlay",
+      "url": "https://iteraplay.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "JDownloader",
+      "url": "https://jdownloader.org/",
+      "section": "software",
+      "desc": "Менеджер загрузок: загрузка с торрентов, HTTP и премиум-аккаунтов",
+      "notes": []
+    },
+    {
+      "name": "JustBeamIt",
+      "url": "https://justbeamit.com/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Katz DDL",
+      "url": "https://katzddl.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "KDE Connect",
+      "url": "https://kdeconnect.kde.org/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Konversation",
+      "url": "https://konversation.kde.org/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "LANDrop",
+      "url": "https://landrop.app/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Libera Guides",
+      "url": "https://libera.chat/guides/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": [
+        "tilde, AnonOps or Rizon - IRC Networks"
+      ]
+    },
+    {
+      "name": "LocalSend",
+      "url": "https://localsend.org/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "LRepacks",
+      "url": "https://lrepacks.net/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами: прямые ссылки",
+      "notes": []
+    },
+    {
+      "name": "MaxRelease",
+      "url": "https://max-rls.com/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач",
+      "notes": []
+    },
+    {
+      "name": "MEGA Desktop",
+      "url": "https://mega.io/desktop",
+      "section": "software",
+      "desc": "Облачное хранилище с шифрованием и большими файлами",
+      "notes": [
+        "Official CLI App"
+      ]
+    },
+    {
+      "name": "Merlin Warez",
+      "url": "https://merlinwz.com/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "Minuimus",
+      "url": "https://birds-are-nice.me/software/minuimus.html",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "mmnt",
+      "url": "https://www.mmnt.net/",
+      "section": "software",
+      "desc": "Каталог файлов и раздач для скачивания без рекламы: прямые ссылки",
+      "notes": []
+    },
+    {
+      "name": "Moum",
+      "url": "https://moum.top/en/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": []
+    },
+    {
+      "name": "NahrajSoubor",
+      "url": "https://new.nahrajsoubor.cz/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "NanaZip",
+      "url": "https://nanazip.org/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "NetSplit",
+      "url": "https://netsplit.de/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "New Blood",
+      "url": "https://anonops.com/newblood/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": [
+        "Libera, tilde, or Rizon - IRC Networks"
+      ]
+    },
+    {
+      "name": "new.space",
+      "url": "https://new.space/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Nicotine+",
+      "url": "https://nicotine-plus.org/",
+      "section": "software",
+      "desc": "Каталог файлов и раздач для скачивания без рекламы: приложение",
+      "notes": []
+    },
+    {
+      "name": "Novanon",
+      "url": "https://novanon.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "Nsane Forums",
+      "url": "https://www.nsaneforums.com/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами: требуется регистрация",
+      "notes": []
+    },
+    {
+      "name": "NullBeat",
+      "url": "https://nullbeat.thevolecitor.qzz.io/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "ODCrawler",
+      "url": "https://odcrawler.xyz/",
+      "section": "software",
+      "desc": "Каталог файлов и раздач для скачивания без рекламы: прямые ссылки",
+      "notes": []
+    },
+    {
+      "name": "OnionShare",
+      "url": "https://onionshare.org/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "PairDrop",
+      "url": "https://pairdrop.net/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Pixeldrain Limit Bypass",
+      "url": "https://pixeldrain-bypass.gamedrive.to/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "PressReleased",
+      "url": "https://pressreleased.alwaysdata.net/",
+      "section": "software",
+      "desc": "Инструменты и расширения для обхода платных стен",
+      "notes": []
+    },
+    {
+      "name": "Psycho downloads",
+      "url": "https://psychodownloads.com/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "pyLoad",
+      "url": "https://pyload.net/",
+      "section": "software",
+      "desc": "Менеджер загрузок с докачкой, ускорением и очередью",
+      "notes": []
+    },
+    {
+      "name": "qrcp",
+      "url": "https://qrcp.sh/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "ReadMedium",
+      "url": "https://readmedium.com/",
+      "section": "software",
+      "desc": "Инструменты и расширения для обхода платных стен",
+      "notes": []
+    },
+    {
+      "name": "Real-Debrid",
+      "url": "https://real-debrid.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "ReleaseBB",
+      "url": "https://rlsbb.ru/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги, сериалы",
+      "notes": []
+    },
+    {
+      "name": "ReleaseHive",
+      "url": "https://releasehive.com/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "Resources",
+      "url": "https://awesome.ipfs.tech/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "Rizon",
+      "url": "https://rizon.net/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "SceneSource",
+      "url": "https://www.scnsrc.me/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "SEAL",
+      "url": "https://seal.net/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов: без регистрации",
+      "notes": []
+    },
+    {
+      "name": "Sendme",
+      "url": "https://www.iroh.computer/sendme",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "Snapdrop",
+      "url": "https://node-snapdrop.onrender.com/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Soft98",
+      "url": "https://soft98.ir/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами",
+      "notes": []
+    },
+    {
+      "name": "SoftArchive",
+      "url": "https://softarchive.download/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: комиксы и манга, книги",
+      "notes": []
+    },
+    {
+      "name": "Soulseek",
+      "url": "https://slsknet.org/",
+      "section": "software",
+      "desc": "Каталог файлов и раздач для скачивания без рекламы: приложение",
+      "notes": []
+    },
+    {
+      "name": "Station307",
+      "url": "https://www.station307.com/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "SuperCompression",
+      "url": "https://supercompression.org/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "TehParadox",
+      "url": "https://www.tehparadox.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "Terabox Downloader",
+      "url": "https://getindevice.com/terabox-downloader/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "TeraFetch",
+      "url": "https://terafetch.com/",
+      "section": "software",
+      "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
+      "notes": []
+    },
+    {
+      "name": "termscp",
+      "url": "https://termscp.rs/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "TheLounge",
+      "url": "https://thelounge.chat/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "tilde",
+      "url": "https://tilde.chat/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "ToffeeShare",
+      "url": "https://toffeeshare.com/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "Track Shows",
+      "url": "https://openuserjs.org/scripts/drdre1/ReleaseBB_rlsbb_TV_Show_Tracker",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "Unrar online",
+      "url": "https://unrar.online/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "UnrealIRCd",
+      "url": "https://www.unrealircd.org/",
+      "section": "software",
+      "desc": "IRC-клиенты для scene-раздач и анонсов релизов",
+      "notes": []
+    },
+    {
+      "name": "unzip-online",
+      "url": "https://unzip-online.com/en",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "wallabag",
+      "url": "https://wallabag.org/",
+      "section": "software",
+      "desc": "Инструменты и расширения для обхода платных стен",
+      "notes": []
+    },
+    {
+      "name": "WarezLoad",
+      "url": "https://warezload.net/index.php",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: книги",
+      "notes": []
+    },
+    {
+      "name": "Web Version",
+      "url": "https://web.localsend.org/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "WebWormhole",
+      "url": "https://webwormhole.com/",
+      "section": "software",
+      "desc": "P2P-передача файлов напрямую между устройствами",
+      "notes": []
+    },
+    {
+      "name": "WinRAR",
+      "url": "https://www.win-rar.com/",
+      "section": "software",
+      "desc": "Архиватор для распаковки rar, zip, iso и других форматов",
+      "notes": []
+    },
+    {
+      "name": "WinSCP",
+      "url": "https://winscp.net/eng/index.php",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "wJungle",
+      "url": "https://wjungle.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач: требуется регистрация, книги",
+      "notes": []
+    },
+    {
+      "name": "WorldSRC",
+      "url": "https://www.worldsrc.net/",
+      "section": "software",
+      "desc": "Сайт для скачивания файлов, программ и раздач",
+      "notes": []
+    },
+    {
+      "name": "Wormhole",
+      "url": "https://wormhole.app/",
+      "section": "software",
+      "desc": "Сервис для передачи крупных файлов и архивов",
+      "notes": []
+    },
+    {
+      "name": "ZXPInstaller",
+      "url": "https://zxpinstaller.com/",
+      "section": "software",
+      "desc": "Сайты с пиратским софтом, кряками и патчами: расширение браузера",
+      "notes": []
+    },
+    {
+      "name": "0Mag",
+      "url": "https://www.0mag.net/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "Archiv.pw",
+      "url": "https://archiv.pw/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "BiglyBT",
+      "url": "https://www.biglybt.com/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "BitFlu",
+      "url": "https://bitflu.workaround.ch/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "BitMagnet",
+      "url": "https://bitmagnet.io/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки: через торренты",
+      "notes": []
+    },
+    {
+      "name": "BT4G",
+      "url": "https://bt4gprx.com/",
+      "section": "torrenting",
+      "desc": "Зеркало BT4G с поиском по торрентам",
+      "notes": []
+    },
+    {
+      "name": "cross-seed",
+      "url": "https://www.cross-seed.org/",
+      "section": "torrenting",
+      "desc": "Приватный трекер с эксклюзивными раздачами и аннонсами: через торренты",
+      "notes": []
+    },
+    {
+      "name": "DaMagNet",
+      "url": "https://damag.net/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "Deluge",
+      "url": "https://www.deluge-torrent.org/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": [
+        "Torrent Client"
+      ]
+    },
+    {
+      "name": "Distribyted",
+      "url": "https://distribyted.com/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Dracula",
+      "url": "https://draculatheme.com/qbittorrent",
+      "section": "torrenting",
+      "desc": "Дополнения, плагины и темы оформления для qBittorrent",
+      "notes": [
+        "JDownloader Tools - Apps / Dark Theme, 2 / / Debloat Guide"
+      ]
+    },
+    {
+      "name": "ExtraTorrent",
+      "url": "https://extratorrent.st/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "FileMood",
+      "url": "https://filemood.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "flood",
+      "url": "https://flood.js.org/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "FossTorrents T2M",
+      "url": "https://fosstorrents.com/t2m/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Fragments",
+      "url": "https://apps.gnome.org/Fragments/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Knaben",
+      "url": "https://knaben.org/",
+      "section": "torrenting",
+      "desc": "Быстрый поисковик по торрент-файлам без рекламы",
+      "notes": []
+    },
+    {
+      "name": "Knaben.info",
+      "url": "https://knaben.info/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: через торренты",
+      "notes": []
+    },
+    {
+      "name": "kTorrent",
+      "url": "https://apps.kde.org/ktorrent/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "LIII",
+      "url": "https://codecpack.co/download/LIII-BitTorrent-Client.html",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "M2V",
+      "url": "https://m2v.ru",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "Magnet.diy",
+      "url": "https://magnet.diy/",
+      "section": "torrenting",
+      "desc": "Удалённое скачивание торрентов через облачный сервис",
+      "notes": []
+    },
+    {
+      "name": "Magnet2Torrent",
+      "url": "https://magnet2torrent.com/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Milkie",
+      "url": "https://milkie.cc",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "NG Pre",
+      "url": "https://ngp.re/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "NNM-Club",
+      "url": "https://nnmclub.to/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ",
+      "notes": []
+    },
+    {
+      "name": "OpenSignup",
+      "url": "https://trackersignup.org/",
+      "section": "torrenting",
+      "desc": "Приватный трекер с эксклюзивными раздачами и аннонсами: трекер",
+      "notes": []
+    },
+    {
+      "name": "PikaTorrent",
+      "url": "https://www.pikatorrent.com/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Pre Database",
+      "url": "https://predataba.se",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "PreDB.net",
+      "url": "https://predb.net/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": [
+        "ReleaseBB, 2, 3, 4 - Audio / Books / Magazines / Track Shows /"
+      ]
+    },
+    {
+      "name": "qBittorrent",
+      "url": "https://www.qbittorrent.org/",
+      "section": "torrenting",
+      "desc": "qBittorrent: бесплатный торрент-клиент без рекламы",
+      "notes": []
+    },
+    {
+      "name": "qui",
+      "url": "https://getqui.com/",
+      "section": "torrenting",
+      "desc": "Дополнения, плагины и темы оформления для qBittorrent: через торренты",
+      "notes": []
+    },
+    {
+      "name": "RARBG Dump",
+      "url": "https://rarbgdump.com/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: книги, игры",
+      "notes": []
+    },
+    {
+      "name": "rTorrent",
+      "url": "https://rtorrent.net/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "rutor.info",
+      "url": "https://rutor.is/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: книги",
+      "notes": []
+    },
+    {
+      "name": "Scnlog",
+      "url": "https://scnlog.me",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": [
+        "Video / Audio / ROMs / Books"
+      ]
+    },
+    {
+      "name": "Seedbox Guide",
+      "url": "https://seedboxgui.de/seedbox/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента",
+      "notes": []
+    },
+    {
+      "name": "Seedr",
+      "url": "https://www.seedr.cc/",
+      "section": "torrenting",
+      "desc": "Трекер для приватной сессии с обменом музыкой и фильмами",
+      "notes": []
+    },
+    {
+      "name": "snowfl",
+      "url": "https://snowfl.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "SonicBit",
+      "url": "https://sonicbit.net/",
+      "section": "torrenting",
+      "desc": "Удалённое скачивание торрентов через облачный сервис",
+      "notes": []
+    },
+    {
+      "name": "srrDB",
+      "url": "https://www.srrdb.com",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    },
+    {
+      "name": "The Black Hole Bay",
+      "url": "https://theblackholebay.lol/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "Tixati",
+      "url": "https://tixati.com/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "TorBox",
+      "url": "https://torbox.app/",
+      "section": "torrenting",
+      "desc": "Удалённое скачивание торрентов через облачный сервис",
+      "notes": [
+        "TorBox - Freemium / 10GB / 10 Monthly Downloads / / Unofficial Mobile Client, 2 / / /",
+        "Freemium / 10GB + 10 Monthly DDL Free / Requires Sign-Up",
+        "TorBox - Freemium / 10GB + 10 Monthly DDL Free / Requires Sign-Up / / Unofficial Mobile Client, 2 / / /"
+      ]
+    },
+    {
+      "name": "Torlock",
+      "url": "https://www.torlock.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "Torrent Kitty",
+      "url": "https://www.torrentkitty.tv/",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Torrenting",
+      "url": "https://www.torrenting.com/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: требуется регистрация, книги",
+      "notes": []
+    },
+    {
+      "name": "TorrentProject",
+      "url": "https://torrentproject.cc/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "TorrentQuest",
+      "url": "https://torrentquest.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "Torrents-CSV",
+      "url": "https://torrents-csv.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "TR4KER",
+      "url": "https://tr4ker.net/",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: книги",
+      "notes": []
+    },
+    {
+      "name": "Tracker Pathways",
+      "url": "https://trackerpathways.org/",
+      "section": "torrenting",
+      "desc": "Приватный трекер с эксклюзивными раздачами и аннонсами: трекер",
+      "notes": []
+    },
+    {
+      "name": "Transmission",
+      "url": "https://transmissionbt.com/",
+      "section": "torrenting",
+      "desc": "Transmission: простой торрент-клиент для всех платформ",
+      "notes": []
+    },
+    {
+      "name": "uIndex",
+      "url": "https://uindex.org/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
+      "notes": []
+    },
+    {
+      "name": "UZTracker",
+      "url": "https://uztracker.me",
+      "section": "torrenting",
+      "desc": "Торрент-индекс с раздачами фильмов, игр и программ: книги",
+      "notes": []
+    },
+    {
+      "name": "webtor",
+      "url": "https://webtor.io/",
+      "section": "torrenting",
+      "desc": "Удалённое скачивание торрентов через облачный сервис: без регистрации",
+      "notes": []
+    },
+    {
+      "name": "WizTorrent",
+      "url": "https://wiztorrent.com/",
+      "section": "torrenting",
+      "desc": "Торрент-клиент для загрузки и раздачи пиратного контента: через торренты",
+      "notes": []
+    },
+    {
+      "name": "Xrel",
+      "url": "https://www.xrel.to",
+      "section": "torrenting",
+      "desc": "Помощники для поиска, проверки и скачивания раздач: scene-раздачи",
+      "notes": []
+    }
+  ]
+}

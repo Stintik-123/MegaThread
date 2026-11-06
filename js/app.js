@@ -34,6 +34,7 @@ const el = {
   catGrid: $('#cat-grid'),
   sidebarCats: $('#sidebar-cats'),
   heroBadge: $('#hero-badge'),
+  heroMeta: $('#hero-meta'),
   allList: $('#all-list'),
   allTags: $('#all-tags'),
   allOs: $('#all-os'),
@@ -199,11 +200,13 @@ function renderFacts() {
   if (el.heroBadge) {
     el.heroBadge.textContent = `${RESOURCES.length} ресурсов · ${CATEGORIES.length} разделов`;
   }
+  if (el.heroMeta) {
+    el.heroMeta.textContent = `${RESOURCES.length} ссылок · ${CATEGORIES.length} разделов · ${tagCount} меток`;
+  }
 }
 
 const START_PICKS = [
-  'AmneziaVPN', 'RuStore', 'yt-dlp', 'Смотрим', 'Lampa',
-  'uBlock Origin', 'Anna’s Archive: зеркала', 'Stepik', 'AdGuard DNS', 'TorrentSearch',
+  'RuTracker', 'rutor.info', 'LibGen', 'Nyaa', 'FitGirl Repacks', 'Anna\'s Archive', 'qBittorrent', 'uBlock Origin', 'TorrentGalaxy', 'Wotaku', 'Z-Library',
 ];
 
 function renderStartPicks() {
