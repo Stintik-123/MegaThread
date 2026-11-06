@@ -8,11 +8,11 @@ const REPO = 'MegaThread';
 const API = 'https://api.github.com';
 
 const DESCRIPTION =
-  'Каталог бесплатных ресурсов и торрент-трекеров: 264 ссылки в 13 разделах, поиск по Ctrl+K, фильтры, избранное, PWA и работа офлайн.';
+  'Пиратский сборник: 1383 ссылки в 9 разделах (торренты, кино, аниме, игры, книги, музыка, обход блокировок, инструменты, файлообменники). Поиск по Ctrl+K, избранное, PWA, работа офлайн.';
 const TOPICS = [
-  'static-site', 'pwa', 'catalog', 'resources', 'free-resources',
-  'russian-language', 'torrents', 'privacy', 'open-source', 'awesome-list',
-  'vanilla-js', 'offline-first', 'no-build', 'directory',
+  'static-site', 'pwa', 'catalog', 'resources', 'piracy',
+  'russian-language', 'torrents', 'privacy', 'awesome-list',
+  'vanilla-js', 'offline-first', 'no-build', 'directory', 'ru-piracy',
 ];
 const HOMEPAGE = 'https://stintik-123.github.io/MegaThread/';
 
