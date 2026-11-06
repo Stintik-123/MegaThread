@@ -1,4 +1,4 @@
-const CACHE = 'megathread-v10';
+const CACHE = 'megathread-v11';
 const PREVIEW_CACHE = 'megathread-previews-v1';
 
 // Все модули и стили, от которых зависит интерактивный каталог.
