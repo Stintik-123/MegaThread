@@ -1,5 +1,5 @@
 // Пиратский каталог MegaThread. Единственный источник правды по составу.
-// 9 категорий, 1383 ресурсов.
+// 9 категорий, 1392 ресурсов.
 // Собран из FMHY, мегатреда Reddit и открытых пиратских списков.
 // ru: ok — открывается напрямую, limited — работает не всегда, blocked — нужен обход,
 // mirror — нужен актуальный домен или зеркало.
@@ -13261,7 +13261,88 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
-  }
+  },
+  {
+    "cat": "books",
+    "name": "BookTracker",
+    "desc": "Библиотека книг и сборников, включая зеркала Флибусты. Поиск по авторам и жанрам.",
+    "url": "https://booktracker.org/",
+    "tags": ["книги", "библиотека", "флибуста"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "tools",
+    "name": "Futon (Android)",
+    "desc": "Форк Kotatsu для Android: чтение манги и новелл из 1200+ источников, история, закладки, трекинг прочитанного.",
+    "url": "https://github.com/AppFuton/Futon",
+    "tags": ["манга", "android", "читалка"],
+    "os": ["android"],
+    "ru": "ok"
+  },
+  {
+    "cat": "books",
+    "name": "Akuma",
+    "desc": "Манга, додзинси и другая печатная продукция с каталогом и поиском.",
+    "url": "https://akuma.moe/",
+    "tags": ["манга", "додзинси"],
+    "os": ["any"],
+    "ru": "limited"
+  },
+  {
+    "cat": "streaming",
+    "name": "Mogu (Hololive)",
+    "desc": "Архив платных стримов и видео Hololive.",
+    "url": "https://mogu.holopirates.moe/",
+    "tags": ["vtuber", "hololive", "архив"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "tools",
+    "name": "Pawchive",
+    "desc": "Архив постов авторов с Patreon, визуальный аналог Kemono.",
+    "url": "https://pawchive.pw/",
+    "tags": ["patreon", "архив"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "VRCpirate",
+    "desc": "Модели персонажей, аксессуары и интерактивные объекты для VRChat.",
+    "url": "https://vrcpirate.com/",
+    "tags": ["vrchat", "модели", "vr"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "F95Zone",
+    "desc": "Форум по играм, комиксам и анимациям для взрослых. Для скачивания требуется регистрация.",
+    "url": "https://f95zone.to/",
+    "tags": ["18+", "игры", "форум"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "Flashpoint Archive",
+    "desc": "Архив флеш-игр и анимаций: сохранение утраченного веб-контента.",
+    "url": "https://flashpointarchive.org/downloads",
+    "tags": ["флеш", "архив", "браузерные"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "LewdPatcher",
+    "desc": "Патчи, снимающие цензуру в играх.",
+    "url": "https://lewdpatcher.com/",
+    "tags": ["патчи", "18+"],
+    "os": ["windows"],
+    "ru": "ok"
+  },
 ];
 
 export const CAT_BY_ID = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]));
