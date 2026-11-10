@@ -324,6 +324,18 @@ const CORE = [
   { cat: 'downloads', name: 'Mediafire', url: 'https://www.mediafire.com/', desc: 'Файлообменник с быстрыми ссылками и превью файлов', tags: ['файлообменники'], ru: 'ok' },
   { cat: 'downloads', name: 'Pixeldrain', url: 'https://pixeldrain.com/', desc: 'Файлообменник без рекламы и без ожидания', tags: ['файлообменники', 'бесплатно'], ru: 'ok' },
   { cat: 'downloads', name: '1fichier', url: 'https://1fichier.com/', desc: 'Файлообменник с большими лимитами и защитой от спама', tags: ['файлообменники'], ru: 'ok' },
+
+  // Ресурсы, добавленные вручную через issues (issue #4): они не собираются
+  // автоматически из мегатредов, поэтому живут здесь, в CORE.
+  { cat: 'books', name: 'BookTracker', url: 'https://booktracker.org/', desc: 'Библиотека книг и сборников, включая зеркала Флибусты. Поиск по авторам и жанрам.', tags: ['книги', 'библиотека', 'флибуста'], ru: 'ok' },
+  { cat: 'tools', name: 'Futon (Android)', url: 'https://github.com/AppFuton/Futon', desc: 'Форк Kotatsu для Android: чтение манги и новелл из 1200+ источников, история, закладки, трекинг прочитанного.', tags: ['манга', 'приложения'], os: ['a'], ru: 'ok' },
+  { cat: 'books', name: 'Akuma', url: 'https://akuma.moe/', desc: 'Манга, додзинси и другая печатная продукция с каталогом и поиском.', tags: ['манга', 'додзинси'], ru: 'limited', note: 'Отвечает не всегда — домен может не открываться без обхода.' },
+  { cat: 'streaming', name: 'Mogu (Hololive)', url: 'https://mogu.holopirates.moe/', desc: 'Архив платных стримов и видео Hololive.', tags: ['стриминг', 'архив'], ru: 'ok' },
+  { cat: 'tools', name: 'Pawchive', url: 'https://pawchive.pw/', desc: 'Архив постов авторов с Patreon, визуальный аналог Kemono.', tags: ['патreon', 'архив'], ru: 'ok' },
+  { cat: 'games', name: 'VRCpirate', url: 'https://vrcpirate.com/', desc: 'Модели персонажей, аксессуары и интерактивные объекты для VRChat.', tags: ['VRChat', 'модели'], ru: 'ok' },
+  { cat: 'games', name: 'F95Zone', url: 'https://f95zone.to/', desc: 'Форум по играм, комиксам и анимациям для взрослых. Для скачивания требуется регистрация.', tags: ['18+', 'игры', 'форум'], ru: 'ok' },
+  { cat: 'games', name: 'Flashpoint Archive', url: 'https://flashpointarchive.org/downloads', desc: 'Архив флеш-игр и анимаций: сохранение утраченного веб-контента.', tags: ['флеш', 'архив', 'браузерные'], ru: 'ok' },
+  { cat: 'games', name: 'LewdPatcher', url: 'https://lewdpatcher.com/', desc: 'Патчи, снимающие цензуру в играх.', tags: ['патчи', '18+'], os: ['w'], ru: 'ok' },
 ];
 
 const known = new Set(resources.map((r) => r.url.replace(/^www\./, '').replace(/\/+$/, '')));
