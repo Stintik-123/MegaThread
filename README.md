@@ -61,19 +61,26 @@
 │   ├── render.js           # чистые функции разметки
 │   ├── icons.js            # линейные глифы
 │   ├── labels.js           # подписи, статусы доступности, синонимы, подсказки клавиш
-│   └── data.js             # каталог: 9 категорий, 1383 ресурса
-├── previews/               # скриншоты сайтов (640×400, ~16 КБ) + manifest.json
+│   ├── groups.js            # группы подразделов для докс-страниц
+│   └── data.js             # каталог: 9 категорий, 1377 ресурсов
+├── previews/               # скриншоты сайтов (640×400, ~16 КБ) + manifest.json + stubs.json
 ├── scripts/
 │   ├── serve.mjs           # локальный статический сервер
 │   ├── generate-fallback.mjs  # пересобирает noscript.html из каталога
+│   ├── fmhy-fetch.mjs      # собирает ссылки FMHY в scripts/fmhy-links.json
+│   ├── reddit-fetch.mjs    # собирает ссылки мегатредов Reddit в scripts/reddit-links.json
 │   ├── build-piracy-catalog.mjs # собирает каталог из источников (FMHY, мегатреды Reddit)
 │   ├── build-groups.mjs    # пересобирает группы подразделов в js/groups.js
+│   ├── sync-numbers.mjs    # синхронизирует числа (счётчики, OG, README) с каталогом
 │   ├── fetch-previews-piracy.mjs  # снимает скриншоты пиратских доменов в previews/
 │   ├── cleanup-previews.mjs # убирает превью доменов, которых больше нет в каталоге
+│   ├── merge-stubs.mjs     # объединяет список заглушек из git и текущего прогона
+│   ├── drop-stub-previews.mjs # сбрасывает заглушки, чтобы переснять их заново
 │   ├── make-og.mjs         # рисует OG-обложку icons/og-image.png
+│   ├── publish-repo.mjs    # описание, темы и Pages на GitHub
 │   └── shots.mjs           # снимает скриншоты для визуальной проверки
 ├── tests/
-│   └── smoke.mjs           # 67 проверок в headless Chromium
+│   └── smoke.mjs           # 70 проверок в headless Chromium
 ├── sw.js                   # офлайн-кэш
 ├── manifest.json           # PWA-манифест
 └── icons/                  # SVG-иконки и OG-обложка
@@ -97,6 +104,8 @@ npm test
 
 Нужен playwright: `npm i -D playwright && npx playwright install chromium`.
 
+Ожидания тестов берутся из самого `js/data.js`, поэтому после пересборки каталога числа в тестах не расходятся с данными: сколько ресурсов, сколько разделов, сколько меток — всё считается динамически.
+
 ## Каталог
 
 Данные лежат в `js/data.js` — это единственный источник правды:
@@ -105,6 +114,15 @@ npm test
 export const CATEGORIES = [{ id, title, desc, icon }, ...];
 export const RESOURCES  = [{ cat, name, desc, url, tags: [...], os: [...], ru, note }, ...];
 ```
+
+Каталог собирается из внешних источников — FMHY и мегатредов Reddit, — поэтому пересобирается целиком:
+
+```bash
+npm run fetch:links    # обновить scripts/fmhy-links.json и scripts/reddit-links.json
+npm run build:catalog  # каталог → группы → числа → noscript.html → OG-обложка
+```
+
+Ручная правка `js/data.js` сразу затирается следующей сборкой: чтобы добавить ресурс надолго, допишите его в `CORE` в `scripts/build-piracy-catalog.mjs` — эти ресурсы не теряются при сборе.
 
 Добавить ресурс — дописать объект в `RESOURCES`: счётчики, фильтры, поиск и номера обновятся сами.
 

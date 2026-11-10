@@ -74,7 +74,7 @@ const html = `<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MegaThread — каталог без JavaScript</title>
-<meta name="description" content="Полный список бесплатных ресурсов MegaThread в виде обычной страницы.">
+<meta name="description" content="Полный список пиратских ресурсов MegaThread в виде обычной страницы.">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <style>
@@ -98,7 +98,7 @@ const html = `<!DOCTYPE html>
 </head>
 <body>
 <div class="wrap">
-  <h1>MegaThread — каталог бесплатных ресурсов</h1>
+  <h1>MegaThread — пиратский сборник</h1>
   <p class="lead">Эта страница работает без JavaScript: ${RESOURCES.length} ресурсов в ${CATEGORIES.length} категориях.
   <a href="index.html">Вернуться к интерактивной версии</a>.</p>
   <div class="legend">

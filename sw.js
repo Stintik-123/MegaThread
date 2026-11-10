@@ -1,5 +1,5 @@
-const CACHE = 'megathread-v11';
-const PREVIEW_CACHE = 'megathread-previews-v1';
+const CACHE = 'megathread-v12';
+const PREVIEW_CACHE = 'megathread-previews-v2';
 
 // Все модули и стили, от которых зависит интерактивный каталог.
 const ASSETS = [
@@ -82,17 +82,17 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Скриншоты — отдельный ленивый кэш
+  // Скриншоты — отдельный кэш. Network-first: картинки переснимаются, и старый
+  // кадр не должен висеть в офлайне вечно.
   if (url.pathname.includes('/previews/')) {
     event.respondWith(
       caches.open(PREVIEW_CACHE).then(async (cache) => {
-        const cached = await cache.match(req);
-        if (cached) return cached;
         try {
           const res = await fetch(req);
           if (res.ok && res.type === 'basic') cache.put(req, res.clone());
           return res;
         } catch {
+          const cached = await cache.match(req);
           return cached || Response.error();
         }
       })

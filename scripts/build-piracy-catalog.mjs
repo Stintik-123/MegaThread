@@ -226,6 +226,39 @@ function statusOf(host, url) {
   return 'ok';
 }
 
+/* Платформы для известных инструментов: у с��ралок платформа не указана. */
+const OS_BY_HOST = {
+  'qbittorrent.org': ['w', 'm', 'l'],
+  'transmissionbt.com': ['w', 'm', 'l'],
+  '7-zip.org': ['w'],
+  'videolan.org': ['w', 'm', 'l', 'a', 'i'],
+  'ublockorigin.com': ['w', 'm', 'l', 'a', 'i'],
+  '4kdownload.com': ['w', 'm', 'l'],
+  'mediaarea.net': ['w', 'm', 'l'],
+  'amnezia.org': ['w', 'm', 'l', 'a', 'i'],
+  'protonvpn.com': ['w', 'm', 'l', 'a', 'i'],
+  'mullvad.net': ['w', 'm', 'l', 'a', 'i'],
+  'adguard-dns.com': ['w', 'm', 'l', 'a', 'i'],
+  'goodbyedpi.com': ['w', 'm', 'l'],
+  'zapret.tools': ['w', 'm', 'l'],
+  'apkpure.com': ['a'],
+  'apkmirror.com': ['a'],
+  'itch.io': ['w', 'm', 'l'],
+  'telegram.org': ['w', 'm', 'l', 'a', 'i'],
+  'discord.com': ['w', 'm', 'l', 'a', 'i'],
+  'spotify.com': ['w', 'm', 'l', 'a', 'i'],
+  'github.com': ['w', 'm', 'l'],
+  'mega.nz': ['w', 'm', 'l', 'a', 'i'],
+  'pixeldrain.com': ['w', 'm', 'l', 'a', 'i'],
+  'mediafire.com': ['w', 'm', 'l', 'a', 'i'],
+};
+
+function osFor(url) {
+  const host = hostOf(url);
+  const found = OS_BY_HOST[host] || OS_BY_HOST[host.replace(/^www\./, '')];
+  return found ? found.slice() : ['any'];
+}
+
 const resources = [];
 for (const [host, item] of byHost) {
   const cat = CATEGORIES.find((c) => c.id === item.cat);
@@ -238,7 +271,7 @@ for (const [host, item] of byHost) {
     desc: desc,
     url: item.url,
     tags: TAGS_BY_CAT[item.cat].slice(0, 3),
-    os: ['any'],
+    os: osFor(item.url),
     ru: statusOf(host, item.url),
     ...(note ? { note } : {}),
   });
@@ -298,7 +331,7 @@ for (const c of CORE) {
   const key = c.url.replace(/^www\./, '').replace(/\/+$/, '');
   if (known.has(key)) continue;
   known.add(key);
-  resources.push({ os: ['any'], ...c });
+  resources.push({ os: osFor(c.url), ...c });
 }
 
 resources.sort((a, b) => a.cat.localeCompare(b.cat) || a.name.localeCompare(b.name, 'ru'));

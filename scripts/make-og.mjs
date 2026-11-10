@@ -7,6 +7,11 @@ import { chromium } from 'playwright';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
+/* Аватар вставляем прямо в разметку: file:// с кириллицей в пути не загружается. */
+const AVATAR_DATA =
+  'data:image/png;base64,' +
+  fs.readFileSync(path.join(ROOT, 'icons', 'RuPiracy.png')).toString('base64');
+
 const html = `<!DOCTYPE html>
 <html><head><meta charset="utf-8"><style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -23,6 +28,7 @@ const html = `<!DOCTYPE html>
   }
   .mark { display: flex; align-items: center; gap: 16px; }
   .mark svg { width: 44px; height: 44px; }
+  .mark img { width: 46px; height: 46px; border-radius: 10px; object-fit: cover; display: block; }
   .mark span { font-size: 30px; font-weight: 700; letter-spacing: -.02em; }
   .mark em { font-style: normal; color: #171717; }
   h1 { font-size: 74px; font-weight: 700; letter-spacing: -.03em; line-height: 1.05; max-width: 900px; }
@@ -34,17 +40,17 @@ const html = `<!DOCTYPE html>
 </style></head>
 <body>
   <div class="mark">
-    <svg viewBox="0 0 24 24" fill="none" stroke="#111111" stroke-width="2.4" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h9"/></svg>
+    <img src="${AVATAR_DATA}" alt="" width="46" height="46">
     <span>Mega<em>Thread</em></span>
   </div>
   <div>
-    <h1>Каталог бесплатных ресурсов и трекеров</h1>
-    <p class="sub">Кино, игры, софт, обход блокировок, ИИ, книги. Без аккаунтов.</p>
+    <h1>Пиратский сборник трекеров и раздач</h1>
+    <p class="sub">Кино, аниме, игры, книги, музыка, обход блокировок. Без аккаунтов.</p>
     <div class="rule"></div>
     <div class="row">
-      <div class="stat"><b>1383</b><span>ресурсов</span></div>
+      <div class="stat"><b>1377</b><span>ресурсов</span></div>
       <div class="stat"><b>9</b><span>разделов</span></div>
-      <div class="stat"><b>1374</b><span>открываются сразу</span></div>
+      <div class="stat"><b>1368</b><span>открываются сразу</span></div>
       <div class="stat"><b>29</b><span>меток</span></div>
     </div>
   </div>

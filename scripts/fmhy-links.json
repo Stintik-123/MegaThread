@@ -40,7 +40,7 @@
       "name": "AnimeDex",
       "url": "https://animedex.fun/",
       "section": "anime",
-      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
       "notes": []
     },
     {
@@ -219,13 +219,6 @@
       "notes": []
     },
     {
-      "name": "MultiAnime",
-      "url": "https://multinime.site/",
-      "section": "anime",
-      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
-      "notes": []
-    },
-    {
       "name": "Nyaa",
       "url": "https://nyaa.si/",
       "section": "anime",
@@ -275,7 +268,7 @@
       "name": "WatchAnimeX",
       "url": "https://watchanimez.me/",
       "section": "anime",
-      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: ",
+      "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
       "notes": []
     },
     {
@@ -1641,6 +1634,13 @@
       "notes": []
     },
     {
+      "name": "67Movies",
+      "url": "https://67movies.st/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
       "name": "Addic7ed",
       "url": "https://www.addic7ed.com/",
       "section": "movie-and-shows",
@@ -1781,6 +1781,13 @@
       "notes": []
     },
     {
+      "name": "CineWave",
+      "url": "https://watch.cinewave.qzz.io/",
+      "section": "movie-and-shows",
+      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
       "name": "Cinezo",
       "url": "https://www.cinezo.st/",
       "section": "movie-and-shows",
@@ -1805,10 +1812,8 @@
       "name": "CorsFlix",
       "url": "https://watch.corsflix.net",
       "section": "movie-and-shows",
-      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
-      "notes": [
-        "Rive, 2 or , 2, 3 - Movies / TV / Anime / Status /"
-      ]
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
     },
     {
       "name": "Dailymotion",
@@ -1865,6 +1870,22 @@
       "section": "movie-and-shows",
       "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме",
       "notes": []
+    },
+    {
+      "name": "Features / Posters",
+      "url": "https://greasyfork.org/scripts/603382",
+      "section": "movie-and-shows",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, прямые ссылки, фильмы",
+      "notes": [
+        "or IMDb-Scout-Mod / - Torrent Site Results on IMDb",
+        "CS.RIN Tools - Status / Enhancements / Steam Buttons / /",
+        "1337x Tools - Telegram Bot / IMDb Ratings / / Display Magnets / Timestamp Fix",
+        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / / Timestamp Fix",
+        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / Display Magnets /",
+        "MyAnonaMouse - Torrents / Invites /",
+        "NTS Radio - DJ Radio Shows / / Downloader / SoundCloud / Mixcloud / Discovery Guide",
+        "Quickly Send DDL Links to Premiumize & NoPremium"
+      ]
     },
     {
       "name": "FilmFans",
@@ -1972,13 +1993,6 @@
       "notes": []
     },
     {
-      "name": "HydraHD",
-      "url": "https://hydrahd.gd/",
-      "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
-      "notes": []
-    },
-    {
       "name": "KatDrama",
       "url": "https://k-drama.in/",
       "section": "movie-and-shows",
@@ -2058,17 +2072,10 @@
       "notes": []
     },
     {
-      "name": "Moovie",
-      "url": "https://moovie.fun/",
+      "name": "moanatv.",
+      "url": "https://lfmx.app/",
       "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
-      "notes": []
-    },
-    {
-      "name": "Movie Night",
-      "url": "https://movienig.ht/",
-      "section": "movie-and-shows",
-      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
       "notes": []
     },
     {
@@ -2107,13 +2114,6 @@
       "notes": [
         "2, 3, 4 / Status /"
       ]
-    },
-    {
-      "name": "NetShows",
-      "url": "https://netshows.xyz/",
-      "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
-      "notes": []
     },
     {
       "name": "Nico Nico",
@@ -2161,9 +2161,9 @@
       "name": "PlayTorrio",
       "url": "https://playtorrio.xyz/",
       "section": "movie-and-shows",
-      "desc": "Приложение для онлайн-просмотра фильмов и сериалов: приложение",
+      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
       "notes": [
-        "2 - Multi-Site Downloader / Movies / TV / Anime / 4K / HEVC / /",
+        "2 - Streaming App / Use HTTP Plugin / / /",
         "2 - Torrent Streaming App / Stremio Addon Support / /"
       ]
     },
@@ -2172,13 +2172,6 @@
       "url": "https://pressplayx.to/",
       "section": "movie-and-shows",
       "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: фильмы",
-      "notes": []
-    },
-    {
-      "name": "Primeshows",
-      "url": "https://www.primeshows.org/",
-      "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
       "notes": []
     },
     {
@@ -2206,7 +2199,7 @@
     },
     {
       "name": "PSArips",
-      "url": "https://psa.wf/",
+      "url": "https://psarips.com/",
       "section": "movie-and-shows",
       "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
       "notes": []
@@ -2272,10 +2265,8 @@
       "name": "Rive",
       "url": "https://www.rivestream.app/",
       "section": "movie-and-shows",
-      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
-      "notes": [
-        "2 or CorsFlix, 2, 3 - Movies / TV / Anime / Status /"
-      ]
+      "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+      "notes": []
     },
     {
       "name": "RLSXTVT",
@@ -2295,22 +2286,6 @@
         "ROMs / Torrents / Use",
         "RuTracker Tools - Quick Translator / Wiki / / Bypass Extension, 2",
         "RuTracker Tools - Quick Translator / Wiki / Rules / , 2"
-      ]
-    },
-    {
-      "name": "Search Filters / Stars",
-      "url": "https://greasyfork.org/scripts/585901",
-      "section": "movie-and-shows",
-      "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, прямые ссылки, фильмы",
-      "notes": [
-        "or IMDb-Scout-Mod / - Torrent Site Results on IMDb",
-        "CS.RIN Tools - Status / Enhancements / Steam Buttons / /",
-        "1337x Tools - Telegram Bot / IMDb Ratings / / Display Magnets / Timestamp Fix",
-        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / / Timestamp Fix",
-        "1337x Tools - Telegram Bot / IMDb Ratings / Steam Store Hover / Display Magnets /",
-        "MyAnonaMouse - Torrents / Invites /",
-        "NTS Radio - DJ Radio Shows / / Downloader / SoundCloud / Mixcloud / Discovery Guide",
-        "Quickly Send DDL Links to Premiumize & NoPremium"
       ]
     },
     {
@@ -2356,6 +2331,13 @@
       "notes": []
     },
     {
+      "name": "Spacedom",
+      "url": "https://spacedom.live/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+      "notes": []
+    },
+    {
       "name": "SSR Movies",
       "url": "https://ssrmovies.blue/",
       "section": "movie-and-shows",
@@ -2376,13 +2358,13 @@
       "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
       "notes": [
         "Aether, 2, 3 - Movies / TV / Anime / Auto-Next / 4K / /",
-        "Rive, 2, 3 or CorsFlix, 2, 3 - Movies / TV / Anime / Auto-Next / 4K / /",
-        "HydraHD, 2 - Movies / TV / Anime / Auto-Next / /",
         "Re:ANIME, 2, 3 - Sub / Dub / Auto-Next / Index / /",
         "⁠bAnime - Sub / Dub / Auto-Next / /",
         "WCO, 2, 3, 4, 5, 6 - TV / Movies / Anime /",
         "Rive, 2 or CorsFlix, 2, 3 - Movies / TV / Anime / /",
-        "YTS or YifyMovies - Movies / 4K / Proxies / / /"
+        "YTS or YifyMovies - Movies / 4K / Proxies / / /",
+        "CS.RIN Tools - / Enhancements / Steam Buttons / Steam Hover /",
+        "NEPU Audiobooks, 2, 3, 4 / /"
       ]
     },
     {
@@ -2390,13 +2372,6 @@
       "url": "https://primewire.nexus/",
       "section": "movie-and-shows",
       "desc": "Сайт для онлайн-просмотра сериалов и шоу",
-      "notes": []
-    },
-    {
-      "name": "StreamAggregator",
-      "url": "https://streamaggregator.in/",
-      "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
       "notes": []
     },
     {
@@ -2439,6 +2414,13 @@
       "url": "https://subsource.net/",
       "section": "movie-and-shows",
       "desc": "Сайт для скачивания субтитров к фильмам и сериалам",
+      "notes": []
+    },
+    {
+      "name": "SweetFox",
+      "url": "https://sweetfox.app/",
+      "section": "movie-and-shows",
+      "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
       "notes": []
     },
     {
@@ -2616,13 +2598,6 @@
       "url": "https://youplex.cc/",
       "section": "movie-and-shows",
       "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: в HD-качестве, фильмы",
-      "notes": []
-    },
-    {
-      "name": "Youshows",
-      "url": "https://youshows.org/",
-      "section": "movie-and-shows",
-      "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
       "notes": []
     },
     {
@@ -2826,13 +2801,6 @@
     {
       "name": "iPlusFree",
       "url": "https://www7.iplusfree.org/",
-      "section": "music",
-      "desc": "Сайт для скачивания музыки, альбомов и подкастов",
-      "notes": []
-    },
-    {
-      "name": "LEAKED",
-      "url": "https://leaked.cx/",
       "section": "music",
       "desc": "Сайт для скачивания музыки, альбомов и подкастов",
       "notes": []
@@ -3411,13 +3379,6 @@
       "url": "https://reflect4.me/",
       "section": "privacy",
       "desc": "Веб-прокси для доступа к заблокированным сайтам",
-      "notes": []
-    },
-    {
-      "name": "Rethink DNS",
-      "url": "https://rethinkdns.com/app",
-      "section": "privacy",
-      "desc": "Инструмент обхода блокировок и цензуры в интернете",
       "notes": []
     },
     {
@@ -4154,7 +4115,7 @@
     },
     {
       "name": "Pixeldrain Limit Bypass",
-      "url": "https://pixeldrain-bypass.gamedrive.to/",
+      "url": "https://pixeldrain-bypass.gamedrive.org/",
       "section": "software",
       "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
       "notes": []
@@ -4479,6 +4440,13 @@
       "url": "https://bt4gprx.com/",
       "section": "torrenting",
       "desc": "Зеркало BT4G с поиском по торрентам",
+      "notes": []
+    },
+    {
+      "name": "BTDigg",
+      "url": "https://btdig.com/",
+      "section": "torrenting",
+      "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
       "notes": []
     },
     {

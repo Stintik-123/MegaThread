@@ -1,61 +1,48 @@
-/* Снимает скриншоты сайта в разных состояниях для визуальной проверки.
-   Запуск: node scripts/shots.mjs */
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+/* Снимает скриншоты страниц сайта в .shots/ для визуальной проверки.
+   Запуск: node scripts/shots-new.mjs */
 import { chromium } from 'playwright';
 import { listen } from './serve.mjs';
 
-const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const OUT = path.join(ROOT, '.shots');
-
 const { server, port } = await listen(0);
 const BASE = `http://127.0.0.1:${port}`;
-
 const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
 
-const desktop = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
-const page = await desktop.newPage();
+const shots = [
+  ['01-home', BASE + '/index.html'],
+  ['02-category', BASE + '/index.html#/cat/torrents'],
+  ['03-catalog', BASE + '/index.html#/catalog'],
+  ['04-collections', BASE + '/index.html#/collections'],
+];
 
+for (const [name, url] of shots) {
+  await page.goto(url, { waitUntil: 'networkidle' });
+  await page.waitForTimeout(900);
+  await page.screenshot({ path: `.shots/${name}.png`, fullPage: false });
+  console.log('снимок', name);
+}
+
+// палитра поиска
 await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-await page.waitForTimeout(400);
-await page.screenshot({ path: path.join(OUT, '01-home.png') });
+await page.keyboard.press('Control+k');
+await page.fill('#palette-input', 'торренты');
+await page.waitForTimeout(700);
+await page.screenshot({ path: '.shots/05-palette.png' });
+console.log('снимок 05-palette');
 
-await page.fill('#search', 'vpn');
-await page.waitForSelector('#search-results .hit');
-await page.waitForTimeout(250);
-await page.screenshot({ path: path.join(OUT, '02-search.png'), clip: { x: 0, y: 0, width: 1440, height: 700 } });
-await page.fill('#search', '');
+// тёмная тема
+await page.keyboard.press('Escape');
+await page.click('#theme-toggle');
+await page.waitForTimeout(500);
+await page.screenshot({ path: '.shots/06-dark.png' });
+console.log('снимок 06-dark');
 
-await page.goto(BASE + '/index.html#/cat/privacy', { waitUntil: 'networkidle' });
-await page.waitForTimeout(400);
-await page.screenshot({ path: path.join(OUT, '03-category.png') });
-
-await page.click('#cat-tags .chip:has-text("VPN")');
-await page.waitForTimeout(300);
-await page.screenshot({ path: path.join(OUT, '04-filtered.png') });
-
-await page.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-await page.click('#start-grid .pick__name');
-await page.waitForSelector('#res-dialog[open]');
-await page.waitForTimeout(300);
-await page.screenshot({ path: path.join(OUT, '05-dialog.png') });
-
-await desktop.close();
-
-const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2 });
-const m = await mobile.newPage();
-await m.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-await m.waitForTimeout(400);
-await m.screenshot({ path: path.join(OUT, '06-mobile.png') });
-await mobile.close();
-
-const dark = await browser.newContext({ viewport: { width: 1440, height: 1000 }, colorScheme: 'dark' });
-const d = await dark.newPage();
-await d.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
-await d.waitForTimeout(400);
-await d.screenshot({ path: path.join(OUT, '07-dark.png') });
-await dark.close();
+// мобильный
+const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
+await mobile.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
+await mobile.waitForTimeout(700);
+await mobile.screenshot({ path: '.shots/07-mobile.png' });
+console.log('снимок 07-mobile');
 
 await browser.close();
 server.close();
-console.log('Скриншоты в .shots/');

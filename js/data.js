@@ -1,5 +1,5 @@
 // Пиратский каталог MegaThread. Единственный источник правды по составу.
-// 9 категорий, 1392 ресурсов.
+// 9 категорий, 1377 ресурсов.
 // Собран из FMHY, мегатреда Reddit и открытых пиратских списков.
 // ru: ok — открывается напрямую, limited — работает не всегда, blocked — нужен обход,
 // mirror — нужен актуальный домен или зеркало.
@@ -76,6 +76,15 @@ export const RESOURCES = [
     "name": "1Shows",
     "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
     "url": "http://1shows.org",
+    "tags": ["аниме", "стриминг"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "anime",
+    "name": "67Movies",
+    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+    "url": "https://67movies.st/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
     "ru": "ok"
@@ -302,12 +311,11 @@ export const RESOURCES = [
   {
     "cat": "anime",
     "name": "AnimeDex",
-    "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+    "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
     "url": "https://animedex.fun/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
-    "note": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: "
+    "ru": "ok"
   },
   {
     "cat": "anime",
@@ -776,15 +784,6 @@ export const RESOURCES = [
     "name": "Coreflix",
     "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
     "url": "https://coreflix.tv/",
-    "tags": ["аниме", "стриминг"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "anime",
-    "name": "CorsFlix",
-    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
-    "url": "https://watch.corsflix.net",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
     "ru": "ok"
@@ -1277,6 +1276,15 @@ export const RESOURCES = [
   },
   {
     "cat": "anime",
+    "name": "moanatv.",
+    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
+    "url": "https://lfmx.app/",
+    "tags": ["аниме", "стриминг"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "anime",
     "name": "Monimo",
     "desc": "Пиратный софт и сборки. Аниме с озвучкой, субтитрами и манга в открытом доступе",
     "url": "https://monimoapp.netlify.com/",
@@ -1297,15 +1305,6 @@ export const RESOURCES = [
   },
   {
     "cat": "anime",
-    "name": "Movie Night",
-    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
-    "url": "https://movienig.ht/",
-    "tags": ["аниме", "стриминг"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "anime",
     "name": "MoviesEver",
     "desc": "Онлайн-кино и сериалы. Аниме с озвучкой, субтитрами и манга в открытом доступе",
     "url": "https://moviesever.com/",
@@ -1313,16 +1312,6 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Онлайн-кино и сериалы. Аниме с озвучкой, субтитрами и манга в открытом доступе."
-  },
-  {
-    "cat": "anime",
-    "name": "MultiAnime",
-    "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
-    "url": "https://multinime.site/",
-    "tags": ["аниме", "стриминг"],
-    "os": ["any"],
-    "ru": "ok",
-    "note": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: "
   },
   {
     "cat": "anime",
@@ -1462,15 +1451,6 @@ export const RESOURCES = [
   },
   {
     "cat": "anime",
-    "name": "Rive",
-    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, в HD-качестве, фильмы",
-    "url": "https://www.rivestream.app/",
-    "tags": ["аниме", "стриминг"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "anime",
     "name": "Romsmania",
     "desc": "Пиратский стриминг и раздачи аниме. Игры, репаки и прошивки скачиваются напрямую из архива",
     "url": "https://romsmania.cc/",
@@ -1561,9 +1541,27 @@ export const RESOURCES = [
   },
   {
     "cat": "anime",
+    "name": "Spacedom",
+    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+    "url": "https://spacedom.live/",
+    "tags": ["аниме", "стриминг"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "anime",
     "name": "Status",
     "desc": "Пиратский стриминг с выделенным сервером и быстрым откликом: с автопереходом, в HD-качестве, фильмы",
     "url": "https://rar.to/",
+    "tags": ["аниме", "стриминг"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "anime",
+    "name": "SweetFox",
+    "desc": "Агрегатор стриминговых ссылок на фильмы, сериалы и аниме: с автопереходом, фильмы",
+    "url": "https://sweetfox.app/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
     "ru": "ok"
@@ -1666,12 +1664,11 @@ export const RESOURCES = [
   {
     "cat": "anime",
     "name": "WatchAnimeX",
-    "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами",
+    "desc": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: с автопереходом",
     "url": "https://watchanimez.me/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
-    "note": "Сайт для онлайн-просмотра аниме с озвучкой и субтитрами: "
+    "ru": "ok"
   },
   {
     "cat": "anime",
@@ -2901,7 +2898,7 @@ export const RESOURCES = [
     "desc": "Серверы и готовые конфиги VPN для обхода блокировок",
     "url": "https://amnezia.org/",
     "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -2910,7 +2907,7 @@ export const RESOURCES = [
     "desc": "Протокол WireGuard с маскировкой трафика",
     "url": "https://amnezia.org/documentation/instructions/amneziawg/",
     "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -3121,7 +3118,7 @@ export const RESOURCES = [
     "desc": "Локальный обход DPI без VPN",
     "url": "https://github.com/valeriangalliat/goodbyedpi",
     "tags": ["DPI", "обход"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -3194,7 +3191,7 @@ export const RESOURCES = [
     "desc": "VPN без логи и без слежки, оплата криптовалютой",
     "url": "https://mullvad.net/",
     "tags": ["VPN", "приватность"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -3284,7 +3281,7 @@ export const RESOURCES = [
     "desc": "Файлообменник с большими лимитами и анонимной загрузкой",
     "url": "https://pixeldrain.com/",
     "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -3330,7 +3327,7 @@ export const RESOURCES = [
     "desc": "VPN-сервис для обхода блокировок и доступа к заблокированным сайтам",
     "url": "https://protonvpn.com",
     "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -3417,15 +3414,6 @@ export const RESOURCES = [
   },
   {
     "cat": "bypass",
-    "name": "Rethink DNS",
-    "desc": "Инструмент обхода блокировок и цензуры в интернете",
-    "url": "https://rethinkdns.com/app",
-    "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "bypass",
     "name": "RiseupVPN",
     "desc": "VPN-сервис для обхода блокировок и смены IP-адреса",
     "url": "https://riseup.net/en/vpn",
@@ -3502,15 +3490,6 @@ export const RESOURCES = [
     "name": "SSLSecureProxy",
     "desc": "Веб-прокси для доступа к заблокированным сайтам",
     "url": "https://www.sslsecureproxy.com/",
-    "tags": ["VPN", "обход", "конфиги"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "bypass",
-    "name": "StreamAggregator",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
-    "url": "https://streamaggregator.in/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
     "ru": "ok"
@@ -3696,7 +3675,7 @@ export const RESOURCES = [
     "desc": "Набор инструментов против блокировок и DPI",
     "url": "https://github.com/bol-van/zapret",
     "tags": ["DPI", "обход"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -3820,7 +3799,7 @@ export const RESOURCES = [
     "desc": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы",
     "url": "https://apkpure.com/",
     "tags": ["файлообменники", "скачивание"],
-    "os": ["any"],
+    "os": ["a"],
     "ru": "ok",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
@@ -4654,7 +4633,7 @@ export const RESOURCES = [
     "desc": "Файлообменник для хранения и скачивания крупных файлов",
     "url": "https://www.mediafire.com/",
     "tags": ["файлообменники", "скачивание"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -4741,6 +4720,16 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Онлайн-кино и сериалы. Файлы загружаются напрямую, без ожидания и рекламы."
+  },
+  {
+    "cat": "downloads",
+    "name": "MP3TAG",
+    "desc": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке",
+    "url": "https://www.mp3tag.de/en/",
+    "tags": ["файлообменники", "скачивание"],
+    "os": ["any"],
+    "ru": "ok",
+    "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
     "cat": "downloads",
@@ -6207,7 +6196,7 @@ export const RESOURCES = [
     "cat": "games",
     "name": "Pixeldrain Limit Bypass",
     "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
-    "url": "https://pixeldrain-bypass.gamedrive.to/",
+    "url": "https://pixeldrain-bypass.gamedrive.org/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
     "ru": "ok"
@@ -7080,15 +7069,6 @@ export const RESOURCES = [
   },
   {
     "cat": "music",
-    "name": "LEAKED",
-    "desc": "Сайт для скачивания музыки, альбомов и подкастов",
-    "url": "https://leaked.cx/",
-    "tags": ["музыка", "аудио"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "music",
     "name": "LeakedAlbums",
     "desc": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе",
     "url": "https://leakedalbums.org/",
@@ -7219,16 +7199,6 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
-  },
-  {
-    "cat": "music",
-    "name": "MP3TAG",
-    "desc": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке",
-    "url": "https://www.mp3tag.de/en/",
-    "tags": ["музыка", "аудио"],
-    "os": ["any"],
-    "ru": "ok",
-    "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
     "cat": "music",
@@ -8055,6 +8025,15 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
+    "name": "CineWave",
+    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
+    "url": "https://watch.cinewave.qzz.io/",
+    "tags": ["стриминг", "бесплатно"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "streaming",
     "name": "CMoviesHD",
     "desc": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации",
     "url": "https://www2.cmovieshd.bz",
@@ -8719,15 +8698,6 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
-    "name": "HydraHD",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
-    "url": "https://hydrahd.gd/",
-    "tags": ["стриминг", "бесплатно"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "streaming",
     "name": "iFlicks2",
     "desc": "Пиратный софт и сборки. Ресурс из пиратской подборки, доступен по прямой ссылке",
     "url": "https://iflicksapp.com/",
@@ -9000,15 +8970,6 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
-    "name": "Moovie",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: с автопереходом, фильмы",
-    "url": "https://moovie.fun/",
-    "tags": ["стриминг", "бесплатно"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "streaming",
     "name": "Morpheus TV",
     "desc": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации",
     "url": "https://www.morpheustvhd.com/",
@@ -9174,15 +9135,6 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
-    "name": "NetShows",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
-    "url": "https://netshows.xyz/",
-    "tags": ["стриминг", "бесплатно"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "streaming",
     "name": "Nico Nico",
     "desc": "Сайт для онлайн-просмотра фильмов в хорошем качестве",
     "url": "https://www.nicovideo.jp/",
@@ -9326,15 +9278,6 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
-    "name": "Primeshows",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы, сериалы",
-    "url": "https://www.primeshows.org/",
-    "tags": ["стриминг", "бесплатно"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "streaming",
     "name": "PrimeWire",
     "desc": "Сайт для онлайн-просмотра сериалов и шоу",
     "url": "https://www.primewire.mov/",
@@ -9346,10 +9289,11 @@ export const RESOURCES = [
     "cat": "streaming",
     "name": "PSArips",
     "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
-    "url": "https://psa.wf/",
+    "url": "https://psarips.com/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "ok",
+    "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
     "cat": "streaming",
@@ -9911,15 +9855,6 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
-    "name": "Youshows",
-    "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
-    "url": "https://youshows.org/",
-    "tags": ["стриминг", "бесплатно"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "streaming",
     "name": "ZetMoon",
     "desc": "Пиратский стриминг с несколькими зеркалами на случай блокировки: фильмы",
     "url": "https://zetmoon.live/",
@@ -9952,7 +9887,7 @@ export const RESOURCES = [
     "desc": "Загрузка видео и аудиодорожек с YouTube и других сервисов",
     "url": "https://www.4kdownload.com/",
     "tags": ["утилиты", "видео"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -9961,7 +9896,7 @@ export const RESOURCES = [
     "desc": "Бесплатный архиватор для распаковки rar, zip, iso и других форматов",
     "url": "https://www.7-zip.org/",
     "tags": ["утилиты", "клиенты", "системные"],
-    "os": ["any"],
+    "os": ["w"],
     "ru": "ok"
   },
   {
@@ -9988,7 +9923,7 @@ export const RESOURCES = [
     "desc": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы",
     "url": "https://www.apkmirror.com/",
     "tags": ["утилиты", "клиенты", "системные"],
-    "os": ["any"],
+    "os": ["a"],
     "ru": "ok",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
@@ -10351,7 +10286,7 @@ export const RESOURCES = [
     "desc": "Показывает метаданные файла: кодек, битрейт, дорожки, субтитры",
     "url": "https://mediaarea.net/en/MediaInfo",
     "tags": ["утилиты", "системные"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -10717,7 +10652,7 @@ export const RESOURCES = [
     "desc": "Плеер: открывает почти любой видеофайл и поток",
     "url": "https://www.videolan.org/vlc/",
     "tags": ["системные", "утилиты"],
-    "os": ["any"],
+    "os": ["w", "m", "l", "a", "i"],
     "ru": "ok"
   },
   {
@@ -11080,7 +11015,7 @@ export const RESOURCES = [
   {
     "cat": "torrents",
     "name": "BTDigg",
-    "desc": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте",
+    "desc": "Агрегатор ссылок на торрент-раздачи и magnet-ссылки",
     "url": "https://btdig.com/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
@@ -11141,6 +11076,15 @@ export const RESOURCES = [
     "name": "CinemaCity",
     "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
     "url": "https://cinemacity.cc/",
+    "tags": ["торренты", "трекеры", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
+    "name": "CorsFlix",
+    "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+    "url": "https://watch.corsflix.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
     "ru": "ok"
@@ -11305,6 +11249,16 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Онлайн-кино и сериалы. Торренты и magnet-раздачи в одном месте."
+  },
+  {
+    "cat": "torrents",
+    "name": "Features / Posters",
+    "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, прямые ссылки, фильмы",
+    "url": "https://greasyfork.org/scripts/603382",
+    "tags": ["торренты", "трекеры", "индексы"],
+    "os": ["any"],
+    "ru": "ok",
+    "note": "Торрент-трекер с большой базой раздач. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
     "cat": "torrents",
@@ -12171,7 +12125,7 @@ export const RESOURCES = [
   {
     "cat": "torrents",
     "name": "PlayTorrio",
-    "desc": "Приложение для онлайн-просмотра фильмов и сериалов: приложение",
+    "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, фильмы",
     "url": "https://playtorrio.xyz/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
@@ -12276,16 +12230,6 @@ export const RESOURCES = [
   },
   {
     "cat": "torrents",
-    "name": "PSARips",
-    "desc": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы",
-    "url": "https://psarips.com/",
-    "tags": ["торренты", "трекеры", "индексы"],
-    "os": ["any"],
-    "ru": "ok",
-    "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
-  },
-  {
-    "cat": "torrents",
     "name": "Public Domain Movie Torrents",
     "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
     "url": "https://www.publicdomaintorrents.info/",
@@ -12299,7 +12243,7 @@ export const RESOURCES = [
     "desc": "qBittorrent: бесплатный торрент-клиент без рекламы",
     "url": "https://www.qbittorrent.org/",
     "tags": ["торренты", "трекеры", "индексы"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -12417,6 +12361,15 @@ export const RESOURCES = [
   },
   {
     "cat": "torrents",
+    "name": "Rive",
+    "desc": "Торрент-индекс с раздачами фильмов, сериалов и аниме: фильмы",
+    "url": "https://www.rivestream.app/",
+    "tags": ["торренты", "трекеры", "индексы"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "torrents",
     "name": "Rock Box",
     "desc": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте",
     "url": "https://rawkbawx.rocks/",
@@ -12510,16 +12463,6 @@ export const RESOURCES = [
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
     "ru": "ok"
-  },
-  {
-    "cat": "torrents",
-    "name": "Search Filters / Stars",
-    "desc": "Сайт для скачивания фильмов и сериалов в хорошем качестве: в HD-качестве, прямые ссылки, фильмы",
-    "url": "https://greasyfork.org/scripts/585901",
-    "tags": ["торренты", "трекеры", "индексы"],
-    "os": ["any"],
-    "ru": "ok",
-    "note": "Торрент-трекер с большой базой раздач. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
     "cat": "torrents",
@@ -12918,7 +12861,7 @@ export const RESOURCES = [
     "desc": "Transmission: простой торрент-клиент для всех платформ",
     "url": "https://transmissionbt.com/",
     "tags": ["торренты", "трекеры", "индексы"],
-    "os": ["any"],
+    "os": ["w", "m", "l"],
     "ru": "ok"
   },
   {
@@ -13261,88 +13204,7 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
-  },
-  {
-    "cat": "books",
-    "name": "BookTracker",
-    "desc": "Библиотека книг и сборников, включая зеркала Флибусты. Поиск по авторам и жанрам.",
-    "url": "https://booktracker.org/",
-    "tags": ["книги", "библиотека", "флибуста"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "tools",
-    "name": "Futon (Android)",
-    "desc": "Форк Kotatsu для Android: чтение манги и новелл из 1200+ источников, история, закладки, трекинг прочитанного.",
-    "url": "https://github.com/AppFuton/Futon",
-    "tags": ["манга", "android", "читалка"],
-    "os": ["android"],
-    "ru": "ok"
-  },
-  {
-    "cat": "books",
-    "name": "Akuma",
-    "desc": "Манга, додзинси и другая печатная продукция с каталогом и поиском.",
-    "url": "https://akuma.moe/",
-    "tags": ["манга", "додзинси"],
-    "os": ["any"],
-    "ru": "limited"
-  },
-  {
-    "cat": "streaming",
-    "name": "Mogu (Hololive)",
-    "desc": "Архив платных стримов и видео Hololive.",
-    "url": "https://mogu.holopirates.moe/",
-    "tags": ["vtuber", "hololive", "архив"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "tools",
-    "name": "Pawchive",
-    "desc": "Архив постов авторов с Patreon, визуальный аналог Kemono.",
-    "url": "https://pawchive.pw/",
-    "tags": ["patreon", "архив"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "games",
-    "name": "VRCpirate",
-    "desc": "Модели персонажей, аксессуары и интерактивные объекты для VRChat.",
-    "url": "https://vrcpirate.com/",
-    "tags": ["vrchat", "модели", "vr"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "games",
-    "name": "F95Zone",
-    "desc": "Форум по играм, комиксам и анимациям для взрослых. Для скачивания требуется регистрация.",
-    "url": "https://f95zone.to/",
-    "tags": ["18+", "игры", "форум"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "games",
-    "name": "Flashpoint Archive",
-    "desc": "Архив флеш-игр и анимаций: сохранение утраченного веб-контента.",
-    "url": "https://flashpointarchive.org/downloads",
-    "tags": ["флеш", "архив", "браузерные"],
-    "os": ["any"],
-    "ru": "ok"
-  },
-  {
-    "cat": "games",
-    "name": "LewdPatcher",
-    "desc": "Патчи, снимающие цензуру в играх.",
-    "url": "https://lewdpatcher.com/",
-    "tags": ["патчи", "18+"],
-    "os": ["windows"],
-    "ru": "ok"
-  },
+  }
 ];
 
 export const CAT_BY_ID = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]));

@@ -1,12 +1,15 @@
 {
   "name": "megathread",
   "private": true,
-  "description": "MegaThread — каталог бесплатных ресурсов. Одностраничник на чистом HTML/CSS/JS.",
+  "description": "MegaThread — пиратский сборник трекеров, раздач, зеркал и инструментов. Одностраничник на чистом HTML/CSS/JS.",
   "type": "module",
   "scripts": {
     "start": "node scripts/serve.mjs",
     "build": "node scripts/generate-fallback.mjs",
     "build:og": "node scripts/make-og.mjs",
+    "build:catalog": "node scripts/build-piracy-catalog.mjs && node scripts/build-groups.mjs && node scripts/sync-numbers.mjs && node scripts/generate-fallback.mjs && node scripts/make-og.mjs",
+    "fetch:links": "node scripts/fmhy-fetch.mjs && node scripts/reddit-fetch.mjs",
+    "fetch:previews": "node scripts/fetch-previews-piracy.mjs",
     "shots": "node scripts/shots.mjs",
     "test": "node tests/smoke.mjs"
   },

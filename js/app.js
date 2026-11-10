@@ -182,7 +182,7 @@ function titleFor(name) {
     case 'rules': return 'Правила — MegaThread';
     case 'search': return 'Поиск — MegaThread';
     case 'category': return 'Категория — MegaThread';
-    default: return 'MegaThread — бесплатные ресурсы интернета в одном каталоге';
+    default: return 'MegaThread — пиратский сборник трекеров, раздач и зеркал';
   }
 }
 
