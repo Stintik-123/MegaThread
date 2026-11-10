@@ -8,7 +8,7 @@ const REPO = 'MegaThread';
 const API = 'https://api.github.com';
 
 const DESCRIPTION =
-  'Пиратский сборник: 1383 ссылки в 9 разделах (торренты, кино, аниме, игры, книги, музыка, обход блокировок, инструменты, файлообменники). Поиск по Ctrl+K, избранное, PWA, работа офлайн.';
+  'Пиратский сборник: 1386 ссылок в 9 разделах (торренты, кино, аниме, игры, книги, музыка, обход блокировок, инструменты, файлообменники). Поиск по Ctrl+K, избранное, PWA, работа офлайн.';
 const TOPICS = [
   'static-site', 'pwa', 'catalog', 'resources', 'piracy',
   'russian-language', 'torrents', 'privacy', 'awesome-list',
