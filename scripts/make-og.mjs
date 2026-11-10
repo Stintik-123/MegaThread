@@ -48,10 +48,10 @@ const html = `<!DOCTYPE html>
     <p class="sub">Кино, аниме, игры, книги, музыка, обход блокировок. Без аккаунтов.</p>
     <div class="rule"></div>
     <div class="row">
-      <div class="stat"><b>1377</b><span>ресурсов</span></div>
+      <div class="stat"><b>1386</b><span>ресурсов</span></div>
       <div class="stat"><b>9</b><span>разделов</span></div>
-      <div class="stat"><b>1368</b><span>открываются сразу</span></div>
-      <div class="stat"><b>29</b><span>меток</span></div>
+      <div class="stat"><b>1376</b><span>открываются сразу</span></div>
+      <div class="stat"><b>43</b><span>меток</span></div>
     </div>
   </div>
 </body></html>`;

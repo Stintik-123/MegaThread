@@ -1,5 +1,5 @@
 // Пиратский каталог MegaThread. Единственный источник правды по составу.
-// 9 категорий, 1377 ресурсов.
+// 9 категорий, 1386 ресурсов.
 // Собран из FMHY, мегатреда Reddit и открытых пиратских списков.
 // ru: ok — открывается напрямую, limited — работает не всегда, blocked — нужен обход,
 // mirror — нужен актуальный домен или зеркало.
@@ -1778,6 +1778,16 @@ export const RESOURCES = [
   },
   {
     "cat": "books",
+    "name": "Akuma",
+    "desc": "Манга, додзинси и другая печатная продукция с каталогом и поиском.",
+    "url": "https://akuma.moe/",
+    "tags": ["манга", "додзинси"],
+    "os": ["any"],
+    "ru": "limited",
+    "note": "Отвечает не всегда — домен может не открываться без обхода."
+  },
+  {
+    "cat": "books",
     "name": "Anna's Archive",
     "desc": "Библиотека электронных книг, статей и журналов: комиксы и манга, книги",
     "url": "https://annas-archive.gl/",
@@ -1950,6 +1960,15 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Пиратный софт и сборки. Книги и аудиокниги доступны для скачивания без регистрации."
+  },
+  {
+    "cat": "books",
+    "name": "BookTracker",
+    "desc": "Библиотека книг и сборников, включая зеркала Флибусты. Поиск по авторам и жанрам.",
+    "url": "https://booktracker.org/",
+    "tags": ["книги", "библиотека", "флибуста"],
+    "os": ["any"],
+    "ru": "ok"
   },
   {
     "cat": "books",
@@ -5675,6 +5694,15 @@ export const RESOURCES = [
   },
   {
     "cat": "games",
+    "name": "F95Zone",
+    "desc": "Форум по играм, комиксам и анимациям для взрослых. Для скачивания требуется регистрация.",
+    "url": "https://f95zone.to/",
+    "tags": ["18+", "игры", "форум"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
     "name": "FC Gallery",
     "desc": "ROM-игры для консолей Nintendo: NES, SNES, N64, GameCube",
     "url": "https://fcpic.nesbbs.com/index_en.html",
@@ -5711,6 +5739,15 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Репаки и взломанные игры. Файлы загружаются напрямую, без ожидания и рекламы."
+  },
+  {
+    "cat": "games",
+    "name": "Flashpoint Archive",
+    "desc": "Архив флеш-игр и анимаций: сохранение утраченного веб-контента.",
+    "url": "https://flashpointarchive.org/downloads",
+    "tags": ["флеш", "архив", "браузерные"],
+    "os": ["any"],
+    "ru": "ok"
   },
   {
     "cat": "games",
@@ -5926,6 +5963,15 @@ export const RESOURCES = [
     "url": "https://www.legendsworld.net/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "games",
+    "name": "LewdPatcher",
+    "desc": "Патчи, снимающие цензуру в играх.",
+    "url": "https://lewdpatcher.com/",
+    "tags": ["патчи", "18+"],
+    "os": ["w"],
     "ru": "ok"
   },
   {
@@ -6586,6 +6632,15 @@ export const RESOURCES = [
     "os": ["any"],
     "ru": "ok",
     "note": "Пиратные игры, репаки и эмуляторы. Игры, репаки и прошивки скачиваются напрямую из архива."
+  },
+  {
+    "cat": "games",
+    "name": "VRCpirate",
+    "desc": "Модели персонажей, аксессуары и интерактивные объекты для VRChat.",
+    "url": "https://vrcpirate.com/",
+    "tags": ["VRChat", "модели"],
+    "os": ["any"],
+    "ru": "ok"
   },
   {
     "cat": "games",
@@ -8970,6 +9025,15 @@ export const RESOURCES = [
   },
   {
     "cat": "streaming",
+    "name": "Mogu (Hololive)",
+    "desc": "Архив платных стримов и видео Hololive.",
+    "url": "https://mogu.holopirates.moe/",
+    "tags": ["стриминг", "архив"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "streaming",
     "name": "Morpheus TV",
     "desc": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации",
     "url": "https://www.morpheustvhd.com/",
@@ -10129,6 +10193,15 @@ export const RESOURCES = [
   },
   {
     "cat": "tools",
+    "name": "Futon (Android)",
+    "desc": "Форк Kotatsu для Android: чтение манги и новелл из 1200+ источников, история, закладки, трекинг прочитанного.",
+    "url": "https://github.com/AppFuton/Futon",
+    "tags": ["манга", "приложения"],
+    "os": ["a"],
+    "ru": "ok"
+  },
+  {
+    "cat": "tools",
     "name": "Get4All",
     "desc": "Дебрид-сервисы и лечи для ускоренной загрузки",
     "url": "https://get4all.org/",
@@ -10395,6 +10468,15 @@ export const RESOURCES = [
     "desc": "P2P-передача файлов напрямую между устройствами",
     "url": "https://pairdrop.net/",
     "tags": ["утилиты", "клиенты", "системные"],
+    "os": ["any"],
+    "ru": "ok"
+  },
+  {
+    "cat": "tools",
+    "name": "Pawchive",
+    "desc": "Архив постов авторов с Patreon, визуальный аналог Kemono.",
+    "url": "https://pawchive.pw/",
+    "tags": ["патreon", "архив"],
     "os": ["any"],
     "ru": "ok"
   },
