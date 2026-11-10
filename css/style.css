@@ -502,6 +502,10 @@ body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
   font-weight: 600;
   color: var(--accent);
   text-align: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .docitem__name:hover,
 .row__name:hover { text-decoration: underline; }
@@ -509,6 +513,7 @@ body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
   display: block;
   font-size: var(--fs-small);
   color: var(--fg-muted);
+  overflow-wrap: anywhere;
 }
 .row__desc {
   display: block;
@@ -567,16 +572,17 @@ body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
   font-weight: 600;
   border-radius: var(--radius-pill);
   white-space: nowrap;
+  border: var(--border) solid var(--line);
 }
-.ru--ok { color: var(--st-limited-fg); background: var(--st-limited-bg); }
+.ru--ok { color: var(--st-ok-fg); background: var(--st-ok-bg); }
 .ru--limited { color: var(--st-limited-fg); background: var(--st-limited-bg); }
 .ru--blocked { color: var(--st-blocked-fg); background: var(--st-blocked-bg); }
 .ru--mirror { color: var(--st-mirror-fg); background: var(--st-mirror-bg); }
 
-.tag--ok { color: var(--ok); background: var(--ok-wash); border-color: transparent; }
-.tag--limited { color: var(--warn); background: var(--warn-wash); border-color: transparent; }
-.tag--blocked { color: var(--danger); background: var(--danger-wash); border-color: transparent; }
-.tag--mirror { color: var(--mirror); background: var(--mirror-wash); border-color: transparent; }
+.tag--ok { color: var(--ok); background: var(--ok-wash); border-color: var(--line); }
+.tag--limited { color: var(--warn); background: var(--warn-wash); border-color: var(--line); }
+.tag--blocked { color: var(--danger); background: var(--danger-wash); border-color: var(--line-strong); }
+.tag--mirror { color: var(--mirror); background: var(--mirror-wash); border-color: var(--line); }
 
 .ico {
   display: inline-grid;
@@ -803,7 +809,7 @@ body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
   color: var(--fg-muted);
 }
 .modal__note b { flex: none; color: var(--fg); }
-.modal__note--ru { background: var(--warn-wash); color: var(--fg-muted); }
+.modal__note--ru { background: var(--surface-2); color: var(--fg-muted); }
 .modal__url {
   margin: var(--s4) var(--s5) 0;
   font-family: var(--font-mono);
@@ -944,10 +950,18 @@ body.nav-open .nav-scrim { opacity: 1; pointer-events: auto; }
 .colcard__head h3 { font-size: var(--fs-h3); font-weight: 600; }
 .colcard__head p { margin-top: 2px; font-size: var(--fs-small); color: var(--fg-muted); }
 .colcard__list { display: flex; flex-direction: column; gap: var(--s1); font-size: var(--fs-sm); }
-.colcard__list li { display: flex; align-items: center; gap: var(--s2); }
-.colcard__list button { color: var(--accent); text-align: left; }
+.colcard__list li { display: flex; align-items: center; gap: var(--s2); min-width: 0; }
+.colcard__list button {
+  color: var(--accent);
+  text-align: left;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .colcard__list button:hover { text-decoration: underline; }
-.colcard__tag { margin-left: auto; }
+.colcard__tag { margin-left: auto; flex: none; }
 .colcard__more { align-self: flex-start; margin-top: auto; }
 
 /* ============================ облако меток ============================ */
@@ -1067,7 +1081,7 @@ mark {
   height: 26px;
   flex: none;
   border-radius: var(--radius-ctl);
-  background: var(--ok-wash);
+  background: var(--surface-2);
   color: var(--ok);
 }
 .novpn__icon svg { width: 16px; height: 16px; }
@@ -1170,8 +1184,9 @@ mark {
   margin-left: var(--s2);
   padding: 1px var(--s2);
   font-size: var(--fs-micro);
-  color: var(--warn);
-  background: var(--warn-wash);
+  color: var(--fg-muted);
+  background: var(--surface-2);
+  border: var(--border) solid var(--line);
   border-radius: var(--radius-pill);
 }
 
@@ -1218,7 +1233,7 @@ mark {
   margin: var(--s6) auto;
   padding: var(--s4);
   font-size: var(--fs-sm);
-  background: var(--warn-wash);
+  background: var(--surface-2);
   color: var(--fg);
   border: var(--border) solid var(--line);
   border-radius: var(--radius-card);

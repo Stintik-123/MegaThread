@@ -68,21 +68,21 @@
   --danger: #52525b;
   --danger-wash: #ebebed;
 
-  /* статусы доступности — только серые: смысл несёт подпись, а не цвет */
+  /* статусы доступности — тихие серые: смысл несёт подпись, а не заливка */
   --ok: var(--st-ok-fg);
   --ok-wash: var(--st-ok-bg);
   --warn: var(--st-limited-fg);
   --warn-wash: var(--st-limited-bg);
   --mirror: var(--st-mirror-fg);
   --mirror-wash: var(--st-mirror-bg);
-  --st-ok-fg: #ffffff;
-  --st-ok-bg: #171717;
-  --st-limited-fg: #3f3f46;
-  --st-limited-bg: #e4e4e7;
-  --st-blocked-fg: #52525b;
-  --st-blocked-bg: #ebebed;
-  --st-mirror-fg: #3f3f46;
-  --st-mirror-bg: #f1f1f2;
+  --st-ok-fg: #8a8a92;
+  --st-ok-bg: transparent;
+  --st-limited-fg: #5f5f68;
+  --st-limited-bg: transparent;
+  --st-blocked-fg: #3f3f46;
+  --st-blocked-bg: transparent;
+  --st-mirror-fg: #5f5f68;
+  --st-mirror-bg: transparent;
 
   --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
   --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);
@@ -113,14 +113,14 @@
   --danger: #a1a1a6;
   --danger-wash: #232325;
 
-  --st-ok-fg: #101011;
-  --st-ok-bg: #ededed;
-  --st-limited-fg: #d4d4d8;
-  --st-limited-bg: #2c2c30;
-  --st-blocked-fg: #a1a1a6;
-  --st-blocked-bg: #232325;
-  --st-mirror-fg: #d4d4d8;
-  --st-mirror-bg: #262629;
+  --st-ok-fg: #77777f;
+  --st-ok-bg: transparent;
+  --st-limited-fg: #a1a1a6;
+  --st-limited-bg: transparent;
+  --st-blocked-fg: #d4d4d8;
+  --st-blocked-bg: transparent;
+  --st-mirror-fg: #a1a1a6;
+  --st-mirror-bg: transparent;
 
   --shadow-1: 0 1px 2px rgba(0, 0, 0, .5);
   --shadow-2: 0 8px 24px rgba(0, 0, 0, .55);
@@ -149,14 +149,14 @@
     --danger: #52525b;
     --danger-wash: #ebebed;
 
-    --st-ok-fg: #ffffff;
-    --st-ok-bg: #171717;
-    --st-limited-fg: #3f3f46;
-    --st-limited-bg: #e4e4e7;
-    --st-blocked-fg: #52525b;
-    --st-blocked-bg: #ebebed;
-    --st-mirror-fg: #3f3f46;
-    --st-mirror-bg: #f1f1f2;
+    --st-ok-fg: #8a8a92;
+    --st-ok-bg: transparent;
+    --st-limited-fg: #5f5f68;
+    --st-limited-bg: transparent;
+    --st-blocked-fg: #3f3f46;
+    --st-blocked-bg: transparent;
+    --st-mirror-fg: #5f5f68;
+    --st-mirror-bg: transparent;
 
     --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
     --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);

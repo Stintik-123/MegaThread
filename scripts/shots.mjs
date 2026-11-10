@@ -37,6 +37,12 @@ await page.waitForTimeout(500);
 await page.screenshot({ path: '.shots/06-dark.png' });
 console.log('снимок 06-dark');
 
+// тёмная тема + подборки: проверяем обрезку длинных названий и тихие статусы
+await page.goto(BASE + '/index.html#/collections', { waitUntil: 'networkidle' });
+await page.waitForTimeout(900);
+await page.screenshot({ path: '.shots/08-dark-collections.png' });
+console.log('снимок 08-dark-collections');
+
 // мобильный
 const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
 await mobile.goto(BASE + '/index.html', { waitUntil: 'networkidle' });
