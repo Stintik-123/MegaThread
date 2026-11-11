@@ -146,7 +146,7 @@ export const RESOURCES = [
     "url": "https://w1.alluc.uno/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратские аниме, манга и озвучки. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -265,7 +265,7 @@ export const RESOURCES = [
     "url": "https://twist.moe/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -334,7 +334,7 @@ export const RESOURCES = [
     "url": "https://www.animefever.tv/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -504,7 +504,7 @@ export const RESOURCES = [
     "url": "https://www.animerush.tv/genres/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -690,7 +690,7 @@ export const RESOURCES = [
     "url": "https://atwitst.moe",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратские аниме, манга и озвучки. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -815,7 +815,7 @@ export const RESOURCES = [
     "url": "https://dubbedanime.biz/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -825,7 +825,7 @@ export const RESOURCES = [
     "url": "https://ww5.dubbedanime.net/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -960,7 +960,7 @@ export const RESOURCES = [
     "url": "https://www2.gogoanime.video/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -989,7 +989,7 @@ export const RESOURCES = [
     "url": "https://store.ioob.pw/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -1154,7 +1154,7 @@ export const RESOURCES = [
     "url": "https://manga4life.com/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Читалка пиратной манги. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1164,7 +1164,7 @@ export const RESOURCES = [
     "url": "http://mangapark.me/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Читалка пиратной манги. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1194,7 +1194,7 @@ export const RESOURCES = [
     "url": "http://www.mangago.me/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Читалка пиратной манги. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1204,7 +1204,7 @@ export const RESOURCES = [
     "url": "https://angaseeonline.net",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Читалка пиратной манги. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1262,7 +1262,7 @@ export const RESOURCES = [
     "url": "http://www.miomio.tv/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -1300,7 +1300,7 @@ export const RESOURCES = [
     "url": "http://titaniumtv.xyz/Morph2.apk",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -1320,7 +1320,7 @@ export const RESOURCES = [
     "url": "https://www.nineanime.com/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский стриминг и раздачи аниме. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1340,7 +1340,7 @@ export const RESOURCES = [
     "url": "https://od-db.the-eye.eu/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратские аниме, манга и озвучки. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1369,7 +1369,7 @@ export const RESOURCES = [
     "url": "https://rg-mechanics.org/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский стриминг и раздачи аниме. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -1486,7 +1486,7 @@ export const RESOURCES = [
     "url": "https://www2.series9.io/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -1639,7 +1639,7 @@ export const RESOURCES = [
     "url": "https://videospider.in/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратские аниме, манга и озвучки. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1687,7 +1687,7 @@ export const RESOURCES = [
     "url": "https://watchcartoonsonline.la/",
     "tags": ["аниме", "стриминг"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратские аниме, манга и озвучки. Аниме с озвучкой, субтитрами и манга в открытом доступе."
   },
   {
@@ -1763,7 +1763,7 @@ export const RESOURCES = [
     "url": "http://abook.ws/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -1802,7 +1802,7 @@ export const RESOURCES = [
     "url": "https://annas-archive.org/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "books",
@@ -1821,7 +1821,7 @@ export const RESOURCES = [
     "url": "http://audiobookbay.pl/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Аудиокниги. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -1841,7 +1841,7 @@ export const RESOURCES = [
     "url": "https://audiobooks.cloud/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Аудиокниги. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -1861,7 +1861,7 @@ export const RESOURCES = [
     "url": "http://b-ok.xyz/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -1919,7 +1919,7 @@ export const RESOURCES = [
     "url": "http://en.bookfi.net/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -1968,8 +1968,7 @@ export const RESOURCES = [
     "url": "https://booktracker.org/",
     "tags": ["книги", "библиотека", "флибуста"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "books",
     "name": "BookYards",
@@ -2103,7 +2102,7 @@ export const RESOURCES = [
     "url": "http://ebook-reader-review.toptenreviews.com/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Библиотека пиратных книг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -2219,8 +2218,7 @@ export const RESOURCES = [
     "url": "https://xkcd-search.typesense.org/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "books",
     "name": "Flibusta",
@@ -2228,8 +2226,7 @@ export const RESOURCES = [
     "url": "https://flibusta.is/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "books",
     "name": "fmhy.net",
@@ -2315,7 +2312,7 @@ export const RESOURCES = [
     "url": "https://flibusta.i2p/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "books",
@@ -2741,7 +2738,7 @@ export const RESOURCES = [
     "url": "https://ebooks.i2p/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "books",
@@ -2750,7 +2747,7 @@ export const RESOURCES = [
     "url": "https://tokybook.com/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -2760,7 +2757,7 @@ export const RESOURCES = [
     "url": "https://www.twirpx.com/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -2844,7 +2841,7 @@ export const RESOURCES = [
     "url": "https://b-ok.cc/",
     "tags": ["книги", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Библиотека пиратных книг и аудиокниг. Книги и аудиокниги доступны для скачивания без регистрации."
   },
   {
@@ -2964,8 +2961,7 @@ export const RESOURCES = [
     "url": "https://www.blockaway.net/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "Bypass Paywalls Clean",
@@ -3029,8 +3025,7 @@ export const RESOURCES = [
     "url": "https://www.croxyproxy.com/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "DNSCrypt",
@@ -3211,8 +3206,7 @@ export const RESOURCES = [
     "url": "https://mullvad.net/",
     "tags": ["VPN", "приватность"],
     "os": ["w", "m", "l", "a", "i"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "NetBird",
@@ -3256,8 +3250,7 @@ export const RESOURCES = [
     "url": "https://nym.com/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "OpenTunnel",
@@ -3365,8 +3358,7 @@ export const RESOURCES = [
     "url": "https://proxyium.com/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "ProxyOf2",
@@ -3484,8 +3476,7 @@ export const RESOURCES = [
     "url": "https://snowflake.torproject.org/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "SSHKit",
@@ -3574,7 +3565,7 @@ export const RESOURCES = [
     "url": "https://unblockninja.com/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Инструмент обхода блокировок. Помогает обходить блокировки и оставаться анонимным."
   },
   {
@@ -3584,7 +3575,7 @@ export const RESOURCES = [
     "url": "https://unblocksource.nl/",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Инструмент обхода блокировок. Помогает обходить блокировки и оставаться анонимным."
   },
   {
@@ -3657,8 +3648,7 @@ export const RESOURCES = [
     "url": "https://windscribe.com",
     "tags": ["VPN", "обход", "конфиги"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "bypass",
     "name": "WireSock",
@@ -3733,8 +3723,7 @@ export const RESOURCES = [
     "url": "https://1fichier.com/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "downloads",
     "name": "2share",
@@ -3858,7 +3847,7 @@ export const RESOURCES = [
     "url": "http://avxhome.se/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -4013,7 +4002,7 @@ export const RESOURCES = [
     "url": "https://ddlhub.xyz/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Сервис прямых загрузок и файлообменник. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -4072,7 +4061,7 @@ export const RESOURCES = [
     "url": "https://dmca.gripe/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -4306,7 +4295,7 @@ export const RESOURCES = [
     "url": "https://filepursuit.com",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -4399,7 +4388,7 @@ export const RESOURCES = [
     "url": "https://gigapack.live/",
     "tags": ["файлообменники", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "downloads",
@@ -4539,7 +4528,7 @@ export const RESOURCES = [
     "url": "https://kickasswarez.info/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратный софт и сборки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -4579,7 +4568,7 @@ export const RESOURCES = [
     "url": "http://leecher.needrp.net",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -4737,7 +4726,7 @@ export const RESOURCES = [
     "url": "https://moviesrus.tk",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -4916,7 +4905,7 @@ export const RESOURCES = [
     "url": "https://www.rulu.co/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -4935,7 +4924,7 @@ export const RESOURCES = [
     "url": "https://www.scenelinklist.com/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -4992,7 +4981,7 @@ export const RESOURCES = [
     "url": "https://simkl.com/",
     "tags": ["файлообменники", "скачивание"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -5454,8 +5443,7 @@ export const RESOURCES = [
     "url": "https://cdromance.org/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "games",
     "name": "CDRomance",
@@ -5463,7 +5451,7 @@ export const RESOURCES = [
     "url": "https://cdromance.com",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Эмуляторы и ROM-файлы. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -5513,7 +5501,7 @@ export const RESOURCES = [
     "url": "https://forum.cracked-scriptz.ru",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Репаки и взломанные игры. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -5562,7 +5550,7 @@ export const RESOURCES = [
     "url": "https://crackwatch.com/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Репаки и взломанные игры. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -5896,7 +5884,7 @@ export const RESOURCES = [
     "url": "http://higan.byuu.org/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратные игры, репаки и эмуляторы. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -5915,7 +5903,7 @@ export const RESOURCES = [
     "url": "https://iscracked.info/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Репаки и взломанные игры. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -6010,7 +5998,7 @@ export const RESOURCES = [
     "url": "http://w13.monkrus.ws/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратные игры, репаки и эмуляторы. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -6649,7 +6637,7 @@ export const RESOURCES = [
     "url": "https://vsetop.org/",
     "tags": ["игры", "скачивание", "репаки"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратные игры, репаки и эмуляторы. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -6785,7 +6773,7 @@ export const RESOURCES = [
     "url": "https://albumdabster.com",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -6943,7 +6931,7 @@ export const RESOURCES = [
     "url": "https://ddl-music.to/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Музыкальные раздачи и аудио. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -7026,7 +7014,7 @@ export const RESOURCES = [
     "url": "https://free-mp3-download.net/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -7129,7 +7117,7 @@ export const RESOURCES = [
     "url": "https://leakedalbums.org/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -7204,8 +7192,7 @@ export const RESOURCES = [
     "url": "https://mixupload.com/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "music",
     "name": "mp3.li",
@@ -7252,7 +7239,7 @@ export const RESOURCES = [
     "url": "https://mp3ogg.ru/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -7357,7 +7344,7 @@ export const RESOURCES = [
     "url": "https://per-fect.nl",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -7469,7 +7456,7 @@ export const RESOURCES = [
     "url": "https://www.streethiphop.org/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Музыкальные раздачи и аудио. Музыкальные альбомы и треки в свободном доступе."
   },
   {
@@ -7572,8 +7559,7 @@ export const RESOURCES = [
     "url": "https://z3.fm/",
     "tags": ["музыка", "аудио"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "music",
     "name": "zvu4no",
@@ -7698,7 +7684,7 @@ export const RESOURCES = [
     "url": "https://3dl.tv/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -7747,7 +7733,7 @@ export const RESOURCES = [
     "url": "http://www.720pstream.me/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7795,7 +7781,7 @@ export const RESOURCES = [
     "url": "https://allostream.biz",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7843,7 +7829,7 @@ export const RESOURCES = [
     "url": "https://www.annuaire-telechargement.fr/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7853,7 +7839,7 @@ export const RESOURCES = [
     "url": "https://aostv.app/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7873,7 +7859,7 @@ export const RESOURCES = [
     "url": "https://www.movies4you.ovh/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7930,7 +7916,7 @@ export const RESOURCES = [
     "url": "https://best-movies.watch/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -7997,7 +7983,7 @@ export const RESOURCES = [
     "url": "https://bonsaihd.site/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8094,7 +8080,7 @@ export const RESOURCES = [
     "url": "https://www2.cmovieshd.bz",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8142,7 +8128,7 @@ export const RESOURCES = [
     "url": "https://crickfree.org/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8182,8 +8168,7 @@ export const RESOURCES = [
     "url": "https://www.dailymotion.com/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "streaming",
     "name": "Daxiv Video",
@@ -8210,7 +8195,7 @@ export const RESOURCES = [
     "url": "https://www.divxtop.com/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8269,7 +8254,7 @@ export const RESOURCES = [
     "url": "https://www2.emule-island.ru/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8308,7 +8293,7 @@ export const RESOURCES = [
     "url": "https://www.etopop.fr/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8318,7 +8303,7 @@ export const RESOURCES = [
     "url": "https://exousia.app",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратный софт и сборки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8386,7 +8371,7 @@ export const RESOURCES = [
     "url": "https://filmix.site",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8406,7 +8391,7 @@ export const RESOURCES = [
     "url": "https://www1.filmstreaming1vf.co/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8416,7 +8401,7 @@ export const RESOURCES = [
     "url": "https://www.filmstreaming1.rip/film/aventure/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8496,7 +8481,7 @@ export const RESOURCES = [
     "url": "https://www3.fmovies.to/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8544,7 +8529,7 @@ export const RESOURCES = [
     "url": "https://www.frstream.org",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8584,7 +8569,7 @@ export const RESOURCES = [
     "url": "https://www.gomovieshub.se/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8768,7 +8753,7 @@ export const RESOURCES = [
     "url": "https://ilovetowatch.online/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8778,7 +8763,7 @@ export const RESOURCES = [
     "url": "https://indoxxi.cx/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8798,7 +8783,7 @@ export const RESOURCES = [
     "url": "https://www.iwannawatch.is/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8855,7 +8840,7 @@ export const RESOURCES = [
     "url": "https://kingotv.net/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -8981,7 +8966,7 @@ export const RESOURCES = [
     "url": "https://megashowsapk.com/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9001,7 +8986,7 @@ export const RESOURCES = [
     "url": "https://bmovies.is/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9079,7 +9064,7 @@ export const RESOURCES = [
     "url": "https://www.coolmoviejagg.pro/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -9117,7 +9102,7 @@ export const RESOURCES = [
     "url": "http://www.movie2k.st",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -9127,7 +9112,7 @@ export const RESOURCES = [
     "url": "https://moviesleak.net/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -9176,7 +9161,7 @@ export const RESOURCES = [
     "url": "https://n1streamings.com/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9271,7 +9256,7 @@ export const RESOURCES = [
     "url": "https://onemov.net/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9404,7 +9389,7 @@ export const RESOURCES = [
     "url": "https://w22.seriecomplete.com/series/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9499,7 +9484,7 @@ export const RESOURCES = [
     "url": "http://spacemov.io/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы без подписки. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9592,7 +9577,7 @@ export const RESOURCES = [
     "url": "https://www.takiartmovies.ga/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9667,7 +9652,7 @@ export const RESOURCES = [
     "url": "https://tvmovies.to/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9819,7 +9804,7 @@ export const RESOURCES = [
     "url": "https://www1.watchfree.movie/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Фильмы и сериалы смотрите без подписки и регистрации."
   },
   {
@@ -9886,7 +9871,7 @@ export const RESOURCES = [
     "url": "https://worldfree4u.expert/",
     "tags": ["стриминг", "бесплатно"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "streaming",
@@ -9988,7 +9973,7 @@ export const RESOURCES = [
     "url": "https://www.apkmirror.com/",
     "tags": ["утилиты", "клиенты", "системные"],
     "os": ["a"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -10590,7 +10575,7 @@ export const RESOURCES = [
     "url": "https://solamovies.cc/",
     "tags": ["утилиты", "клиенты", "системные"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Онлайн-кино и сериалы. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -10789,8 +10774,7 @@ export const RESOURCES = [
     "url": "https://1337x.to/",
     "tags": ["индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "1337x Movies",
@@ -10798,7 +10782,7 @@ export const RESOURCES = [
     "url": "https://1337x.to/movie-library/1/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский трекер и индекс раздач: - 1337x.to."
   },
   {
@@ -11072,8 +11056,7 @@ export const RESOURCES = [
     "url": "https://bt4gprx.com/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "BTCloud",
@@ -11091,7 +11074,7 @@ export const RESOURCES = [
     "url": "https://btdb.to/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -11101,7 +11084,7 @@ export const RESOURCES = [
     "url": "https://btdig.com/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -11111,7 +11094,7 @@ export const RESOURCES = [
     "url": "https://www.bthub.me/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -11187,8 +11170,7 @@ export const RESOURCES = [
     "url": "https://damag.net/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "Darli",
@@ -11196,7 +11178,7 @@ export const RESOURCES = [
     "url": "http://tracker.darli.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Трекер и индекс пиратских раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -11320,8 +11302,7 @@ export const RESOURCES = [
     "url": "https://eztvx.to/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "EZTV",
@@ -11560,7 +11541,7 @@ export const RESOURCES = [
     "url": "https://idope.se/apk/down.html",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -11722,8 +11703,7 @@ export const RESOURCES = [
     "url": "https://www.limetorrents.lol/",
     "tags": ["индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "limetorrents.cc",
@@ -11731,7 +11711,7 @@ export const RESOURCES = [
     "url": "https://www.limetorrents.info/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -11907,8 +11887,7 @@ export const RESOURCES = [
     "url": "https://new-team.org/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "Newsbin",
@@ -11965,7 +11944,7 @@ export const RESOURCES = [
     "url": "https://nnmclub.to/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Файлообменник и прямые загрузки. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -11975,8 +11954,7 @@ export const RESOURCES = [
     "url": "https://nnm-club.me/",
     "tags": ["трекеры", "русский"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "Nostalgic Torrents",
@@ -11984,7 +11962,7 @@ export const RESOURCES = [
     "url": "https://nostalgic.is/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12390,7 +12368,7 @@ export const RESOURCES = [
     "url": "https://rarbg.to/torrents.php",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12429,7 +12407,7 @@ export const RESOURCES = [
     "url": "https://anonym.to/https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Эмуляторы и ROM-файлы. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -12476,8 +12454,7 @@ export const RESOURCES = [
     "url": "https://rutor.is/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "rutor.info",
@@ -12485,7 +12462,7 @@ export const RESOURCES = [
     "url": "http://rutor.info/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Трекер и индекс пиратских раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12495,8 +12472,7 @@ export const RESOURCES = [
     "url": "https://rutor.info/",
     "tags": ["индексы", "русский"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "RuTracker",
@@ -12504,7 +12480,7 @@ export const RESOURCES = [
     "url": "https://rutracker.cr/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Трекер и индекс пиратских раздач. Файлы загружаются напрямую, без ожидания и рекламы."
   },
   {
@@ -12514,7 +12490,7 @@ export const RESOURCES = [
     "url": "http://rutracker.ru/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Трекер и индекс пиратских раздач. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
@@ -12534,7 +12510,7 @@ export const RESOURCES = [
     "url": "https://rutracker.org/forum/index.php?c=2",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Трекер и индекс пиратских раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12593,7 +12569,7 @@ export const RESOURCES = [
     "url": "https://solidtorrents.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12648,8 +12624,7 @@ export const RESOURCES = [
     "url": "https://thepiratebay.org/",
     "tags": ["индексы"],
     "os": ["any"],
-    "ru": "ok"
-  },
+    "ru": "blocked" },
   {
     "cat": "torrents",
     "name": "Tixati",
@@ -12667,7 +12642,7 @@ export const RESOURCES = [
     "url": "https://toorgle.me/",
     "tags": ["индексы", "поиск"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "torrents",
@@ -12695,7 +12670,7 @@ export const RESOURCES = [
     "url": "https://www.torlock.com/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12764,7 +12739,7 @@ export const RESOURCES = [
     "url": "https://www.torrentfunk.com/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -12784,7 +12759,7 @@ export const RESOURCES = [
     "url": "https://torrentgalaxy.to/",
     "tags": ["индексы"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "torrents",
@@ -12878,7 +12853,7 @@ export const RESOURCES = [
     "url": "https://torrentz2.nz/",
     "tags": ["индексы"],
     "os": ["any"],
-    "ru": "ok"
+    "ru": "mirror"
   },
   {
     "cat": "torrents",
@@ -12897,7 +12872,7 @@ export const RESOURCES = [
     "url": "https://thepiratebay.org/search.php?q=top100:200",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -13107,7 +13082,7 @@ export const RESOURCES = [
     "url": "https://worldofp2p.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -13147,7 +13122,7 @@ export const RESOURCES = [
     "url": "https://xatab-repack.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Репаки и взломанные игры. Игры, репаки и прошивки скачиваются напрямую из архива."
   },
   {
@@ -13177,7 +13152,7 @@ export const RESOURCES = [
     "url": "http://xtremewrestlingtorrents.net/",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "blocked",
     "note": "Торрент-трекер с большой базой раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -13234,7 +13209,7 @@ export const RESOURCES = [
     "url": "https://yts.mx",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский трекер и индекс раздач. Торренты и magnet-раздачи в одном месте."
   },
   {
@@ -13274,7 +13249,7 @@ export const RESOURCES = [
     "url": "http://www.zxcfiles.net",
     "tags": ["торренты", "трекеры", "индексы"],
     "os": ["any"],
-    "ru": "ok",
+    "ru": "mirror",
     "note": "Пиратский ресурс из подборки мегатреда. Ресурс из пиратской подборки, доступен по прямой ссылке."
   },
   {
