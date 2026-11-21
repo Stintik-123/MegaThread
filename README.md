@@ -2,6 +2,10 @@
   <img src="icons/og-image.png" width="100%" alt="MegaThread" />
 </p>
 
+<p align="center">
+  <img src="docs/screenshot.png" width="100%" alt="MegaThread — главная страница" />
+</p>
+
 # MegaThread — пиратский сборник
 
 Пиратский сборник трекеров, раздач, зеркал и инструментов обхода блокировок. **1383 ресурса в 9 разделах.**
