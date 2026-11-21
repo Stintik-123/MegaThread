@@ -1,4 +1,4 @@
-/* MegaThread — монохромная графитовая тема в духе печатного справочника.
+/* MegaThread — полночная тема с индиго-акцентом.
    Правило: цвет, шрифт, отступ и радиус живут только здесь. Вне токенов — ни одного литерала. */
 
 :root {
@@ -6,7 +6,7 @@
   --font-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
 
-  --fs-display: 44px;
+  --fs-display: 48px;
   --fs-xl: 30px;
   --fs-h1: 30px;
   --fs-h2: 20px;
@@ -17,9 +17,9 @@
   --fs-sm: 12px;
   --fs-micro: 12px;
   --fs-count: 13px;
-  --fs-stat: 28px;
+  --fs-stat: 30px;
 
-  --lh-tight: 1.08;
+  --lh-tight: 1.06;
   --lh-body: 1.55;
 
   /* --- шаг отступов: всё кратно 4 --- */
@@ -35,11 +35,11 @@
   --container: 1280px;
   --header-h: 60px;
 
-  /* --- форма: умеренные радиусы, вложенность вычитается из внешнего --- */
-  --radius-xs: 4px;
-  --radius-ctl: 8px;
-  --radius-card: 12px;
-  --radius-modal: 14px;
+  /* --- форма: мягкие радиусы, вложенность вычитается из внешнего --- */
+  --radius-xs: 6px;
+  --radius-ctl: 10px;
+  --radius-card: 16px;
+  --radius-modal: 20px;
   --radius-pill: 999px;
   --border: 1px;
 
@@ -48,78 +48,78 @@
   --dur-slow: 320ms;
   --ease: cubic-bezier(.22, 1, .36, 1);
 
-  /* --- палитра: графит, единственный акцент — чернила --- */
+  /* --- палитра: тёплый нейтральный цинк + индиго --- */
   --bg: #fafafa;
   --surface: #ffffff;
-  --surface-2: #f4f4f5;
-  --surface-3: #ebebed;
-  --fg: #171717;
-  --fg-muted: #525252;
-  --fg-faint: #737373;
-  --line: #e5e5e7;
-  --line-strong: #c9c9cd;
+  --surface-2: #f2f2f4;
+  --surface-3: #e8e8ec;
+  --fg: #131316;
+  --fg-muted: #55555e;
+  --fg-faint: #7c7c86;
+  --line: #e6e6ea;
+  --line-strong: #cfcfd6;
 
-  --accent: #171717;
-  --accent-strong: #171717;
+  --accent: #5b5bd6;
+  --accent-strong: #4a4ac4;
   --accent-fg: #ffffff;
-  --accent-wash: #f0f0f1;
+  --accent-wash: #ededfb;
 
-  --focus: #171717;
-  --danger: #52525b;
-  --danger-wash: #ebebed;
+  --focus: #5b5bd6;
+  --danger: #b3261e;
+  --danger-wash: #fbeaec;
 
-  /* статусы доступности — тихие серые: смысл несёт подпись, а не заливка */
+  /* статусы доступности: тихие смысловые оттенки без заливок */
   --ok: var(--st-ok-fg);
   --ok-wash: var(--st-ok-bg);
   --warn: var(--st-limited-fg);
   --warn-wash: var(--st-limited-bg);
   --mirror: var(--st-mirror-fg);
   --mirror-wash: var(--st-mirror-bg);
-  --st-ok-fg: #8a8a92;
+  --st-ok-fg: #40795c;
   --st-ok-bg: transparent;
-  --st-limited-fg: #5f5f68;
+  --st-limited-fg: #8d6a2f;
   --st-limited-bg: transparent;
-  --st-blocked-fg: #3f3f46;
+  --st-blocked-fg: #8a4a44;
   --st-blocked-bg: transparent;
-  --st-mirror-fg: #5f5f68;
+  --st-mirror-fg: #4a5a8a;
   --st-mirror-bg: transparent;
 
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
-  --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);
-  --shadow-3: 0 24px 48px -16px rgba(0, 0, 0, .28);
-  --overlay: rgba(20, 20, 21, .45);
+  --shadow-1: 0 1px 2px rgba(19, 19, 22, .06);
+  --shadow-2: 0 8px 24px rgba(19, 19, 22, .10);
+  --shadow-3: 0 24px 48px -16px rgba(19, 19, 22, .28);
+  --overlay: rgba(19, 19, 22, .45);
 }
 
-/* Тёмная тема: та же графитовая шкала, один и тот же чёрный акцент.
-   Глубина — шаги поверхностей и волосяные линии, без цветных теней. */
+/* Тёмная тема: глубокий графит, индиго слегка поднят по светлоте.
+   Глубина — шаги поверхностей и волосские линии, без цветных теней. */
 [data-theme='dark'],
 :root:not([data-theme='light']) {
-  --bg: #141415;
-  --surface: #19191b;
-  --surface-2: #232325;
-  --surface-3: #2b2b2e;
-  --fg: #ededed;
-  --fg-muted: #a1a1a6;
-  --fg-faint: #85858b;
-  --line: #2b2b2e;
-  --line-strong: #3d3d41;
+  --bg: #0e0e11;
+  --surface: #141418;
+  --surface-2: #1d1d22;
+  --surface-3: #26262c;
+  --fg: #ededf0;
+  --fg-muted: #a3a3ad;
+  --fg-faint: #7f7f8a;
+  --line: #232329;
+  --line-strong: #38383f;
 
-  --accent: #ededed;
-  --accent-strong: #ededed;
-  --accent-fg: #101011;
-  --accent-wash: #232325;
+  --accent: #8a8aff;
+  --accent-strong: #a1a1ff;
+  --accent-fg: #0e0e11;
+  --accent-wash: rgba(138, 138, 255, .12);
 
-  --focus: #ededed;
-  --danger: #a1a1a6;
-  --danger-wash: #232325;
+  --focus: #8a8aff;
+  --danger: #f87171;
+  --danger-wash: rgba(248, 113, 113, .1);
 
-  --st-ok-fg: #77777f;
+  --st-ok-fg: #6fae8c;
   --st-ok-bg: transparent;
-  --st-limited-fg: #a1a1a6;
+  --st-limited-fg: #c2a061;
   --st-limited-bg: transparent;
-  --st-blocked-fg: #d4d4d8;
+  --st-blocked-fg: #d98a84;
   --st-blocked-bg: transparent;
-  --st-mirror-fg: #a1a1a6;
+  --st-mirror-fg: #8fa3d9;
   --st-mirror-bg: transparent;
 
   --shadow-1: 0 1px 2px rgba(0, 0, 0, .5);
@@ -132,35 +132,35 @@
   :root:not([data-theme='dark']) {
     --bg: #fafafa;
     --surface: #ffffff;
-    --surface-2: #f4f4f5;
-    --surface-3: #ebebed;
-    --fg: #171717;
-    --fg-muted: #525252;
-    --fg-faint: #737373;
-    --line: #e5e5e7;
-    --line-strong: #c9c9cd;
+    --surface-2: #f2f2f4;
+    --surface-3: #e8e8ec;
+    --fg: #131316;
+    --fg-muted: #55555e;
+    --fg-faint: #7c7c86;
+    --line: #e6e6ea;
+    --line-strong: #cfcfd6;
 
-    --accent: #171717;
-    --accent-strong: #171717;
+    --accent: #5b5bd6;
+    --accent-strong: #4a4ac4;
     --accent-fg: #ffffff;
-    --accent-wash: #f0f0f1;
+    --accent-wash: #ededfb;
 
-    --focus: #171717;
-    --danger: #52525b;
-    --danger-wash: #ebebed;
+    --focus: #5b5bd6;
+    --danger: #b3261e;
+    --danger-wash: #fbeaec;
 
-    --st-ok-fg: #8a8a92;
+    --st-ok-fg: #40795c;
     --st-ok-bg: transparent;
-    --st-limited-fg: #5f5f68;
+    --st-limited-fg: #8d6a2f;
     --st-limited-bg: transparent;
-    --st-blocked-fg: #3f3f46;
+    --st-blocked-fg: #8a4a44;
     --st-blocked-bg: transparent;
-    --st-mirror-fg: #5f5f68;
+    --st-mirror-fg: #4a5a8a;
     --st-mirror-bg: transparent;
 
-    --shadow-1: 0 1px 2px rgba(0, 0, 0, .05);
-    --shadow-2: 0 8px 24px rgba(0, 0, 0, .10);
-    --shadow-3: 0 24px 48px -16px rgba(0, 0, 0, .28);
-    --overlay: rgba(20, 20, 21, .45);
+    --shadow-1: 0 1px 2px rgba(19, 19, 22, .06);
+    --shadow-2: 0 8px 24px rgba(19, 19, 22, .10);
+    --shadow-3: 0 24px 48px -16px rgba(19, 19, 22, .28);
+    --overlay: rgba(19, 19, 22, .45);
   }
 }
