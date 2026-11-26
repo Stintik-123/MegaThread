@@ -1,6 +1,6 @@
-<p align="center">
+<div align="center">
   <img src="icons/og-image.png" width="100%" alt="MegaThread" />
-</p>
+</div>
 
 <p align="center">
   <img src="docs/screenshot.png" width="100%" alt="MegaThread — главная страница" />
@@ -197,3 +197,11 @@ npm test             # 67 проверок в реальном Chromium
 ## Лицензия
 
 Код каталога — [MIT](LICENSE). Ссылки и описания принадлежат их авторам.
+
+## Star History
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Stintik-123/MegaThread&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Stintik-123/MegaThread&type=Date" />
+  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Stintik-123/MegaThread&type=Date" />
+</picture>
